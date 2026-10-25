@@ -65,9 +65,8 @@ title: "La Fundación · Idearium Caribe"
         <div class="people">
           <div class="person"><b>Alejandro Perdomo Fermin</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
           <div class="person"><b>Daniel García Ayaach</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
-          <div class="person"><b>Jonhangel Sanchez Utrera</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
+          <div class="person"><b>Jonhangel Sánchez Utrera</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
         </div>
-        <p><span class="todo">[Junta directiva y consejo asesor académico]</span></p>
       </div>
     </div>
   </section>

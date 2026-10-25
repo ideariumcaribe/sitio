@@ -286,3 +286,4 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 .cat-tabla td.pie{color:var(--muted);font-size:.92rem}
 .en-colombeia{margin:0;padding-left:1.1em;display:grid;gap:6px}
 .en-colombeia li{font-size:1.05rem}
+.welcome .collage{display:block;width:100%;height:auto;margin-bottom:8px}

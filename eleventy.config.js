@@ -1,4 +1,5 @@
 // Configuración de Eleventy para el sitio de Idearium Caribe.
+import { slugAutor } from "./lib/slug.js";
 export default function (eleventyConfig) {
   // Archivos que se copian tal cual al sitio publicado.
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
@@ -43,6 +44,19 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("vecinosObra", (lista, id) => {
     const i = (lista || []).findIndex((o) => o.identificador === id);
     return { anterior: i > 0 ? lista[i - 1] : null, siguiente: i >= 0 && i < lista.length - 1 ? lista[i + 1] : null };
+  });
+  eleventyConfig.addFilter("slugAutor", slugAutor);
+  eleventyConfig.addFilter("split", (s, sep) => String(s || "").split(sep).map((x) => x.trim()).filter(Boolean));
+  eleventyConfig.addFilter("otrosAutores", (s, nombre) => String(s || "").split(";").map((x) => x.trim()).filter((x) => x && x !== nombre).join(", "));
+  eleventyConfig.addFilter("deAutor", (arts, nombre) => (arts || []).filter((a) => (a.data.autores || []).includes(nombre) || a.data.editor === nombre));
+  eleventyConfig.addFilter("porInicial", (autores) => {
+    const grupos = [];
+    for (const a of autores || []) {
+      const ult = grupos[grupos.length - 1];
+      if (ult && ult.letra === a.inicial) ult.autores.push(a);
+      else grupos.push({ letra: a.inicial, autores: [a] });
+    }
+    return grupos;
   });
   eleventyConfig.addFilter("urlLimpia", (u) => String(u).replace(/index\.html$/, "").replace(/\.html$/, ""));
 

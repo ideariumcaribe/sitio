@@ -213,6 +213,21 @@ content:
         type: string
         description: Lugar y editorial, por ejemplo «Caracas, Tipografía Garrido».
 
+  - name: autores
+    label: "Biblioteca: orden de autores"
+    type: file
+    path: _data/autores.json
+    format: json
+    list: true
+    fields:
+      - name: nombre
+        label: Nombre tal como aparece en el catálogo
+        type: string
+      - name: forma_catalogo
+        label: Forma para ordenar (Apellidos, Nombre)
+        type: string
+        description: Por ejemplo, «Vallenilla Lanz, Laureano». Si un autor no figura aquí, se ordena por su nombre de pila.
+
   - name: sitio
     label: Datos generales del sitio
     type: file

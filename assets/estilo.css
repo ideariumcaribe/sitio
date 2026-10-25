@@ -262,3 +262,27 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
   .visor iframe{height:72vh;min-height:420px}
   .obra-nav{grid-template-columns:minmax(0,1fr)}
 }
+.pestanas{display:flex;gap:24px;border-bottom:1px solid var(--line);font-family:var(--f-ui)}
+.pestanas a{text-decoration:none;color:var(--muted);padding:8px 0;border-bottom:2px solid transparent;margin-bottom:-1px}
+.pestanas a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--ink)}
+.pestanas a:hover{color:var(--ink)}
+.cat-tabla a.aut{text-decoration:none;color:var(--ink)}
+.cat-tabla a.aut:hover{text-decoration:underline}
+.obra-cab .autores a{text-decoration:none}
+.obra-cab .autores a:hover{text-decoration:underline}
+.abc{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--f-ui);font-size:1.05rem}
+.abc a{text-decoration:none}
+.abc a:hover{text-decoration:underline}
+.autores-indice{columns:3 260px;column-gap:48px}
+.letra{break-inside:avoid;padding:0 0 22px;border:0}
+.letra h2{font-size:1.5rem;border-bottom:1px solid var(--ink);padding-bottom:4px;margin-bottom:8px}
+.letra ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.letra li{font-size:1rem}
+.letra li a{text-decoration:none}
+.letra li a:hover{text-decoration:underline}
+.letra .n,.coaut{font-family:var(--f-ui);font-size:.82rem;color:var(--muted)}
+.coaut{display:block}
+.coaut::before{content:"con "}
+.cat-tabla td.pie{color:var(--muted);font-size:.92rem}
+.en-colombeia{margin:0;padding-left:1.1em;display:grid;gap:6px}
+.en-colombeia li{font-size:1.05rem}

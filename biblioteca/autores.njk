@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: "Autores de la Biblioteca Digital · Idearium Caribe"
+descripcion: "Índice alfabético de autores de la Biblioteca Digital de Idearium Caribe."
+permalink: /biblioteca/autores/
+---
+{%- set grupos = autoresBiblioteca | porInicial -%}
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><span class="es">Autores</span><span class="en">Authors</span></nav>
+      <div class="sec-title"><div><p class="label es">Biblioteca Digital</p><p class="label en">Digital Library</p>
+        <h1 class="es">Autores</h1><h1 class="en">Authors</h1></div></div>
+      {% include "biblioteca-pestanas.njk" %}
+      <nav class="abc" aria-label="Letras">
+        {%- for g in grupos %}<a href="#letra-{{ g.letra }}">{{ g.letra }}</a>{% endfor %}
+      </nav>
+      <div class="autores-indice">
+        {%- for g in grupos %}
+        <section class="letra" id="letra-{{ g.letra }}" aria-labelledby="t-{{ g.letra }}">
+          <h2 id="t-{{ g.letra }}">{{ g.letra }}</h2>
+          <ul>
+            {%- for a in g.autores %}
+            <li><a href="/biblioteca/autores/{{ a.slug }}/">{{ a.forma }}</a> <span class="n">{{ a.obras | length }}</span></li>
+            {%- endfor %}
+          </ul>
+        </section>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>

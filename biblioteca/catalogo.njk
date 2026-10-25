@@ -10,6 +10,7 @@ permalink: /biblioteca/catalogo/
       <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><span class="es">Catálogo</span><span class="en">Catalogue</span></nav>
       <div class="sec-title"><div><p class="label es">Biblioteca Digital</p><p class="label en">Digital Library</p>
         <h1 class="es">Catálogo</h1><h1 class="en">Catalogue</h1></div></div>
+      {% include "biblioteca-pestanas.njk" %}
       <p class="es cat-intro">Todas las obras se leen en línea, sin costo ni registro. Haga clic en un título para abrirlo.</p>
       <p class="en cat-intro">Every work can be read online, free and without registration. Click a title to open it.</p>
       <div class="cat-buscar">
@@ -27,7 +28,7 @@ permalink: /biblioteca/catalogo/
           </tr></thead>
           <tbody>
             {%- for o in catalogo | sort(false, true, "signatura") %}
-            <tr data-buscar="{{ (o.titulo + ' ' + o.autor) | sinTildes }}"><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a></td><td>{{ o.autor | replace(";", ",") }}</td><td class="yr">{{ o.anio }}</td></tr>
+            <tr data-buscar="{{ (o.titulo + ' ' + o.autor) | sinTildes }}"><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a></td><td>{% for n in o.autor | split(";") %}<a class="aut" href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td><td class="yr">{{ o.anio }}</td></tr>
             {%- endfor %}
           </tbody>
         </table>

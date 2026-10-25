@@ -1,0 +1,390 @@
+[
+ {
+  "nombre": "Academia Nacional de la Historia",
+  "forma_catalogo": "Academia Nacional de la Historia"
+ },
+ {
+  "nombre": "Agustín Blanco Muñoz",
+  "forma_catalogo": "Blanco Muñoz, Agustín"
+ },
+ {
+  "nombre": "Agustín Codazzi",
+  "forma_catalogo": "Codazzi, Agustín"
+ },
+ {
+  "nombre": "Alfonso Armas Ayala",
+  "forma_catalogo": "Armas Ayala, Alfonso"
+ },
+ {
+  "nombre": "Alfredo Tarre Murzi (Sanin)",
+  "forma_catalogo": "Tarre Murzi, Alfredo (Sanin)"
+ },
+ {
+  "nombre": "Alicia Ardao",
+  "forma_catalogo": "Ardao, Alicia"
+ },
+ {
+  "nombre": "Ana Mercedes Pérez",
+  "forma_catalogo": "Pérez, Ana Mercedes"
+ },
+ {
+  "nombre": "Angel Sanz Tapia",
+  "forma_catalogo": "Sanz Tapia, Angel"
+ },
+ {
+  "nombre": "Antonio Arellano Moreno",
+  "forma_catalogo": "Arellano Moreno, Antonio"
+ },
+ {
+  "nombre": "Antonio Pérez Vivas",
+  "forma_catalogo": "Pérez Vivas, Antonio"
+ },
+ {
+  "nombre": "Arturo Sosa Abascal",
+  "forma_catalogo": "Sosa Abascal, Arturo"
+ },
+ {
+  "nombre": "Eloi Lengrand",
+  "forma_catalogo": "Lengrand, Eloi"
+ },
+ {
+  "nombre": "Arturo Uslar Pietri",
+  "forma_catalogo": "Uslar Pietri, Arturo"
+ },
+ {
+  "nombre": "Augusto Mijares",
+  "forma_catalogo": "Mijares, Augusto"
+ },
+ {
+  "nombre": "Beatriz Briceño-Picón",
+  "forma_catalogo": "Briceño-Picón, Beatriz"
+ },
+ {
+  "nombre": "Caracciolo Parra Pérez",
+  "forma_catalogo": "Parra Pérez, Caracciolo"
+ },
+ {
+  "nombre": "Carlos Irazábal",
+  "forma_catalogo": "Irazábal, Carlos"
+ },
+ {
+  "nombre": "Carlos Rodríguez Jiménez",
+  "forma_catalogo": "Rodríguez Jiménez, Carlos"
+ },
+ {
+  "nombre": "Carlos Soublette",
+  "forma_catalogo": "Soublette, Carlos"
+ },
+ {
+  "nombre": "Carmelo Fernández",
+  "forma_catalogo": "Fernández, Carmelo"
+ },
+ {
+  "nombre": "Cornelio Hispano",
+  "forma_catalogo": "Hispano, Cornelio"
+ },
+ {
+  "nombre": "Eduardo Arcila Farías",
+  "forma_catalogo": "Arcila Farías, Eduardo"
+ },
+ {
+  "nombre": "Eleazar López Contreras",
+  "forma_catalogo": "López Contreras, Eleazar"
+ },
+ {
+  "nombre": "Enrique Bernardo Núñez",
+  "forma_catalogo": "Núñez, Enrique Bernardo"
+ },
+ {
+  "nombre": "Enrique Gandía",
+  "forma_catalogo": "Gandía, Enrique"
+ },
+ {
+  "nombre": "Enrique Meléndez",
+  "forma_catalogo": "Meléndez, Enrique"
+ },
+ {
+  "nombre": "FUNRES",
+  "forma_catalogo": "FUNRES"
+ },
+ {
+  "nombre": "Federico Brito Figueroa",
+  "forma_catalogo": "Brito Figueroa, Federico"
+ },
+ {
+  "nombre": "Francisco Depons",
+  "forma_catalogo": "Depons, Francisco"
+ },
+ {
+  "nombre": "Francisco Javier Yanes",
+  "forma_catalogo": "Yanes, Francisco Javier"
+ },
+ {
+  "nombre": "Fundación Vicente Lecuna",
+  "forma_catalogo": "Fundación Vicente Lecuna"
+ },
+ {
+  "nombre": "Gabriel E. Muñoz",
+  "forma_catalogo": "Muñoz, Gabriel E."
+ },
+ {
+  "nombre": "Gabriel Fernández de Villalobos",
+  "forma_catalogo": "Fernández de Villalobos, Gabriel"
+ },
+ {
+  "nombre": "Guillermo Morón",
+  "forma_catalogo": "Morón, Guillermo"
+ },
+ {
+  "nombre": "Gustavo Ocando Yamarte",
+  "forma_catalogo": "Ocando Yamarte, Gustavo"
+ },
+ {
+  "nombre": "Harrison Sabin Howard",
+  "forma_catalogo": "Howard, Harrison Sabin"
+ },
+ {
+  "nombre": "Héctor García Chuecos",
+  "forma_catalogo": "García Chuecos, Héctor"
+ },
+ {
+  "nombre": "Idearium Caribe",
+  "forma_catalogo": "Idearium Caribe"
+ },
+ {
+  "nombre": "Indalecio Liévano Aguirre",
+  "forma_catalogo": "Liévano Aguirre, Indalecio"
+ },
+ {
+  "nombre": "Instituto Panamericano de Geografía e Historia",
+  "forma_catalogo": "Instituto Panamericano de Geografía e Historia"
+ },
+ {
+  "nombre": "Isaías Medina Angarita",
+  "forma_catalogo": "Medina Angarita, Isaías"
+ },
+ {
+  "nombre": "Jesús Evaristo Casariego",
+  "forma_catalogo": "Casariego, Jesús Evaristo"
+ },
+ {
+  "nombre": "Joaquín Gabaldón Márquez",
+  "forma_catalogo": "Gabaldón Márquez, Joaquín"
+ },
+ {
+  "nombre": "John Gustavus Adolphus Williamson",
+  "forma_catalogo": "Williamson, John Gustavus Adolphus"
+ },
+ {
+  "nombre": "Joseph Thorning",
+  "forma_catalogo": "Thorning, Joseph"
+ },
+ {
+  "nombre": "José Antonio Páez",
+  "forma_catalogo": "Páez, José Antonio"
+ },
+ {
+  "nombre": "José Gregorio Hernández",
+  "forma_catalogo": "Hernández, José Gregorio"
+ },
+ {
+  "nombre": "José Vicente Pepper",
+  "forma_catalogo": "Pepper, José Vicente"
+ },
+ {
+  "nombre": "Juan Bautista Querales",
+  "forma_catalogo": "Querales, Juan Bautista"
+ },
+ {
+  "nombre": "Juan Liscano",
+  "forma_catalogo": "Liscano, Juan"
+ },
+ {
+  "nombre": "Juan Penzini Hernández",
+  "forma_catalogo": "Penzini Hernández, Juan"
+ },
+ {
+  "nombre": "Juan Uslar Pietri",
+  "forma_catalogo": "Uslar Pietri, Juan"
+ },
+ {
+  "nombre": "Juan Vicente González",
+  "forma_catalogo": "González, Juan Vicente"
+ },
+ {
+  "nombre": "Laureano Vallenilla Lanz",
+  "forma_catalogo": "Vallenilla Lanz, Laureano"
+ },
+ {
+  "nombre": "Laureano Vallenilla-Lanz Planchart",
+  "forma_catalogo": "Vallenilla-Lanz Planchart, Laureano"
+ },
+ {
+  "nombre": "Luis Alberto Sucre",
+  "forma_catalogo": "Sucre, Luis Alberto"
+ },
+ {
+  "nombre": "Luis Cordero Velásquez",
+  "forma_catalogo": "Cordero Velásquez, Luis"
+ },
+ {
+  "nombre": "Luis Perú de Lacroix",
+  "forma_catalogo": "Perú de Lacroix, Luis"
+ },
+ {
+  "nombre": "Manuel Lucena Salmoral",
+  "forma_catalogo": "Lucena Salmoral, Manuel"
+ },
+ {
+  "nombre": "Manuel Pérez Vila",
+  "forma_catalogo": "Pérez Vila, Manuel"
+ },
+ {
+  "nombre": "Marcos Pérez Jiménez",
+  "forma_catalogo": "Pérez Jiménez, Marcos"
+ },
+ {
+  "nombre": "Mariano Picón-Salas",
+  "forma_catalogo": "Picón-Salas, Mariano"
+ },
+ {
+  "nombre": "Mario Briceño-Iragorry",
+  "forma_catalogo": "Briceño-Iragorry, Mario"
+ },
+ {
+  "nombre": "Marius André",
+  "forma_catalogo": "André, Marius"
+ },
+ {
+  "nombre": "Miguel Batllori",
+  "forma_catalogo": "Batllori, Miguel"
+ },
+ {
+  "nombre": "Ministerio de Relaciones Exteriores de Venezuela",
+  "forma_catalogo": "Ministerio de Relaciones Exteriores de Venezuela"
+ },
+ {
+  "nombre": "Nemesio García Naranjo",
+  "forma_catalogo": "García Naranjo, Nemesio"
+ },
+ {
+  "nombre": "Nicolás Eugenio Navarro",
+  "forma_catalogo": "Navarro, Nicolás Eugenio"
+ },
+ {
+  "nombre": "Nora Bustamante",
+  "forma_catalogo": "Bustamante, Nora"
+ },
+ {
+  "nombre": "Ocarina Castillo D'Imperio",
+  "forma_catalogo": "Castillo D'Imperio, Ocarina"
+ },
+ {
+  "nombre": "Paolo Nicolai",
+  "forma_catalogo": "Nicolai, Paolo"
+ },
+ {
+  "nombre": "Pedro Estrada",
+  "forma_catalogo": "Estrada, Pedro"
+ },
+ {
+  "nombre": "Pedro Grases",
+  "forma_catalogo": "Grases, Pedro"
+ },
+ {
+  "nombre": "Pedro Manuel Arcaya",
+  "forma_catalogo": "Arcaya, Pedro Manuel"
+ },
+ {
+  "nombre": "Rafael Ramón Castellanos",
+  "forma_catalogo": "Castellanos, Rafael Ramón"
+ },
+ {
+  "nombre": "Ramón Díaz Sánchez",
+  "forma_catalogo": "Díaz Sánchez, Ramón"
+ },
+ {
+  "nombre": "Ramón J. Velásquez",
+  "forma_catalogo": "Velásquez, Ramón J."
+ },
+ {
+  "nombre": "Ramón Páez",
+  "forma_catalogo": "Páez, Ramón"
+ },
+ {
+  "nombre": "Ricardo Archila",
+  "forma_catalogo": "Archila, Ricardo"
+ },
+ {
+  "nombre": "Ricardo Escalante",
+  "forma_catalogo": "Escalante, Ricardo"
+ },
+ {
+  "nombre": "Richard Vowell",
+  "forma_catalogo": "Vowell, Richard"
+ },
+ {
+  "nombre": "Robert Bontine Cunninghame Graham",
+  "forma_catalogo": "Cunninghame Graham, Robert Bontine"
+ },
+ {
+  "nombre": "Rómulo Betancourt",
+  "forma_catalogo": "Betancourt, Rómulo"
+ },
+ {
+  "nombre": "Rómulo Gallegos",
+  "forma_catalogo": "Gallegos, Rómulo"
+ },
+ {
+  "nombre": "Santiago Gerardo Suárez",
+  "forma_catalogo": "Suárez, Santiago Gerardo"
+ },
+ {
+  "nombre": "Simón Bolívar",
+  "forma_catalogo": "Bolívar, Simón"
+ },
+ {
+  "nombre": "Thomas Paine",
+  "forma_catalogo": "Paine, Thomas"
+ },
+ {
+  "nombre": "Tomás Michelena",
+  "forma_catalogo": "Michelena, Tomás"
+ },
+ {
+  "nombre": "Tomás Polanco Alcántara",
+  "forma_catalogo": "Polanco Alcántara, Tomás"
+ },
+ {
+  "nombre": "Tulio Chiossone",
+  "forma_catalogo": "Chiossone, Tulio"
+ },
+ {
+  "nombre": "Valentina Lecuna",
+  "forma_catalogo": "Lecuna, Valentina"
+ },
+ {
+  "nombre": "Vicente Dávila",
+  "forma_catalogo": "Dávila, Vicente"
+ },
+ {
+  "nombre": "Vicente Lecuna",
+  "forma_catalogo": "Lecuna, Vicente"
+ },
+ {
+  "nombre": "William Spence Robertson",
+  "forma_catalogo": "Robertson, William Spence"
+ },
+ {
+  "nombre": "Ángel César Rivas",
+  "forma_catalogo": "Rivas, Ángel César"
+ },
+ {
+  "nombre": "Ángel Francisco Brice",
+  "forma_catalogo": "Brice, Ángel Francisco"
+ },
+ {
+  "nombre": "Ángel Laborde y Navarro",
+  "forma_catalogo": "Laborde y Navarro, Ángel"
+ }
+]

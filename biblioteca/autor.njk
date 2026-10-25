@@ -1,0 +1,47 @@
+---
+layout: base.njk
+pagination:
+  data: autoresBiblioteca
+  size: 1
+  alias: autor
+permalink: "/biblioteca/autores/{{ autor.slug }}/"
+eleventyComputed:
+  title: "{{ autor.nombre }} · Biblioteca Digital · Idearium Caribe"
+  descripcion: "Obras de {{ autor.nombre }} en la Biblioteca Digital de Idearium Caribe, de lectura libre en línea."
+---
+{%- set enColombeia = collections.articulo | deAutor(autor.nombre) -%}
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><a href="/biblioteca/autores/"><span class="es">Autores</span><span class="en">Authors</span></a><span aria-hidden="true"> › </span><span>{{ autor.forma }}</span></nav>
+      <div class="sec-title"><div><p class="label es">Autor</p><p class="label en">Author</p>
+        <h1>{{ autor.nombre }}</h1>
+        <p class="cat-cuenta"><span class="es">{{ autor.obras | length }} {{ "obra" if autor.obras.length == 1 else "obras" }} en la Biblioteca Digital</span><span class="en">{{ autor.obras | length }} {{ "work" if autor.obras.length == 1 else "works" }} in the Digital Library</span></p></div></div>
+      <div class="ledger-wrap">
+        <table class="ledger cat-tabla">
+          <thead><tr>
+            <th><span class="es">Signatura</span><span class="en">Call no.</span></th>
+            <th><span class="es">Título</span><span class="en">Title</span></th>
+            <th><span class="es">Pie de imprenta</span><span class="en">Imprint</span></th>
+            <th><span class="es">Año</span><span class="en">Year</span></th>
+          </tr></thead>
+          <tbody>
+            {%- for o in autor.obras %}
+            <tr><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a>{% if o.autor | split(";") | length > 1 %}<span class="coaut">{{ o.autor | otrosAutores(autor.nombre) }}</span>{% endif %}</td><td class="pie">{{ o.pie_de_imprenta }}</td><td class="yr">{{ o.anio }}</td></tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+      {%- if enColombeia.length %}
+      <div class="stack" style="gap:12px">
+        <h2 class="label"><span class="es">También en Colombeia</span><span class="en">Also in Colombeia</span></h2>
+        <ul class="en-colombeia">
+          {%- for a in enColombeia %}
+          <li><a href="{{ a.url }}">{{ a.data.titulo }}</a> <span class="ref">· <i>Colombeia</i>, n.º {{ a.data.numero }}</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+    </div>
+  </section>
+</main>

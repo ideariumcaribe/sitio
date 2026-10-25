@@ -18,7 +18,7 @@ eleventyComputed:
       <header class="obra-cab">
         <p class="label sig-label">{{ obra.signatura }}</p>
         <h1>{{ obra.titulo }}</h1>
-        {%- if obra.autor %}<p class="autores">{{ obra.autor | replace(";", ",") }}</p>{% endif %}
+        {%- if obra.autor %}<p class="autores">{% for n in obra.autor | split(";") %}<a href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
         <p class="ref">{% if obra.pie_de_imprenta %}{{ obra.pie_de_imprenta }}{% endif %}{% if obra.anio %}{% if obra.pie_de_imprenta %}, {% endif %}{{ obra.anio }}{% endif %}{% if obra.primera_edicion %} · <span class="es">1.ª ed.</span><span class="en">1st ed.</span> {{ obra.primera_edicion }}{% endif %}</p>
       </header>
       <div class="visor">

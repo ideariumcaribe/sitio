@@ -1,0 +1,231 @@
+ Configuración del editor Pages CMS (app.pagescms.org) para el sitio de Idearium Caribe.
+# Define qué se puede editar desde el navegador y con qué campos.
+
+media:
+  - name: pdf
+    label: PDF de artículos
+    input: colombeia/articulos
+    output: /colombeia/articulos
+    extensions: [pdf]
+  - name: portadas
+    label: Portadas de Colombeia
+    input: colombeia/portadas
+    output: /colombeia/portadas
+    categories: [image]
+
+content:
+  - name: articulos
+    label: Artículos de Colombeia
+    type: collection
+    path: colombeia/fichas
+    format: yaml-frontmatter
+    exclude: [fichas.11tydata.js]
+    filename: "colombeia-{numero}-{titulo}.md"
+    fields:
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+      - name: subtitulo
+        label: Subtítulo
+        type: string
+      - name: autores
+        label: Autores
+        type: string
+        list: true
+        description: Un nombre por línea, en el orden en que figuran en la revista.
+      - name: editor
+        label: Edición y notas
+        type: string
+        description: Solo para textos inéditos o curados (por ejemplo, «Alejandro Perdomo Fermin»).
+      - name: numero
+        label: Número de la revista
+        type: number
+        required: true
+      - name: orden
+        label: Posición en el índice
+        type: number
+        description: 0 para la presentación, 1 para el primer texto, y así sucesivamente.
+      - name: seccion
+        label: Sección
+        type: select
+        options:
+          values: [Presentación, Inéditos, Curados, Artículos, Ensayos]
+      - name: pagina_inicial
+        label: Página inicial
+        type: string
+      - name: pagina_final
+        label: Página final
+        type: string
+      - name: resumen
+        label: Resumen
+        type: text
+        description: Entre 100 y 150 palabras, aprobado por el autor.
+      - name: palabras_clave
+        label: Palabras clave
+        type: string
+        list: true
+      - name: pdf
+        label: PDF del artículo
+        type: file
+        options:
+          media: pdf
+          extensions: [pdf]
+        description: Menos de 5 MB y con texto seleccionable (no escaneado).
+      - name: doi
+        label: DOI
+        type: string
+        description: Opcional. Solo el identificador, por ejemplo 10.5281/zenodo.1234567.
+      - name: licencia
+        label: Licencia
+        type: string
+        description: «CC BY 4.0» para textos propios de la revista; vacío para textos de terceros.
+
+  - name: numeros
+    label: Números de Colombeia
+    type: collection
+    path: colombeia/numeros
+    format: yaml-frontmatter
+    exclude: [numeros.11tydata.js]
+    filename: "numero-{numero}.md"
+    fields:
+      - name: numero
+        label: Número
+        type: number
+        required: true
+      - name: titulo
+        label: Título del número
+        type: string
+        required: true
+      - name: fecha
+        label: Fecha
+        type: string
+        description: Por ejemplo, «mayo-junio de 2026».
+      - name: anio
+        label: Año
+        type: number
+      - name: portada
+        label: Portada
+        type: image
+        options:
+          media: portadas
+      - name: enlace_completo
+        label: Enlace al número completo
+        type: string
+        description: Opcional (por ejemplo, la página del número en Internet Archive).
+
+  - name: paginas
+    label: Páginas
+    type: collection
+    path: paginas
+    format: yaml-frontmatter
+    exclude: [paginas.11tydata.js]
+    fields:
+      - name: title
+        label: Título de la pestaña del navegador
+        type: string
+      - name: body
+        label: Contenido (HTML)
+        type: code
+        options:
+          format: html
+        description: Cada texto aparece dos veces, en español (class="es") y en inglés (class="en"). Cambie solo el texto entre las etiquetas.
+
+  - name: boletin
+    label: "Inicio: artículos del boletín"
+    type: file
+    path: _data/boletin.json
+    format: json
+    list: true
+    fields:
+      - name: titulo
+        label: Título
+        type: string
+      - name: ruta
+        label: Dirección en Substack
+        type: string
+        description: La parte que sigue al dominio, por ejemplo /p/vallenilla-lanz-en-roma
+      - name: categoria
+        label: Categoría (español)
+        type: string
+      - name: categoria_en
+        label: Categoría (inglés)
+        type: string
+
+  - name: destacados
+    label: "Biblioteca: obras destacadas"
+    type: file
+    path: _data/destacados.json
+    format: json
+    list: true
+    fields:
+      - name: signatura
+        label: Signatura
+        type: string
+      - name: obra
+        label: Título de la obra
+        type: string
+      - name: detalle
+        label: Detalle tras el título
+        type: string
+        description: Por ejemplo, «, vols. I–IV, VI–X»
+      - name: enlace
+        label: Enlace en Internet Archive
+        type: string
+      - name: autor
+        label: Autor
+        type: string
+      - name: anio
+        label: Año
+        type: string
+
+  - name: sitio
+    label: Datos generales del sitio
+    type: file
+    path: _data/sitio.json
+    format: json
+    fields:
+      - name: nombre
+        label: Nombre de la entidad
+        type: string
+      - name: url
+        label: Dirección pública del sitio
+        type: string
+        description: Sin barra final, por ejemplo https://ideariumcaribe.com
+      - name: email
+        label: Correo
+        type: string
+      - name: direccion
+        label: Dirección postal
+        type: string
+      - name: issn
+        label: ISSN de Colombeia
+        type: string
+      - name: boletin
+        label: Dirección del boletín en Substack
+        type: string
+        description: Sin barra final. Cámbiela si el boletín pasa a boletin.ideariumcaribe.com.
+      - name: biblioteca_digital
+        label: Enlace a la Biblioteca Digital
+        type: string
+      - name: obras_biblioteca
+        label: Número de obras en la Biblioteca Digital
+        type: number
+      - name: redes_sociales
+        label: Redes sociales
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            type: string
+          - name: enlace
+            type: string
+      - name: redes_academicas
+        label: Redes académicas
+        type: object
+        list: true
+        fields:
+          - name: nombre
+            type: string
+          - name: enlace
+            type: string

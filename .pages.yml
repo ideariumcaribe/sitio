@@ -170,14 +170,48 @@ content:
         type: string
         description: Por ejemplo, «, vols. I–IV, VI–X»
       - name: enlace
-        label: Enlace en Internet Archive
+        label: Enlace
         type: string
+        description: La página de la obra en el catálogo, por ejemplo /biblioteca/obras/identificador-en-archive/
       - name: autor
         label: Autor
         type: string
       - name: anio
         label: Año
         type: string
+
+  - name: catalogo
+    label: "Biblioteca: catálogo"
+    type: file
+    path: _data/catalogo.json
+    format: json
+    list: true
+    fields:
+      - name: signatura
+        label: Signatura
+        type: string
+        description: Por ejemplo, IC-0240
+      - name: identificador
+        label: Identificador en Internet Archive
+        type: string
+        description: La parte final de la dirección de la obra en archive.org (archive.org/details/ESTO).
+      - name: titulo
+        label: Título
+        type: string
+      - name: autor
+        label: Autor
+        type: string
+        description: Varios autores, separados por punto y coma.
+      - name: anio
+        label: Año de esta edición
+        type: string
+      - name: primera_edicion
+        label: Año de la primera edición
+        type: string
+      - name: pie_de_imprenta
+        label: Pie de imprenta
+        type: string
+        description: Lugar y editorial, por ejemplo «Caracas, Tipografía Garrido».
 
   - name: sitio
     label: Datos generales del sitio

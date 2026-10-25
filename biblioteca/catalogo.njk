@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: "Catálogo de la Biblioteca Digital · Idearium Caribe"
+descripcion: "Catálogo de las obras de la Biblioteca Digital de Idearium Caribe, de libre lectura en línea."
+permalink: /biblioteca/catalogo/
+---
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><span class="es">Catálogo</span><span class="en">Catalogue</span></nav>
+      <div class="sec-title"><div><p class="label es">Biblioteca Digital</p><p class="label en">Digital Library</p>
+        <h1 class="es">Catálogo</h1><h1 class="en">Catalogue</h1></div></div>
+      <p class="es cat-intro">Todas las obras se leen en línea, sin costo ni registro. Haga clic en un título para abrirlo.</p>
+      <p class="en cat-intro">Every work can be read online, free and without registration. Click a title to open it.</p>
+      <div class="cat-buscar">
+        <label for="cat-q" class="label"><span class="es">Buscar por título o autor</span><span class="en">Search by title or author</span></label>
+        <input id="cat-q" type="search" autocomplete="off" spellcheck="false">
+        <p class="cat-cuenta" aria-live="polite" data-total="{{ catalogo | length }}"><span class="es">{{ catalogo | length }} obras</span><span class="en">{{ catalogo | length }} works</span></p>
+      </div>
+      <div class="ledger-wrap">
+        <table class="ledger cat-tabla">
+          <thead><tr>
+            <th><span class="es">Signatura</span><span class="en">Call no.</span></th>
+            <th><span class="es">Título</span><span class="en">Title</span></th>
+            <th><span class="es">Autor</span><span class="en">Author</span></th>
+            <th><span class="es">Año</span><span class="en">Year</span></th>
+          </tr></thead>
+          <tbody>
+            {%- for o in catalogo | sort(false, true, "signatura") %}
+            <tr data-buscar="{{ (o.titulo + ' ' + o.autor) | sinTildes }}"><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a></td><td>{{ o.autor | replace(";", ",") }}</td><td class="yr">{{ o.anio }}</td></tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="/assets/catalogo.js" defer></script>

@@ -22,7 +22,7 @@
     </a>
     <nav class="menu" aria-label="Menú principal">
       <a href="/fundacion.html"{% if u == "/fundacion.html" %} aria-current="page"{% endif %}><span class="es">La Fundación</span><span class="en">The Foundation</span></a>
-      <a href="/biblioteca.html"{% if u == "/biblioteca.html" %} aria-current="page"{% endif %}><span class="es">Biblioteca</span><span class="en">Library</span></a>
+      <a href="/biblioteca.html"{% if u.startsWith("/biblioteca") %} aria-current="page"{% endif %}><span class="es">Biblioteca</span><span class="en">Library</span></a>
       <a href="/colombeia.html"{% if u.startsWith("/colombeia") %} aria-current="page"{% endif %}>Colombeia</a>
       <a href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener"><span class="es">Boletín</span><span class="en">Newsletter</span></a>
       <a href="/apoyanos.html"{% if u == "/apoyanos.html" %} aria-current="page"{% endif %}><span class="es">Apóyanos</span><span class="en">Support us</span></a>

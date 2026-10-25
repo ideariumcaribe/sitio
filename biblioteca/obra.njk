@@ -1,0 +1,37 @@
+---
+layout: base.njk
+pagination:
+  data: catalogo
+  size: 1
+  alias: obra
+permalink: "/biblioteca/obras/{{ obra.identificador }}/"
+eleventyComputed:
+  title: "{{ obra.titulo }} · Biblioteca Digital · Idearium Caribe"
+  descripcion: "{{ obra.titulo }}{% if obra.autor %}, de {{ obra.autor | replace(';', ',') }}{% endif %}{% if obra.anio %} ({{ obra.anio }}){% endif %}. Lectura libre en la Biblioteca Digital de Idearium Caribe."
+---
+{%- set ordenadas = catalogo | sort(false, true, "signatura") -%}
+{%- set vecinos = ordenadas | vecinosObra(obra.identificador) -%}
+<main>
+  <article class="obra-pag">
+    <div class="wrap">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><a href="/biblioteca/catalogo/"><span class="es">Catálogo</span><span class="en">Catalogue</span></a><span aria-hidden="true"> › </span><span>{{ obra.signatura }}</span></nav>
+      <header class="obra-cab">
+        <p class="label sig-label">{{ obra.signatura }}</p>
+        <h1>{{ obra.titulo }}</h1>
+        {%- if obra.autor %}<p class="autores">{{ obra.autor | replace(";", ",") }}</p>{% endif %}
+        <p class="ref">{% if obra.pie_de_imprenta %}{{ obra.pie_de_imprenta }}{% endif %}{% if obra.anio %}{% if obra.pie_de_imprenta %}, {% endif %}{{ obra.anio }}{% endif %}{% if obra.primera_edicion %} · <span class="es">1.ª ed.</span><span class="en">1st ed.</span> {{ obra.primera_edicion }}{% endif %}</p>
+      </header>
+      <div class="visor">
+        <iframe src="https://archive.org/embed/{{ obra.identificador }}" title="{{ obra.titulo }}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <div class="obra-acciones">
+        <a class="btn" href="https://archive.org/details/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Abrir en Internet Archive</span><span class="en">Open on the Internet Archive</span></a>
+        <a class="btn outline" href="https://archive.org/download/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Descargar (PDF y otros formatos)</span><span class="en">Download (PDF and other formats)</span></a>
+      </div>
+      <nav class="art-nav obra-nav" aria-label="Otras obras">
+        {%- if vecinos.anterior %}<a href="/biblioteca/obras/{{ vecinos.anterior.identificador }}/"><span class="label"><span class="es">Anterior</span><span class="en">Previous</span> · {{ vecinos.anterior.signatura }}</span>{{ vecinos.anterior.titulo }}</a>{% endif %}
+        {%- if vecinos.siguiente %}<a href="/biblioteca/obras/{{ vecinos.siguiente.identificador }}/"><span class="label"><span class="es">Siguiente</span><span class="en">Next</span> · {{ vecinos.siguiente.signatura }}</span>{{ vecinos.siguiente.titulo }}</a>{% endif %}
+      </nav>
+    </div>
+  </article>
+</main>

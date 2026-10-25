@@ -240,3 +240,25 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 .objetivos{max-width:46em}
 .objetivos li{font-size:1.05rem}
 .objetivos ol{margin:4px 0}
+
+/* ---------- Biblioteca: catálogo y obras ---------- */
+.cat-pag,.obra-pag{padding-block:48px 72px}
+.cat-pag h1,.obra-cab h1{font-size:clamp(2rem,4vw,3rem)}
+.cat-intro{color:var(--muted);max-width:46em}
+.cat-buscar{display:grid;gap:8px;max-width:520px}
+.cat-buscar input{font:inherit;font-size:1.05rem;padding:10px 14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:0}
+.cat-buscar input:focus{outline:2px solid var(--ink);outline-offset:1px}
+.cat-cuenta{font-family:var(--f-ui);font-size:.9rem;color:var(--muted)}
+.cat-tabla td a{text-decoration:none}
+.cat-tabla td a:hover{text-decoration:underline}
+.obra-cab{max-width:900px;display:grid;gap:10px;margin-bottom:32px}
+.obra-cab .autores{font-size:1.2rem}
+.sig-label{font-family:var(--f-mono);color:var(--stamp);letter-spacing:.04em}
+.visor{border:1px solid var(--line);background:var(--soft)}
+.visor iframe{display:block;width:100%;height:min(82vh,900px);min-height:480px;border:0}
+.obra-acciones{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 40px}
+.obra-nav{max-width:900px;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
+@media (max-width: 860px){
+  .visor iframe{height:72vh;min-height:420px}
+  .obra-nav{grid-template-columns:minmax(0,1fr)}
+}

@@ -39,6 +39,11 @@ export default function (eleventyConfig) {
     const l = (Array.isArray(autores) ? autores : [autores]).filter(Boolean);
     return l.length < 2 ? l.join("") : l.slice(0, -1).join(", ") + " y " + l[l.length - 1];
   });
+  eleventyConfig.addFilter("sinTildes", (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""));
+  eleventyConfig.addFilter("vecinosObra", (lista, id) => {
+    const i = (lista || []).findIndex((o) => o.identificador === id);
+    return { anterior: i > 0 ? lista[i - 1] : null, siguiente: i >= 0 && i < lista.length - 1 ? lista[i + 1] : null };
+  });
   eleventyConfig.addFilter("urlLimpia", (u) => String(u).replace(/index\.html$/, "").replace(/\.html$/, ""));
 
   return {

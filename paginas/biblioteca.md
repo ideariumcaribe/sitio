@@ -6,7 +6,7 @@ title: "Biblioteca · Idearium Caribe"
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Biblioteca y archivo</p><p class="label en">Library and archive</p>
         <h2 class="es">Lo que preservamos</h2><h2 class="en">What we preserve</h2></div>
-        <a class="more" href="{{ sitio.biblioteca_digital }}" target="_blank" rel="noopener"><span class="es">Ver la Biblioteca Digital</span><span class="en">Open the Digital Library</span></a></div>
+        <a class="more" href="/biblioteca/catalogo/"><span class="es">Consultar el catálogo</span><span class="en">Browse the catalogue</span></a></div>
       <div class="cards">
         <div class="card"><p class="label">Internet Archive</p>
           <h3 class="es">Biblioteca Digital</h3><h3 class="en">Digital Library</h3>

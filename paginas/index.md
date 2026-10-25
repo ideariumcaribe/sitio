@@ -4,19 +4,19 @@ title: "Idearium Caribe"
 <main>
   <section id="inicio">
     <div class="wrap">
-      <div class="welcome">
-        <div>
-          <p class="label es">Bienvenido a Idearium Caribe</p><p class="label en">Welcome to Idearium Caribe</p>
-          <h1 class="es">La memoria documental de Venezuela, abierta a todos.</h1>
-          <h1 class="en">Venezuela's documentary memory, open to all.</h1>
-        </div>
+      <div class="welcome welcome-img">
         <div class="text">
-          <img class="collage" src="/assets/img/portada-collage.webp" srcset="/assets/img/portada-collage-800.webp 800w, /assets/img/portada-collage.webp 1360w" sizes="(max-width: 900px) 100vw, 540px" width="1360" height="784" alt="Collage de piezas de la Biblioteca: un busto en bronce, las portadas de «Historia de la rebelión popular de 1814», de Juan Uslar Pietri, y «Tapices de historia patria», de Mario Briceño-Iragorry, un grabado de perfil y una pintura religiosa.">
+          <p class="label es">Bienvenido a Idearium Caribe</p><p class="label en">Welcome to Idearium Caribe</p>
+          <h1 class="es">La memoria<br>de Venezuela,<br>abierta a todos.</h1>
+          <h1 class="en">The memory<br>of Venezuela,<br>open to all.</h1>
           <p class="lede es">Somos una fundación cultural sin fines de lucro dedicada a seleccionar, curar y editar materiales sobre la historia de Venezuela e Hispanoamérica.</p>
           <p class="lede en">We are a nonprofit cultural foundation devoted to selecting, curating and editing materials on the history of Venezuela and Spanish America.</p>
           <p class="es">Digitalizamos libros y documentos raros o en riesgo, los preservamos y los ofrecemos en acceso abierto a investigadores, estudiantes y comunidades en Venezuela, el Caribe y la diáspora.</p>
           <p class="en">We digitize rare and at-risk books and documents, preserve them, and make them openly available to researchers, students and communities in Venezuela, the Caribbean and the diaspora.</p>
         </div>
+        <figure class="collage-fig">
+          <img class="collage" src="/assets/img/portada-collage.webp" srcset="/assets/img/portada-collage-800.webp 800w, /assets/img/portada-collage.webp 1360w" sizes="(max-width: 900px) 100vw, 680px" width="1360" height="784" alt="Collage de piezas de la Biblioteca: un busto en bronce, las portadas de «Historia de la rebelión popular de 1814», de Juan Uslar Pietri, y «Tapices de historia patria», de Mario Briceño-Iragorry, un grabado de perfil y una pintura religiosa.">
+        </figure>
       </div>
       <div class="pillars">
         <a class="pillar" href="{{ sitio.biblioteca_digital }}" target="_blank" rel="noopener">

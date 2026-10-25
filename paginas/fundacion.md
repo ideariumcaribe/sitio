@@ -6,37 +6,33 @@ title: "La Fundación · Idearium Caribe"
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">La Fundación</p><p class="label en">The Foundation</p>
         <h2 class="es">La fundación Idearium Caribe</h2><h2 class="en">The Idearium Caribe foundation</h2></div></div>
-      <div class="cols">
-        <div class="col">
-          <p class="es">Idearium Caribe Co (Georgia, 2025) es una organización sin fines de lucro, registrada como una <i>domestic nonprofit corporation</i>. Surge como fundación cultural cuyos objetivos son (y no están limitados a):</p>
-          <p class="en">Idearium Caribe Co (Georgia, 2025) is a nonprofit organization registered as a domestic nonprofit corporation. It was founded as a cultural foundation whose aims include, but are not limited to:</p>
-          <p class="es">Somos miembros del programa <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> del Internet Archive.</p>
-          <p class="en">We are members of the Internet Archive's <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> program.</p>
-        </div>
-        <div class="col">
-          <ol class="es">
-            <li>La promoción del venezolanismo como pensamiento, teoría y acción.</li>
-            <li>La recuperación de todo el pensamiento histórico, social y económico dentro de toda la historia venezolana.</li>
-            <li>La recuperación de todas las expresiones culturales venezolanas a lo largo de su historia.</li>
-            <li>Trabajar en el renacimiento intelectual de Venezuela en todos los espacios, desde los medios formales hasta los espacios más pequeños.</li>
-            <li>El trabajo de recopilar, curar, editar y reproducir todo el material histórico, social y cultural venezolano.</li>
-            <li>El trabajo de difundir todos nuestros principios a través de los medios disponibles, como gacetas, revistas, periódicos y libros.</li>
-            <li>Trabajar con nuestro propio sello editorial con el objetivo de establecer una línea de pensamiento venezolano que sirva a todos los venezolanos y personas de otros países en su mejoramiento intelectual, moral y espiritual.</li>
-            <li>La promoción de los lazos entre Venezuela, las naciones de América y del mundo, en un marco de respeto y comprensión mutua.</li>
-            <li>Dar a conocer la cultura venezolana en todo el mundo.</li>
-          </ol>
-          <ol class="en">
-            <li>Promoting <i>venezolanismo</i> as thought, theory and action.</li>
-            <li>Recovering all historical, social and economic thought throughout Venezuelan history.</li>
-            <li>Recovering all Venezuelan cultural expressions throughout its history.</li>
-            <li>Working towards Venezuela's intellectual renaissance in every arena, from formal media to the smallest spaces.</li>
-            <li>Collecting, curating, editing and reproducing all Venezuelan historical, social and cultural material.</li>
-            <li>Spreading all our principles through the means available, such as gazettes, magazines, newspapers and books.</li>
-            <li>Working with our own publishing imprint to establish a line of Venezuelan thought that serves all Venezuelans and people of other countries in their intellectual, moral and spiritual betterment.</li>
-            <li>Promoting ties between Venezuela and the nations of the Americas and the world, within a framework of mutual respect and understanding.</li>
-            <li>Making Venezuelan culture known throughout the world.</li>
-          </ol>
-        </div>
+      <div class="col objetivos">
+        <p class="es">Idearium Caribe Co (Georgia, 2025) es una organización sin fines de lucro, registrada como una <i>domestic nonprofit corporation</i>. Surge como fundación cultural cuyos objetivos son (y no están limitados a):</p>
+        <p class="en">Idearium Caribe Co (Georgia, 2025) is a nonprofit organization registered as a domestic nonprofit corporation. It was founded as a cultural foundation whose aims include, but are not limited to:</p>
+        <ol class="es">
+          <li>La promoción del venezolanismo como pensamiento, teoría y acción.</li>
+          <li>La recuperación de todo el pensamiento histórico, social y económico dentro de toda la historia venezolana.</li>
+          <li>La recuperación de todas las expresiones culturales venezolanas a lo largo de su historia.</li>
+          <li>Trabajar en el renacimiento intelectual de Venezuela en todos los espacios, desde los medios formales hasta los espacios más pequeños.</li>
+          <li>El trabajo de recopilar, curar, editar y reproducir todo el material histórico, social y cultural venezolano.</li>
+          <li>El trabajo de difundir todos nuestros principios a través de los medios disponibles, como gacetas, revistas, periódicos y libros.</li>
+          <li>Trabajar con nuestro propio sello editorial con el objetivo de establecer una línea de pensamiento venezolano que sirva a todos los venezolanos y personas de otros países en su mejoramiento intelectual, moral y espiritual.</li>
+          <li>La promoción de los lazos entre Venezuela, las naciones de América y del mundo, en un marco de respeto y comprensión mutua.</li>
+          <li>Dar a conocer la cultura venezolana en todo el mundo.</li>
+        </ol>
+        <ol class="en">
+          <li>Promoting <i>venezolanismo</i> as thought, theory and action.</li>
+          <li>Recovering all historical, social and economic thought throughout Venezuelan history.</li>
+          <li>Recovering all Venezuelan cultural expressions throughout its history.</li>
+          <li>Working towards Venezuela's intellectual renaissance in every arena, from formal media to the smallest spaces.</li>
+          <li>Collecting, curating, editing and reproducing all Venezuelan historical, social and cultural material.</li>
+          <li>Spreading all our principles through the means available, such as gazettes, magazines, newspapers and books.</li>
+          <li>Working with our own publishing imprint to establish a line of Venezuelan thought that serves all Venezuelans and people of other countries in their intellectual, moral and spiritual betterment.</li>
+          <li>Promoting ties between Venezuela and the nations of the Americas and the world, within a framework of mutual respect and understanding.</li>
+          <li>Making Venezuelan culture known throughout the world.</li>
+        </ol>
+        <p class="es">Somos miembros del programa <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> del Internet Archive.</p>
+        <p class="en">We are members of the Internet Archive's <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> program.</p>
       </div>
       <div class="sec-title"><div><h2 class="es">Las ideas detrás de Idearium Caribe</h2><h2 class="en">The ideas behind Idearium Caribe</h2></div></div>
       <div class="cols">

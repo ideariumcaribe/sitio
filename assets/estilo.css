@@ -237,3 +237,6 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 .articulo section,.num-pag section{padding-block:0;border-top:0}
 .resumen p{font-size:1.05rem}
 .art-lado p:not(.label){font-size:.98rem}
+.objetivos{max-width:46em}
+.objetivos li{font-size:1.05rem}
+.objetivos ol{margin:4px 0}

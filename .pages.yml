@@ -216,7 +216,7 @@ content:
   - name: autores
     label: "Biblioteca: orden de autores"
     type: file
-    path: _data/autores.json
+    path: _data/ordenAutores.json
     format: json
     list: true
     fields:

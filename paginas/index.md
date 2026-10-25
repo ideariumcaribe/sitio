@@ -7,8 +7,8 @@ title: "Idearium Caribe"
       <div class="welcome welcome-img">
         <div class="text">
           <p class="label es">Bienvenido a Idearium Caribe</p><p class="label en">Welcome to Idearium Caribe</p>
-          <h1 class="es">La memoria<br>de Venezuela,<br>abierta a todos.</h1>
-          <h1 class="en">The memory<br>of Venezuela,<br>open to all.</h1>
+          <h1 class="es">La memoria<br>de Venezuela,<br>abierta a todos</h1>
+          <h1 class="en">The memory<br>of Venezuela,<br>open to all</h1>
           <p class="lede es">Somos una fundación cultural sin fines de lucro dedicada a seleccionar, curar y editar materiales sobre la historia de Venezuela e Hispanoamérica.</p>
           <p class="lede en">We are a nonprofit cultural foundation devoted to selecting, curating and editing materials on the history of Venezuela and Spanish America.</p>
           <p class="es">Digitalizamos libros y documentos raros o en riesgo, los preservamos y los ofrecemos en acceso abierto a investigadores, estudiantes y comunidades en Venezuela, el Caribe y la diáspora.</p>

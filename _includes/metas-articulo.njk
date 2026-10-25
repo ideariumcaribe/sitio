@@ -1,0 +1,31 @@
+{%- set num = collections.numeros | numeroPorId(numero) -%}
+<link rel="canonical" href="{{ sitio.url }}{{ page.url | urlLimpia }}">
+<meta name="citation_title" content="{{ titulo }}{% if subtitulo %}: {{ subtitulo }}{% endif %}">
+{%- for a in autores %}
+<meta name="citation_author" content="{{ a }}">
+{%- endfor %}
+<meta name="citation_publication_date" content="{{ num.data.anio }}">
+<meta name="citation_journal_title" content="Colombeia">
+<meta name="citation_issn" content="{{ sitio.issn }}">
+<meta name="citation_issue" content="{{ numero }}">
+<meta name="citation_firstpage" content="{{ pagina_inicial }}">
+<meta name="citation_lastpage" content="{{ pagina_final }}">
+<meta name="citation_publisher" content="{{ sitio.nombre }}">
+<meta name="citation_language" content="es">
+<meta name="citation_abstract_html_url" content="{{ sitio.url }}{{ page.url | urlLimpia }}">
+<meta name="citation_pdf_url" content="{{ sitio.url }}{{ pdf }}">
+{%- for k in palabras_clave %}
+<meta name="citation_keywords" content="{{ k }}">
+{%- endfor %}
+{%- if doi %}
+<meta name="citation_doi" content="{{ doi }}">
+{%- endif %}
+<meta name="DC.title" content="{{ titulo }}{% if subtitulo %}: {{ subtitulo }}{% endif %}">
+{%- for a in autores %}
+<meta name="DC.creator" content="{{ a }}">
+{%- endfor %}
+<meta name="DC.issued" content="{{ num.data.anio }}">
+<meta name="DC.language" content="es">
+<meta property="og:title" content="{{ titulo }}">
+<meta property="og:type" content="article">
+<meta property="og:image" content="{{ sitio.url }}{{ num.data.portada }}">

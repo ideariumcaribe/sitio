@@ -1,0 +1,38 @@
+---
+layout: base.njk
+---
+{%- set arts = collections.articulo | delNumero(numero) -%}
+<main>
+  <section class="num-pag">
+    <div class="wrap">
+      <nav class="migas" aria-label="Ruta"><a href="/colombeia.html">Colombeia</a><span aria-hidden="true"> › </span><span>N.º {{ numero }}</span></nav>
+      <div class="num-cab">
+        <img class="num-portada" src="{{ portada }}" alt="Portada de Colombeia, n.º {{ numero }}" width="619" height="963">
+        <div>
+          <p class="label">Colombeia · N.º {{ numero }} · {{ fecha }}</p>
+          <h1>{{ titulo }}</h1>
+          <p class="ref">ISSN {{ sitio.issn }} · {{ sitio.nombre }}</p>
+          {%- if enlace_completo %}
+          <p><a class="more" href="{{ enlace_completo }}" target="_blank" rel="noopener"><span class="es">Número completo en Internet Archive</span><span class="en">Full issue on the Internet Archive</span></a></p>
+          {%- endif %}
+        </div>
+      </div>
+      <div class="indice">
+        <h2 class="label"><span class="es">Índice</span><span class="en">Contents</span></h2>
+        {%- for g in arts | porSeccion %}
+        <h3 class="ind-sec">{{ g.seccion }}</h3>
+        <ol class="ind-lista">
+          {%- for a in g.items %}
+          <li>
+            <a class="ind-t" href="{{ a.url }}">{{ a.data.titulo }}</a>
+            {%- if a.data.subtitulo %}<span class="ind-s">{{ a.data.subtitulo }}</span>{% endif %}
+            <span class="ind-a">{{ a.data.autores | listaAutores }}{% if a.data.editor %} (ed. {{ a.data.editor }}){% endif %}</span>
+            <span class="ind-p">{{ a.data.pagina_inicial }}</span>
+          </li>
+          {%- endfor %}
+        </ol>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>

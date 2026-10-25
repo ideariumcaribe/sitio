@@ -1,0 +1,50 @@
+{
+  "nombre": "Idearium Caribe Co.",
+  "url": "https://ideariumcaribe.com",
+  "email": "editorial@ideariumcaribe.com",
+  "direccion": "15 Shelton Ct, Senoia, GA 30276",
+  "issn": "3069-7700",
+  "boletin": "https://www.ideariumcaribe.com",
+  "biblioteca_digital": "https://archive.org/details/idearium-caribe",
+  "obras_biblioteca": 239,
+  "redes_sociales": [
+    {
+      "nombre": "X",
+      "enlace": "https://x.com/IdeariumCaribe"
+    },
+    {
+      "nombre": "Telegram",
+      "enlace": "https://t.me/ideariumcaribe"
+    },
+    {
+      "nombre": "Substack",
+      "enlace": "https://www.ideariumcaribe.com/subscribe"
+    }
+  ],
+  "redes_academicas": [
+    {
+      "nombre": "Internet Archive",
+      "enlace": "https://archive.org/details/idearium-caribe"
+    },
+    {
+      "nombre": "Archive-It",
+      "enlace": "https://archive-it.org/organizations/4701"
+    },
+    {
+      "nombre": "Community Webs",
+      "enlace": "https://communitywebs.archive-it.org/organization/4701/"
+    },
+    {
+      "nombre": "Zenodo",
+      "enlace": "https://zenodo.org/communities/ideariumcaribe"
+    },
+    {
+      "nombre": "Knowledge Commons",
+      "enlace": "https://hcommons.org/groups/idearium-caribe/"
+    },
+    {
+      "nombre": "Wikidata",
+      "enlace": "https://www.wikidata.org/wiki/Q141814056"
+    }
+  ]
+}

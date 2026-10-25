@@ -1,0 +1,5 @@
+<ul class="posts">
+        {%- for p in boletin %}
+        <li><a href="{{ sitio.boletin }}{{ p.ruta }}" target="_blank" rel="noopener"><span class="t">{{ p.titulo }}</span><span class="k es">{{ p.categoria }}</span><span class="k en">{{ p.categoria_en or p.categoria }}</span></a></li>
+        {%- endfor %}
+      </ul>

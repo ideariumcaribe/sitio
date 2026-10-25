@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ title }}</title>
+{% if descripcion %}<meta name="description" content="{{ descripcion }}">{% endif %}
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="/assets/estilo.css">
+{% if esArticulo %}{% include "metas-articulo.njk" %}{% endif %}
+</head>
+<body>
+{%- set u = page.url %}
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <span class="seal">{% include "logo.svg" %}</span>
+      <b>Idearium Caribe</b>
+    </a>
+    <nav class="menu" aria-label="Menú principal">
+      <a href="/fundacion.html"{% if u == "/fundacion.html" %} aria-current="page"{% endif %}><span class="es">La Fundación</span><span class="en">The Foundation</span></a>
+      <a href="/biblioteca.html"{% if u == "/biblioteca.html" %} aria-current="page"{% endif %}><span class="es">Biblioteca</span><span class="en">Library</span></a>
+      <a href="/colombeia.html"{% if u.startsWith("/colombeia") %} aria-current="page"{% endif %}>Colombeia</a>
+      <a href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener"><span class="es">Boletín</span><span class="en">Newsletter</span></a>
+      <a href="/apoyanos.html"{% if u == "/apoyanos.html" %} aria-current="page"{% endif %}><span class="es">Apóyanos</span><span class="en">Support us</span></a>
+    </nav>
+    <div class="langs" role="group" aria-label="Idioma / Language">
+      <button type="button" id="lang-es" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+{{ content | safe }}
+
+<footer>
+  <div class="wrap">
+    <div>
+      <span class="seal">{% include "logo.svg" %}</span>
+      <div class="addr">
+        <span>{{ sitio.nombre }}</span>
+        <span>{{ sitio.direccion }}</span>
+        <span><span id="email">{{ sitio.email }}</span><button type="button" class="copy" id="copy-email"><span class="es">Copiar</span><span class="en">Copy</span></button><span class="copy-status" id="copy-status" role="status"></span></span>
+      </div>
+    </div>
+    <div><h4 class="es">La Fundación</h4><h4 class="en">Foundation</h4>
+      <ul><li><a href="/fundacion.html"><span class="es">Quiénes somos</span><span class="en">Who we are</span></a></li>
+        <li><a href="/biblioteca.html#acceso"><span class="es">Acceso y derechos</span><span class="en">Access and rights</span></a></li>
+        <li><a href="/apoyanos.html"><span class="es">Apóyanos</span><span class="en">Support us</span></a></li></ul></div>
+    <div><h4 class="es">Publicaciones</h4><h4 class="en">Publications</h4>
+      <ul><li><a href="{{ sitio.biblioteca_digital }}" target="_blank" rel="noopener"><span class="es">Biblioteca Digital</span><span class="en">Digital Library</span></a></li>
+        <li><a href="/colombeia.html">Colombeia</a></li>
+        <li><a href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener"><span class="es">Boletín</span><span class="en">Newsletter</span></a></li></ul></div>
+    <div><h4 class="es">Síguenos</h4><h4 class="en">Follow us</h4>
+      <ul>{% for r in sitio.redes_sociales %}<li><a href="{{ r.enlace }}" target="_blank" rel="noopener">{{ r.nombre }}</a></li>{% endfor %}</ul></div>
+    <div><h4 class="es">Redes académicas</h4><h4 class="en">Scholarly networks</h4>
+      <ul>{% for r in sitio.redes_academicas %}<li><a href="{{ r.enlace }}" target="_blank" rel="noopener">{{ r.nombre }}</a></li>{% endfor %}</ul></div>
+    <div class="legal">
+      <span>© {{ anio_actual }} {{ sitio.nombre }} · Colombeia ISSN {{ sitio.issn }}</span>
+      <span class="es">Miembro del programa <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> del Internet Archive</span>
+      <span class="en">Member of the Internet Archive's <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> program</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+{% if esArticulo %}<script type="module" src="/assets/lector.js"></script>{% endif %}
+</body>
+</html>

@@ -1,0 +1,60 @@
+---
+layout: base.njk
+---
+{%- set num = collections.numeros | numeroPorId(numero) -%}
+{%- set hermanos = collections.articulo | delNumero(numero) -%}
+{%- set pos = hermanos | posicion(page.url) -%}
+{%- set autoresTxt = autores | listaAutores -%}
+<main>
+  <article class="articulo">
+    <div class="wrap">
+      <nav class="migas" aria-label="Ruta"><a href="/colombeia.html">Colombeia</a><span aria-hidden="true"> › </span><a href="{{ num.url }}">N.º {{ numero }} · {{ num.data.fecha }}</a></nav>
+      <header class="art-cab">
+        <p class="label">{{ seccion }}</p>
+        <h1>{{ titulo }}</h1>
+        {%- if subtitulo %}<p class="subt">{{ subtitulo }}</p>{% endif %}
+        <p class="autores">{{ autoresTxt }}{% if editor %} <span class="ed">(<span class="es">ed.</span><span class="en">ed.</span> {{ editor }})</span>{% endif %}</p>
+        <p class="ref"><i>Colombeia</i>, n.º {{ numero }} ({{ num.data.fecha }}), pp. {{ pagina_inicial }}-{{ pagina_final }} · ISSN {{ sitio.issn }}</p>
+      </header>
+      <div class="art-grid">
+        <div class="art-main">
+          <section class="resumen">
+            <h2 class="label"><span class="es">Resumen</span><span class="en">Abstract (Spanish)</span></h2>
+            <p>{{ resumen }}</p>
+            {%- if palabras_clave and palabras_clave.length %}
+            <p class="kw"><b><span class="es">Palabras clave:</span><span class="en">Keywords:</span></b> {{ palabras_clave | join("; ") }}</p>
+            {%- endif %}
+          </section>
+          <section class="lector" data-pdf="{{ pdf }}" aria-label="Lector del artículo">
+            <div class="lector-barra">
+              <button type="button" class="lb" data-acc="menos" aria-label="Reducir">−</button>
+              <button type="button" class="lb" data-acc="ajustar"><span class="es">Ajustar</span><span class="en">Fit</span></button>
+              <button type="button" class="lb" data-acc="mas" aria-label="Ampliar">+</button>
+              <span class="lector-estado" aria-live="polite"></span>
+              <a class="lb" href="{{ pdf }}" download><span class="es">Descargar PDF</span><span class="en">Download PDF</span></a>
+            </div>
+            <div class="lector-paginas"></div>
+            <noscript><p><a href="{{ pdf }}">Abrir el PDF</a></p></noscript>
+          </section>
+        </div>
+        <aside class="art-lado">
+          <a class="btn" href="{{ pdf }}" download><span class="es">Descargar PDF</span><span class="en">Download PDF</span></a>
+          <div>
+            <p class="label"><span class="es">Cómo citar</span><span class="en">How to cite</span></p>
+            <p class="cita">{{ autoresTxt }}, «{{ titulo }}{% if subtitulo %}: {{ subtitulo }}{% endif %}»{% if editor %}, ed. {{ editor }}{% endif %}, <i>Colombeia</i>, n.º {{ numero }} ({{ num.data.fecha }}): {{ pagina_inicial }}-{{ pagina_final }}.</p>
+          </div>
+          {%- if doi %}
+          <div><p class="label">DOI</p><p><a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener">{{ doi }}</a></p></div>
+          {%- endif %}
+          {%- if licencia %}
+          <div><p class="label"><span class="es">Licencia</span><span class="en">License</span></p><p>{% if licencia == "CC BY 4.0" %}<a href="https://creativecommons.org/licenses/by/4.0/deed.es" target="_blank" rel="noopener">Creative Commons Atribución 4.0 (CC BY 4.0)</a>{% else %}{{ licencia }}{% endif %}</p></div>
+          {%- endif %}
+          <nav class="art-nav" aria-label="Otros textos del número">
+            {%- if pos.anterior %}<a href="{{ pos.anterior.url }}"><span class="label"><span class="es">Anterior</span><span class="en">Previous</span></span>{{ pos.anterior.data.titulo }}</a>{% endif %}
+            {%- if pos.siguiente %}<a href="{{ pos.siguiente.url }}"><span class="label"><span class="es">Siguiente</span><span class="en">Next</span></span>{{ pos.siguiente.data.titulo }}</a>{% endif %}
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </article>
+</main>

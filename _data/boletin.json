@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "El segundo aniversario de Idearium Caribe",
+    "ruta": "/p/el-segundo-aniversario-de-idearium",
+    "categoria": "Fundación",
+    "categoria_en": "Foundation"
+  },
+  {
+    "titulo": "La odisea por los libros venezolanos",
+    "ruta": "/p/la-odisea-por-los-libros-venezolanos",
+    "categoria": "Biblioteca",
+    "categoria_en": "Library"
+  },
+  {
+    "titulo": "Vallenilla Lanz en Roma",
+    "ruta": "/p/vallenilla-lanz-en-roma",
+    "categoria": "Ensayo",
+    "categoria_en": "Essay"
+  },
+  {
+    "titulo": "El ideario venezolanista de Mario Briceño-Iragorry",
+    "ruta": "/p/el-ideario-venezolanista-de-mario-briceno-iragorry",
+    "categoria": "Ensayo",
+    "categoria_en": "Essay"
+  },
+  {
+    "titulo": "Hacer el país: Alberto Adriani Mazzei y José Carlos Mariátegui",
+    "ruta": "/p/hacer-el-pais-alberto-adriani-mazzei-y-jose-carlos-mariategui",
+    "categoria": "Ensayo",
+    "categoria_en": "Essay"
+  }
+]

@@ -1,0 +1,13 @@
+<div class="stack" id="numeros" style="gap:24px">
+        <div class="sec-title"><div><p class="label es">Números publicados</p><p class="label en">Published issues</p>
+          <h2 class="es">Todos los números</h2><h2 class="en">All issues</h2></div></div>
+        <div class="numeros">
+          {%- for n in collections.numeros | reverse %}
+          <a class="numero" href="{{ n.url }}">
+            <img src="{{ n.data.portada }}" alt="" width="619" height="963" loading="lazy">
+            <span class="n">N.º {{ n.data.numero }} · {{ n.data.fecha }}</span>
+            <span class="t">{{ n.data.titulo }}</span>
+          </a>
+          {%- endfor %}
+        </div>
+      </div>

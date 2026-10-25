@@ -1,0 +1,5 @@
+<tbody>
+            {%- for d in destacados %}
+            <tr><td class="sig">{{ d.signatura }}</td><td>{% if d.enlace %}<a href="{{ d.enlace }}" target="_blank" rel="noopener">{{ d.obra }}</a>{% else %}{{ d.obra }}{% endif %}{{ d.detalle }}</td><td>{{ d.autor }}</td><td class="yr">{{ d.anio }}</td></tr>
+            {%- endfor %}
+          </tbody>

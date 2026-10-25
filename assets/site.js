@@ -1,0 +1,19 @@
+(function(){
+  var body=document.body;
+  function setLang(l){
+    body.setAttribute('data-lang',l);
+    document.documentElement.setAttribute('lang',l);
+    document.querySelectorAll('.langs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.lang===l));});
+    try{localStorage.setItem('ic-lang',l);}catch(e){}
+  }
+  var saved=null; try{saved=localStorage.getItem('ic-lang');}catch(e){}
+  setLang(saved==='en'?'en':'es');
+  document.querySelectorAll('.langs button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang);});});
+  var btn=document.getElementById('copy-email'), st=document.getElementById('copy-status'), em=document.getElementById('email');
+  btn.addEventListener('click',function(){
+    var en=body.getAttribute('data-lang')==='en';
+    var ok=function(){st.textContent=en?'Copied':'Copiado';};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(em);var s=window.getSelection();s.removeAllRanges();s.addRange(r);st.textContent=en?'Selected':'Seleccionado';};
+    try{navigator.clipboard.writeText(em.textContent).then(ok,fallback);}catch(e){fallback();}
+  });
+})();

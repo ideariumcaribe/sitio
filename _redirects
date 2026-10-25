@@ -1,0 +1,7 @@
+# Redirecciones (Cloudflare Pages lee este archivo).
+# Cuando el boletín de Substack pase a boletin.ideariumcaribe.com y este sitio
+# ocupe ideariumcaribe.com, quite el «#» de las tres líneas siguientes para que
+# los enlaces antiguos del boletín sigan funcionando.
+# /p/*         https://boletin.ideariumcaribe.com/p/:splat   301
+# /archive     https://boletin.ideariumcaribe.com/archive    301
+# /subscribe   https://boletin.ideariumcaribe.com/subscribe  301

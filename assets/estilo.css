@@ -296,3 +296,4 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 }
 .welcome .text p.label{font-size:.74rem;color:var(--muted)}
 .welcome-img h1{font-size:clamp(2.7rem,5.6vw,4.4rem);line-height:1.08}
+.pay-row p{font-size:.95rem;color:var(--muted)}

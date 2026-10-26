@@ -14,6 +14,8 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addGlobalData("anio_actual", () => new Date().getFullYear());
+  // Versión de compilación: se añade a las URL de CSS y JS para que los navegadores no usen copias viejas.
+  eleventyConfig.addGlobalData("version", () => Date.now().toString(36));
 
   // Números de Colombeia, del primero al último.
   eleventyConfig.addCollection("numeros", (api) =>

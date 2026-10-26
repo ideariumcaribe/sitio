@@ -1,21 +1,8 @@
-# Redirecciones (Cloudflare Pages lee este archivo; gana la primera regla que coincide).
-# El boletín volvió a ideariumcaribe.substack.com. Estas reglas llevan las direcciones
-# antiguas del boletín (cuando vivía en www.ideariumcaribe.com) a su nueva dirección,
-# para que no se rompan los enlaces compartidos y Google actualice sus resultados.
-
-# Secciones antiguas que ahora tienen equivalente en el sitio
-/s/biblioteca-digital  /biblioteca  301
-/s/biblioteca          /biblioteca  301
-/s/colombeia           /colombeia   301
-
-# Todo lo demás del boletín
-/p/*              https://ideariumcaribe.substack.com/p/:splat   301
-/s/*              https://ideariumcaribe.substack.com/s/:splat   301
-/t/*              https://ideariumcaribe.substack.com/t/:splat   301
-/archive          https://ideariumcaribe.substack.com/archive    301
-/subscribe        https://ideariumcaribe.substack.com/subscribe  301
-/about            https://ideariumcaribe.substack.com/about      301
-/feed             https://ideariumcaribe.substack.com/feed       301
-/podcast          https://ideariumcaribe.substack.com/podcast    301
-/recommendations  https://ideariumcaribe.substack.com/recommendations  301
-/notes            https://ideariumcaribe.substack.com/notes      301
+# Redirecciones (Cloudflare Pages lee este archivo).
+# El boletín volvió a ideariumcaribe.substack.com. Estas reglas llevan los enlaces
+# antiguos del boletín (ideariumcaribe.com/p/..., /archive, /subscribe, /about)
+# a su nueva dirección, para que no se rompan los artículos ya compartidos.
+/p/*         https://ideariumcaribe.substack.com/p/:splat   301
+/archive     https://ideariumcaribe.substack.com/archive    301
+/subscribe   https://ideariumcaribe.substack.com/subscribe  301
+/about       https://ideariumcaribe.substack.com/about      301

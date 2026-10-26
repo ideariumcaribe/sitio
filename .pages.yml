@@ -253,7 +253,7 @@ content:
       - name: boletin
         label: Dirección del boletín en Substack
         type: string
-        description: Sin barra final. Cámbiela si el boletín pasa a boletin.ideariumcaribe.com.
+        description: Sin barra final, por ejemplo https://ideariumcaribe.substack.com
       - name: biblioteca_digital
         label: Enlace a la Biblioteca Digital
         type: string

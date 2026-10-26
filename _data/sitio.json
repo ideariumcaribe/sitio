@@ -4,7 +4,7 @@
   "email": "editorial@ideariumcaribe.com",
   "direccion": "15 Shelton Ct, Senoia, GA 30276",
   "issn": "3069-7700",
-  "boletin": "https://www.ideariumcaribe.com",
+  "boletin": "https://ideariumcaribe.substack.com",
   "biblioteca_digital": "https://archive.org/details/idearium-caribe",
   "obras_biblioteca": 247,
   "redes_sociales": [
@@ -18,7 +18,7 @@
     },
     {
       "nombre": "Substack",
-      "enlace": "https://www.ideariumcaribe.com/subscribe"
+      "enlace": "https://ideariumcaribe.substack.com/subscribe"
     }
   ],
   "redes_academicas": [

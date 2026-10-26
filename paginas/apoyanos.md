@@ -29,12 +29,5 @@ descripcion: "Apoye la digitalización y preservación de la memoria documental 
     </div>
   </section>
 
-  <section class="band">
-    <div class="wrap">
-      <div><h2 class="es">Suscríbase al boletín</h2><h2 class="en">Subscribe to the newsletter</h2>
-        <p class="es">Ensayos, novedades de la Biblioteca y nuevos números de Colombeia. Más de 1.000 lectores.</p>
-        <p class="en">Essays, Library news and new issues of Colombeia. Over 1,000 readers.</p></div>
-      <a class="btn" href="{{ sitio.boletin }}/subscribe" target="_blank" rel="noopener"><span class="es">Suscribirse</span><span class="en">Subscribe</span></a>
-    </div>
-  </section>
+  {% include "suscripcion.njk" %}
 </main>

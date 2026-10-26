@@ -305,3 +305,4 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 .boletin-alt a{color:var(--muted)}
 .boletin-embed{display:block;flex:0 1 480px;width:100%;max-width:480px;height:320px;border:0;background:transparent}
 @media (max-width:600px){.boletin-embed{max-width:none;height:300px}}
+.obra-permiso{font-family:var(--f-ui);font-size:.9rem;color:var(--muted);margin-top:10px}

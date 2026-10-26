@@ -21,6 +21,9 @@ eleventyComputed:
         <h1>{{ obra.titulo }}</h1>
         {%- if obra.autor %}<p class="autores">{% for n in obra.autor | split(";") %}<a href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
         <p class="ref">{% if obra.pie_de_imprenta %}{{ obra.pie_de_imprenta }}{% endif %}{% if obra.anio %}{% if obra.pie_de_imprenta %}, {% endif %}{{ obra.anio }}{% endif %}{% if obra.primera_edicion %} · <span class="es">1.ª ed.</span><span class="en">1st ed.</span> {{ obra.primera_edicion }}{% endif %}</p>
+        {%- if obra.autorizacion %}
+        <p class="obra-permiso"><span class="es">Publicada con autorización del titular de los derechos:</span><span class="en">Published with permission of the rights holder:</span> {{ obra.autorizacion }}</p>
+        {%- endif %}
       </header>
       <div class="visor">
         <iframe src="https://archive.org/embed/{{ obra.identificador }}" title="{{ obra.titulo }}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>

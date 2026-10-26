@@ -216,6 +216,10 @@ content:
         label: Pie de imprenta
         type: string
         description: Lugar y editorial, por ejemplo «Caracas, Tipografía Garrido».
+      - name: autorizacion
+        label: Autorización de derechos
+        type: string
+        description: Opcional. Quién autorizó la publicación, por ejemplo «Instituto Panamericano de Geografía e Historia (IPGH)». Se muestra en la página de la obra.
 
   - name: autores
     label: "Biblioteca: orden de autores"

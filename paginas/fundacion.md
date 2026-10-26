@@ -58,6 +58,12 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
         </div>
       </div>
       <div class="stack" style="gap:18px">
+        <p class="label es">Autorizaciones</p><p class="label en">Permissions</p>
+        <div class="nets">
+          <a class="net" href="https://www.ipgh.org" target="_blank" rel="noopener"><b>Instituto Panamericano de Geografía e Historia</b><span class="es">Organismo especializado de la OEA. Autoriza la difusión de las publicaciones de su Comité de Orígenes de la Emancipación (oficio SG/COMSOCIAL/VARIOS/11/2026).</span><span class="en">A specialized organization of the OAS. It authorizes the dissemination of the publications of its Committee on the Origins of Emancipation (letter SG/COMSOCIAL/VARIOS/11/2026).</span></a>
+        </div>
+      </div>
+      <div class="stack" style="gap:18px">
         <p class="label es">Consejo editorial</p><p class="label en">Editorial council</p>
         <div class="people">
           <div class="person"><b>Alejandro Perdomo Fermin</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>

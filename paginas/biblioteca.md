@@ -6,13 +6,13 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
   <section id="biblioteca">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Biblioteca y archivo</p><p class="label en">Library and archive</p>
-        <h2 class="es">Lo que preservamos</h2><h2 class="en">What we preserve</h2></div>
-        <a class="more" href="/biblioteca/catalogo/"><span class="es">Consultar el catálogo</span><span class="en">Browse the catalogue</span></a></div>
+        <h2 class="es">Lo que preservamos</h2><h2 class="en">What we preserve</h2></div></div>
       <div class="cards">
         <div class="card"><p class="label">Internet Archive</p>
           <h3 class="es">Biblioteca Digital</h3><h3 class="en">Digital Library</h3>
           <p class="es">{{ sitio.obras_biblioteca }} libros y publicaciones, desde la Independencia hasta el siglo XX, muchos agotados o difíciles de encontrar.</p>
-          <p class="en">{{ sitio.obras_biblioteca }} books and periodicals, from independence to the twentieth century, many out of print or hard to find.</p></div>
+          <p class="en">{{ sitio.obras_biblioteca }} books and periodicals, from independence to the twentieth century, many out of print or hard to find.</p>
+          <a class="more" href="/biblioteca/catalogo/"><span class="es">Consultar el catálogo</span><span class="en">Browse the catalogue</span></a></div>
         <div class="card"><p class="label">Archive-It</p>
           <h3 class="es">Archivo web</h3><h3 class="en">Web archive</h3>
           <p class="es">Capturas de sitios, decretos y prensa digital venezolana en riesgo de desaparecer de internet.</p>

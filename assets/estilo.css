@@ -303,6 +303,6 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 .band-boletin .boletin-texto{flex:1 1 320px;max-width:560px}
 .boletin-alt{font-family:var(--f-ui);font-size:.9rem;margin-top:14px!important}
 .boletin-alt a{color:var(--muted)}
-.boletin-embed{display:block;flex:0 1 480px;width:100%;max-width:480px;height:320px;border:0;background:transparent}
-@media (max-width:600px){.boletin-embed{max-width:none;height:300px}}
+.boletin-embed{display:block;flex:0 1 480px;width:100%;max-width:480px;height:400px;border:0;overflow:hidden;background:transparent}
+@media (max-width:600px){.boletin-embed{max-width:none;height:440px}}
 .obra-permiso{font-family:var(--f-ui);font-size:.9rem;color:var(--muted);margin-top:10px}

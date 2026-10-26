@@ -244,7 +244,7 @@ content:
       - name: url
         label: Dirección pública del sitio
         type: string
-        description: Sin barra final, por ejemplo https://ideariumcaribe.com
+        description: Sin barra final, por ejemplo https://www.ideariumcaribe.com
       - name: descripcion
         label: Descripción general para Google
         type: text

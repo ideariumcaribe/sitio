@@ -1,5 +1,4 @@
 {%- set num = collections.numeros | numeroPorId(numero) -%}
-<link rel="canonical" href="{{ sitio.url }}{{ page.url | urlLimpia }}">
 <meta name="citation_title" content="{{ titulo }}{% if subtitulo %}: {{ subtitulo }}{% endif %}">
 {%- for a in autores %}
 <meta name="citation_author" content="{{ a }}">
@@ -26,6 +25,3 @@
 {%- endfor %}
 <meta name="DC.issued" content="{{ num.data.anio }}">
 <meta name="DC.language" content="es">
-<meta property="og:title" content="{{ titulo }}">
-<meta property="og:type" content="article">
-<meta property="og:image" content="{{ sitio.url }}{{ num.data.portada }}">

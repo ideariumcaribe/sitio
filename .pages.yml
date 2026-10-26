@@ -124,6 +124,10 @@ content:
       - name: title
         label: Título de la pestaña del navegador
         type: string
+      - name: descripcion
+        label: Descripción para Google
+        type: text
+        description: Una o dos frases (máximo unos 160 caracteres) que Google muestra bajo el título.
       - name: body
         label: Contenido (HTML)
         type: code
@@ -241,6 +245,9 @@ content:
         label: Dirección pública del sitio
         type: string
         description: Sin barra final, por ejemplo https://ideariumcaribe.com
+      - name: descripcion
+        label: Descripción general para Google
+        type: text
       - name: email
         label: Correo
         type: string

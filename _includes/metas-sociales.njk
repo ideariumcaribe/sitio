@@ -1,0 +1,25 @@
+{%- set desc = descripcion or sitio.descripcion -%}
+{%- set canon = sitio.url + (page.url | urlLimpia) -%}
+{%- set imgSocial = "/assets/img/compartir.jpg" -%}
+{%- if esArticulo -%}{%- set numA = collections.numeros | numeroPorId(numero) -%}{%- set imgSocial = numA.data.portada -%}{%- elif portada -%}{%- set imgSocial = portada -%}{%- endif -%}
+<meta name="description" content="{{ desc | truncate(300) }}">
+<link rel="canonical" href="{{ canon }}">
+{%- if page.url == "/404.html" %}
+<meta name="robots" content="noindex">
+{%- endif %}
+<meta property="og:site_name" content="Idearium Caribe">
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="{{ 'article' if esArticulo else 'website' }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ desc | truncate(300) }}">
+<meta property="og:url" content="{{ canon }}">
+<meta property="og:image" content="{{ sitio.url }}{{ imgSocial }}">
+<meta name="twitter:card" content="{{ 'summary_large_image' if imgSocial == '/assets/img/compartir.jpg' else 'summary' }}">
+<meta name="twitter:site" content="@IdeariumCaribe">
+{%- if page.url == "/" %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":{{ sitio.nombre | dump | safe }},"alternateName":"Idearium Caribe","url":{{ (sitio.url + "/") | dump | safe }},"logo":{{ (sitio.url + "/assets/img/logo-512.png") | dump | safe }},"description":{{ sitio.descripcion | dump | safe }},"email":{{ sitio.email | dump | safe }},"address":{"@type":"PostalAddress","streetAddress":"15 Shelton Ct","addressLocality":"Senoia","addressRegion":"GA","postalCode":"30276","addressCountry":"US"},"sameAs":[{% for r in sitio.redes_sociales %}{{ r.enlace | dump | safe }},{% endfor %}{% for r in sitio.redes_academicas %}{{ r.enlace | dump | safe }}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+{%- elif page.url == "/colombeia.html" %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"Colombeia","issn":{{ sitio.issn | dump | safe }},"url":{{ canon | dump | safe }},"inLanguage":"es","isAccessibleForFree":true,"license":"https://creativecommons.org/licenses/by/4.0/","publisher":{"@type":"Organization","name":{{ sitio.nombre | dump | safe }},"url":{{ (sitio.url + "/") | dump | safe }}}}</script>
+{%- elif obra %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":{{ obra.titulo | dump | safe }},"url":{{ canon | dump | safe }}{% if obra.autor %},"author":[{% for n in obra.autor | split(";") %}{"@type":"Person","name":{{ n | dump | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}{% if obra.anio %},"datePublished":{{ obra.anio | dump | safe }}{% endif %}{% if obra.pie_de_imprenta %},"publisher":{{ obra.pie_de_imprenta | dump | safe }}{% endif %},"inLanguage":"es","isAccessibleForFree":true,"sameAs":{{ ("https://archive.org/details/" + obra.identificador) | dump | safe }},"isPartOf":{"@type":"Collection","name":"Biblioteca Digital de Idearium Caribe","url":{{ (sitio.url + "/biblioteca/catalogo/") | dump | safe }}}}</script>
+{%- endif %}

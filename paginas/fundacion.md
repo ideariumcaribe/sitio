@@ -1,5 +1,6 @@
 ---
 title: "La Fundación · Idearium Caribe"
+descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro con sede en Georgia (Estados Unidos), dedicada a recuperar el pensamiento, la historia y la cultura de Venezuela."
 ---
 <main>
   <section id="fundacion">

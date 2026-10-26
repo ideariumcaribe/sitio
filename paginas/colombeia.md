@@ -1,5 +1,6 @@
 ---
 title: "Colombeia · Idearium Caribe"
+descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto sobre historia y pensamiento venezolano e hispanoamericano, editada por Idearium Caribe."
 ---
 <main>
   <section id="colombeia">

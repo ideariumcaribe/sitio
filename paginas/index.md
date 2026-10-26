@@ -1,5 +1,6 @@
 ---
-title: "Idearium Caribe"
+title: "Idearium Caribe · La memoria de Venezuela, abierta a todos"
+descripcion: "Fundación cultural sin fines de lucro que digitaliza, preserva y publica en acceso abierto libros y documentos sobre la historia de Venezuela e Hispanoamérica."
 ---
 <main>
   <section id="inicio">

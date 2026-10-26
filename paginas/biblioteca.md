@@ -1,5 +1,6 @@
 ---
 title: "Biblioteca · Idearium Caribe"
+descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de historia venezolana, de la Independencia al siglo XX, de lectura libre en línea."
 ---
 <main>
   <section id="biblioteca">

@@ -1,5 +1,6 @@
 ---
 title: "Apóyanos · Idearium Caribe"
+descripcion: "Apoye la digitalización y preservación de la memoria documental de Venezuela con una donación o con libros para la Biblioteca Digital."
 ---
 <main>
   <section id="apoyanos">

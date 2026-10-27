@@ -64,7 +64,7 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
         </div>
       </div>
       <div class="stack" style="gap:18px">
-        <p class="label es">Consejo editorial</p><p class="label en">Editorial council</p>
+        <p class="label es">Junta Directiva</p><p class="label en">Board of Directors</p>
         <div class="people">
           <div class="person"><b>Alejandro Perdomo Fermin</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
           <div class="person"><b>Daniel García Ayaach</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>

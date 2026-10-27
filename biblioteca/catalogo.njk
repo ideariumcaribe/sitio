@@ -14,7 +14,7 @@ permalink: /biblioteca/catalogo/
       <p class="es cat-intro">Todas las obras se leen en línea, sin costo ni registro. Haga clic en un título para abrirlo.</p>
       <p class="en cat-intro">Every work can be read online, free and without registration. Click a title to open it.</p>
       <div class="cat-buscar">
-        <label for="cat-q" class="label"><span class="es">Buscar por título o autor</span><span class="en">Search by title or author</span></label>
+        <label for="cat-q" class="label"><span class="es">Buscar por título, autor o editorial</span><span class="en">Search by title, author or publisher</span></label>
         <input id="cat-q" type="search" autocomplete="off" spellcheck="false">
         <p class="cat-cuenta" aria-live="polite" data-total="{{ catalogo | length }}"><span class="es">{{ catalogo | length }} obras</span><span class="en">{{ catalogo | length }} works</span></p>
       </div>
@@ -28,7 +28,7 @@ permalink: /biblioteca/catalogo/
           </tr></thead>
           <tbody>
             {%- for o in catalogo | sort(false, true, "signatura") %}
-            <tr data-buscar="{{ (o.titulo + ' ' + o.autor) | sinTildes }}"><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a></td><td>{% for n in o.autor | split(";") %}<a class="aut" href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td><td class="yr">{{ o.anio }}</td></tr>
+            <tr data-buscar="{{ (o.titulo + ' ' + o.autor + ' ' + o.pie_de_imprenta) | sinTildes }}"><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a></td><td>{% for n in o.autor | split(";") %}<a class="aut" href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td><td class="yr">{{ o.anio }}</td></tr>
             {%- endfor %}
           </tbody>
         </table>

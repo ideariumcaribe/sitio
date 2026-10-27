@@ -83,8 +83,8 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
       <div class="stack" style="gap:18px">
         <p class="label es">Investigadores asociados</p><p class="label en">Associate researchers</p>
         <div class="people">
-          <div class="person"><b>Luis Alejandro Niebles</b><span class="es">Investigador asociado</span><span class="en">Associate researcher</span></div>
-          <div class="person"><b>Angelo Ramírez</b><span class="es">Investigador asociado</span><span class="en">Associate researcher</span></div>
+          <div class="person"><b>Luis Alejandro Niebles</b><span class="es">Investigador asociado</span><span class="en">Associate researcher</span><span>Universidad Central de Venezuela</span></div>
+          <div class="person"><b>Angelo Ramírez</b><span class="es">Investigador asociado</span><span class="en">Associate researcher</span><span>Universidad de Concepción</span></div>
         </div>
       </div>
     </div>

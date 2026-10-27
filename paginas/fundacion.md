@@ -71,6 +71,15 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
           <div class="person"><b>Jonhangel Sánchez Utrera</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
         </div>
       </div>
+      <div class="stack" style="gap:18px">
+        <p class="label es">Equipo</p><p class="label en">Team</p>
+        <div class="people">
+          <div class="person"><b>Manuel de Abreu Valladares</b><span class="es">Coordinador de la Biblioteca Digital</span><span class="en">Digital Library Coordinator</span></div>
+          <div class="person"><b>José Gregorio Sáez</b><span class="es">Coordinador de Hemeroteca</span><span class="en">Periodicals Coordinator</span></div>
+          <div class="person"><b>José Alfredo Paniagua Núñez</b><span class="es">Editor del Boletín</span><span class="en">Newsletter Editor</span></div>
+          <div class="person"><b>José Ortega</b><span class="es">Coordinador de Comunicaciones</span><span class="en">Communications Coordinator</span></div>
+        </div>
+      </div>
     </div>
   </section>
 </main>

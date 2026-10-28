@@ -9,6 +9,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
         <!-- La portada se toma automáticamente del último número publicado. -->
         {% include "colombeia-portada.njk" %}
         <div class="text">
+          <img class="colombeia-logo" src="/assets/img/colombeia-logo.svg" alt="Logo de Colombeia" width="110" height="148">
           <p class="label es">Revista</p><p class="label en">Journal</p>
           <h2 class="es">Colombeia, nuestra columna vertebral</h2>
           <h2 class="en">Colombeia, our backbone</h2>

@@ -12,7 +12,7 @@ descripcion: "Apoye la digitalización y preservación de la memoria documental 
           <p class="es">Su aporte sostiene la digitalización, la preservación y el fomento de la intelectualidad venezolana. Al donar, escriba «Idearium Caribe» en la descripción del pago.</p>
           <p class="en">Your support sustains digitization, preservation and the promotion of Venezuelan intellectual life. When you donate, write "Idearium Caribe" in the payment description.</p>
           <div>
-            <div class="pay-row"><span>Zelle</span><code>editorial@ideariumcaribe.com</code></div>
+            <div class="pay-row"><span>Zelle</span><code>ideariumcaribe</code></div>
             <div class="pay-row"><span>Lightning</span><code>ideariumcaribe@blink.sv</code></div>
             <div class="pay-row"><span>Bitcoin</span><code>bc1qjzjan495u5tl0t8v0yytedjy7cwkl9jtv53gxg</code></div>
             <div class="pay-row"><span class="es">Transferencia</span><span class="en">Bank transfer</span><p class="es">Escríbanos a {{ sitio.email }} y le enviaremos los datos.</p><p class="en">Write to {{ sitio.email }} and we will send the details.</p></div>

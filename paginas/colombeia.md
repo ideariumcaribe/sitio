@@ -41,6 +41,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
             <dt class="es">Director</dt><dt class="en">Editor-in-chief</dt><dd>Alejandro Perdomo Fermin</dd>
             <dt class="es">Consejo editorial</dt><dt class="en">Editorial council</dt><dd>Daniel García Ayaach <span class="es">y</span><span class="en">and</span> Jonhangel Sánchez Utrera</dd>
             <dt class="es">Entidad editora</dt><dt class="en">Publisher</dt><dd>Idearium Caribe Co., Senoia, Georgia, <span class="es">Estados Unidos</span><span class="en">United States</span></dd>
+            <dt class="es">Biblioteca del Congreso</dt><dt class="en">Library of Congress</dt><dd><a href="https://lccn.loc.gov/{{ sitio.lccn_colombeia }}" rel="noopener" target="_blank">LCCN {{ sitio.lccn_colombeia }}</a></dd>
             <dt class="es">Contacto editorial</dt><dt class="en">Editorial contact</dt><dd>{{ sitio.email_editorial }}</dd>
             <dt>X</dt><dd><a href="{{ sitio.x_colombeia }}" rel="me noopener" target="_blank">@{{ sitio.x_colombeia | replace("https://x.com/", "") }}</a></dd>
           </dl>

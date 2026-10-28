@@ -267,6 +267,9 @@ content:
       - name: x_colombeia
         label: Cuenta de X de Colombeia (enlace completo)
         type: string
+      - name: lccn_colombeia
+        label: Número LCCN de Colombeia (Biblioteca del Congreso)
+        type: string
       - name: direccion
         label: Dirección postal
         type: string

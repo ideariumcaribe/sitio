@@ -9,10 +9,14 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
         <!-- La portada se toma automáticamente del último número publicado. -->
         {% include "colombeia-portada.njk" %}
         <div class="text">
-          <img class="colombeia-logo" src="/assets/img/colombeia-logo.svg" alt="Logo de Colombeia" width="110" height="148">
-          <p class="label es">Revista</p><p class="label en">Journal</p>
-          <h2 class="es">Colombeia, nuestra columna vertebral</h2>
-          <h2 class="en">Colombeia, our backbone</h2>
+          <div class="col-cab">
+            <img class="colombeia-logo" src="/assets/img/colombeia-logo.svg" alt="Logo de Colombeia" width="74" height="100">
+            <div>
+              <p class="label es">Revista</p><p class="label en">Journal</p>
+              <h2 class="es">Colombeia, nuestra columna vertebral</h2>
+              <h2 class="en">Colombeia, our backbone</h2>
+            </div>
+          </div>
           <p class="es">Entre 2024 y 2025, como sabrán nuestros lectores, publicamos más de una centena de artículos y ensayos, contando además boletines y otras formas literarias seleccionadas por nuestro Consejo editorial. En 2025 incursionamos en la publicación periódica. No conformes con nuestro trabajo, del que bien podríamos enorgullecernos por su calidad y diversificación literaria, decidimos que <i>Colombeia</i> podía influir en el debate contemporáneo y servir como un referente intelectual en tiempos donde hay una notoria orfandad del espíritu, un abandono de la literatura y los espacios académicos se vacían. No nos consideramos maestros de nada, ni creemos tener la potestad de la enseñanza, ni autoridad de ningún tipo, pero sí unas grandes ansias de trabajar por el desarrollo de nuestra nación y de nuestra civilización, que mejores tiempos ha visto.</p>
           <p class="en">Between 2024 and 2025, as our readers will know, we published more than a hundred articles and essays, in addition to newsletters and other literary forms selected by our Editorial Council. In 2025 we ventured into periodical publishing. Not content with our work, of which we could well be proud for its quality and literary range, we decided that <i>Colombeia</i> could influence contemporary debate and serve as an intellectual point of reference at a time of notable spiritual orphanhood, when literature is abandoned and academic spaces are emptying. We do not consider ourselves masters of anything, nor do we believe we hold the power to teach or any kind of authority, but we do have a great eagerness to work for the development of our nation and of our civilization, which has seen better times.</p>
           <p class="es">El primer número de <i>Colombeia</i> coincidió con el mes de octubre, pues se cumplía otro aniversario del descubrimiento de América. Dedicamos nuestro primer gran esfuerzo intelectual al hecho fundante, a la etnogénesis de nuestros pueblos con opiniones muy diversas pero no por ello contradictorias; pues todos, a su manera, rendían homenaje al nacimiento de las Indias, de las Américas, de este Caribe nuestro. <i>Colombeia</i>, aquel término mirandino y americanista, sirve como un recordatorio de nuestras aspiraciones espirituales y morales, del ennoblecimiento de nuestras naciones. He aquí nuestro primer gran esfuerzo.</p>

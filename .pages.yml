@@ -264,6 +264,9 @@ content:
       - name: email_comunicaciones
         label: Correo de comunicaciones (prensa, alianzas, boletín)
         type: string
+      - name: x_colombeia
+        label: Cuenta de X de Colombeia (enlace completo)
+        type: string
       - name: direccion
         label: Dirección postal
         type: string

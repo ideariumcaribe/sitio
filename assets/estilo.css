@@ -311,3 +311,4 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 .col-cab .label{margin-bottom:6px}
 .colombeia-logo{display:block;flex:0 0 auto;width:auto;height:104px}
 @media (max-width:600px){.col-cab{gap:16px}.colombeia-logo{height:84px}}
+.contacto .pay-row p{margin-top:4px;font-size:.92rem;color:var(--muted)}

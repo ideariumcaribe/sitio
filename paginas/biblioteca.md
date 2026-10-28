@@ -49,13 +49,13 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
             <li>Los fondos digitalizados se consultan en todo momento, sin costo ni afiliación académica.</li>
             <li>Los originales están disponibles para investigadores con cita previa, y las piezas no digitalizadas pueden digitalizarse a petición.</li>
             <li>Publicamos obras de dominio público, obras propias y obras autorizadas por escrito por sus titulares.</li>
-            <li>Si es titular de derechos sobre una obra y desea su retirada, escríbanos: restringiremos el acceso mientras estudiamos la solicitud y responderemos por escrito.</li>
+            <li>Si es titular de derechos sobre una obra y desea su retirada, escríbanos a {{ sitio.email_biblioteca }}: restringiremos el acceso mientras estudiamos la solicitud y responderemos por escrito.</li>
           </ul>
           <ul class="en">
             <li>Digitized holdings can be consulted at any time, free of charge and with no academic affiliation.</li>
             <li>Originals are available to researchers by appointment, and items not yet digitized can be scanned on request.</li>
             <li>We publish works in the public domain, our own works, and works authorized in writing by their rights holders.</li>
-            <li>If you hold rights to a work and want it removed, write to us: we will restrict access while we review the request and reply in writing.</li>
+            <li>If you hold rights to a work and want it removed, write to {{ sitio.email_biblioteca }}: we will restrict access while we review the request and reply in writing.</li>
           </ul>
         </div>
         <div class="col">

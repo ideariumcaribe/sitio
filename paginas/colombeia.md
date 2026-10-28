@@ -36,7 +36,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
             <dt class="es">Director</dt><dt class="en">Editor-in-chief</dt><dd>Alejandro Perdomo Fermin</dd>
             <dt class="es">Consejo editorial</dt><dt class="en">Editorial council</dt><dd>Daniel García Ayaach <span class="es">y</span><span class="en">and</span> Jonhangel Sánchez Utrera</dd>
             <dt class="es">Entidad editora</dt><dt class="en">Publisher</dt><dd>Idearium Caribe Co., Senoia, Georgia, <span class="es">Estados Unidos</span><span class="en">United States</span></dd>
-            <dt class="es">Contacto editorial</dt><dt class="en">Editorial contact</dt><dd>editorial@ideariumcaribe.com</dd>
+            <dt class="es">Contacto editorial</dt><dt class="en">Editorial contact</dt><dd>{{ sitio.email_editorial }}</dd>
           </dl>
           <h3 class="es">Periodicidad</h3><h3 class="en">Frequency</h3>
           <p class="es"><i>Colombeia</i> se publica con periodicidad bimestral. El primer número corresponde al bimestre septiembre-octubre de 2025. En casos donde por causas mayores haya retrasos en la publicación de los números, se notificará a los contribuyentes.</p>
@@ -46,7 +46,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
       <div class="col" id="evaluacion">
         <h3 class="es">Proceso de evaluación</h3><h3 class="en">Review process</h3>
         <ol class="es">
-          <li>La recepción del material a publicarse se hará mediante nuestra dirección de correo electrónico: editorial@ideariumcaribe.com.</li>
+          <li>La recepción del material a publicarse se hará mediante nuestra dirección de correo electrónico: {{ sitio.email_editorial }}.</li>
           <li>Todos los correos enviados a nuestra dirección deberán estar titulados para facilitar la labor de recepción. Escriba de título el nombre de su publicación.</li>
           <li>Los archivos adjuntos deben estar en formato .doc o .docx y deben llevar también el título de su publicación. Preferimos la recepción de archivos en formato .doc o .docx porque nos permite trabajar sobre el texto. Si, por alguna razón, hubiera que hacer ajustes al texto, notificaremos al autor. Desaconsejamos profundamente el uso de PDF, ya que haría complicado el trabajo de edición.</li>
           <li>Asegúrese de llenar la siguiente información en el cuerpo de texto del correo que pretende dirigirnos con su futura publicación. Por ejemplo, i) el nombre del autor y de ser posible, una breve reseña del autor ii) el título del texto a publicar, iii) el género literario y iv) un resumen o abstract no mayor a 250 palabras.</li>
@@ -55,7 +55,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li>Todos los ensayos, cuya publicación siempre aconsejamos y buscamos promover, estarán regidos por el formato Chicago (18ª ed). Las mismas normas aplican a los artículos académicos, científicos o de investigación comúnmente conocidos como <i>papers</i>. Dedicaremos un apartado propio a los lineamientos relacionados al estilo del género ensayístico.</li>
         </ol>
         <ol class="en">
-          <li>Submissions are received at our email address: editorial@ideariumcaribe.com.</li>
+          <li>Submissions are received at our email address: {{ sitio.email_editorial }}.</li>
           <li>All emails sent to our address must have a subject line to make receiving them easier. Use the title of your work as the subject.</li>
           <li>Attachments must be in .doc or .docx format and must also bear the title of your work. We prefer .doc or .docx files because they allow us to work on the text. If the text needs any adjustments, we will notify the author. We strongly advise against PDF, as it would make editing difficult.</li>
           <li>Make sure to include the following information in the body of the email containing your proposed publication: i) the author's name and, if possible, a short bio; ii) the title of the text; iii) the literary genre; and iv) a summary or abstract of no more than 250 words.</li>

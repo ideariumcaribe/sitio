@@ -87,6 +87,15 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
           <div class="person"><b>Angelo Ramírez</b><span class="es">Investigador asociado</span><span class="en">Associate researcher</span><span>Universidad de Concepción</span></div>
         </div>
       </div>
+      <div class="stack" style="gap:18px">
+        <p class="label es">Contacto</p><p class="label en">Contact</p>
+        <div class="contacto">
+          <div class="pay-row"><span class="es">Fundación</span><span class="en">Foundation</span><code>{{ sitio.email }}</code></div>
+          <div class="pay-row"><span>Colombeia</span><code>{{ sitio.email_editorial }}</code></div>
+          <div class="pay-row"><span class="es">Biblioteca</span><span class="en">Library</span><code>{{ sitio.email_biblioteca }}</code></div>
+          <div class="pay-row"><span class="es">Comunicaciones</span><span class="en">Communications</span><code>{{ sitio.email_comunicaciones }}</code></div>
+        </div>
+      </div>
     </div>
   </section>
 </main>

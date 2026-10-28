@@ -15,7 +15,7 @@ descripcion: "Apoye la digitalización y preservación de la memoria documental 
             <div class="pay-row"><span>Zelle</span><code>editorial@ideariumcaribe.com</code></div>
             <div class="pay-row"><span>Lightning</span><code>ideariumcaribe@blink.sv</code></div>
             <div class="pay-row"><span>Bitcoin</span><code>bc1qjzjan495u5tl0t8v0yytedjy7cwkl9jtv53gxg</code></div>
-            <div class="pay-row"><span class="es">Transferencia</span><span class="en">Bank transfer</span><p class="es">Escríbanos y le enviaremos los datos.</p><p class="en">Write to us and we will send the details.</p></div>
+            <div class="pay-row"><span class="es">Transferencia</span><span class="en">Bank transfer</span><p class="es">Escríbanos a {{ sitio.email }} y le enviaremos los datos.</p><p class="en">Write to {{ sitio.email }} and we will send the details.</p></div>
           </div>
           <div><a class="btn" href="https://buymeacoffee.com/ideariumcaribe" target="_blank" rel="noopener">Buy Me a Coffee</a></div>
         </div>
@@ -23,7 +23,7 @@ descripcion: "Apoye la digitalización y preservación de la memoria documental 
           <h3 class="es">Done libros</h3><h3 class="en">Donate books</h3>
           <p class="es">Recibimos libros de autores venezolanos o sobre temas venezolanos y los digitalizamos para su lectura libre en la Biblioteca Digital.</p>
           <p class="en">We accept books by Venezuelan authors or on Venezuelan subjects and digitize them for free reading in the Digital Library.</p>
-          <p class="es">Escríbanos a editorial@ideariumcaribe.com.</p><p class="en">Write to editorial@ideariumcaribe.com.</p>
+          <p class="es">Escríbanos a {{ sitio.email_biblioteca }}.</p><p class="en">Write to {{ sitio.email_biblioteca }}.</p>
         </div>
       </div>
     </div>

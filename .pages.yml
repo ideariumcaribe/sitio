@@ -253,7 +253,16 @@ content:
         label: Descripción general para Google
         type: text
       - name: email
-        label: Correo
+        label: Correo general (pie de página)
+        type: string
+      - name: email_editorial
+        label: Correo de Colombeia
+        type: string
+      - name: email_biblioteca
+        label: Correo de la Biblioteca y la Hemeroteca
+        type: string
+      - name: email_comunicaciones
+        label: Correo de comunicaciones (prensa, alianzas, boletín)
         type: string
       - name: direccion
         label: Dirección postal

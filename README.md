@@ -42,7 +42,7 @@ Configuración en Cloudflare Pages:
 ## Antes de publicar en el dominio principal
 
 1. En «Datos generales del sitio», confirme la dirección pública (`url`). Se usa en los metadatos de Google Académico y en el mapa del sitio.
-2. El boletín está en `ideariumcaribe.substack.com`. Las redirecciones de `_redirects` llevan allí los enlaces antiguos (`ideariumcaribe.com/p/...`).
+2. El boletín, *El Caribe Ilustrado*, está en `www.elcaribeilustrado.com` (Substack; antes `ideariumcaribe.substack.com`). Las redirecciones de `_redirects` llevan allí los enlaces antiguos (`ideariumcaribe.com/p/...`).
 
 ## Trabajar en una computadora (opcional)
 

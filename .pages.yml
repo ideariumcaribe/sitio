@@ -277,9 +277,9 @@ content:
         label: ISSN de Colombeia
         type: string
       - name: boletin
-        label: Dirección del boletín en Substack
+        label: Dirección de El Caribe Ilustrado (Substack)
         type: string
-        description: Sin barra final, por ejemplo https://ideariumcaribe.substack.com
+        description: Sin barra final, por ejemplo https://www.elcaribeilustrado.com
       - name: biblioteca_digital
         label: Enlace a la Biblioteca Digital
         type: string

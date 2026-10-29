@@ -1,8 +1,8 @@
 # Redirecciones (Cloudflare Pages lee este archivo).
-# El boletín volvió a ideariumcaribe.substack.com. Estas reglas llevan los enlaces
+# El boletín (El Caribe Ilustrado) está en www.elcaribeilustrado.com. Estas reglas llevan los enlaces
 # antiguos del boletín (ideariumcaribe.com/p/..., /archive, /subscribe, /about)
 # a su nueva dirección, para que no se rompan los artículos ya compartidos.
-/p/*         https://ideariumcaribe.substack.com/p/:splat   301
-/archive     https://ideariumcaribe.substack.com/archive    301
-/subscribe   https://ideariumcaribe.substack.com/subscribe  301
-/about       https://ideariumcaribe.substack.com/about      301
+/p/*         https://www.elcaribeilustrado.com/p/:splat   301
+/archive     https://www.elcaribeilustrado.com/archive    301
+/subscribe   https://www.elcaribeilustrado.com/subscribe  301
+/about       https://www.elcaribeilustrado.com/about      301

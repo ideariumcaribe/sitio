@@ -312,3 +312,10 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 .colombeia-logo{display:block;flex:0 0 auto;width:auto;height:104px}
 @media (max-width:600px){.col-cab{gap:16px}.colombeia-logo{height:84px}}
 .contacto .pay-row p{margin-top:4px;font-size:.92rem;color:var(--muted)}
+
+/* El Caribe Ilustrado */
+.ci-intro{display:grid;gap:18px;max-width:46em}
+.ci-intro h2{font-size:clamp(2rem,4vw,3rem)}
+ol.principios{padding-left:1.3em;display:grid;gap:12px;margin:0 0 18px}
+ol.principios li{line-height:1.6}
+.ref-codigos{font-size:1rem;color:var(--muted)}

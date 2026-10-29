@@ -319,3 +319,6 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 ol.principios{padding-left:1.3em;display:grid;gap:12px;margin:0 0 18px}
 ol.principios li{line-height:1.6}
 .ref-codigos{font-size:1rem;color:var(--muted)}
+.ci-logotipo{margin:10px 0 8px;line-height:0}
+.ci-logotipo img{display:block;width:auto;height:150px;max-width:100%}
+@media (max-width:720px){.ci-logotipo img{height:auto;width:100%;max-width:320px}}

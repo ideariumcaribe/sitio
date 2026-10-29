@@ -8,7 +8,7 @@ descripcion: "El Caribe Ilustrado, semanario cultural independiente editado por 
       <div class="ci-intro">
         <div>
           <p class="label es">Semanario</p><p class="label en">Weekly</p>
-          <h2><i>El Caribe Ilustrado</i></h2>
+          <h2 class="ci-logotipo"><img src="/assets/img/el-caribe-ilustrado.svg" alt="El Caribe Ilustrado" width="1631" height="580"></h2>
         </div>
         <p class="es"><i>El Caribe Ilustrado</i> surge en 2026 a iniciativa de la fundación Idearium Caribe Co., que es su sociedad editora, como semanario cultural independiente. Pretende, a través de sus contenidos, ofrecer a sus lectores instrumentos para su perfeccionamiento intelectual, cultivando, además, el pensamiento crítico.</p>
         <p class="en"><i>El Caribe Ilustrado</i> was founded in 2026 on the initiative of the Idearium Caribe Co. foundation, its publisher, as an independent cultural weekly. Through its content, it seeks to offer readers tools for their intellectual development while also cultivating critical thinking.</p>

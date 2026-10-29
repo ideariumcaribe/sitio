@@ -325,3 +325,4 @@ ol.principios li{line-height:1.6}
 .ci-cab{display:flex;align-items:center;gap:28px}
 .ci-sello{height:150px;width:auto;padding-right:28px;border-right:1px solid var(--line)}
 @media (max-width:720px){.ci-cab{gap:16px}.ci-sello{height:72px;padding-right:16px}.ci-logotipo img{max-width:230px}}
+#etica h4{font-size:1.05rem;font-weight:600;margin:10px 0 -4px}#etica p{font-size:1rem}

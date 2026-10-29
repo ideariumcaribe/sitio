@@ -322,3 +322,6 @@ ol.principios li{line-height:1.6}
 .ci-logotipo{margin:10px 0 8px;line-height:0}
 .ci-logotipo img{display:block;width:auto;height:150px;max-width:100%}
 @media (max-width:720px){.ci-logotipo img{height:auto;width:100%;max-width:320px}}
+.ci-cab{display:flex;align-items:center;gap:28px}
+.ci-sello{height:150px;width:auto;padding-right:28px;border-right:1px solid var(--line)}
+@media (max-width:720px){.ci-cab{gap:16px}.ci-sello{height:72px;padding-right:16px}.ci-logotipo img{max-width:230px}}

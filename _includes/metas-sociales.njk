@@ -1,7 +1,7 @@
 {%- set desc = descripcion or sitio.descripcion -%}
 {%- set canon = sitio.url + (page.url | urlLimpia) -%}
 {%- set imgSocial = "/assets/img/compartir.jpg" -%}
-{%- if esArticulo -%}{%- set numA = collections.numeros | numeroPorId(numero) -%}{%- set imgSocial = numA.data.portada -%}{%- elif portada -%}{%- set imgSocial = portada -%}{%- endif -%}
+{%- if esArticulo -%}{%- set numA = collections.numeros | numeroPorId(numero) -%}{%- set imgSocial = numA.data.portada -%}{%- elif portada -%}{%- set imgSocial = portada -%}{%- elif page.url == "/el-caribe-ilustrado.html" -%}{%- set imgSocial = "/assets/img/el-caribe-ilustrado-compartir.jpg" -%}{%- endif -%}
 <meta name="description" content="{{ desc | truncate(300) }}">
 <link rel="canonical" href="{{ canon }}">
 {%- if page.url == "/404.html" %}
@@ -21,7 +21,7 @@
 {%- elif page.url == "/colombeia.html" %}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"Colombeia","issn":{{ sitio.issn | dump | safe }},"url":{{ canon | dump | safe }},"inLanguage":"es","isAccessibleForFree":true,"sameAs":[{{ sitio.x_colombeia | dump | safe }},{{ ("https://lccn.loc.gov/" + sitio.lccn_colombeia) | dump | safe }}],"license":"https://creativecommons.org/licenses/by/4.0/","publisher":{"@type":"Organization","name":{{ sitio.nombre | dump | safe }},"url":{{ (sitio.url + "/") | dump | safe }}}}</script>
 {%- elif page.url == "/el-caribe-ilustrado.html" %}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"El Caribe Ilustrado","url":{{ sitio.boletin | dump | safe }},"inLanguage":"es","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":{{ sitio.nombre | dump | safe }},"url":{{ (sitio.url + "/") | dump | safe }}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"El Caribe Ilustrado","url":{{ sitio.boletin | dump | safe }},"logo":{{ (sitio.url + "/assets/img/el-caribe-ilustrado-compartir.jpg") | dump | safe }},"inLanguage":"es","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":{{ sitio.nombre | dump | safe }},"url":{{ (sitio.url + "/") | dump | safe }}}}</script>
 {%- elif obra %}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":{{ obra.titulo | dump | safe }},"url":{{ canon | dump | safe }}{% if obra.autor %},"author":[{% for n in obra.autor | split(";") %}{"@type":"Person","name":{{ n | dump | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]{% endif %}{% if obra.anio %},"datePublished":{{ obra.anio | dump | safe }}{% endif %}{% if obra.pie_de_imprenta %},"publisher":{{ obra.pie_de_imprenta | dump | safe }}{% endif %},"inLanguage":"es","isAccessibleForFree":true,"sameAs":{{ ("https://archive.org/details/" + obra.identificador) | dump | safe }},"isPartOf":{"@type":"Collection","name":"Biblioteca Digital de Idearium Caribe","url":{{ (sitio.url + "/biblioteca/catalogo/") | dump | safe }}}}</script>
 {%- endif %}

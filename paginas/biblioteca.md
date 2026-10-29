@@ -60,8 +60,8 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
         </div>
         <div class="col">
           <h3 class="es">Publique con nosotros</h3><h3 class="en">Publish with us</h3>
-          <p class="es">Recibimos ensayos, artículos, reseñas, poesía, cuento y folclore para <i>El Caribe Ilustrado</i> y para <i>Colombeia</i>. Consulte los requisitos de envío en el proceso de evaluación de la revista.</p>
-          <p class="en">We welcome essays, articles, reviews, poetry, short fiction and folklore for <i>El Caribe Ilustrado</i> and for <i>Colombeia</i>. See the submission requirements in the journal's review process.</p>
+          <p class="es">Recibimos ensayos, artículos, reseñas, poesía, cuento y folclore para El Caribe Ilustrado y para <i>Colombeia</i>. Consulte los requisitos de envío en el proceso de evaluación de la revista.</p>
+          <p class="en">We welcome essays, articles, reviews, poetry, short fiction and folklore for El Caribe Ilustrado and for <i>Colombeia</i>. See the submission requirements in the journal's review process.</p>
           <a class="more" href="/colombeia.html#evaluacion"><span class="es">Proceso de evaluación</span><span class="en">Review process</span></a>
         </div>
       </div>

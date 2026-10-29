@@ -61,6 +61,7 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
         <p class="label es">Autorizaciones</p><p class="label en">Permissions</p>
         <div class="nets">
           <a class="net" href="https://www.ipgh.org" target="_blank" rel="noopener"><b>Instituto Panamericano de Geografía e Historia</b><span class="es">Organismo especializado de la OEA. Autoriza la difusión de las publicaciones de su Comité de Orígenes de la Emancipación.</span><span class="en">A specialized organization of the OAS. It authorizes the dissemination of the publications of its Committee on the Origins of Emancipation.</span></a>
+          <a class="net" href="https://www.aecid.es" target="_blank" rel="noopener"><b>Agencia Española de Cooperación Internacional para el Desarrollo</b><span class="es">Servicio de Publicaciones de la AECID. Autoriza la difusión de las obras de Ediciones Cultura Hispánica en nuestra Biblioteca Digital.</span><span class="en">AECID Publications Service. It authorizes the dissemination of the Ediciones Cultura Hispánica works in our Digital Library.</span></a>
         </div>
       </div>
       <div class="stack" style="gap:18px">

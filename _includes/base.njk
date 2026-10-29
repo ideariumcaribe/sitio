@@ -24,7 +24,7 @@
       <a href="/fundacion.html"{% if u == "/fundacion.html" %} aria-current="page"{% endif %}><span class="es">La Fundación</span><span class="en">The Foundation</span></a>
       <a href="/biblioteca.html"{% if u.startsWith("/biblioteca") %} aria-current="page"{% endif %}><span class="es">Biblioteca</span><span class="en">Library</span></a>
       <a href="/colombeia.html"{% if u.startsWith("/colombeia") %} aria-current="page"{% endif %}>Colombeia</a>
-      <a href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener"><span class="es">Boletín</span><span class="en">Newsletter</span></a>
+      <a href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener">El Caribe Ilustrado</a>
       <a href="/apoyanos.html"{% if u == "/apoyanos.html" %} aria-current="page"{% endif %}><span class="es">Apóyanos</span><span class="en">Support us</span></a>
     </nav>
     <div class="langs" role="group" aria-label="Idioma / Language">
@@ -53,7 +53,7 @@
     <div><h4 class="es">Publicaciones</h4><h4 class="en">Publications</h4>
       <ul><li><a href="{{ sitio.biblioteca_digital }}" target="_blank" rel="noopener"><span class="es">Biblioteca Digital</span><span class="en">Digital Library</span></a></li>
         <li><a href="/colombeia.html">Colombeia</a></li>
-        <li><a href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener"><span class="es">Boletín</span><span class="en">Newsletter</span></a></li></ul></div>
+        <li><a href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener">El Caribe Ilustrado</a></li></ul></div>
     <div><h4 class="es">Síguenos</h4><h4 class="en">Follow us</h4>
       <ul>{% for r in sitio.redes_sociales %}<li><a href="{{ r.enlace }}" target="_blank" rel="noopener">{{ r.nombre }}</a></li>{% endfor %}</ul></div>
     <div><h4 class="es">Redes académicas</h4><h4 class="en">Scholarly networks</h4>

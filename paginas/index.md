@@ -39,7 +39,7 @@ descripcion: "Fundación cultural sin fines de lucro que digitaliza, preserva y 
   <section id="actividad">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Nuestra actividad</p><p class="label en">Our activity</p>
-        <h2 class="es">Del boletín</h2><h2 class="en">From the newsletter</h2></div>
+        <h2 class="es">De <i>El Caribe Ilustrado</i></h2><h2 class="en">From <i>El Caribe Ilustrado</i></h2></div>
         <a class="more" href="{{ sitio.boletin }}/archive" target="_blank" rel="noopener"><span class="es">Ver todo el archivo</span><span class="en">See the full archive</span></a></div>
       <!-- La lista de artículos del boletín se edita en «Boletín: artículos destacados». -->
       {% include "boletin-lista.njk" %}

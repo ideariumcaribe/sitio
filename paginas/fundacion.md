@@ -76,7 +76,7 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
         <div class="people">
           <div class="person"><b>Manuel de Abreu Valladares</b><span class="es">Coordinador de la Biblioteca Digital</span><span class="en">Digital Library Coordinator</span></div>
           <div class="person"><b>José Gregorio Sáez</b><span class="es">Coordinador de Hemeroteca</span><span class="en">Periodicals Coordinator</span></div>
-          <div class="person"><b>José Alfredo Paniagua Núñez</b><span class="es">Editor del Boletín</span><span class="en">Newsletter Editor</span></div>
+          <div class="person"><b>José Alfredo Paniagua Núñez</b><span class="es">Editor de <i>El Caribe Ilustrado</i></span><span class="en">Editor, <i>El Caribe Ilustrado</i></span></div>
           <div class="person"><b>José Ortega</b><span class="es">Coordinador de Comunicaciones</span><span class="en">Communications Coordinator</span></div>
         </div>
       </div>
@@ -93,7 +93,7 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
           <div class="pay-row"><span class="es">Fundación</span><span class="en">Foundation</span><div><code>{{ sitio.email }}</code><p class="es">Consultas generales, donaciones y asuntos de la Junta Directiva.</p><p class="en">General inquiries, donations and Board matters.</p></div></div>
           <div class="pay-row"><span>Colombeia</span><div><code>{{ sitio.email_editorial }}</code><p class="es">Envío de artículos, autores y evaluadores de la revista.</p><p class="en">Article submissions, authors and reviewers.</p></div></div>
           <div class="pay-row"><span class="es">Biblioteca</span><span class="en">Library</span><div><code>{{ sitio.email_biblioteca }}</code><p class="es">Biblioteca Digital y Hemeroteca: donación de libros, autorizaciones y solicitudes de retirada.</p><p class="en">Digital Library and periodicals: book donations, permissions and takedown requests.</p></div></div>
-          <div class="pay-row"><span class="es">Comunicaciones</span><span class="en">Communications</span><div><code>{{ sitio.email_comunicaciones }}</code><p class="es">Prensa, alianzas institucionales y boletín.</p><p class="en">Press, institutional partnerships and newsletter.</p></div></div>
+          <div class="pay-row"><span class="es">Comunicaciones</span><span class="en">Communications</span><div><code>{{ sitio.email_comunicaciones }}</code><p class="es">Prensa, alianzas institucionales y <i>El Caribe Ilustrado</i>.</p><p class="en">Press, institutional partnerships and <i>El Caribe Ilustrado</i>.</p></div></div>
         </div>
       </div>
     </div>

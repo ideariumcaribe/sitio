@@ -2249,5 +2249,77 @@
   "anio": "1972",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+ },
+ {
+  "signatura": "IC-0249",
+  "identificador": "arturo-uslar-pietri-godos-insurgentes-y-visionarios",
+  "titulo": "Godos, insurgentes y visionarios",
+  "autor": "Arturo Uslar Pietri",
+  "anio": "1986",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Barcelona, Editorial Seix Barral"
+ },
+ {
+  "signatura": "IC-0250",
+  "identificador": "eugene-andre-un-naturalista-en-la-guayana",
+  "titulo": "Un naturalista en la Guayana",
+  "autor": "Eugène André",
+  "anio": "1964",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Banco Central de Venezuela, Colección Cuatricentenario de Caracas"
+ },
+ {
+  "signatura": "IC-0251",
+  "identificador": "mariano-picon-salas-biblioteca-mariano-picon-salas-vol-II",
+  "titulo": "Biblioteca Mariano Picón-Salas: Suma de Venezuela. Vol. II",
+  "autor": "Mariano Picón-Salas",
+  "anio": "1988",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Monte Ávila Editores"
+ },
+ {
+  "signatura": "IC-0252",
+  "identificador": "mariano-picon-salas-biblioteca-mariano-picon-salas-vol-IV",
+  "titulo": "Biblioteca Mariano Picón-Salas: Viajes y estudios latinoamericanos. Vol. IV",
+  "autor": "Mariano Picón-Salas",
+  "anio": "1991",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Monte Ávila Editores"
+ },
+ {
+  "signatura": "IC-0253",
+  "identificador": "gustavo-ocando-yamarte-historia-politico-eclesiastica-de-venezuela-vol-I",
+  "titulo": "Historia político-eclesiástica de Venezuela (1830-1847). Vol. I",
+  "autor": "Gustavo Ocando Yamarte",
+  "anio": "1975",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+ },
+ {
+  "signatura": "IC-0254",
+  "identificador": "jules-humbert-los-origenes-venezolanos",
+  "titulo": "Los orígenes venezolanos: Ensayo sobre la colonización española en Venezuela",
+  "autor": "Jules Humbert; Feliciana de Casas",
+  "anio": "1976",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+ },
+ {
+  "signatura": "IC-0255",
+  "identificador": "jules-humbert-la-ocupacion-alemana-de-venezuela-en-el-siglo-xvi",
+  "titulo": "La ocupación alemana de Venezuela en el siglo XVI: Período llamado de los Welser (1528-1556)",
+  "autor": "Jules Humbert; Roberto Gabaldón",
+  "anio": "1983",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+ },
+ {
+  "signatura": "IC-0256",
+  "identificador": "jules-humbert-historia-de-colombia-y-de-venezuela",
+  "titulo": "Historia de Colombia y de Venezuela: Desde sus orígenes hasta nuestros días",
+  "autor": "Jules Humbert; Roberto Gabaldón",
+  "anio": "1985",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
  }
 ]

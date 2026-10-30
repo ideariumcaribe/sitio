@@ -54,3 +54,7 @@ npm start
 ```
 
 El sitio queda en http://localhost:8080 y se actualiza al guardar los archivos.
+
+## Signaturas de la Biblioteca Digital
+
+Las signaturas (`IC-0001`, `IC-0002`…) siguen el orden en que cada obra se subió al Internet Archive, de la más antigua a la más reciente (campo `addeddate` de la colección `idearium-caribe`). Cada obra nueva recibe el número siguiente al último. Los números de *Colombeia* no forman parte del catálogo: se consultan en la sección de la revista.

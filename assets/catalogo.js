@@ -1,5 +1,5 @@
 // Buscador del catálogo: filtra las obras por título, autor o editorial, sin distinguir tildes ni mayúsculas.
-// Conmutador de vista: lista o portadas (se recuerda en este navegador).
+// Conmutador de vista: portadas (por defecto) o lista (se recuerda en este navegador).
 (function () {
   var q = document.getElementById("cat-q");
   if (!q) return;
@@ -20,11 +20,11 @@
     if (!grid || !tabla) return;
     grid.hidden = v !== "portadas"; tabla.hidden = v === "portadas";
     botones.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.vista === v ? "true" : "false"); });
-    try { localStorage.setItem("cat-vista", v); } catch (e) {}
+    try { localStorage.setItem("cat-vista-2", v); } catch (e) {}
   }
   botones.forEach(function (b) { b.addEventListener("click", function () { vista(b.dataset.vista); }); });
-  var guardada = null; try { guardada = localStorage.getItem("cat-vista"); } catch (e) {}
-  if (guardada === "portadas") vista("portadas");
+  var guardada = null; try { guardada = localStorage.getItem("cat-vista-2"); } catch (e) {}
+  if (guardada === "lista") vista("lista");
   // Orden: reordena a la vez las filas de la lista y las fichas de portadas.
   var selects = Array.prototype.slice.call(document.querySelectorAll("select[data-orden]"));
   var cmp = function (k) {

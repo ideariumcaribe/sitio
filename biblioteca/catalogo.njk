@@ -21,11 +21,13 @@ permalink: /biblioteca/catalogo/
       <div class="cat-barra">
       <label class="cat-orden es"><span>Ordenar por</span><select data-orden><option value="signatura">Signatura</option><option value="titulo">Título (A–Z)</option><option value="autor">Autor (A–Z)</option><option value="editorial">Editorial (A–Z)</option><option value="anio-asc">Año (más antiguo primero)</option><option value="anio-desc">Año (más reciente primero)</option></select></label><label class="cat-orden en"><span>Sort by</span><select data-orden><option value="signatura">Call number</option><option value="titulo">Title (A–Z)</option><option value="autor">Author (A–Z)</option><option value="editorial">Publisher (A–Z)</option><option value="anio-asc">Year (oldest first)</option><option value="anio-desc">Year (newest first)</option></select></label>
       <div class="cat-vista" role="group" aria-label="Vista">
-        <button type="button" data-vista="lista" aria-pressed="true"><span class="es">Lista</span><span class="en">List</span></button>
-        <button type="button" data-vista="portadas" aria-pressed="false"><span class="es">Portadas</span><span class="en">Covers</span></button>
+        <button type="button" data-vista="portadas" aria-pressed="true"><span class="es">Portadas</span><span class="en">Covers</span></button>
+        <button type="button" data-vista="lista" aria-pressed="false"><span class="es">Lista</span><span class="en">List</span></button>
       </div>
       </div>
-      <div class="ledger-wrap">
+      {%- set lista = catalogo | sort(false, true, "signatura") %}{% set clase = "cat-portadas" %}{% set oculta = false %}
+      {% include "portadas-grid.njk" %}
+      <div class="ledger-wrap" hidden>
         <table class="ledger cat-tabla">
           <thead><tr>
             <th><span class="es">Signatura</span><span class="en">Call no.</span></th>
@@ -40,8 +42,6 @@ permalink: /biblioteca/catalogo/
           </tbody>
         </table>
       </div>
-      {%- set lista = catalogo | sort(false, true, "signatura") %}{% set clase = "cat-portadas" %}{% set oculta = true %}
-      {% include "portadas-grid.njk" %}
     </div>
   </section>
 </main>

@@ -1,0 +1,39 @@
+---
+permalink: /biblioteca/novedades.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+{%- set ultimas = catalogo | recientes(30) %}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Idearium Caribe · Novedades de la Biblioteca Digital</title>
+  <link>{{ sitio.url }}/biblioteca/catalogo/?orden=recientes</link>
+  <atom:link href="{{ sitio.url }}/biblioteca/novedades.xml" rel="self" type="application/rss+xml"/>
+  <description>Últimas obras incorporadas a la Biblioteca Digital de Idearium Caribe Co.: libros y documentos de historia venezolana en acceso abierto.</description>
+  <language>es</language>
+  {%- if ultimas[0].incorporacion %}
+  <lastBuildDate>{{ ultimas[0].incorporacion | fechaRss }}</lastBuildDate>
+  {%- endif %}
+  <image>
+    <url>{{ sitio.url }}/assets/img/compartir.jpg</url>
+    <title>Idearium Caribe · Novedades de la Biblioteca Digital</title>
+    <link>{{ sitio.url }}/biblioteca/catalogo/?orden=recientes</link>
+  </image>
+  {%- for o in ultimas %}
+  {%- set enlace = sitio.url + "/biblioteca/obras/" + o.identificador + "/" %}
+  <item>
+    <title>{{ o.titulo }}</title>
+    <link>{{ enlace }}</link>
+    <guid isPermaLink="true">{{ enlace }}</guid>
+    <dc:creator>{{ o.autor | replace(";", ",") }}</dc:creator>
+    {%- if o.incorporacion %}
+    <pubDate>{{ o.incorporacion | fechaRss }}</pubDate>
+    {%- endif %}
+    {%- for m in o.materias %}
+    <category>{{ (materias | materia(m)).nombre }}</category>
+    {%- endfor %}
+    <description>{{ ('<p><img src="https://archive.org/services/img/' + o.identificador + '" alt="" width="180"></p><p>' + (o.autor | replace(";", ",")) + '. ' + (o.pie_de_imprenta) + (', ' + o.anio if o.anio else '') + '.</p><p>Signatura ' + o.signatura + '. Lectura libre en la Biblioteca Digital de Idearium Caribe.</p>') }}</description>
+  </item>
+  {%- endfor %}
+</channel>
+</rss>

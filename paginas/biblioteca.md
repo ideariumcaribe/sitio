@@ -23,6 +23,13 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
           <p class="es">Copias maestras de alta resolución, con al menos tres copias en dos ubicaciones y verificación de integridad.</p>
           <p class="en">High-resolution master copies, with at least three copies in two locations and integrity checks.</p></div>
       </div>
+      <div class="stack recientes">
+        <div class="sec-title"><div><p class="label es">Novedades</p><p class="label en">New additions</p>
+          <h2 class="es">Últimas incorporaciones</h2><h2 class="en">Latest additions</h2></div>
+          <div class="recientes-enlaces"><a class="more" href="/biblioteca/catalogo/?orden=recientes"><span class="es">Ver todas</span><span class="en">See all</span></a><a class="rss" href="/biblioteca/novedades.xml" title="RSS">RSS</a></div></div>
+        {%- set lista = catalogo | recientes(6) %}{% set clase = "portadas-recientes" %}{% set oculta = false %}
+        {% include "portadas-grid.njk" %}
+      </div>
       <div class="ledger-wrap">
         <table class="ledger">
           <thead><tr>

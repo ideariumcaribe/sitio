@@ -58,3 +58,7 @@ El sitio queda en http://localhost:8080 y se actualiza al guardar los archivos.
 ## Signaturas de la Biblioteca Digital
 
 Las signaturas (`IC-0001`, `IC-0002`…) siguen el orden en que cada obra se subió al Internet Archive, de la más antigua a la más reciente (campo `addeddate` de la colección `idearium-caribe`). Cada obra nueva recibe el número siguiente al último. Los números de *Colombeia* no forman parte del catálogo: se consultan en la sección de la revista.
+
+## Últimas incorporaciones y canal RSS
+
+La página de la Biblioteca muestra las seis obras con signatura más alta (las últimas subidas a Internet Archive). El canal RSS `/biblioteca/novedades.xml` lista las 30 más recientes y usa el campo `incorporacion` (fecha de subida, AAAA-MM-DD) como fecha de publicación. Al añadir una obra en Pages CMS, complete «Fecha de incorporación».

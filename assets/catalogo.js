@@ -31,6 +31,7 @@
     return function (a, b) {
       var A = a.dataset, B = b.dataset, r = 0;
       if (k === "anio-asc" || k === "anio-desc") { r = (parseInt(A.anio, 10) || 9999) - (parseInt(B.anio, 10) || 9999); if (k === "anio-desc") r = -r; }
+      else if (k === "recientes") return B.sig.localeCompare(A.sig);
       else if (k !== "signatura") r = (A[k] || "").localeCompare(B[k] || "", "es");
       return r || A.sig.localeCompare(B.sig);
     };
@@ -46,6 +47,9 @@
   }
   selects.forEach(function (s) { s.addEventListener("change", function () { ordenar(s.value); }); });
   var ordenGuardado = null; try { ordenGuardado = localStorage.getItem("cat-orden"); } catch (e) {}
-  if (ordenGuardado && ordenGuardado !== "signatura") ordenar(ordenGuardado);
+  var ordenUrl = null; try { ordenUrl = new URLSearchParams(location.search).get("orden"); } catch (e) {}
+  var validos = selects.length ? Array.prototype.map.call(selects[0].options, function (o) { return o.value; }) : [];
+  if (ordenUrl && validos.indexOf(ordenUrl) !== -1) ordenar(ordenUrl);
+  else if (ordenGuardado && ordenGuardado !== "signatura" && validos.indexOf(ordenGuardado) !== -1) ordenar(ordenGuardado);
   q.addEventListener("input", filtrar);
 })();

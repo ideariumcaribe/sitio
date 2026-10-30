@@ -220,6 +220,12 @@ content:
         label: Autorización de derechos
         type: string
         description: Opcional. Quién autorizó la publicación, por ejemplo «Instituto Panamericano de Geografía e Historia (IPGH)». Se muestra en la página de la obra.
+      - name: incorporacion
+        label: Fecha de incorporación
+        type: date
+        description: Día en que la obra se subió a Internet Archive. Ordena las «Últimas incorporaciones» y el canal RSS.
+        options:
+          format: yyyy-MM-dd
       - name: materias
         label: Temas
         type: select

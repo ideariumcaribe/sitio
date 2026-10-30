@@ -52,6 +52,8 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addFilter("slugAutor", slugAutor);
   // Materias de la Biblioteca.
+  eleventyConfig.addFilter("recientes", (lista, n) => (lista || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura)).slice(0, n || 6));
+  eleventyConfig.addFilter("fechaRss", (f) => { const d = new Date(String(f || "") + "T12:00:00Z"); return isNaN(d) ? "" : d.toUTCString(); });
   eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));
   eleventyConfig.addFilter("materia", (todas, slug) => (todas || []).find((m) => m.slug === slug) || { slug, nombre: slug, nombre_en: slug });
   // Claves de orden del catálogo: título sin artículo inicial, primer autor por apellido, editorial sin la ciudad.

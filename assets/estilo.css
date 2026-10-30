@@ -357,3 +357,7 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .obra-materias .label{margin-right:4px}
 .obra-materias a{font-family:var(--f-ui);font-size:.85rem;text-decoration:none;border:1px solid var(--line);padding:3px 10px;color:var(--ink)}
 .obra-materias a:hover{border-color:var(--ink)}
+.recientes-enlaces{display:flex;align-items:baseline;gap:18px}
+.recientes-enlaces .rss{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:2px 7px}
+.recientes-enlaces .rss:hover{color:var(--ink);border-color:var(--ink)}
+.recientes{margin-bottom:24px}

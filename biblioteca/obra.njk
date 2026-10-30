@@ -17,7 +17,7 @@ eleventyComputed:
     <div class="wrap">
       <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><a href="/biblioteca/catalogo/"><span class="es">Catálogo</span><span class="en">Catalogue</span></a><span aria-hidden="true"> › </span><span>{{ obra.signatura }}</span></nav>
       <div class="obra-intro">
-      <img class="obra-portada" src="https://archive.org/services/img/{{ obra.identificador }}" alt="Portada de {{ obra.titulo }}" width="180" height="240" decoding="async">
+      <img class="obra-portada" src="https://archive.org/services/img/{{ obra.identificador }}" data-ia="{{ obra.identificador }}" alt="Portada de {{ obra.titulo }}" width="180" height="240" decoding="async">
       <header class="obra-cab">
         <p class="label sig-label">{{ obra.signatura }}</p>
         <h1>{{ obra.titulo }}</h1>

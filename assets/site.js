@@ -17,3 +17,17 @@
     try{navigator.clipboard.writeText(em.textContent).then(ok,fallback);}catch(e){fallback();}
   });
 })();
+
+// Portadas del Internet Archive: si una miniatura no carga, prueba otras dos direcciones del mismo libro.
+(function(){
+  var alt=function(id){return ['https://archive.org/download/'+id+'/__ia_thumb.jpg','https://archive.org/download/'+id+'/page/n0_w300.jpg'];};
+  var fix=function(img){
+    var id=img.getAttribute('data-ia'); if(!id) return;
+    var n=+(img.getAttribute('data-intento')||0), urls=alt(id);
+    if(n<urls.length){img.setAttribute('data-intento',n+1); img.src=urls[n];}
+  };
+  document.querySelectorAll('img[data-ia]').forEach(function(img){
+    img.addEventListener('error',function(){fix(img);});
+    if(img.complete && img.naturalWidth===0 && img.getAttribute('src')) fix(img);
+  });
+})();

@@ -51,6 +51,9 @@ export default function (eleventyConfig) {
     return { anterior: i > 0 ? lista[i - 1] : null, siguiente: i >= 0 && i < lista.length - 1 ? lista[i + 1] : null };
   });
   eleventyConfig.addFilter("slugAutor", slugAutor);
+  // Materias de la Biblioteca.
+  eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));
+  eleventyConfig.addFilter("materia", (todas, slug) => (todas || []).find((m) => m.slug === slug) || { slug, nombre: slug, nombre_en: slug });
   // Claves de orden del catálogo: título sin artículo inicial, primer autor por apellido, editorial sin la ciudad.
   eleventyConfig.addFilter("claveTitulo", (t) => llave(t).replace(/^(el|la|los|las|lo|un|una|unos|unas)\s+/, ""));
   eleventyConfig.addFilter("claveAutor", (a) => { const n = String(a || "").split(";")[0].trim(); return llave((formasAutor[n] || n).replace(/,/g, "  ")); });

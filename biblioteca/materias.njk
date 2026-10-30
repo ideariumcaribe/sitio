@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: "Temas de la Biblioteca Digital · Idearium Caribe"
+descripcion: "Índice por temas de la Biblioteca Digital de Idearium Caribe: periodos, personajes, temas y tipos de obra."
+permalink: /biblioteca/materias/
+---
+{%- set grupos = [["periodos","Periodos","Periods"],["personajes","Personajes","People"],["temas","Temas","Topics"],["tipo","Tipo de obra","Type of work"]] -%}
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><span class="es">Temas</span><span class="en">Subjects</span></nav>
+      <div class="sec-title"><div><p class="label es">Biblioteca Digital</p><p class="label en">Digital Library</p>
+        <h1 class="es">Temas</h1><h1 class="en">Subjects</h1></div></div>
+      {% include "biblioteca-pestanas.njk" %}
+      <div class="materias-indice">
+        {%- for g in grupos %}
+        <section aria-labelledby="g-{{ g[0] }}">
+          <h2 id="g-{{ g[0] }}"><span class="es">{{ g[1] }}</span><span class="en">{{ g[2] }}</span></h2>
+          <ul>
+            {%- for m in materias %}{% if m.grupo == g[0] %}
+            <li><a href="/biblioteca/materias/{{ m.slug }}/"><span class="es">{{ m.nombre }}</span><span class="en">{{ m.nombre_en }}</span></a> <span class="n">{{ catalogo | deMateria(m.slug) | length }}</span></li>
+            {%- endif %}{% endfor %}
+          </ul>
+        </section>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</main>

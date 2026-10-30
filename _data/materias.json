@@ -1,0 +1,152 @@
+[
+ {
+  "slug": "conquista-y-colonia",
+  "nombre": "Conquista y Colonia",
+  "nombre_en": "Conquest and colonial period",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "antecedentes-de-la-independencia",
+  "nombre": "Antecedentes de la Independencia",
+  "nombre_en": "Antecedents of Independence",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "independencia",
+  "nombre": "Independencia",
+  "nombre_en": "Independence",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "republica-siglo-xix",
+  "nombre": "República en el siglo XIX",
+  "nombre_en": "The Republic in the 19th century",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "castro-y-gomez",
+  "nombre": "Castro y Gómez",
+  "nombre_en": "Castro and Gómez",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "de-lopez-contreras-a-gallegos",
+  "nombre": "De López Contreras a Gallegos",
+  "nombre_en": "From López Contreras to Gallegos",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "dictadura-militar",
+  "nombre": "La dictadura militar",
+  "nombre_en": "The military dictatorship",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "democracia",
+  "nombre": "Democracia",
+  "nombre_en": "Democracy",
+  "grupo": "periodos"
+ },
+ {
+  "slug": "simon-bolivar",
+  "nombre": "Simón Bolívar",
+  "nombre_en": "Simón Bolívar",
+  "grupo": "personajes"
+ },
+ {
+  "slug": "francisco-de-miranda",
+  "nombre": "Francisco de Miranda",
+  "nombre_en": "Francisco de Miranda",
+  "grupo": "personajes"
+ },
+ {
+  "slug": "jose-antonio-paez",
+  "nombre": "José Antonio Páez",
+  "nombre_en": "José Antonio Páez",
+  "grupo": "personajes"
+ },
+ {
+  "slug": "pensamiento-politico",
+  "nombre": "Pensamiento político e historia de las ideas",
+  "nombre_en": "Political thought and history of ideas",
+  "grupo": "temas"
+ },
+ {
+  "slug": "identidad-y-cultura",
+  "nombre": "Identidad y cultura venezolana",
+  "nombre_en": "Venezuelan identity and culture",
+  "grupo": "temas"
+ },
+ {
+  "slug": "economia-y-petroleo",
+  "nombre": "Economía y petróleo",
+  "nombre_en": "Economy and oil",
+  "grupo": "temas"
+ },
+ {
+  "slug": "sociedad",
+  "nombre": "Sociedad",
+  "nombre_en": "Society",
+  "grupo": "temas"
+ },
+ {
+  "slug": "iglesia-y-religion",
+  "nombre": "Iglesia y religión",
+  "nombre_en": "Church and religion",
+  "grupo": "temas"
+ },
+ {
+  "slug": "derecho-e-instituciones",
+  "nombre": "Derecho e instituciones",
+  "nombre_en": "Law and institutions",
+  "grupo": "temas"
+ },
+ {
+  "slug": "historia-regional",
+  "nombre": "Historia regional",
+  "nombre_en": "Regional history",
+  "grupo": "temas"
+ },
+ {
+  "slug": "viajeros-y-geografia",
+  "nombre": "Viajeros y geografía",
+  "nombre_en": "Travellers and geography",
+  "grupo": "temas"
+ },
+ {
+  "slug": "relaciones-internacionales",
+  "nombre": "Relaciones internacionales",
+  "nombre_en": "International relations",
+  "grupo": "temas"
+ },
+ {
+  "slug": "literatura-y-ensayo",
+  "nombre": "Literatura y ensayo",
+  "nombre_en": "Literature and essay",
+  "grupo": "temas"
+ },
+ {
+  "slug": "biografias",
+  "nombre": "Biografías",
+  "nombre_en": "Biographies",
+  "grupo": "tipo"
+ },
+ {
+  "slug": "memorias-y-autobiografias",
+  "nombre": "Memorias y autobiografías",
+  "nombre_en": "Memoirs and autobiographies",
+  "grupo": "tipo"
+ },
+ {
+  "slug": "documentos-y-epistolarios",
+  "nombre": "Documentos y epistolarios",
+  "nombre_en": "Documents and letters",
+  "grupo": "tipo"
+ },
+ {
+  "slug": "historias-generales",
+  "nombre": "Historias generales",
+  "nombre_en": "General histories",
+  "grupo": "tipo"
+ }
+]

@@ -347,3 +347,13 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .cat-orden{display:flex;align-items:center;gap:10px;font-family:var(--f-ui);font-size:.88rem;color:var(--muted)}
 .cat-orden select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--ink);border-radius:0;padding:7px 30px 7px 10px}
 .cat-pie{display:block;font-size:.84rem;color:var(--muted);margin-top:3px}
+.materias-indice{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:36px 48px}
+.materias-indice section{padding-block:0;border-top:0}
+.materias-indice h2{font-size:1.25rem;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--ink)}
+.materias-indice ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.materias-indice a{text-decoration:none}.materias-indice a:hover{text-decoration:underline}
+.materias-indice .n{font-family:var(--f-mono);font-size:.75rem;color:var(--muted);margin-left:4px}
+.obra-materias{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;margin-top:6px}
+.obra-materias .label{margin-right:4px}
+.obra-materias a{font-family:var(--f-ui);font-size:.85rem;text-decoration:none;border:1px solid var(--line);padding:3px 10px;color:var(--ink)}
+.obra-materias a:hover{border-color:var(--ink)}

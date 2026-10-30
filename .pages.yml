@@ -220,6 +220,60 @@ content:
         label: Autorización de derechos
         type: string
         description: Opcional. Quién autorizó la publicación, por ejemplo «Instituto Panamericano de Geografía e Historia (IPGH)». Se muestra en la página de la obra.
+      - name: materias
+        label: Temas
+        type: select
+        description: De uno a tres temas de la lista. Para crear un tema nuevo, añádalo en «Biblioteca: temas».
+        options:
+          multiple: true
+          values:
+            - { label: "Conquista y Colonia", value: "conquista-y-colonia" }
+            - { label: "Antecedentes de la Independencia", value: "antecedentes-de-la-independencia" }
+            - { label: "Independencia", value: "independencia" }
+            - { label: "República en el siglo XIX", value: "republica-siglo-xix" }
+            - { label: "Castro y Gómez", value: "castro-y-gomez" }
+            - { label: "De López Contreras a Gallegos", value: "de-lopez-contreras-a-gallegos" }
+            - { label: "La dictadura militar", value: "dictadura-militar" }
+            - { label: "Democracia", value: "democracia" }
+            - { label: "Simón Bolívar", value: "simon-bolivar" }
+            - { label: "Francisco de Miranda", value: "francisco-de-miranda" }
+            - { label: "José Antonio Páez", value: "jose-antonio-paez" }
+            - { label: "Pensamiento político e historia de las ideas", value: "pensamiento-politico" }
+            - { label: "Identidad y cultura venezolana", value: "identidad-y-cultura" }
+            - { label: "Economía y petróleo", value: "economia-y-petroleo" }
+            - { label: "Sociedad", value: "sociedad" }
+            - { label: "Iglesia y religión", value: "iglesia-y-religion" }
+            - { label: "Derecho e instituciones", value: "derecho-e-instituciones" }
+            - { label: "Historia regional", value: "historia-regional" }
+            - { label: "Viajeros y geografía", value: "viajeros-y-geografia" }
+            - { label: "Relaciones internacionales", value: "relaciones-internacionales" }
+            - { label: "Literatura y ensayo", value: "literatura-y-ensayo" }
+            - { label: "Biografías", value: "biografias" }
+            - { label: "Memorias y autobiografías", value: "memorias-y-autobiografias" }
+            - { label: "Documentos y epistolarios", value: "documentos-y-epistolarios" }
+            - { label: "Historias generales", value: "historias-generales" }
+
+  - name: materias
+    label: "Biblioteca: temas"
+    type: file
+    path: _data/materias.json
+    format: json
+    list: true
+    fields:
+      - name: slug
+        label: Identificador (sin espacios ni tildes)
+        type: string
+      - name: nombre
+        label: Nombre en español
+        type: string
+      - name: nombre_en
+        label: Nombre en inglés
+        type: string
+      - name: grupo
+        label: Grupo
+        type: select
+        options:
+          values: [periodos, personajes, temas, tipo]
 
   - name: autores
     label: "Biblioteca: orden de autores"

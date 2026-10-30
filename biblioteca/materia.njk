@@ -1,0 +1,40 @@
+---
+layout: base.njk
+pagination:
+  data: materias
+  size: 1
+  addAllPagesToCollections: true
+  alias: mat
+permalink: "/biblioteca/materias/{{ mat.slug }}/"
+eleventyComputed:
+  title: "{{ mat.nombre }} · Biblioteca Digital · Idearium Caribe"
+  descripcion: "Obras sobre {{ mat.nombre }} en la Biblioteca Digital de Idearium Caribe, de lectura libre en línea."
+---
+{%- set obras = catalogo | deMateria(mat.slug) -%}
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><a href="/biblioteca/materias/"><span class="es">Temas</span><span class="en">Subjects</span></a><span aria-hidden="true"> › </span><span class="es">{{ mat.nombre }}</span><span class="en">{{ mat.nombre_en }}</span></nav>
+      <div class="sec-title"><div><p class="label es">Tema</p><p class="label en">Subject</p>
+        <h1 class="es">{{ mat.nombre }}</h1><h1 class="en">{{ mat.nombre_en }}</h1>
+        <p class="cat-cuenta"><span class="es">{{ obras | length }} {{ "obra" if obras.length == 1 else "obras" }} en la Biblioteca Digital</span><span class="en">{{ obras | length }} {{ "work" if obras.length == 1 else "works" }} in the Digital Library</span></p></div></div>
+      {%- set lista = obras %}{% set clase = "aut-portadas" %}{% set oculta = false %}
+      {% include "portadas-grid.njk" %}
+      <div class="ledger-wrap">
+        <table class="ledger cat-tabla">
+          <thead><tr>
+            <th><span class="es">Signatura</span><span class="en">Call no.</span></th>
+            <th><span class="es">Título</span><span class="en">Title</span></th>
+            <th><span class="es">Autor</span><span class="en">Author</span></th>
+            <th><span class="es">Año</span><span class="en">Year</span></th>
+          </tr></thead>
+          <tbody>
+            {%- for o in obras %}
+            <tr><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a>{% if o.pie_de_imprenta %}<span class="cat-pie">{{ o.pie_de_imprenta }}</span>{% endif %}</td><td>{% for n in o.autor | split(";") %}<a class="aut" href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td><td class="yr">{{ o.anio }}</td></tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>

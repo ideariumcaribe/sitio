@@ -6,7 +6,8 @@
   "autor": "Juan Uslar Pietri",
   "anio": "1954",
   "primera_edicion": "",
-  "pie_de_imprenta": "París, Ediciones Soberbia"
+  "pie_de_imprenta": "París, Ediciones Soberbia",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0002",
@@ -15,7 +16,8 @@
   "autor": "Augusto Mijares",
   "anio": "1963",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones de la Fundación Eugenio Mendoza"
+  "pie_de_imprenta": "Caracas, Ediciones de la Fundación Eugenio Mendoza",
+  "materias": ["identidad-y-cultura", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0003",
@@ -24,7 +26,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1982",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Impresos Urbina"
+  "pie_de_imprenta": "Caracas, Impresos Urbina",
+  "materias": ["conquista-y-colonia", "identidad-y-cultura"]
  },
  {
   "signatura": "IC-0004",
@@ -33,7 +36,8 @@
   "autor": "Arturo Uslar Pietri",
   "anio": "1962",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Publicaciones del Ateneo de Caracas"
+  "pie_de_imprenta": "Caracas, Publicaciones del Ateneo de Caracas",
+  "materias": ["identidad-y-cultura", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0005",
@@ -42,7 +46,8 @@
   "autor": "Antonio Pérez Vivas",
   "anio": "1987",
   "primera_edicion": "",
-  "pie_de_imprenta": "San Cristóbal, Tipografía Cortés"
+  "pie_de_imprenta": "San Cristóbal, Tipografía Cortés",
+  "materias": ["castro-y-gomez", "dictadura-militar"]
  },
  {
   "signatura": "IC-0006",
@@ -51,7 +56,8 @@
   "autor": "Ramón J. Velásquez",
   "anio": "1987",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Edición Homenaje al Autor del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Edición Homenaje al Autor del Congreso de la República",
+  "materias": ["republica-siglo-xix", "biografias"]
  },
  {
   "signatura": "IC-0007",
@@ -60,7 +66,8 @@
   "autor": "Arturo Uslar Pietri",
   "anio": "1992",
   "primera_edicion": "",
-  "pie_de_imprenta": "Bogotá, Grupo Editorial Norma"
+  "pie_de_imprenta": "Bogotá, Grupo Editorial Norma",
+  "materias": ["democracia", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0008",
@@ -69,7 +76,8 @@
   "autor": "Isaías Medina Angarita",
   "anio": "1963",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Pensamiento Vivo Editores"
+  "pie_de_imprenta": "Caracas, Pensamiento Vivo Editores",
+  "materias": ["de-lopez-contreras-a-gallegos", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0009",
@@ -78,7 +86,8 @@
   "autor": "Laureano Vallenilla-Lanz Planchart",
   "anio": "1965",
   "primera_edicion": "",
-  "pie_de_imprenta": "Choisy-le-Roi, Imprimerie des Gondoles"
+  "pie_de_imprenta": "Choisy-le-Roi, Imprimerie des Gondoles",
+  "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0010",
@@ -87,7 +96,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1948",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0011",
@@ -96,7 +106,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1946",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Élite"
+  "pie_de_imprenta": "Caracas, Editorial Élite",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0012",
@@ -105,7 +116,8 @@
   "autor": "Carlos Rodríguez Jiménez",
   "anio": "1933",
   "primera_edicion": "",
-  "pie_de_imprenta": "Tokio, Kogyokwan"
+  "pie_de_imprenta": "Tokio, Kogyokwan",
+  "materias": ["castro-y-gomez"]
  },
  {
   "signatura": "IC-0013",
@@ -114,7 +126,8 @@
   "autor": "Laureano Vallenilla Lanz",
   "anio": "1956",
   "primera_edicion": "1921",
-  "pie_de_imprenta": "Caracas, Ediciones Garrido"
+  "pie_de_imprenta": "Caracas, Ediciones Garrido",
+  "materias": ["pensamiento-politico"]
  },
  {
   "signatura": "IC-0014",
@@ -123,7 +136,8 @@
   "autor": "Laureano Vallenilla Lanz",
   "anio": "1952",
   "primera_edicion": "1919",
-  "pie_de_imprenta": "Caracas, Tipografía Garrido"
+  "pie_de_imprenta": "Caracas, Tipografía Garrido",
+  "materias": ["pensamiento-politico", "sociedad"]
  },
  {
   "signatura": "IC-0015",
@@ -132,7 +146,8 @@
   "autor": "Laureano Vallenilla Lanz",
   "anio": "1953",
   "primera_edicion": "1930",
-  "pie_de_imprenta": "Caracas, Tipografía Garrido"
+  "pie_de_imprenta": "Caracas, Tipografía Garrido",
+  "materias": ["pensamiento-politico", "identidad-y-cultura"]
  },
  {
   "signatura": "IC-0016",
@@ -141,7 +156,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1939",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0017",
@@ -150,7 +166,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1939",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0018",
@@ -159,7 +176,8 @@
   "autor": "Augusto Mijares; Mariano Picón-Salas; Ramón Díaz Sánchez; Eduardo Arcila Farías; Juan Liscano",
   "anio": "1962",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Fundación Eugenio Mendoza"
+  "pie_de_imprenta": "Caracas, Fundación Eugenio Mendoza",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0019",
@@ -168,7 +186,8 @@
   "autor": "Augusto Mijares",
   "anio": "1940",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Escuela Técnica Industrial"
+  "pie_de_imprenta": "Caracas, Escuela Técnica Industrial",
+  "materias": ["pensamiento-politico", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0020",
@@ -177,7 +196,8 @@
   "autor": "Nora Bustamante",
   "anio": "1985",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Universidad Santa María, Fondo Editorial Lola de Fuenmayor"
+  "pie_de_imprenta": "Caracas, Universidad Santa María, Fondo Editorial Lola de Fuenmayor",
+  "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0021",
@@ -186,7 +206,8 @@
   "autor": "Luis Cordero Velásquez",
   "anio": "1978",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Lumevec"
+  "pie_de_imprenta": "Caracas, Lumevec",
+  "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0022",
@@ -195,7 +216,8 @@
   "autor": "Agustín Codazzi",
   "anio": "1960",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación"
+  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación",
+  "materias": ["viajeros-y-geografia"]
  },
  {
   "signatura": "IC-0023",
@@ -204,7 +226,8 @@
   "autor": "Agustín Codazzi",
   "anio": "1960",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación"
+  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación",
+  "materias": ["viajeros-y-geografia"]
  },
  {
   "signatura": "IC-0024",
@@ -214,7 +237,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0025",
@@ -224,7 +248,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0026",
@@ -234,7 +259,8 @@
   "anio": "1968",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0027",
@@ -244,7 +270,8 @@
   "anio": "1981",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["francisco-de-miranda", "biografias"]
  },
  {
   "signatura": "IC-0028",
@@ -253,7 +280,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1966",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Ediciones Culturales del Banco del Caribe"
+  "pie_de_imprenta": "Madrid, Ediciones Culturales del Banco del Caribe",
+  "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0029",
@@ -262,7 +290,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1966",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Ediciones Culturales del Banco del Caribe"
+  "pie_de_imprenta": "Madrid, Ediciones Culturales del Banco del Caribe",
+  "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0030",
@@ -271,7 +300,8 @@
   "autor": "Juan Uslar Pietri",
   "anio": "1979",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Ateneo de Caracas"
+  "pie_de_imprenta": "Caracas, Editorial Ateneo de Caracas",
+  "materias": ["francisco-de-miranda"]
  },
  {
   "signatura": "IC-0031",
@@ -280,7 +310,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1955",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Aguilar, Sección Venezolana"
+  "pie_de_imprenta": "Caracas, Aguilar, Sección Venezolana",
+  "materias": ["francisco-de-miranda", "biografias"]
  },
  {
   "signatura": "IC-0032",
@@ -289,7 +320,8 @@
   "autor": "William Spence Robertson",
   "anio": "1967",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Publicaciones del Banco Industrial de Venezuela"
+  "pie_de_imprenta": "Caracas, Publicaciones del Banco Industrial de Venezuela",
+  "materias": ["francisco-de-miranda", "biografias"]
  },
  {
   "signatura": "IC-0033",
@@ -298,7 +330,8 @@
   "autor": "Augusto Mijares",
   "anio": "1964",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones de la Fundación Eugenio Mendoza"
+  "pie_de_imprenta": "Caracas, Ediciones de la Fundación Eugenio Mendoza",
+  "materias": ["simon-bolivar", "biografias"]
  },
  {
   "signatura": "IC-0034",
@@ -307,7 +340,8 @@
   "autor": "Indalecio Liévano Aguirre",
   "anio": "1950",
   "primera_edicion": "",
-  "pie_de_imprenta": "Bogotá, Editorial El Liberal"
+  "pie_de_imprenta": "Bogotá, Editorial El Liberal",
+  "materias": ["simon-bolivar", "biografias"]
  },
  {
   "signatura": "IC-0035",
@@ -316,7 +350,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0036",
@@ -325,7 +360,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0037",
@@ -334,7 +370,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0038",
@@ -343,7 +380,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0039",
@@ -352,7 +390,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0040",
@@ -361,7 +400,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0041",
@@ -370,7 +410,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0042",
@@ -379,7 +420,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1929",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0043",
@@ -388,7 +430,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1930",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0044",
@@ -397,7 +440,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1942",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Escuela Técnica Industrial"
+  "pie_de_imprenta": "Caracas, Escuela Técnica Industrial",
+  "materias": ["simon-bolivar", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0045",
@@ -406,7 +450,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1946",
   "primera_edicion": "",
-  "pie_de_imprenta": "Buenos Aires, W. M. Jackson"
+  "pie_de_imprenta": "Buenos Aires, W. M. Jackson",
+  "materias": ["simon-bolivar", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0046",
@@ -415,7 +460,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1939",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0047",
@@ -424,7 +470,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1956",
   "primera_edicion": "",
-  "pie_de_imprenta": "New York, The Colonial Press Inc."
+  "pie_de_imprenta": "New York, The Colonial Press Inc.",
+  "materias": ["simon-bolivar"]
  },
  {
   "signatura": "IC-0048",
@@ -433,7 +480,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1957",
   "primera_edicion": "",
-  "pie_de_imprenta": "New York, The Colonial Press Inc."
+  "pie_de_imprenta": "New York, The Colonial Press Inc.",
+  "materias": ["simon-bolivar"]
  },
  {
   "signatura": "IC-0049",
@@ -442,7 +490,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1958",
   "primera_edicion": "",
-  "pie_de_imprenta": "New York, The Colonial Press Inc."
+  "pie_de_imprenta": "New York, The Colonial Press Inc.",
+  "materias": ["simon-bolivar"]
  },
  {
   "signatura": "IC-0050",
@@ -451,7 +500,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1970",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Lisama"
+  "pie_de_imprenta": "Caracas, Ediciones Lisama",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0051",
@@ -460,7 +510,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1970",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Lisama"
+  "pie_de_imprenta": "Caracas, Ediciones Lisama",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0052",
@@ -469,7 +520,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1970",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Lisama"
+  "pie_de_imprenta": "Caracas, Ediciones Lisama",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0053",
@@ -479,7 +531,8 @@
   "anio": "1954",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
-  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)"
+  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0054",
@@ -489,7 +542,8 @@
   "anio": "1954",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
-  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)"
+  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0055",
@@ -499,7 +553,8 @@
   "anio": "1955",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
-  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)"
+  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0056",
@@ -509,7 +564,8 @@
   "anio": "1956",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
-  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)"
+  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0057",
@@ -519,7 +575,8 @@
   "anio": "1957",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
-  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)"
+  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0058",
@@ -528,7 +585,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1945",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["simon-bolivar", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0059",
@@ -537,7 +595,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1948",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["simon-bolivar", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0060",
@@ -546,7 +605,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1952",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional"
+  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
+  "materias": ["simon-bolivar", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0061",
@@ -555,7 +615,8 @@
   "autor": "Cornelio Hispano; Luis Perú de Lacroix",
   "anio": "1912",
   "primera_edicion": "",
-  "pie_de_imprenta": "París, Paul Ollendorf"
+  "pie_de_imprenta": "París, Paul Ollendorf",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0062",
@@ -564,7 +625,8 @@
   "autor": "Nicolás Eugenio Navarro; Luis Perú de Lacroix",
   "anio": "1935",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0063",
@@ -573,7 +635,8 @@
   "autor": "Nicolás Eugenio Navarro",
   "anio": "1933",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["simon-bolivar"]
  },
  {
   "signatura": "IC-0064",
@@ -582,7 +645,8 @@
   "autor": "Nicolás Eugenio Navarro",
   "anio": "1930",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Parra León Hermanos"
+  "pie_de_imprenta": "Caracas, Parra León Hermanos",
+  "materias": ["simon-bolivar", "iglesia-y-religion"]
  },
  {
   "signatura": "IC-0065",
@@ -592,7 +656,8 @@
   "anio": "1957",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
-  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)"
+  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
+  "materias": ["independencia", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0066",
@@ -601,7 +666,8 @@
   "autor": "Rómulo Gallegos",
   "anio": "1959",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Aguilar"
+  "pie_de_imprenta": "Madrid, Aguilar",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0067",
@@ -610,7 +676,8 @@
   "autor": "Rómulo Gallegos",
   "anio": "1958",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Aguilar"
+  "pie_de_imprenta": "Madrid, Aguilar",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0068",
@@ -619,7 +686,8 @@
   "autor": "Jesús Evaristo Casariego",
   "anio": "1982",
   "primera_edicion": "",
-  "pie_de_imprenta": "Oviedo, Instituto de Estudios Asturianos"
+  "pie_de_imprenta": "Oviedo, Instituto de Estudios Asturianos",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0069",
@@ -628,7 +696,8 @@
   "autor": "Luis Alberto Sucre",
   "anio": "1928",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
+  "materias": ["conquista-y-colonia", "derecho-e-instituciones"]
  },
  {
   "signatura": "IC-0070",
@@ -637,7 +706,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1940",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial La Torre"
+  "pie_de_imprenta": "Caracas, Editorial La Torre",
+  "materias": ["identidad-y-cultura", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0071",
@@ -646,7 +716,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1955",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Aguilar"
+  "pie_de_imprenta": "Madrid, Aguilar",
+  "materias": ["identidad-y-cultura"]
  },
  {
   "signatura": "IC-0072",
@@ -655,7 +726,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1963",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Publicaciones del Ateneo de Caracas"
+  "pie_de_imprenta": "Caracas, Publicaciones del Ateneo de Caracas",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0073",
@@ -664,7 +736,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1958",
   "primera_edicion": "",
-  "pie_de_imprenta": "Maracaibo, Ediciones de la Universidad del Zulia"
+  "pie_de_imprenta": "Maracaibo, Ediciones de la Universidad del Zulia",
+  "materias": ["historia-regional", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0074",
@@ -673,7 +746,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1953",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Garrido"
+  "pie_de_imprenta": "Caracas, Ediciones Garrido",
+  "materias": ["castro-y-gomez"]
  },
  {
   "signatura": "IC-0075",
@@ -682,7 +756,8 @@
   "autor": "Harrison Sabin Howard",
   "anio": "1976",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Monte Ávila Editores"
+  "pie_de_imprenta": "Caracas, Monte Ávila Editores",
+  "materias": ["de-lopez-contreras-a-gallegos", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0076",
@@ -691,7 +766,8 @@
   "autor": "Fundación Vicente Lecuna",
   "anio": "1959",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Cromotip"
+  "pie_de_imprenta": "Caracas, Cromotip",
+  "materias": ["biografias"]
  },
  {
   "signatura": "IC-0077",
@@ -700,7 +776,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1954",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Garrido"
+  "pie_de_imprenta": "Caracas, Ediciones Garrido",
+  "materias": ["republica-siglo-xix"]
  },
  {
   "signatura": "IC-0078",
@@ -709,7 +786,8 @@
   "autor": "Valentina Lecuna",
   "anio": "1981",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Fecar S. A."
+  "pie_de_imprenta": "Madrid, Fecar S. A.",
+  "materias": ["biografias"]
  },
  {
   "signatura": "IC-0079",
@@ -718,7 +796,8 @@
   "autor": "Vicente Lecuna",
   "anio": "1954",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Nacional"
+  "pie_de_imprenta": "Caracas, Imprenta Nacional",
+  "materias": ["simon-bolivar"]
  },
  {
   "signatura": "IC-0080",
@@ -727,7 +806,8 @@
   "autor": "Juan Vicente González",
   "anio": "1913",
   "primera_edicion": "",
-  "pie_de_imprenta": "París, Casa Editorial Garnier Hermanos"
+  "pie_de_imprenta": "París, Casa Editorial Garnier Hermanos",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0081",
@@ -736,7 +816,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1957",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación"
+  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0082",
@@ -745,7 +826,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1952",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Secretaria General de la Décima Conferencia Interamericana"
+  "pie_de_imprenta": "Caracas, Secretaria General de la Décima Conferencia Interamericana",
+  "materias": ["francisco-de-miranda", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0083",
@@ -754,7 +836,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1932",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Javier Morata"
+  "pie_de_imprenta": "Madrid, Javier Morata",
+  "materias": ["conquista-y-colonia", "derecho-e-instituciones"]
  },
  {
   "signatura": "IC-0084",
@@ -763,7 +846,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1988",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Culturales del Banco del Caribe"
+  "pie_de_imprenta": "Caracas, Ediciones Culturales del Banco del Caribe",
+  "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0085",
@@ -772,7 +856,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1953",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Secretaria General de la Décima Conferencia Interamericana"
+  "pie_de_imprenta": "Caracas, Secretaria General de la Décima Conferencia Interamericana",
+  "materias": ["independencia", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0086",
@@ -781,7 +866,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1988",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Culturales del Banco del Caribe"
+  "pie_de_imprenta": "Caracas, Ediciones Culturales del Banco del Caribe",
+  "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0087",
@@ -790,7 +876,8 @@
   "autor": "Caracciolo Parra Pérez",
   "anio": "1943",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Litografía del Comercio"
+  "pie_de_imprenta": "Caracas, Litografía del Comercio",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0088",
@@ -800,7 +887,8 @@
   "anio": "1964",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
-  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)"
+  "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
+  "materias": ["conquista-y-colonia", "derecho-e-instituciones"]
  },
  {
   "signatura": "IC-0089",
@@ -809,7 +897,8 @@
   "autor": "Tomás Polanco Alcántara",
   "anio": "1982",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela S.A."
+  "pie_de_imprenta": "Caracas, Banco de Venezuela S.A.",
+  "materias": ["biografias", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0090",
@@ -818,7 +907,8 @@
   "autor": "Agustín Blanco Muñoz; Marcos Pérez Jiménez",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Centro de Estudios de Historia Actual, FACES-UCV, Consejo de Desarrollo Científico y Humanístico"
+  "pie_de_imprenta": "Caracas, Centro de Estudios de Historia Actual, FACES-UCV, Consejo de Desarrollo Científico y Humanístico",
+  "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0091",
@@ -827,7 +917,8 @@
   "autor": "Marcos Pérez Jiménez",
   "anio": "1968",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Garrido"
+  "pie_de_imprenta": "Caracas, Ediciones Garrido",
+  "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0092",
@@ -836,7 +927,8 @@
   "autor": "Ministerio de Relaciones Exteriores de Venezuela",
   "anio": "1955",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía La Nación"
+  "pie_de_imprenta": "Caracas, Tipografía La Nación",
+  "materias": ["dictadura-militar"]
  },
  {
   "signatura": "IC-0093",
@@ -845,7 +937,8 @@
   "autor": "Rómulo Betancourt",
   "anio": "1956",
   "primera_edicion": "",
-  "pie_de_imprenta": "Méjico, Fondo de Cultura Económica"
+  "pie_de_imprenta": "Méjico, Fondo de Cultura Económica",
+  "materias": ["economia-y-petroleo", "de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0094",
@@ -854,7 +947,8 @@
   "autor": "Vicente Dávila",
   "anio": "1933",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["francisco-de-miranda", "biografias"]
  },
  {
   "signatura": "IC-0095",
@@ -863,7 +957,8 @@
   "autor": "Vicente Dávila",
   "anio": "1924",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Bolívar"
+  "pie_de_imprenta": "Caracas, Imprenta Bolívar",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0096",
@@ -872,7 +967,8 @@
   "autor": "Vicente Dávila",
   "anio": "1901",
   "primera_edicion": "",
-  "pie_de_imprenta": "Mérida, Imprenta Oficial"
+  "pie_de_imprenta": "Mérida, Imprenta Oficial",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0097",
@@ -881,7 +977,8 @@
   "autor": "Vicente Dávila",
   "anio": "1927",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["historia-regional", "conquista-y-colonia"]
  },
  {
   "signatura": "IC-0098",
@@ -890,7 +987,8 @@
   "autor": "Vicente Dávila",
   "anio": "1930",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0099",
@@ -899,7 +997,8 @@
   "autor": "Vicente Dávila",
   "anio": "1949",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Nacional"
+  "pie_de_imprenta": "Caracas, Imprenta Nacional",
+  "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0100",
@@ -908,7 +1007,8 @@
   "autor": "Vicente Dávila",
   "anio": "1950",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Nacional"
+  "pie_de_imprenta": "Caracas, Imprenta Nacional",
+  "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0101",
@@ -917,7 +1017,8 @@
   "autor": "Vicente Dávila",
   "anio": "1923",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Bolívar"
+  "pie_de_imprenta": "Caracas, Imprenta Bolívar",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0102",
@@ -926,7 +1027,8 @@
   "autor": "Vicente Dávila",
   "anio": "1927",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0103",
@@ -935,7 +1037,8 @@
   "autor": "Vicente Dávila",
   "anio": "1919",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Bolívar"
+  "pie_de_imprenta": "Caracas, Imprenta Bolívar",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0104",
@@ -944,7 +1047,8 @@
   "autor": "Vicente Dávila",
   "anio": "1943",
   "primera_edicion": "",
-  "pie_de_imprenta": "México D.F., Imprenta Manuel León Sánchez"
+  "pie_de_imprenta": "México D.F., Imprenta Manuel León Sánchez",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0105",
@@ -953,7 +1057,8 @@
   "autor": "Vicente Dávila",
   "anio": "1936",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0106",
@@ -962,7 +1067,8 @@
   "autor": "Vicente Dávila",
   "anio": "1939",
   "primera_edicion": "",
-  "pie_de_imprenta": "Santiago de Chile, Imprenta Universitaria"
+  "pie_de_imprenta": "Santiago de Chile, Imprenta Universitaria",
+  "materias": ["sociedad"]
  },
  {
   "signatura": "IC-0107",
@@ -971,7 +1077,8 @@
   "autor": "Vicente Dávila",
   "anio": "1942",
   "primera_edicion": "",
-  "pie_de_imprenta": "México D.F., Imprenta Rafael Ros e Hijo"
+  "pie_de_imprenta": "México D.F., Imprenta Rafael Ros e Hijo",
+  "materias": ["sociedad"]
  },
  {
   "signatura": "IC-0108",
@@ -980,7 +1087,8 @@
   "autor": "Vicente Dávila",
   "anio": "1918",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Bolívar"
+  "pie_de_imprenta": "Caracas, Imprenta Bolívar",
+  "materias": ["independencia", "historia-regional", "biografias"]
  },
  {
   "signatura": "IC-0109",
@@ -989,7 +1097,8 @@
   "autor": "Vicente Dávila",
   "anio": "1921",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Bolívar"
+  "pie_de_imprenta": "Caracas, Imprenta Bolívar",
+  "materias": ["independencia", "historia-regional", "biografias"]
  },
  {
   "signatura": "IC-0110",
@@ -998,7 +1107,8 @@
   "autor": "Vicente Dávila",
   "anio": "1947",
   "primera_edicion": "",
-  "pie_de_imprenta": "México D.F., Imprenta Manuel León Sánchez"
+  "pie_de_imprenta": "México D.F., Imprenta Manuel León Sánchez",
+  "materias": ["viajeros-y-geografia", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0111",
@@ -1007,7 +1117,8 @@
   "autor": "Vicente Dávila",
   "anio": "1900",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Bolívar"
+  "pie_de_imprenta": "Caracas, Imprenta Bolívar",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0112",
@@ -1016,7 +1127,8 @@
   "autor": "Vicente Dávila",
   "anio": "1963",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, publicación propia"
+  "pie_de_imprenta": "Caracas, publicación propia",
+  "materias": ["literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0113",
@@ -1025,7 +1137,8 @@
   "autor": "Francisco Depons",
   "anio": "1930",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Tipografía Americana"
+  "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "materias": ["viajeros-y-geografia", "conquista-y-colonia"]
  },
  {
   "signatura": "IC-0114",
@@ -1034,7 +1147,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1947",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional"
+  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
+  "materias": ["independencia", "biografias"]
  },
  {
   "signatura": "IC-0115",
@@ -1043,7 +1157,8 @@
   "autor": "Beatriz Briceño-Picón",
   "anio": "1987",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Trípode"
+  "pie_de_imprenta": "Caracas, Ediciones Trípode",
+  "materias": ["biografias"]
  },
  {
   "signatura": "IC-0116",
@@ -1052,7 +1167,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1942",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Nacional"
+  "pie_de_imprenta": "Caracas, Imprenta Nacional",
+  "materias": ["conquista-y-colonia", "economia-y-petroleo", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0117",
@@ -1061,7 +1177,8 @@
   "autor": "Arturo Sosa Abascal; Eloi Lengrand",
   "anio": "1981",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Centauro"
+  "pie_de_imprenta": "Caracas, Ediciones Centauro",
+  "materias": ["pensamiento-politico", "castro-y-gomez"]
  },
  {
   "signatura": "IC-0118",
@@ -1070,7 +1187,8 @@
   "autor": "Arturo Sosa Abascal",
   "anio": "1985",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Centauro"
+  "pie_de_imprenta": "Caracas, Ediciones Centauro",
+  "materias": ["pensamiento-politico"]
  },
  {
   "signatura": "IC-0119",
@@ -1079,7 +1197,8 @@
   "autor": "Carlos Irazábal",
   "anio": "1974",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, José Agustín Catalá"
+  "pie_de_imprenta": "Caracas, José Agustín Catalá",
+  "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
   "signatura": "IC-0120",
@@ -1088,7 +1207,8 @@
   "autor": "Carlos Irazábal",
   "anio": "1974",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, José Agustín Catalá"
+  "pie_de_imprenta": "Caracas, José Agustín Catalá",
+  "materias": ["sociedad", "economia-y-petroleo"]
  },
  {
   "signatura": "IC-0121",
@@ -1097,7 +1217,8 @@
   "autor": "Alfredo Tarre Murzi (Sanin)",
   "anio": "1978",
   "primera_edicion": "",
-  "pie_de_imprenta": "Valencia, Vadell Hermanos Editores"
+  "pie_de_imprenta": "Valencia, Vadell Hermanos Editores",
+  "materias": ["economia-y-petroleo", "democracia"]
  },
  {
   "signatura": "IC-0122",
@@ -1106,7 +1227,8 @@
   "autor": "Francisco Javier Yanes",
   "anio": "1948",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional"
+  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
+  "materias": ["historia-regional"]
  },
  {
   "signatura": "IC-0123",
@@ -1115,7 +1237,8 @@
   "autor": "Francisco Javier Yanes",
   "anio": "1949",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional"
+  "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
+  "materias": ["historia-regional", "independencia"]
  },
  {
   "signatura": "IC-0124",
@@ -1124,7 +1247,8 @@
   "autor": "Francisco Javier Yanes",
   "anio": "1944",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Élite"
+  "pie_de_imprenta": "Caracas, Editorial Élite",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0125",
@@ -1133,7 +1257,8 @@
   "autor": "Francisco Javier Yanes",
   "anio": "1943",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Élite"
+  "pie_de_imprenta": "Caracas, Editorial Élite",
+  "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0126",
@@ -1142,7 +1267,8 @@
   "autor": "Francisco Javier Yanes",
   "anio": "1943",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Élite"
+  "pie_de_imprenta": "Caracas, Editorial Élite",
+  "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0127",
@@ -1151,7 +1277,8 @@
   "autor": "Tomás Polanco Alcántara",
   "anio": "1993",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Fundación Eugenio Mendoza"
+  "pie_de_imprenta": "Caracas, Fundación Eugenio Mendoza",
+  "materias": ["biografias", "economia-y-petroleo"]
  },
  {
   "signatura": "IC-0128",
@@ -1160,7 +1287,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1988",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0129",
@@ -1169,7 +1297,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1989",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0130",
@@ -1178,7 +1307,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1989",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0131",
@@ -1187,7 +1317,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1989",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0132",
@@ -1196,7 +1327,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1990",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0133",
@@ -1205,7 +1337,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1990",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0134",
@@ -1214,7 +1347,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1990",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0135",
@@ -1223,7 +1357,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1990",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0136",
@@ -1232,7 +1367,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1990",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0137",
@@ -1241,7 +1377,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1991",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0138",
@@ -1250,7 +1387,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1991",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0139",
@@ -1259,7 +1397,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1991",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0140",
@@ -1268,7 +1407,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1991",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0141",
@@ -1277,7 +1417,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1991",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0142",
@@ -1286,7 +1427,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1991",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0143",
@@ -1295,7 +1437,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1992",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0144",
@@ -1304,7 +1447,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1993",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0145",
@@ -1313,7 +1457,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1993",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0146",
@@ -1322,7 +1467,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1996",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0147",
@@ -1331,7 +1477,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1997",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0148",
@@ -1340,7 +1487,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1997",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0149",
@@ -1349,7 +1497,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1997",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0150",
@@ -1358,7 +1507,8 @@
   "autor": "Mario Briceño-Iragorry",
   "anio": "1998",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República"
+  "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0151",
@@ -1367,7 +1517,8 @@
   "autor": "Marius André",
   "anio": "1924",
   "primera_edicion": "",
-  "pie_de_imprenta": "Barcelona, Casa Editorial Araluce"
+  "pie_de_imprenta": "Barcelona, Casa Editorial Araluce",
+  "materias": ["simon-bolivar", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0152",
@@ -1376,7 +1527,8 @@
   "autor": "José Vicente Pepper",
   "anio": "1947",
   "primera_edicion": "",
-  "pie_de_imprenta": "Trujillo, Editora Montalvo"
+  "pie_de_imprenta": "Trujillo, Editora Montalvo",
+  "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0153",
@@ -1385,7 +1537,8 @@
   "autor": "José Vicente Pepper",
   "anio": "1957",
   "primera_edicion": "",
-  "pie_de_imprenta": "Bruselas, Editorial Atenas"
+  "pie_de_imprenta": "Bruselas, Editorial Atenas",
+  "materias": ["dictadura-militar"]
  },
  {
   "signatura": "IC-0154",
@@ -1394,7 +1547,8 @@
   "autor": "José Antonio Páez",
   "anio": "1946",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Biblioteca y Editorial del Maestro"
+  "pie_de_imprenta": "Caracas, Biblioteca y Editorial del Maestro",
+  "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0155",
@@ -1403,7 +1557,8 @@
   "autor": "José Antonio Páez",
   "anio": "1946",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Biblioteca y Editorial del Maestro"
+  "pie_de_imprenta": "Caracas, Biblioteca y Editorial del Maestro",
+  "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0156",
@@ -1412,7 +1567,8 @@
   "autor": "José Antonio Páez",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0157",
@@ -1421,7 +1577,8 @@
   "autor": "José Antonio Páez",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0158",
@@ -1430,7 +1587,8 @@
   "autor": "José Antonio Páez",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0159",
@@ -1439,7 +1597,8 @@
   "autor": "José Antonio Páez",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0160",
@@ -1448,7 +1607,8 @@
   "autor": "Robert Bontine Cunninghame Graham",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "biografias"]
  },
  {
   "signatura": "IC-0161",
@@ -1457,7 +1617,8 @@
   "autor": "Tomás Michelena",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "biografias"]
  },
  {
   "signatura": "IC-0162",
@@ -1466,7 +1627,8 @@
   "autor": "Carmelo Fernández",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["memorias-y-autobiografias", "republica-siglo-xix"]
  },
  {
   "signatura": "IC-0163",
@@ -1475,7 +1637,8 @@
   "autor": "Ramón Páez",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["viajeros-y-geografia", "republica-siglo-xix"]
  },
  {
   "signatura": "IC-0164",
@@ -1484,7 +1647,8 @@
   "autor": "Richard Vowell",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["independencia", "viajeros-y-geografia"]
  },
  {
   "signatura": "IC-0165",
@@ -1493,7 +1657,8 @@
   "autor": "Richard Vowell",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["viajeros-y-geografia", "independencia"]
  },
  {
   "signatura": "IC-0166",
@@ -1502,7 +1667,8 @@
   "autor": "Antonio Arellano Moreno",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "economia-y-petroleo", "republica-siglo-xix"]
  },
  {
   "signatura": "IC-0167",
@@ -1511,7 +1677,8 @@
   "autor": "John Gustavus Adolphus Williamson",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0168",
@@ -1520,7 +1687,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez"]
  },
  {
   "signatura": "IC-0169",
@@ -1529,7 +1697,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1973",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez"]
  },
  {
   "signatura": "IC-0170",
@@ -1538,7 +1707,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1974",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "derecho-e-instituciones"]
  },
  {
   "signatura": "IC-0171",
@@ -1547,7 +1717,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1975",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "derecho-e-instituciones"]
  },
  {
   "signatura": "IC-0172",
@@ -1556,7 +1727,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1974",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez"]
  },
  {
   "signatura": "IC-0173",
@@ -1565,7 +1737,8 @@
   "autor": "Gustavo Ocando Yamarte",
   "anio": "1975",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["iglesia-y-religion", "republica-siglo-xix"]
  },
  {
   "signatura": "IC-0174",
@@ -1574,7 +1747,8 @@
   "autor": "Rafael Ramón Castellanos",
   "anio": "1975",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "biografias"]
  },
  {
   "signatura": "IC-0175",
@@ -1583,7 +1757,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1976",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["jose-antonio-paez", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0176",
@@ -1592,7 +1767,8 @@
   "autor": "Carlos Soublette",
   "anio": "1977",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "biografias"]
  },
  {
   "signatura": "IC-0177",
@@ -1601,7 +1777,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1979",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix"]
  },
  {
   "signatura": "IC-0178",
@@ -1610,7 +1787,8 @@
   "autor": "Carlos Soublette",
   "anio": "1981",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0179",
@@ -1619,7 +1797,8 @@
   "autor": "Carlos Soublette",
   "anio": "1981",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0180",
@@ -1628,7 +1807,8 @@
   "autor": "Carlos Soublette",
   "anio": "1981",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0181",
@@ -1637,7 +1817,8 @@
   "autor": "Manuel Pérez Vila",
   "anio": "1981",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0182",
@@ -1646,7 +1827,8 @@
   "autor": "Juan Bautista Querales",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "biografias"]
  },
  {
   "signatura": "IC-0183",
@@ -1655,7 +1837,8 @@
   "autor": "Juan Bautista Querales",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "biografias"]
  },
  {
   "signatura": "IC-0184",
@@ -1664,7 +1847,8 @@
   "autor": "Juan Bautista Querales",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "biografias"]
  },
  {
   "signatura": "IC-0185",
@@ -1673,7 +1857,8 @@
   "autor": "Juan Bautista Querales",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix", "biografias"]
  },
  {
   "signatura": "IC-0186",
@@ -1682,7 +1867,8 @@
   "autor": "Academia Nacional de la Historia",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["republica-siglo-xix"]
  },
  {
   "signatura": "IC-0187",
@@ -1691,7 +1877,8 @@
   "autor": "Manuel Lucena Salmoral",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["economia-y-petroleo", "independencia"]
  },
  {
   "signatura": "IC-0188",
@@ -1700,7 +1887,8 @@
   "autor": "Alicia Ardao",
   "anio": "1984",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["economia-y-petroleo", "historia-regional"]
  },
  {
   "signatura": "IC-0189",
@@ -1709,7 +1897,8 @@
   "autor": "Gabriel E. Muñoz",
   "anio": "1987",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0190",
@@ -1718,7 +1907,8 @@
   "autor": "Gabriel E. Muñoz",
   "anio": "1987",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["independencia"]
  },
  {
   "signatura": "IC-0191",
@@ -1728,7 +1918,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0192",
@@ -1738,7 +1929,8 @@
   "anio": "1961",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["derecho-e-instituciones", "conquista-y-colonia"]
  },
  {
   "signatura": "IC-0193",
@@ -1748,7 +1940,8 @@
   "anio": "1953",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0194",
@@ -1758,7 +1951,8 @@
   "anio": "1971",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["pensamiento-politico", "independencia"]
  },
  {
   "signatura": "IC-0195",
@@ -1768,7 +1962,8 @@
   "anio": "1974",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["independencia", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0196",
@@ -1778,7 +1973,8 @@
   "anio": "1974",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0197",
@@ -1788,7 +1984,8 @@
   "anio": "1977",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "relaciones-internacionales"]
  },
  {
   "signatura": "IC-0198",
@@ -1797,7 +1994,8 @@
   "autor": "Agustín Blanco Muñoz; Pedro Estrada",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Centro de Estudios de Historia Actual, FACES-UCV, Consejo de Desarrollo Científico y Humanístico"
+  "pie_de_imprenta": "Caracas, Centro de Estudios de Historia Actual, FACES-UCV, Consejo de Desarrollo Científico y Humanístico",
+  "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
   "signatura": "IC-0199",
@@ -1806,7 +2004,8 @@
   "autor": "Arturo Uslar Pietri",
   "anio": "1981",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Gráficas Reunidas"
+  "pie_de_imprenta": "Madrid, Gráficas Reunidas",
+  "materias": ["identidad-y-cultura"]
  },
  {
   "signatura": "IC-0200",
@@ -1815,7 +2014,8 @@
   "autor": "Enrique Meléndez",
   "anio": "2001",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Venezelia"
+  "pie_de_imprenta": "Caracas, Editorial Venezelia",
+  "materias": ["biografias", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0201",
@@ -1824,7 +2024,8 @@
   "autor": "Nemesio García Naranjo",
   "anio": "1927",
   "primera_edicion": "",
-  "pie_de_imprenta": "New York, Carranza & Company"
+  "pie_de_imprenta": "New York, Carranza & Company",
+  "materias": ["castro-y-gomez"]
  },
  {
   "signatura": "IC-0202",
@@ -1833,7 +2034,8 @@
   "autor": "Eleazar López Contreras",
   "anio": "1954",
   "primera_edicion": "",
-  "pie_de_imprenta": "Madrid, Editorial J. B."
+  "pie_de_imprenta": "Madrid, Editorial J. B.",
+  "materias": ["simon-bolivar"]
  },
  {
   "signatura": "IC-0203",
@@ -1842,7 +2044,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1964",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0204",
@@ -1851,7 +2054,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1964",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0205",
@@ -1860,7 +2064,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1965",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0206",
@@ -1869,7 +2074,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1966",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0207",
@@ -1878,7 +2084,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1967",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0208",
@@ -1887,7 +2094,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1968",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0209",
@@ -1896,7 +2104,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1969",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0210",
@@ -1905,7 +2114,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1970",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0211",
@@ -1914,7 +2124,8 @@
   "autor": "Laureano Vallenilla Lanz; Paolo Nicolai",
   "anio": "1934",
   "primera_edicion": "",
-  "pie_de_imprenta": "Roma, Cremonese Editore"
+  "pie_de_imprenta": "Roma, Cremonese Editore",
+  "materias": ["pensamiento-politico", "sociedad"]
  },
  {
   "signatura": "IC-0212",
@@ -1923,7 +2134,8 @@
   "autor": "Juan Penzini Hernández",
   "anio": "1974",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, José González González Editor"
+  "pie_de_imprenta": "Caracas, José González González Editor",
+  "materias": ["biografias", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0213",
@@ -1932,7 +2144,8 @@
   "autor": "Tomás Polanco Alcántara",
   "anio": "1990",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["castro-y-gomez", "biografias"]
  },
  {
   "signatura": "IC-0214",
@@ -1941,7 +2154,8 @@
   "autor": "Arturo Uslar Pietri",
   "anio": "1945",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones del Centro de Estudiantes de Derecho"
+  "pie_de_imprenta": "Caracas, Ediciones del Centro de Estudiantes de Derecho",
+  "materias": ["economia-y-petroleo"]
  },
  {
   "signatura": "IC-0215",
@@ -1950,7 +2164,8 @@
   "autor": "Vicente Lecuna; Simón Bolívar",
   "anio": "1974",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna"
+  "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
+  "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0216",
@@ -1959,7 +2174,8 @@
   "autor": "Eleazar López Contreras",
   "anio": "1966",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Arte"
+  "pie_de_imprenta": "Caracas, Editorial Arte",
+  "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0217",
@@ -1968,7 +2184,8 @@
   "autor": "José Gregorio Hernández",
   "anio": "1968",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Organización de Bienestar Estudiantil"
+  "pie_de_imprenta": "Caracas, Organización de Bienestar Estudiantil",
+  "materias": ["iglesia-y-religion"]
  },
  {
   "signatura": "IC-0218",
@@ -1977,7 +2194,8 @@
   "autor": "Ricardo Archila",
   "anio": "1952",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Imprenta Nacional"
+  "pie_de_imprenta": "Caracas, Imprenta Nacional",
+  "materias": ["biografias"]
  },
  {
   "signatura": "IC-0219",
@@ -1986,7 +2204,8 @@
   "autor": "Ana Mercedes Pérez",
   "anio": "1953",
   "primera_edicion": "",
-  "pie_de_imprenta": "Buenos Aires, Editorial Colombo"
+  "pie_de_imprenta": "Buenos Aires, Editorial Colombo",
+  "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0220",
@@ -1995,7 +2214,8 @@
   "autor": "Federico Brito Figueroa",
   "anio": "1979",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca"
+  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
+  "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
   "signatura": "IC-0221",
@@ -2004,7 +2224,8 @@
   "autor": "Federico Brito Figueroa",
   "anio": "1978",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca"
+  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
+  "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
   "signatura": "IC-0222",
@@ -2013,7 +2234,8 @@
   "autor": "Federico Brito Figueroa",
   "anio": "1978",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca"
+  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
+  "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
   "signatura": "IC-0223",
@@ -2022,7 +2244,8 @@
   "autor": "Federico Brito Figueroa",
   "anio": "1987",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca"
+  "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
+  "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
   "signatura": "IC-0224",
@@ -2031,7 +2254,8 @@
   "autor": "Ricardo Escalante",
   "anio": "1994",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Vadell Hermanos Editores"
+  "pie_de_imprenta": "Caracas, Vadell Hermanos Editores",
+  "materias": ["democracia", "economia-y-petroleo"]
  },
  {
   "signatura": "IC-0225",
@@ -2040,7 +2264,8 @@
   "autor": "Guillermo Morón",
   "anio": "1971",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Britannica"
+  "pie_de_imprenta": "Caracas, Britannica",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0226",
@@ -2049,7 +2274,8 @@
   "autor": "Guillermo Morón",
   "anio": "1971",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Britannica"
+  "pie_de_imprenta": "Caracas, Britannica",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0227",
@@ -2058,7 +2284,8 @@
   "autor": "Guillermo Morón",
   "anio": "1971",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Britannica"
+  "pie_de_imprenta": "Caracas, Britannica",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0228",
@@ -2067,7 +2294,8 @@
   "autor": "Guillermo Morón",
   "anio": "1971",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Britannica"
+  "pie_de_imprenta": "Caracas, Britannica",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0229",
@@ -2076,7 +2304,8 @@
   "autor": "Guillermo Morón",
   "anio": "1971",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Britannica"
+  "pie_de_imprenta": "Caracas, Britannica",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0230",
@@ -2085,7 +2314,8 @@
   "autor": "Ocarina Castillo D'Imperio",
   "anio": "1990",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Fondo Editorial Tropykos"
+  "pie_de_imprenta": "Caracas, Fondo Editorial Tropykos",
+  "materias": ["dictadura-militar", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0231",
@@ -2094,7 +2324,8 @@
   "autor": "FUNRES",
   "anio": "1982",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Fundación para el Rescate del Acervo Documental Venezolano"
+  "pie_de_imprenta": "Caracas, Fundación para el Rescate del Acervo Documental Venezolano",
+  "materias": ["castro-y-gomez", "relaciones-internacionales", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0232",
@@ -2103,7 +2334,8 @@
   "autor": "Tulio Chiossone",
   "anio": "1989",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Ex Libris"
+  "pie_de_imprenta": "Caracas, Editorial Ex Libris",
+  "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0233",
@@ -2112,7 +2344,8 @@
   "autor": "Pedro Manuel Arcaya",
   "anio": "1972",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["conquista-y-colonia", "historia-regional", "sociedad"]
  },
  {
   "signatura": "IC-0234",
@@ -2121,7 +2354,8 @@
   "autor": "Pedro Manuel Arcaya",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Ediciones Librería Historia"
+  "pie_de_imprenta": "Caracas, Ediciones Librería Historia",
+  "materias": ["memorias-y-autobiografias", "castro-y-gomez"]
  },
  {
   "signatura": "IC-0235",
@@ -2130,7 +2364,8 @@
   "autor": "Santiago Gerardo Suárez",
   "anio": "1965",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Arte"
+  "pie_de_imprenta": "Caracas, Editorial Arte",
+  "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
   "signatura": "IC-0236",
@@ -2139,7 +2374,8 @@
   "autor": "Tulio Chiossone",
   "anio": "1979",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Editorial Jurídica Venezolana"
+  "pie_de_imprenta": "Caracas, Editorial Jurídica Venezolana",
+  "materias": ["de-lopez-contreras-a-gallegos", "democracia"]
  },
  {
   "signatura": "IC-0237",
@@ -2148,7 +2384,8 @@
   "autor": "Arturo Uslar Pietri",
   "anio": "1986",
   "primera_edicion": "",
-  "pie_de_imprenta": "Barcelona, Editorial Seix Barral"
+  "pie_de_imprenta": "Barcelona, Editorial Seix Barral",
+  "materias": ["pensamiento-politico", "identidad-y-cultura"]
  },
  {
   "signatura": "IC-0238",
@@ -2158,7 +2395,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0239",
@@ -2168,7 +2406,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["conquista-y-colonia", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0240",
@@ -2178,7 +2417,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0241",
@@ -2188,7 +2428,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["conquista-y-colonia", "independencia"]
  },
  {
   "signatura": "IC-0242",
@@ -2198,7 +2439,8 @@
   "anio": "1957",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0243",
@@ -2208,7 +2450,8 @@
   "anio": "1968",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
   "signatura": "IC-0244",
@@ -2218,7 +2461,8 @@
   "anio": "1949",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["antecedentes-de-la-independencia", "sociedad", "historia-regional"]
  },
  {
   "signatura": "IC-0245",
@@ -2227,7 +2471,8 @@
   "autor": "Eugène André",
   "anio": "1964",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Banco Central de Venezuela, Colección Cuatricentenario de Caracas"
+  "pie_de_imprenta": "Caracas, Banco Central de Venezuela, Colección Cuatricentenario de Caracas",
+  "materias": ["viajeros-y-geografia", "historia-regional"]
  },
  {
   "signatura": "IC-0246",
@@ -2236,7 +2481,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1988",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Monte Ávila Editores"
+  "pie_de_imprenta": "Caracas, Monte Ávila Editores",
+  "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0247",
@@ -2245,7 +2491,8 @@
   "autor": "Mariano Picón-Salas",
   "anio": "1991",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Monte Ávila Editores"
+  "pie_de_imprenta": "Caracas, Monte Ávila Editores",
+  "materias": ["viajeros-y-geografia", "literatura-y-ensayo"]
  },
  {
   "signatura": "IC-0248",
@@ -2255,7 +2502,8 @@
   "anio": "1970",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
-  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)"
+  "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
+  "materias": ["independencia", "pensamiento-politico"]
  },
  {
   "signatura": "IC-0249",
@@ -2264,7 +2512,8 @@
   "autor": "Gustavo Ocando Yamarte",
   "anio": "1975",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["iglesia-y-religion", "republica-siglo-xix"]
  },
  {
   "signatura": "IC-0250",
@@ -2273,7 +2522,8 @@
   "autor": "Jules Humbert; Feliciana de Casas",
   "anio": "1976",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["conquista-y-colonia"]
  },
  {
   "signatura": "IC-0251",
@@ -2282,7 +2532,8 @@
   "autor": "Jules Humbert; Roberto Gabaldón",
   "anio": "1983",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["conquista-y-colonia"]
  },
  {
   "signatura": "IC-0252",
@@ -2291,7 +2542,8 @@
   "autor": "Jules Humbert; Roberto Gabaldón",
   "anio": "1985",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["historias-generales"]
  },
  {
   "signatura": "IC-0253",
@@ -2300,6 +2552,7 @@
   "autor": "Gloria Henríquez Uzcátegui",
   "anio": "1984",
   "primera_edicion": "",
-  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia"
+  "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "materias": ["francisco-de-miranda", "documentos-y-epistolarios"]
  }
 ]

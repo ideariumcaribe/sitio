@@ -1,0 +1,14 @@
+<meta name="citation_title" content="{{ obra.titulo }}">
+{%- for n in obra.autor | split(";") %}
+<meta name="citation_author" content="{{ n | formaAutor }}">
+{%- endfor %}
+{%- if obra.anio %}
+<meta name="citation_publication_date" content="{{ obra.anio }}">
+{%- endif %}
+{%- if obra.pie_de_imprenta %}
+<meta name="citation_publisher" content="{{ obra.pie_de_imprenta | editorialDe }}">
+{%- endif %}
+<meta name="citation_language" content="es">
+<meta name="citation_public_url" content="{{ sitio.url }}{{ page.url }}">
+<meta name="DC.type" content="Text">
+<meta name="DC.rights" content="Acceso abierto">

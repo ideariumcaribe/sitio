@@ -31,13 +31,27 @@ eleventyComputed:
         {%- endif %}
       </header>
       </div>
+      <form class="buscar-texto" data-ia="{{ obra.identificador }}" role="search" hidden>
+        <label for="bt-q"><span class="es">Buscar en el texto de esta obra</span><span class="en">Search the text of this work</span></label>
+        <div class="bt-fila"><input id="bt-q" type="search" name="q" minlength="3" required autocomplete="off" placeholder="Nombre, lugar, fecha…"><button type="submit" class="btn"><span class="es">Buscar</span><span class="en">Search</span></button></div>
+        <p class="bt-estado" aria-live="polite"></p>
+        <ol class="bt-resultados"></ol>
+      </form>
       <div class="visor">
-        <iframe src="https://archive.org/embed/{{ obra.identificador }}" title="{{ obra.titulo }}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <iframe id="visor-ia" src="https://archive.org/embed/{{ obra.identificador }}" title="{{ obra.titulo }}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
       <div class="obra-acciones">
         <a class="btn" href="https://archive.org/details/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Abrir en Internet Archive</span><span class="en">Open on the Internet Archive</span></a>
         <a class="btn outline" href="https://archive.org/download/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Descargar (PDF y otros formatos)</span><span class="en">Download (PDF and other formats)</span></a>
       </div>
+      {%- set c = obra | citas(sitio.url + page.url) %}
+      <section class="como-citar" aria-labelledby="cc-t">
+        <h2 id="cc-t"><span class="es">Cómo citar</span><span class="en">How to cite</span></h2>
+        <div class="cita"><p class="label">Chicago</p><p class="cita-txt">{{ c.chicago | safe }}</p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <div class="cita"><p class="label">APA</p><p class="cita-txt">{{ c.apa | safe }}</p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <p class="cita-nota es">Los gestores bibliográficos como Zotero o Mendeley pueden capturar esta ficha directamente desde el navegador.</p>
+        <p class="cita-nota en">Reference managers such as Zotero or Mendeley can capture this record directly from the browser.</p>
+      </section>
       <nav class="art-nav obra-nav" aria-label="Otras obras">
         {%- if vecinos.anterior %}<a href="/biblioteca/obras/{{ vecinos.anterior.identificador }}/"><span class="label"><span class="es">Anterior</span><span class="en">Previous</span> · {{ vecinos.anterior.signatura }}</span>{{ vecinos.anterior.titulo }}</a>{% endif %}
         {%- if vecinos.siguiente %}<a href="/biblioteca/obras/{{ vecinos.siguiente.identificador }}/"><span class="label"><span class="es">Siguiente</span><span class="en">Next</span> · {{ vecinos.siguiente.signatura }}</span>{{ vecinos.siguiente.titulo }}</a>{% endif %}
@@ -45,3 +59,4 @@ eleventyComputed:
     </div>
   </article>
 </main>
+<script src="/assets/obra.js?v={{ version }}" defer></script>

@@ -52,6 +52,38 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addFilter("slugAutor", slugAutor);
   // Materias de la Biblioteca.
+  // Cómo citar una obra de la Biblioteca (Chicago y APA, adaptados al español).
+  const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const formaDe = (n) => formasAutor[n] || n;
+  const corporativo = (f) => f.indexOf(",") === -1;
+  const unirY = (l) => l.length <= 1 ? (l[0] || "") : l.slice(0, -1).join(", ") + " y " + l[l.length - 1];
+  const fin = (s) => /[.?!]$/.test(s) ? s : s + ".";
+  const iniciales = (nombres) => nombres.replace(/\(.*?\)/g, "").trim().split(/\s+/).map((w) => /^[A-ZÁÉÍÓÚÑÜ]/.test(w) ? w.split("-").map((p) => p.charAt(0) + ".").join("-") : w).join(" ");
+  const pieDe = (p) => { const s = String(p || ""); const i = s.indexOf(","); return i >= 0 ? { lugar: s.slice(0, i).trim(), editorial: s.slice(i + 1).trim() } : { lugar: "", editorial: s.trim() }; };
+  eleventyConfig.addFilter("formaAutor", formaDe);
+  eleventyConfig.addFilter("editorialDe", (p) => pieDe(p).editorial);
+  eleventyConfig.addFilter("citas", (o, url) => {
+    const autores = String(o.autor || "").split(";").map((x) => x.trim()).filter(Boolean);
+    const formas = autores.map(formaDe);
+    const anio = o.anio || "s. f.";
+    const { lugar, editorial } = pieDe(o.pie_de_imprenta);
+    const titulo = "<i>" + esc(fin(o.titulo)) + "</i>";
+    const fuente = "Biblioteca Digital de Idearium Caribe, " + esc(o.signatura) + ". " + esc(url);
+    // Chicago (bibliografía): primer autor invertido, los demás en orden natural.
+    const chiAut = formas.length ? fin(unirY(formas.map((f, i) => i === 0 || corporativo(f) ? f : autores[i]))) : "";
+    const chicago = (chiAut ? esc(chiAut) + " " : "") + titulo + " " + esc((lugar ? lugar + ": " : "") + editorial + ", " + anio) + ". " + fuente + ".";
+    // APA 7: apellidos e iniciales; la editorial se omite si coincide con el autor.
+    const apaAut = formas.map((f) => {
+      if (corporativo(f)) return f;
+      const nombres = f.split(",").slice(1).join(",").replace(/\(.*?\)/g, "").trim().split(/\s+/);
+      const particulas = nombres.filter((w) => /^[a-zà-ÿ]/.test(w));
+      const propios = nombres.filter((w) => !/^[a-zà-ÿ]/.test(w)).join(" ");
+      return (particulas.length ? particulas.join(" ") + " " : "") + f.split(",")[0].trim() + ", " + iniciales(propios);
+    });
+    const apaEd = editorial && !formas.includes(editorial) ? " " + esc(fin(editorial)) : "";
+    const apa = (apaAut.length ? esc(fin(unirY(apaAut))) + " " : "") + "(" + esc(anio) + "). " + titulo + apaEd + " " + esc(url);
+    return { chicago, apa };
+  });
   eleventyConfig.addFilter("recientes", (lista, n) => (lista || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura)).slice(0, n || 6));
   eleventyConfig.addFilter("fechaRss", (f) => { const d = new Date(String(f || "") + "T12:00:00Z"); return isNaN(d) ? "" : d.toUTCString(); });
   eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));

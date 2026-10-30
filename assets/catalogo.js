@@ -25,5 +25,27 @@
   botones.forEach(function (b) { b.addEventListener("click", function () { vista(b.dataset.vista); }); });
   var guardada = null; try { guardada = localStorage.getItem("cat-vista"); } catch (e) {}
   if (guardada === "portadas") vista("portadas");
+  // Orden: reordena a la vez las filas de la lista y las fichas de portadas.
+  var selects = Array.prototype.slice.call(document.querySelectorAll("select[data-orden]"));
+  var cmp = function (k) {
+    return function (a, b) {
+      var A = a.dataset, B = b.dataset, r = 0;
+      if (k === "anio-asc" || k === "anio-desc") { r = (parseInt(A.anio, 10) || 9999) - (parseInt(B.anio, 10) || 9999); if (k === "anio-desc") r = -r; }
+      else if (k !== "signatura") r = (A[k] || "").localeCompare(B[k] || "", "es");
+      return r || A.sig.localeCompare(B.sig);
+    };
+  };
+  function ordenar(k) {
+    [filas, fichas].forEach(function (lista) {
+      if (!lista.length) return;
+      var padre = lista[0].parentNode;
+      lista.slice().sort(cmp(k)).forEach(function (el) { padre.appendChild(el); });
+    });
+    selects.forEach(function (s) { s.value = k; });
+    try { localStorage.setItem("cat-orden", k); } catch (e) {}
+  }
+  selects.forEach(function (s) { s.addEventListener("change", function () { ordenar(s.value); }); });
+  var ordenGuardado = null; try { ordenGuardado = localStorage.getItem("cat-orden"); } catch (e) {}
+  if (ordenGuardado && ordenGuardado !== "signatura") ordenar(ordenGuardado);
   q.addEventListener("input", filtrar);
 })();

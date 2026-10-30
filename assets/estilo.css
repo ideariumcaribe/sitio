@@ -343,3 +343,7 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .obra-intro .obra-cab{margin-bottom:0}
 .obra-portada{width:150px;height:auto;aspect-ratio:3/4;object-fit:cover;background:var(--soft);border:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.1)}
 @media (max-width:640px){.obra-intro{grid-template-columns:96px minmax(0,1fr);gap:18px}.obra-portada{width:96px}ul.portadas{grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:22px 14px}}
+.cat-barra{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px}
+.cat-orden{display:flex;align-items:center;gap:10px;font-family:var(--f-ui);font-size:.88rem;color:var(--muted)}
+.cat-orden select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--ink);border-radius:0;padding:7px 30px 7px 10px}
+.cat-pie{display:block;font-size:.84rem;color:var(--muted);margin-top:3px}

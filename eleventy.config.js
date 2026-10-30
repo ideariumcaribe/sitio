@@ -1,5 +1,8 @@
 // Configuración de Eleventy para el sitio de Idearium Caribe.
+import fs from "node:fs";
 import { slugAutor } from "./lib/slug.js";
+const formasAutor = Object.fromEntries(JSON.parse(fs.readFileSync(new URL("./_data/ordenAutores.json", import.meta.url), "utf8")).map((a) => [a.nombre, a.forma_catalogo]));
+const llave = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[«»"“”¿¡]/g, "").trim();
 export default function (eleventyConfig) {
   // Archivos que se copian tal cual al sitio publicado.
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
@@ -48,6 +51,10 @@ export default function (eleventyConfig) {
     return { anterior: i > 0 ? lista[i - 1] : null, siguiente: i >= 0 && i < lista.length - 1 ? lista[i + 1] : null };
   });
   eleventyConfig.addFilter("slugAutor", slugAutor);
+  // Claves de orden del catálogo: título sin artículo inicial, primer autor por apellido, editorial sin la ciudad.
+  eleventyConfig.addFilter("claveTitulo", (t) => llave(t).replace(/^(el|la|los|las|lo|un|una|unos|unas)\s+/, ""));
+  eleventyConfig.addFilter("claveAutor", (a) => { const n = String(a || "").split(";")[0].trim(); return llave((formasAutor[n] || n).replace(/,/g, "  ")); });
+  eleventyConfig.addFilter("claveEditorial", (p) => { const s = String(p || ""); const i = s.indexOf(","); return llave(i >= 0 ? s.slice(i + 1) : s); });
   eleventyConfig.addFilter("split", (s, sep) => String(s || "").split(sep).map((x) => x.trim()).filter(Boolean));
   eleventyConfig.addFilter("otrosAutores", (s, nombre) => String(s || "").split(";").map((x) => x.trim()).filter((x) => x && x !== nombre).join(", "));
   eleventyConfig.addFilter("deAutor", (arts, nombre) => (arts || []).filter((a) => (a.data.autores || []).includes(nombre) || a.data.editor === nombre));

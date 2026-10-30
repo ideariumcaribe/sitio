@@ -1,5 +1,5 @@
 <ul class="portadas{{ ' ' + clase if clase }}"{{ ' hidden' if oculta }}>
           {%- for o in lista %}
-          <li data-buscar="{{ (o.titulo + ' ' + o.autor + ' ' + o.pie_de_imprenta) | sinTildes }}"><a href="/biblioteca/obras/{{ o.identificador }}/"><img src="https://archive.org/services/img/{{ o.identificador }}" data-ia="{{ o.identificador }}" alt="" loading="lazy" decoding="async" width="180" height="240"><span class="t">{{ o.titulo }}</span><span class="s">{{ o.signatura }}{% if o.anio %} · {{ o.anio }}{% endif %}</span></a></li>
+          <li data-buscar="{{ (o.titulo + ' ' + o.autor + ' ' + o.pie_de_imprenta) | sinTildes }}" data-sig="{{ o.signatura }}" data-titulo="{{ o.titulo | claveTitulo }}" data-autor="{{ o.autor | claveAutor }}" data-editorial="{{ o.pie_de_imprenta | claveEditorial }}" data-anio="{{ o.anio }}"><a href="/biblioteca/obras/{{ o.identificador }}/"><img src="https://archive.org/services/img/{{ o.identificador }}" data-ia="{{ o.identificador }}" alt="" loading="lazy" decoding="async" width="180" height="240"><span class="t">{{ o.titulo }}</span><span class="s">{{ o.signatura }}{% if o.anio %} · {{ o.anio }}{% endif %}</span></a></li>
           {%- endfor %}
         </ul>

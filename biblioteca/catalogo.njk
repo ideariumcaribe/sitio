@@ -18,9 +18,12 @@ permalink: /biblioteca/catalogo/
         <input id="cat-q" type="search" autocomplete="off" spellcheck="false">
         <p class="cat-cuenta" aria-live="polite" data-total="{{ catalogo | length }}"><span class="es">{{ catalogo | length }} obras</span><span class="en">{{ catalogo | length }} works</span></p>
       </div>
+      <div class="cat-barra">
+      <label class="cat-orden es"><span>Ordenar por</span><select data-orden><option value="signatura">Signatura</option><option value="titulo">Título (A–Z)</option><option value="autor">Autor (A–Z)</option><option value="editorial">Editorial (A–Z)</option><option value="anio-asc">Año (más antiguo primero)</option><option value="anio-desc">Año (más reciente primero)</option></select></label><label class="cat-orden en"><span>Sort by</span><select data-orden><option value="signatura">Call number</option><option value="titulo">Title (A–Z)</option><option value="autor">Author (A–Z)</option><option value="editorial">Publisher (A–Z)</option><option value="anio-asc">Year (oldest first)</option><option value="anio-desc">Year (newest first)</option></select></label>
       <div class="cat-vista" role="group" aria-label="Vista">
         <button type="button" data-vista="lista" aria-pressed="true"><span class="es">Lista</span><span class="en">List</span></button>
         <button type="button" data-vista="portadas" aria-pressed="false"><span class="es">Portadas</span><span class="en">Covers</span></button>
+      </div>
       </div>
       <div class="ledger-wrap">
         <table class="ledger cat-tabla">
@@ -32,7 +35,7 @@ permalink: /biblioteca/catalogo/
           </tr></thead>
           <tbody>
             {%- for o in catalogo | sort(false, true, "signatura") %}
-            <tr data-buscar="{{ (o.titulo + ' ' + o.autor + ' ' + o.pie_de_imprenta) | sinTildes }}"><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a></td><td>{% for n in o.autor | split(";") %}<a class="aut" href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td><td class="yr">{{ o.anio }}</td></tr>
+            <tr data-buscar="{{ (o.titulo + ' ' + o.autor + ' ' + o.pie_de_imprenta) | sinTildes }}" data-sig="{{ o.signatura }}" data-titulo="{{ o.titulo | claveTitulo }}" data-autor="{{ o.autor | claveAutor }}" data-editorial="{{ o.pie_de_imprenta | claveEditorial }}" data-anio="{{ o.anio }}"><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a>{% if o.pie_de_imprenta %}<span class="cat-pie">{{ o.pie_de_imprenta }}</span>{% endif %}</td><td>{% for n in o.autor | split(";") %}<a class="aut" href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td><td class="yr">{{ o.anio }}</td></tr>
             {%- endfor %}
           </tbody>
         </table>

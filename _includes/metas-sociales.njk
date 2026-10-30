@@ -13,8 +13,8 @@
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ desc | truncate(300) }}">
 <meta property="og:url" content="{{ canon }}">
-<meta property="og:image" content="{{ sitio.url }}{{ imgSocial }}">
-<meta name="twitter:card" content="{{ 'summary_large_image' if imgSocial == '/assets/img/compartir.jpg' else 'summary' }}">
+<meta property="og:image" content="{% if obra %}https://archive.org/download/{{ obra.identificador }}/page/n0_w800.jpg{% else %}{{ sitio.url }}{{ imgSocial }}{% endif %}">
+<meta name="twitter:card" content="{{ 'summary_large_image' if (imgSocial == '/assets/img/compartir.jpg' and not obra) else 'summary' }}">
 <meta name="twitter:site" content="@{{ (sitio.x_colombeia | replace('https://x.com/', '')) if page.url.startsWith('/colombeia') else 'IdeariumCaribe' }}">
 {%- if page.url == "/" %}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":{{ sitio.nombre | dump | safe }},"alternateName":"Idearium Caribe","url":{{ (sitio.url + "/") | dump | safe }},"logo":{{ (sitio.url + "/assets/img/logo-512.png") | dump | safe }},"description":{{ sitio.descripcion | dump | safe }},"email":{{ sitio.email | dump | safe }},"address":{{ sitio.direccion | dump | safe }},"sameAs":[{% for r in sitio.redes_sociales %}{{ r.enlace | dump | safe }},{% endfor %}{% for r in sitio.redes_academicas %}{{ r.enlace | dump | safe }}{% if not loop.last %},{% endif %}{% endfor %}]}</script>

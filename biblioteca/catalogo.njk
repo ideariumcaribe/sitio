@@ -18,6 +18,10 @@ permalink: /biblioteca/catalogo/
         <input id="cat-q" type="search" autocomplete="off" spellcheck="false">
         <p class="cat-cuenta" aria-live="polite" data-total="{{ catalogo | length }}"><span class="es">{{ catalogo | length }} obras</span><span class="en">{{ catalogo | length }} works</span></p>
       </div>
+      <div class="cat-vista" role="group" aria-label="Vista">
+        <button type="button" data-vista="lista" aria-pressed="true"><span class="es">Lista</span><span class="en">List</span></button>
+        <button type="button" data-vista="portadas" aria-pressed="false"><span class="es">Portadas</span><span class="en">Covers</span></button>
+      </div>
       <div class="ledger-wrap">
         <table class="ledger cat-tabla">
           <thead><tr>
@@ -33,6 +37,8 @@ permalink: /biblioteca/catalogo/
           </tbody>
         </table>
       </div>
+      {%- set lista = catalogo | sort(false, true, "signatura") %}{% set clase = "cat-portadas" %}{% set oculta = true %}
+      {% include "portadas-grid.njk" %}
     </div>
   </section>
 </main>

@@ -16,6 +16,8 @@ eleventyComputed:
   <article class="obra-pag">
     <div class="wrap">
       <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><a href="/biblioteca/catalogo/"><span class="es">Catálogo</span><span class="en">Catalogue</span></a><span aria-hidden="true"> › </span><span>{{ obra.signatura }}</span></nav>
+      <div class="obra-intro">
+      <img class="obra-portada" src="https://archive.org/services/img/{{ obra.identificador }}" alt="Portada de {{ obra.titulo }}" width="180" height="240" decoding="async">
       <header class="obra-cab">
         <p class="label sig-label">{{ obra.signatura }}</p>
         <h1>{{ obra.titulo }}</h1>
@@ -25,6 +27,7 @@ eleventyComputed:
         <p class="obra-permiso"><span class="es">Publicada con autorización del titular de los derechos:</span><span class="en">Published with permission of the rights holder:</span> {{ obra.autorizacion }}</p>
         {%- endif %}
       </header>
+      </div>
       <div class="visor">
         <iframe src="https://archive.org/embed/{{ obra.identificador }}" title="{{ obra.titulo }}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>

@@ -18,6 +18,8 @@ eleventyComputed:
       <div class="sec-title"><div><p class="label es">Autor</p><p class="label en">Author</p>
         <h1>{{ autor.nombre }}</h1>
         <p class="cat-cuenta"><span class="es">{{ autor.obras | length }} {{ "obra" if autor.obras.length == 1 else "obras" }} en la Biblioteca Digital</span><span class="en">{{ autor.obras | length }} {{ "work" if autor.obras.length == 1 else "works" }} in the Digital Library</span></p></div></div>
+      {%- set lista = autor.obras %}{% set clase = "aut-portadas" %}{% set oculta = false %}
+      {% include "portadas-grid.njk" %}
       <div class="ledger-wrap">
         <table class="ledger cat-tabla">
           <thead><tr>

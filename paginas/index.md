@@ -20,7 +20,7 @@ descripcion: "Fundación cultural sin fines de lucro que digitaliza, preserva y 
         </figure>
       </div>
       <div class="pillars">
-        <a class="pillar" href="{{ sitio.biblioteca_digital }}" target="_blank" rel="noopener">
+        <a class="pillar" href="/biblioteca/catalogo/">
           <span class="num">{{ sitio.obras_biblioteca }}</span>
           <h3 class="es">Biblioteca Digital</h3><h3 class="en">Digital Library</h3>
           <p class="es">Libros y publicaciones de historia venezolana, de libre lectura y descarga en Internet Archive.</p>

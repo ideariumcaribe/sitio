@@ -383,3 +383,4 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .cita-copiar:hover{border-color:var(--ink)}
 .cita-nota{font-size:.88rem;color:var(--muted);margin:0}
 @media (max-width:640px){.cita{grid-template-columns:minmax(0,1fr) auto}.cita .label{grid-column:1/-1}.bt-resultados button{grid-template-columns:70px minmax(0,1fr)}}
+.legal .nota-ia{flex-basis:100%;margin:4px 0 0;font-size:.75rem;color:var(--muted)}

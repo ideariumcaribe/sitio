@@ -14,6 +14,13 @@
 <meta property="og:description" content="{{ desc | truncate(300) }}">
 <meta property="og:url" content="{{ canon }}">
 <meta property="og:image" content="{% if obra %}https://archive.org/download/{{ obra.identificador }}/page/n0_w800.jpg{% else %}{{ sitio.url }}{{ imgSocial }}{% endif %}">
+{%- set imgAbs = ("https://archive.org/download/" + obra.identificador + "/page/n0_w800.jpg") if obra else (sitio.url + imgSocial) %}
+{%- if not obra and (imgSocial == "/assets/img/compartir.jpg" or imgSocial == "/assets/img/el-caribe-ilustrado-compartir.jpg") %}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{%- endif %}
+<meta property="og:image:alt" content="{{ title }}">
+<meta name="twitter:image" content="{{ imgAbs }}">
 <meta name="twitter:card" content="{{ 'summary_large_image' if (imgSocial == '/assets/img/compartir.jpg' and not obra) else 'summary' }}">
 <meta name="twitter:site" content="@{{ (sitio.x_colombeia | replace('https://x.com/', '')) if page.url.startsWith('/colombeia') else 'IdeariumCaribe' }}">
 {%- if page.url == "/" %}

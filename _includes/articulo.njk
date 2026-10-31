@@ -25,6 +25,15 @@ layout: base.njk
             <p class="kw"><b><span class="es">Palabras clave:</span><span class="en">Keywords:</span></b> {{ palabras_clave | join("; ") }}</p>
             {%- endif %}
           </section>
+          {%- if abstract %}
+          <section class="resumen" lang="en">
+            <h2 class="label">Abstract</h2>
+            <p>{{ abstract }}</p>
+            {%- if keywords and keywords.length %}
+            <p class="kw"><b>Keywords:</b> {{ keywords | join("; ") }}</p>
+            {%- endif %}
+          </section>
+          {%- endif %}
           <section class="lector" data-pdf="{{ pdf }}" aria-label="Lector del artículo">
             <div class="lector-barra">
               <button type="button" class="lb" data-acc="menos" aria-label="Reducir">−</button>

@@ -65,6 +65,15 @@ content:
         label: Palabras clave
         type: string
         list: true
+      - name: abstract
+        label: Abstract (inglés)
+        type: text
+        description: Opcional. Resumen en inglés, aprobado por el autor.
+      - name: keywords
+        label: Keywords (inglés)
+        type: string
+        list: true
+        description: Opcional. Palabras clave en inglés.
       - name: pdf
         label: PDF del artículo
         type: file
@@ -229,7 +238,7 @@ content:
       - name: materias
         label: Temas
         type: select
-        description: De uno a tres temas de la lista. Para crear un tema nuevo, añádalo en «Biblioteca: temas».
+        description: "De uno a tres temas de la lista. Para crear un tema nuevo, añádalo en «Biblioteca: temas»."
         options:
           multiple: true
           values:

@@ -2807,5 +2807,27 @@
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-10-30",
   "materias": ["francisco-de-miranda", "documentos-y-epistolarios"]
+ },
+ {
+  "signatura": "IC-0254",
+  "identificador": "arturo-uslar-pietri-los-libros-de-miranda",
+  "titulo": "Los libros de Miranda",
+  "autor": "Arturo Uslar Pietri; Pedro Grases",
+  "anio": "1966",
+  "primera_edicion": "",
+  "pie_de_imprenta": "Caracas, Ediciones del Cuatricentenario de Caracas, Comité de Obras Culturales",
+  "incorporacion": "2026-10-30",
+  "materias": ["francisco-de-miranda", "pensamiento-politico"]
+ },
+ {
+  "signatura": "IC-0255",
+  "identificador": "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-I",
+  "titulo": "Documentos para la historia de la vida pública del Libertador. Vol. I",
+  "autor": "José Félix Blanco; Ramón Azpúrua",
+  "anio": "1978",
+  "primera_edicion": "1875",
+  "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
+  "incorporacion": "2026-10-31",
+  "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  }
 ]

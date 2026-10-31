@@ -14,6 +14,8 @@ descripcion: "Aviso legal del sitio web de Idearium Caribe Co.: uso de asistenci
           <p class="en">Artificial intelligence assistance has been used in building this website and its resources to streamline processes. That is, artificial intelligence assistance has been used in creating the website, including its programming and code. All assisted processes are supervised and curated by people.</p>
           <p class="es">La traducción al inglés de la página web es elaborada de forma automática por inteligencia artificial. Hasta nuevo aviso, será llevada a cabo de esta forma por el carácter cambiante de los contenidos y los recursos web.</p>
           <p class="en">The English translation of this website is produced automatically by artificial intelligence. Until further notice, it will be carried out in this way because of the changing nature of the website's content and resources.</p>
+          <p class="es">Las publicaciones en redes sociales, usadas con fines de comunicación y difusión de información de nuestra fundación y su trabajo original, están asistidas por inteligencia artificial con fines de automatización y ahorro de tiempo.</p>
+          <p class="en">Our social media posts, used to communicate and share information about our foundation and its original work, are assisted by artificial intelligence for the purposes of automation and saving time.</p>
         </section>
       </div>
     </div>

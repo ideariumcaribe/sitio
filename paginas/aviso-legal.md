@@ -9,7 +9,7 @@ descripcion: "Aviso legal del sitio web de Idearium Caribe Co.: uso de asistenci
         <h2 class="es">Aviso legal</h2><h2 class="en">Legal notice</h2></div></div>
       <div class="aviso">
         <section id="inteligencia-artificial">
-          <h3 class="es">Política de inteligencia artificial</h3><h3 class="en">Artificial intelligence policy</h3>
+          <h3 class="es">Uso de inteligencia artificial</h3><h3 class="en">Use of artificial intelligence</h3>
           <ol class="es aviso-lista">
             <li>En la construcción de la página web y sus recursos se ha empleado asistencia de inteligencia artificial para agilizar procesos. Es decir que, en la creación de la página web —esto incluye programación y código—, se ha empleado asistencia de inteligencia artificial. Todos los procesos asistidos son supervisados y curados por humanos.</li>
             <li>La traducción al inglés de la página web es elaborada de forma automática por inteligencia artificial. Hasta nuevo aviso, será llevada a cabo de esta forma por el carácter cambiante de los contenidos y los recursos web.</li>

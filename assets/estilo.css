@@ -384,3 +384,4 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .cita-nota{font-size:.88rem;color:var(--muted);margin:0}
 @media (max-width:640px){.cita{grid-template-columns:minmax(0,1fr) auto}.cita .label{grid-column:1/-1}.bt-resultados button{grid-template-columns:70px minmax(0,1fr)}}
 .aviso{max-width:760px;display:grid;gap:28px}.aviso section{padding:0;border:0}.aviso h3{font-size:1.3rem;margin:0 0 10px}.aviso p{margin:0 0 12px}
+.aviso-lista{margin:0;padding-left:1.4em;display:grid;gap:12px}.aviso-lista li{padding-left:4px}

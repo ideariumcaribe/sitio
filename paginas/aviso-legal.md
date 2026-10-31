@@ -1,6 +1,6 @@
 ---
 title: "Aviso legal · Idearium Caribe"
-descripcion: "Aviso legal del sitio web de Idearium Caribe Co.: uso de asistencia de inteligencia artificial y reproducción de las obras de la Biblioteca Digital."
+descripcion: "Aviso legal del sitio web de Idearium Caribe Co.: uso de asistencia de inteligencia artificial."
 ---
 <main>
   <section id="aviso-legal">
@@ -10,10 +10,8 @@ descripcion: "Aviso legal del sitio web de Idearium Caribe Co.: uso de asistenci
       <div class="aviso">
         <section id="inteligencia-artificial">
           <h3 class="es">Uso de inteligencia artificial</h3><h3 class="en">Use of artificial intelligence</h3>
-          <p class="es">En la construcción de la página y sus recursos se ha empleado asistencia de inteligencia artificial para agilizar procesos. Todos los procesos asistidos son supervisados y curados por humanos.</p>
-          <p class="en">Artificial intelligence assistance has been used in building this website and its resources to streamline processes. All assisted processes are supervised and curated by people.</p>
-          <p class="es">Las obras compartidas en la Biblioteca Digital se reproducen íntegramente, partiendo de los originales. La inteligencia artificial no interviene en la reproducción de los mismos.</p>
-          <p class="en">The works shared in the Digital Library are reproduced in full from the originals. Artificial intelligence plays no part in their reproduction.</p>
+          <p class="es">En la construcción de la página y sus recursos se ha empleado asistencia de inteligencia artificial para agilizar procesos. Es decir que, en la creación de la página web —esto incluye programación y código—, se ha empleado asistencia de inteligencia artificial. Todos los procesos asistidos son supervisados y curados por humanos.</p>
+          <p class="en">Artificial intelligence assistance has been used in building this website and its resources to streamline processes. That is, artificial intelligence assistance has been used in creating the website, including its programming and code. All assisted processes are supervised and curated by people.</p>
         </section>
       </div>
     </div>

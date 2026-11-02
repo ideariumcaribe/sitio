@@ -85,14 +85,14 @@ export default function (eleventyConfig) {
     return { chicago, apa };
   });
   // Datos estructurados (schema.org) de una obra de la Biblioteca.
-  eleventyConfig.addFilter("ldObra", (o, url, mats) => {
+  eleventyConfig.addFilter("ldObra", (o, url, mats, naan) => {
     const autores = String(o.autor || "").split(";").map((x) => x.trim()).filter(Boolean);
     const { editorial } = pieDe(o.pie_de_imprenta);
     const ld = {
       "@context": "https://schema.org", "@type": "Book", "@id": url, url, name: o.titulo,
       author: autores.map((n) => ({ "@type": corporativo(formaDe(n)) ? "Organization" : "Person", name: n })),
       datePublished: o.anio || undefined, publisher: editorial ? { "@type": "Organization", name: editorial } : undefined,
-      inLanguage: o.signatura === "IC-0211" ? "it" : "es", identifier: o.signatura,
+      inLanguage: o.signatura === "IC-0211" ? "it" : "es", identifier: naan ? [o.signatura, `https://n2t.net/ark:${naan}/${o.signatura}`] : o.signatura,
       about: (o.materias || []).map((s) => (mats || []).find((m) => m.slug === s)).filter(Boolean).map((m) => m.nombre),
       image: "https://archive.org/services/img/" + o.identificador,
       sameAs: "https://archive.org/details/" + o.identificador,

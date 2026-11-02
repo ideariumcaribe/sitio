@@ -72,3 +72,7 @@ En cada compilación, `biblioteca/marc/marc.11ty.js` genera los registros MARC 2
 - `functions/oai.js` es una función de Cloudflare Pages que responde en `/oai` al protocolo OAI-PMH 2.0 (verbos Identify, ListMetadataFormats, ListSets, ListIdentifiers, ListRecords y GetRecord; formatos `oai_dc` y `marc21`; conjuntos = materias). Lee `/biblioteca/oai/datos.json`, que genera `biblioteca/marc/oai-datos.11ty.js` en cada compilación. La fecha de cada registro es la de incorporación.
 - Cada página de obra lleva datos estructurados schema.org (`Book`, filtro `ldObra`) y el catálogo un `Collection`.
 - Cada obra enlaza su manifiesto IIIF de Internet Archive (`https://iiif.archive.org/iiif/3/<identificador>/manifest.json`), también incluido en MARC y en Dublin Core.
+
+## Identificadores persistentes (ARK)
+
+`functions/ark/[[ruta]].js` resuelve los ARK de la Biblioteca: `ark:NAAN/IC-0001` → página de la obra (la signatura es el nombre base; guiones y mayúsculas no cuentan). Con `?info` devuelve la ficha ERC. La regla registrada en la ARK Alliance es `https://www.ideariumcaribe.com/ark/${content}`. Todo se activa al escribir el NAAN en `_data/sitio.json` (campo «NAAN de los identificadores ARK» en Pages CMS): la página de cada obra muestra el identificador, las citas lo usan y MARC, Dublin Core y schema.org lo incluyen. Las signaturas nunca se reasignan.

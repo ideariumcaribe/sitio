@@ -7,14 +7,17 @@ export default class {
   render(d) {
     const formas = Object.fromEntries((d.ordenAutores || []).map((a) => [a.nombre, a.forma_catalogo]));
     const materias = d.materias || [];
+    const naan = (d.sitio && d.sitio.naan) || "";
     const obras = (d.catalogo || []).slice().sort((a, b) => a.signatura.localeCompare(b.signatura)).map((o) => ({
       id: o.signatura,
+      ruta: `/biblioteca/obras/${o.identificador}/`,
+      titulo: o.titulo, autor: o.autor, anio: o.anio,
       fecha: o.incorporacion,
       sets: o.materias || [],
-      oai_dc: oaiDc(o, { formas, materias }),
-      marc21: aMarcXml(registro(o, { formas, materias })).trim()
+      oai_dc: oaiDc(o, { formas, materias, naan }),
+      marc21: aMarcXml(registro(o, { formas, materias, naan })).trim()
         .replace(/^<record>/, '<record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">'),
     }));
-    return JSON.stringify({ sets: materias.map((m) => ({ spec: m.slug, nombre: m.nombre })), obras });
+    return JSON.stringify({ naan: (d.sitio && d.sitio.naan) || "", sets: materias.map((m) => ({ spec: m.slug, nombre: m.nombre })), obras });
   }
 }

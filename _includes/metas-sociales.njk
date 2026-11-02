@@ -30,5 +30,5 @@
 {%- elif page.url == "/el-caribe-ilustrado.html" %}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"El Caribe Ilustrado","url":{{ sitio.boletin | dump | safe }},"logo":{{ (sitio.url + "/assets/img/el-caribe-ilustrado-compartir.jpg") | dump | safe }},"inLanguage":"es","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":{{ sitio.nombre | dump | safe }},"url":{{ (sitio.url + "/") | dump | safe }}}}</script>
 {%- elif obra %}
-<script type="application/ld+json">{{ obra | ldObra(canon, materias) | safe }}</script>
+<script type="application/ld+json">{{ obra | ldObra(canon, materias, sitio.naan) | safe }}</script>
 {%- endif %}

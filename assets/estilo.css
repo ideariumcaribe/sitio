@@ -391,3 +391,5 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .para-bibliotecas{max-width:760px}
 .descargas-marc{display:flex;flex-wrap:wrap;gap:12px 32px}
 .obra-acciones .iiif{align-self:center;font-size:.85rem;margin-left:8px}
+.obra-ark{font-size:.85rem;color:var(--muted,#555);margin:.4em 0 0}
+.obra-ark a{overflow-wrap:anywhere}

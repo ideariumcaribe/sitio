@@ -345,6 +345,10 @@ content:
       - name: issn
         label: ISSN de Colombeia
         type: string
+      - name: naan
+        label: NAAN de los identificadores ARK
+        type: string
+        description: "Número de cinco cifras asignado por la ARK Alliance. Al rellenarlo se activan los identificadores persistentes de la Biblioteca (ark:NAAN/IC-0001)."
       - name: boletin
         label: Dirección de El Caribe Ilustrado (Substack)
         type: string

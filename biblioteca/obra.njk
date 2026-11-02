@@ -26,6 +26,9 @@ eleventyComputed:
         {%- if obra.materias and obra.materias.length %}
         <p class="obra-materias"><span class="label"><span class="es">Temas</span><span class="en">Subjects</span></span>{% for s in obra.materias %}{% set m = materias | materia(s) %}<a href="/biblioteca/materias/{{ s }}/"><span class="es">{{ m.nombre }}</span><span class="en">{{ m.nombre_en }}</span></a>{% endfor %}</p>
         {%- endif %}
+        {%- if sitio.naan %}
+        <p class="obra-ark"><span class="es">Identificador persistente:</span><span class="en">Persistent identifier:</span> <a href="https://n2t.net/ark:{{ sitio.naan }}/{{ obra.signatura }}">ark:{{ sitio.naan }}/{{ obra.signatura }}</a></p>
+        {%- endif %}
         {%- if obra.autorizacion %}
         <p class="obra-permiso"><span class="es">Publicada con autorización del titular de los derechos:</span><span class="en">Published with permission of the rights holder:</span> {{ obra.autorizacion }}</p>
         {%- endif %}
@@ -45,7 +48,7 @@ eleventyComputed:
         <a class="btn outline" href="https://archive.org/download/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Descargar (PDF y otros formatos)</span><span class="en">Download (PDF and other formats)</span></a>
         <a class="iiif" href="https://iiif.archive.org/iiif/3/{{ obra.identificador }}/manifest.json" target="_blank" rel="noopener" title="IIIF Presentation API 3.0"><span class="es">Manifiesto IIIF</span><span class="en">IIIF manifest</span></a>
       </div>
-      {%- set c = obra | citas(sitio.url + page.url) %}
+      {%- set c = obra | citas(("https://n2t.net/ark:" + sitio.naan + "/" + obra.signatura) if sitio.naan else (sitio.url + page.url)) %}
       <section class="como-citar" aria-labelledby="cc-t">
         <h2 id="cc-t"><span class="es">Cómo citar</span><span class="en">How to cite</span></h2>
         <div class="cita"><p class="label">Chicago</p><p class="cita-txt">{{ c.chicago | safe }}</p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>

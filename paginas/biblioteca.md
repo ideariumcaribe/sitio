@@ -72,6 +72,16 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
           <a class="more" href="/colombeia.html#evaluacion"><span class="es">Proceso de evaluación</span><span class="en">Review process</span></a>
         </div>
       </div>
+      <div class="col para-bibliotecas" id="registros-marc">
+        <h3 class="es">Registros para bibliotecas</h3><h3 class="en">Records for libraries</h3>
+        <p class="es">Ofrecemos los registros catalográficos de las {{ sitio.obras_biblioteca }} obras de la Biblioteca Digital en formato MARC 21 (RDA), para que cualquier biblioteca pueda incorporarlas a su catálogo. Cada registro describe la reproducción electrónica e incluye los enlaces de lectura. Los archivos se actualizan con cada nueva incorporación.</p>
+        <p class="en">Catalogue records for all {{ sitio.obras_biblioteca }} works in the Digital Library are available in MARC 21 (RDA), so any library can add them to its catalogue. Each record describes the electronic reproduction and includes the reading links. The files are updated with every new addition.</p>
+        <div class="descargas-marc">
+          <a class="more" href="/biblioteca/marc/idearium-caribe.mrc" download>MARC 21 (.mrc)</a>
+          <a class="more" href="/biblioteca/marc/idearium-caribe.xml">MARCXML (.xml)</a>
+          <a class="more" href="/biblioteca/marc/idearium-caribe.mrk" download>MarcEdit (.mrk)</a>
+        </div>
+      </div>
     </div>
   </section>
 </main>

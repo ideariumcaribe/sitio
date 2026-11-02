@@ -62,3 +62,7 @@ Las signaturas (`IC-0001`, `IC-0002`…) siguen el orden en que cada obra se sub
 ## Últimas incorporaciones y canal RSS
 
 La página de la Biblioteca muestra las seis obras con signatura más alta (las últimas subidas a Internet Archive). El canal RSS `/biblioteca/novedades.xml` lista las 30 más recientes y usa el campo `incorporacion` (fecha de subida, AAAA-MM-DD) como fecha de publicación. Al añadir una obra en Pages CMS, complete «Fecha de incorporación».
+
+## Registros MARC para bibliotecas
+
+En cada compilación, `biblioteca/marc/marc.11ty.js` genera los registros MARC 21 de todas las obras de `_data/catalogo.json` (con la lógica de `lib/marc.js`) en tres formatos: `/biblioteca/marc/idearium-caribe.mrc` (binario), `.xml` (MARCXML) y `.mrk` (texto de MarcEdit). Se enlazan en la página de la Biblioteca, sección «Registros para bibliotecas». No hay que tocarlos a mano: se actualizan al añadir obras al catálogo. Si una obra no está en español o se publicó en una ciudad nueva, añada su código en `IDIOMAS` o `PAISES` dentro de `lib/marc.js`.

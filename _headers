@@ -15,3 +15,13 @@
   Cache-Control: public, max-age=86400
 /colombeia/articulos/*.pdf
   Cache-Control: public, max-age=86400
+
+# Registros MARC de la Biblioteca Digital (descarga directa).
+/biblioteca/marc/idearium-caribe.mrc
+  Content-Type: application/marc
+  Content-Disposition: attachment; filename="idearium-caribe.mrc"
+/biblioteca/marc/idearium-caribe.mrk
+  Content-Type: text/plain; charset=utf-8
+  Content-Disposition: attachment; filename="idearium-caribe.mrk"
+/biblioteca/marc/idearium-caribe.xml
+  Content-Type: application/marcxml+xml; charset=utf-8

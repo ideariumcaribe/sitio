@@ -386,3 +386,7 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .aviso{max-width:760px;display:grid;gap:28px}.aviso section{padding:0;border:0}.aviso h3{font-size:1.3rem;margin:0 0 10px}.aviso p{margin:0 0 12px}
 .aviso-lista{margin:0;padding-left:1.4em;display:grid;gap:12px}.aviso-lista li{padding-left:4px}
 .comite .miembro{display:block;margin-bottom:6px}.comite .afil{display:block;font-size:.88em;color:var(--muted)}
+
+/* Registros MARC para bibliotecas */
+.para-bibliotecas{max-width:760px}
+.descargas-marc{display:flex;flex-wrap:wrap;gap:12px 32px}

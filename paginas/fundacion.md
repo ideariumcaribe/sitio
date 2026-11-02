@@ -1,6 +1,8 @@
 ---
-title: "La Fundación · Idearium Caribe"
-descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro con sede en Georgia (Estados Unidos), dedicada a recuperar el pensamiento, la historia y la cultura de Venezuela."
+title: La Fundación · Idearium Caribe
+descripcion: Idearium Caribe Co. es una fundación cultural sin fines de lucro
+  con sede en Georgia (Estados Unidos), dedicada a recuperar el pensamiento, la
+  historia y la cultura de Venezuela.
 ---
 <main>
   <section id="fundacion">
@@ -67,9 +69,9 @@ descripcion: "Idearium Caribe Co. es una fundación cultural sin fines de lucro 
       <div class="stack" style="gap:18px">
         <p class="label es">Junta Directiva</p><p class="label en">Board of Directors</p>
         <div class="people">
-          <div class="person"><b>Alejandro Perdomo Fermin</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
-          <div class="person"><b>Daniel García Ayaach</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
-          <div class="person"><b>Jonhangel Sánchez Utrera</b><span class="es">Miembro fundador</span><span class="en">Founding member</span></div>
+          <div class="person"><b>Alejandro Perdomo Fermin</b><span class="es">Fundador y Director de Asuntos Externos</span><span class="en">Founder and Director of External Affairs</span></div>
+          <div class="person"><b>Daniel García Ayaach</b><span class="es">Fundador y Jefe del Gabinete</span><span class="en">Founder and Chief of Staff</span></div>
+          <div class="person"><b>Jonhangel Sánchez Utrera</b><span class="es">Fundador y Director de Preservación Digital</span><span class="en">Founder and Director of Digital Preservation</span></div>
         </div>
       </div>
       <div class="stack" style="gap:18px">

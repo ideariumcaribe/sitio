@@ -26,7 +26,7 @@ const FECHA = /^\d{4}-\d{2}-\d{2}$/;
 
 function respuesta(cuerpo, peticion, estado = 200) {
   const req = peticion ? `<request${Object.entries(peticion).map(([k, v]) => ` ${k}="${esc(v)}"`).join("")}>${BASE}</request>` : `<request>${BASE}</request>`;
-  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/assets/oai.xsl"?>\n' +
     '<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">' +
     `<responseDate>${ahora()}</responseDate>${req}${cuerpo}</OAI-PMH>\n`;
   return new Response(xml, { status: estado, headers: { "Content-Type": "text/xml; charset=utf-8", "Cache-Control": "public, max-age=3600", "Access-Control-Allow-Origin": "*" } });

@@ -25,3 +25,7 @@
   Content-Disposition: attachment; filename="idearium-caribe.mrk"
 /biblioteca/marc/idearium-caribe.xml
   Content-Type: application/marcxml+xml; charset=utf-8
+
+# Hoja XSLT que da formato legible a las respuestas OAI-PMH en el navegador.
+/assets/oai.xsl
+  Content-Type: text/xsl; charset=utf-8

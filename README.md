@@ -66,3 +66,9 @@ La página de la Biblioteca muestra las seis obras con signatura más alta (las 
 ## Registros MARC para bibliotecas
 
 En cada compilación, `biblioteca/marc/marc.11ty.js` genera los registros MARC 21 de todas las obras de `_data/catalogo.json` (con la lógica de `lib/marc.js`) en tres formatos: `/biblioteca/marc/idearium-caribe.mrc` (binario), `.xml` (MARCXML) y `.mrk` (texto de MarcEdit). Se enlazan en la página de la Biblioteca, sección «Registros para bibliotecas». No hay que tocarlos a mano: se actualizan al añadir obras al catálogo. Si una obra no está en español o se publicó en una ciudad nueva, añada su código en `IDIOMAS` o `PAISES` dentro de `lib/marc.js`.
+
+## Cosecha OAI-PMH, schema.org e IIIF
+
+- `functions/oai.js` es una función de Cloudflare Pages que responde en `/oai` al protocolo OAI-PMH 2.0 (verbos Identify, ListMetadataFormats, ListSets, ListIdentifiers, ListRecords y GetRecord; formatos `oai_dc` y `marc21`; conjuntos = materias). Lee `/biblioteca/oai/datos.json`, que genera `biblioteca/marc/oai-datos.11ty.js` en cada compilación. La fecha de cada registro es la de incorporación.
+- Cada página de obra lleva datos estructurados schema.org (`Book`, filtro `ldObra`) y el catálogo un `Collection`.
+- Cada obra enlaza su manifiesto IIIF de Internet Archive (`https://iiif.archive.org/iiif/3/<identificador>/manifest.json`), también incluido en MARC y en Dublin Core.

@@ -43,6 +43,7 @@ eleventyComputed:
       <div class="obra-acciones">
         <a class="btn" href="https://archive.org/details/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Abrir en Internet Archive</span><span class="en">Open on the Internet Archive</span></a>
         <a class="btn outline" href="https://archive.org/download/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Descargar (PDF y otros formatos)</span><span class="en">Download (PDF and other formats)</span></a>
+        <a class="iiif" href="https://iiif.archive.org/iiif/3/{{ obra.identificador }}/manifest.json" target="_blank" rel="noopener" title="IIIF Presentation API 3.0"><span class="es">Manifiesto IIIF</span><span class="en">IIIF manifest</span></a>
       </div>
       {%- set c = obra | citas(sitio.url + page.url) %}
       <section class="como-citar" aria-labelledby="cc-t">

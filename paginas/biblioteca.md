@@ -81,6 +81,8 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
           <a class="more" href="/biblioteca/marc/idearium-caribe.xml">MARCXML (.xml)</a>
           <a class="more" href="/biblioteca/marc/idearium-caribe.mrk" download>MarcEdit (.mrk)</a>
         </div>
+        <p class="es">Los agregadores y repositorios pueden cosechar la colección mediante OAI-PMH, en Dublin Core (<code>oai_dc</code>) o MARCXML (<code>marc21</code>), con las materias como conjuntos: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Cada obra ofrece además su manifiesto IIIF.</p>
+        <p class="en">Aggregators and repositories can harvest the collection via OAI-PMH, in Dublin Core (<code>oai_dc</code>) or MARCXML (<code>marc21</code>), with subjects as sets: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Each work also provides its IIIF manifest.</p>
       </div>
     </div>
   </section>

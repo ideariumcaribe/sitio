@@ -390,3 +390,4 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 /* Registros MARC para bibliotecas */
 .para-bibliotecas{max-width:760px}
 .descargas-marc{display:flex;flex-wrap:wrap;gap:12px 32px}
+.obra-acciones .iiif{align-self:center;font-size:.85rem;margin-left:8px}

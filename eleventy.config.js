@@ -84,6 +84,25 @@ export default function (eleventyConfig) {
     const apa = (apaAut.length ? esc(fin(unirY(apaAut))) + " " : "") + "(" + esc(anio) + "). " + titulo + apaEd + " " + esc(url);
     return { chicago, apa };
   });
+  // Datos estructurados (schema.org) de una obra de la Biblioteca.
+  eleventyConfig.addFilter("ldObra", (o, url, mats) => {
+    const autores = String(o.autor || "").split(";").map((x) => x.trim()).filter(Boolean);
+    const { editorial } = pieDe(o.pie_de_imprenta);
+    const ld = {
+      "@context": "https://schema.org", "@type": "Book", "@id": url, url, name: o.titulo,
+      author: autores.map((n) => ({ "@type": corporativo(formaDe(n)) ? "Organization" : "Person", name: n })),
+      datePublished: o.anio || undefined, publisher: editorial ? { "@type": "Organization", name: editorial } : undefined,
+      inLanguage: o.signatura === "IC-0211" ? "it" : "es", identifier: o.signatura,
+      about: (o.materias || []).map((s) => (mats || []).find((m) => m.slug === s)).filter(Boolean).map((m) => m.nombre),
+      image: "https://archive.org/services/img/" + o.identificador,
+      sameAs: "https://archive.org/details/" + o.identificador,
+      isAccessibleForFree: true, bookFormat: "https://schema.org/EBook",
+      isPartOf: { "@type": "Collection", name: "Biblioteca Digital de Idearium Caribe", url: "https://www.ideariumcaribe.com/biblioteca/catalogo/" },
+      provider: { "@type": "Organization", name: "Idearium Caribe Co.", url: "https://www.ideariumcaribe.com/" },
+    };
+    if (o.primera_edicion && o.primera_edicion !== o.anio) ld.description ="Primera edición: " + o.primera_edicion + ".";
+    return JSON.stringify(ld).replace(/</g, "\\u003c");
+  });
   eleventyConfig.addFilter("recientes", (lista, n) => (lista || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura)).slice(0, n || 6));
   eleventyConfig.addFilter("fechaRss", (f) => { const d = new Date(String(f || "") + "T12:00:00Z"); return isNaN(d) ? "" : d.toUTCString(); });
   eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));

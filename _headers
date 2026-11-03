@@ -1,6 +1,6 @@
 # Cabeceras de seguridad para todo el sitio (Cloudflare Pages lee este archivo).
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://archive.org https://*.archive.org; connect-src 'self' https://archive.org https://*.archive.org; frame-src https://archive.org https://ideariumcaribe.substack.com https://www.elcaribeilustrado.com https://elcaribeilustrado.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data: blob: https://archive.org https://*.archive.org; connect-src 'self' https://archive.org https://*.archive.org; frame-src https://archive.org https://ideariumcaribe.substack.com https://www.elcaribeilustrado.com https://elcaribeilustrado.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=31536000
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
@@ -9,6 +9,8 @@
   Cross-Origin-Opener-Policy: same-origin
 
 # El lector de PDF y los archivos estáticos pueden guardarse en caché.
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
 /assets/pdfjs/*
   Cache-Control: public, max-age=31536000, immutable
 /colombeia/portadas/*

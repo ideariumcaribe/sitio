@@ -100,3 +100,7 @@ Los metadatos del catálogo (registros MARC, Dublin Core, OAI-PMH, datos del sit
 ## Buscador del sitio
 
 `/buscar.html` usa Pagefind (versión fija en package.json). El índice se genera al terminar cada compilación (evento `eleventy.after` en eleventy.config.js) en `_site/pagefind/`. Se indexa el contenido de `data-pagefind-body`, que base.njk pone en todas las páginas salvo el catálogo, los índices de autores y temas, la 404 y el propio buscador (o las que lleven `buscable: false`). Cada página lleva un filtro «tipo» (Obra, Autor, Tema, Colombeia, Página). El texto en inglés (`.en`) y los bloques repetitivos no se indexan. La CSP incluye `'wasm-unsafe-eval'`, que Pagefind necesita.
+
+## Tipografías
+
+EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde el propio sitio (`assets/fonts/`, declaradas en `assets/fuentes.css`, subconjuntos latin y latin-ext), con sus licencias SIL OFL 1.1 al lado. El sitio no carga nada de Google Fonts y la CSP ya no lo permite.

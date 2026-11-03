@@ -48,7 +48,7 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
   <section id="acceso">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Acceso, derechos y lineamientos</p><p class="label en">Access, rights and guidelines</p>
-        <h2 class="es">Consultar y reutilizar</h2><h2 class="en">Research and reuse</h2></div></div>
+        <h2 class="es">Acceso y registros</h2><h2 class="en">Access and records</h2></div></div>
       <div class="cols">
         <div class="col">
           <h3 class="es">Acceso y derechos</h3><h3 class="en">Access and rights</h3>

@@ -105,6 +105,7 @@ export default function (eleventyConfig) {
     if (o.primera_edicion && o.primera_edicion !== o.anio) ld.description ="Primera edición: " + o.primera_edicion + ".";
     return JSON.stringify(ld).replace(/</g, "\\u003c");
   });
+  eleventyConfig.addFilter("autorizadasPor", (lista, titular) => (lista || []).filter((o) => o.autorizacion === titular).length);
   eleventyConfig.addFilter("recientes", (lista, n) => (lista || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura)).slice(0, n || 6));
   eleventyConfig.addFilter("fechaRss", (f) => { const d = new Date(String(f || "") + "T12:00:00Z"); return isNaN(d) ? "" : d.toUTCString(); });
   eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));

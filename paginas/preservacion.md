@@ -47,15 +47,15 @@ descripcion: "Política de preservación digital de Idearium Caribe Co.: copias,
           <h2 class="es">Especificaciones de digitalización</h2><h2 class="en">Digitization specifications</h2>
           <ol class="es aviso-lista">
             <li><b>Equipo.</b> Escáneres cenitales de la familia CZUR (modelo ET25 Pro), que capturan los libros abiertos sin presionarlos contra un cristal, como recomienda FADGI para volúmenes encuadernados.</li>
-            <li><b>Resolución.</b> 320 píxeles por pulgada, en color de 8 bits por canal.</li>
-            <li><b>Nivel de calidad.</b> Estos parámetros siguen el nivel de 3 estrellas de FADGI para libros de colección general (mínimo de 294 ppi) y el de 2 estrellas para libros raros o especiales. El cumplimiento no ha sido certificado mediante cartas de color de referencia.</li>
+            <li><b>Resolución.</b> 320 píxeles por pulgada, con un sensor de 25 megapíxeles, en color de 24 bits (8 bits por canal).</li>
+            <li><b>Nivel de calidad.</b> Estos parámetros de resolución, formato y color siguen el nivel de 3 estrellas de FADGI para libros de colección general (mínimo de 294 ppi) y el de 2 estrellas para libros raros o especiales. El cumplimiento no ha sido certificado mediante cartas de color de referencia.</li>
             <li><b>Copia maestra.</b> Se exporta en TIFF con compresión sin pérdida, con las correcciones geométricas automáticas del escáner y sin retoque alguno. La limpieza de manchas se aplica solo a las copias de trabajo y de difusión.</li>
             <li><b>Registro.</b> De cada obra se anotan la fecha de digitalización, el responsable, la resolución, el modo de color, el número de páginas y el estado físico del ejemplar.</li>
           </ol>
           <ol class="en aviso-lista">
             <li><b>Equipment.</b> CZUR overhead scanners (model ET25 Pro), which capture books open without pressing them against glass, as FADGI recommends for bound volumes.</li>
-            <li><b>Resolution.</b> 320 pixels per inch, in 8-bit-per-channel color.</li>
-            <li><b>Quality level.</b> These parameters follow the FADGI 3-star level for general collection books (minimum 294 ppi) and the 2-star level for rare and special books. Conformance has not been certified with reference color targets.</li>
+            <li><b>Resolution.</b> 320 pixels per inch, with a 25-megapixel sensor, in 24-bit color (8 bits per channel).</li>
+            <li><b>Quality level.</b> These resolution, format and color parameters follow the FADGI 3-star level for general collection books (minimum 294 ppi) and the 2-star level for rare and special books. Conformance has not been certified with reference color targets.</li>
             <li><b>Master copy.</b> Exported as TIFF with lossless compression, with the scanner's automatic geometric corrections and no retouching. Stain removal is applied only to working and access copies.</li>
             <li><b>Record.</b> For each work, the digitization date, the person responsible, the resolution, the color mode, the number of pages and the physical condition of the copy are recorded.</li>
           </ol>

@@ -393,3 +393,8 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .obra-acciones .iiif{align-self:center;font-size:.85rem;margin-left:8px}
 .obra-ark{font-size:.85rem;color:var(--muted,#555);margin:.4em 0 0}
 .obra-ark a{overflow-wrap:anywhere}
+.obra-derechos{margin:.6em 0 0;font-size:.85rem;color:var(--muted);display:grid;gap:4px}
+.obra-derechos div{display:grid;grid-template-columns:8.5em 1fr;gap:8px}
+.obra-derechos dt{font-family:var(--f-ui);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding-top:.15em}
+.obra-derechos dd{margin:0}
+@media (max-width:560px){.obra-derechos div{grid-template-columns:1fr;gap:0}}

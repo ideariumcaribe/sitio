@@ -1,0 +1,5 @@
+{
+ "NoC-US": {"uri": "http://rightsstatements.org/vocab/NoC-US/1.0/", "es": "Sin derechos de autor en Estados Unidos", "en": "No Copyright – United States"},
+ "InC": {"uri": "http://rightsstatements.org/vocab/InC/1.0/", "es": "Protegida por derechos de autor", "en": "In Copyright"},
+ "UND": {"uri": "http://rightsstatements.org/vocab/UND/1.0/", "es": "Derechos de autor indeterminados", "en": "Copyright Undetermined"}
+}

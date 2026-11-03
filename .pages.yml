@@ -229,6 +229,16 @@ content:
         label: Autorización de derechos
         type: string
         description: Opcional. Quién autorizó la publicación, por ejemplo «Instituto Panamericano de Geografía e Historia (IPGH)». Se muestra en la página de la obra.
+      - name: derechos_eeuu
+        label: "Derechos: Estados Unidos"
+        type: select
+        description: "Declaración normalizada de RightsStatements.org. NoC-US: sin derechos en EE. UU.; InC: protegida; UND: indeterminada."
+        options:
+          values: ["NoC-US", "InC", "UND"]
+      - name: derechos_venezuela
+        label: "Derechos: Venezuela"
+        type: string
+        description: "Nota pública con la situación en Venezuela y su fundamento, por ejemplo «Dominio público en Venezuela (art. 25; autor fallecido en 1958).»"
       - name: incorporacion
         label: Fecha de incorporación
         type: date

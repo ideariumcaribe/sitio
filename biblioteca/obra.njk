@@ -32,6 +32,13 @@ eleventyComputed:
         {%- if obra.autorizacion %}
         <p class="obra-permiso"><span class="es">Publicada con autorización del titular de los derechos:</span><span class="en">Published with permission of the rights holder:</span> {{ obra.autorizacion }}</p>
         {%- endif %}
+        {%- set der = derechos[obra.derechos_eeuu] %}
+        {%- if der or obra.derechos_venezuela %}
+        <dl class="obra-derechos">
+          {%- if obra.derechos_venezuela %}<div><dt>Venezuela</dt><dd>{{ obra.derechos_venezuela }}</dd></div>{% endif %}
+          {%- if der %}<div><dt><span class="es">Estados Unidos</span><span class="en">United States</span></dt><dd><a href="{{ der.uri }}" target="_blank" rel="noopener license"><span class="es">{{ der.es }}</span><span class="en">{{ der.en }}</span></a></dd></div>{% endif %}
+        </dl>
+        {%- endif %}
       </header>
       </div>
       <form class="buscar-texto" data-ia="{{ obra.identificador }}" role="search" hidden>

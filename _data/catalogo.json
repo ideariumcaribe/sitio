@@ -8,6 +8,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "París, Ediciones Soberbia",
   "incorporacion": "2025-05-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1979).",
   "materias": ["independencia"]
  },
  {
@@ -19,6 +21,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones de la Fundación Eugenio Mendoza",
   "incorporacion": "2025-05-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2039 (art. 25).",
   "materias": ["identidad-y-cultura", "pensamiento-politico"]
  },
  {
@@ -29,7 +33,10 @@
   "anio": "1982",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Impresos Urbina",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2025-05-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["conquista-y-colonia", "identidad-y-cultura"]
  },
  {
@@ -40,7 +47,10 @@
   "anio": "1962",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Publicaciones del Ateneo de Caracas",
+  "autorizacion": "Fundación Casa Uslar Pietri",
   "incorporacion": "2025-05-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25).",
   "materias": ["identidad-y-cultura", "pensamiento-politico"]
  },
  {
@@ -52,6 +62,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "San Cristóbal, Tipografía Cortés",
   "incorporacion": "2025-05-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1987).",
   "materias": ["castro-y-gomez", "dictadura-militar"]
  },
  {
@@ -63,6 +75,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Edición Homenaje al Autor del Congreso de la República",
   "incorporacion": "2025-05-27",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2074 (art. 25).",
   "materias": ["republica-siglo-xix", "biografias"]
  },
  {
@@ -73,7 +87,10 @@
   "anio": "1992",
   "primera_edicion": "",
   "pie_de_imprenta": "Bogotá, Grupo Editorial Norma",
+  "autorizacion": "Fundación Casa Uslar Pietri",
   "incorporacion": "2025-05-27",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25).",
   "materias": ["democracia", "pensamiento-politico"]
  },
  {
@@ -85,6 +102,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Pensamiento Vivo Editores",
   "incorporacion": "2025-05-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1953).",
   "materias": ["de-lopez-contreras-a-gallegos", "memorias-y-autobiografias"]
  },
  {
@@ -96,6 +115,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Choisy-le-Roi, Imprimerie des Gondoles",
   "incorporacion": "2025-05-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2027 (art. 25).",
   "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
@@ -106,7 +127,10 @@
   "anio": "1948",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2025-06-07",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -117,7 +141,10 @@
   "anio": "1946",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Élite",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2025-06-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -129,6 +156,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Tokio, Kogyokwan",
   "incorporacion": "2025-06-17",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2055 (art. 25; autor fallecido en 1995).",
   "materias": ["castro-y-gomez"]
  },
  {
@@ -140,6 +169,8 @@
   "primera_edicion": "1921",
   "pie_de_imprenta": "Caracas, Ediciones Garrido",
   "incorporacion": "2025-06-17",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1936).",
   "materias": ["pensamiento-politico"]
  },
  {
@@ -151,6 +182,8 @@
   "primera_edicion": "1919",
   "pie_de_imprenta": "Caracas, Tipografía Garrido",
   "incorporacion": "2025-06-20",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1936).",
   "materias": ["pensamiento-politico", "sociedad"]
  },
  {
@@ -162,6 +195,8 @@
   "primera_edicion": "1930",
   "pie_de_imprenta": "Caracas, Tipografía Garrido",
   "incorporacion": "2025-06-20",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1936).",
   "materias": ["pensamiento-politico", "identidad-y-cultura"]
  },
  {
@@ -173,6 +208,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-07-05",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia"]
  },
  {
@@ -184,6 +221,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-07-05",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia"]
  },
  {
@@ -195,6 +234,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Fundación Eugenio Mendoza",
   "incorporacion": "2025-07-05",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Compilación: cada texto conserva los derechos de su autor (arts. 3 y 25); situación por verificar.",
   "materias": ["historias-generales"]
  },
  {
@@ -206,6 +247,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Escuela Técnica Industrial",
   "incorporacion": "2025-07-05",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2039 (art. 25).",
   "materias": ["pensamiento-politico", "literatura-y-ensayo"]
  },
  {
@@ -217,6 +260,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Universidad Santa María, Fondo Editorial Lola de Fuenmayor",
   "incorporacion": "2025-07-06",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1985).",
   "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
@@ -228,6 +273,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Lumevec",
   "incorporacion": "2025-07-06",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1978).",
   "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
@@ -239,6 +286,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación",
   "incorporacion": "2025-07-13",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["viajeros-y-geografia"]
  },
  {
@@ -250,6 +299,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación",
   "incorporacion": "2025-07-13",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["viajeros-y-geografia"]
  },
  {
@@ -262,6 +313,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2064 (art. 25).",
   "materias": ["antecedentes-de-la-independencia", "pensamiento-politico"]
  },
  {
@@ -274,6 +327,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
@@ -286,6 +341,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1968).",
   "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
@@ -298,6 +355,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1981).",
   "materias": ["francisco-de-miranda", "biografias"]
  },
  {
@@ -309,6 +368,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Culturales del Banco del Caribe",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
@@ -320,6 +381,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Ediciones Culturales del Banco del Caribe",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
@@ -331,6 +394,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Ateneo de Caracas",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1979).",
   "materias": ["francisco-de-miranda"]
  },
  {
@@ -342,6 +407,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Aguilar, Sección Venezolana",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["francisco-de-miranda", "biografias"]
  },
  {
@@ -353,6 +420,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Publicaciones del Banco Industrial de Venezuela",
   "incorporacion": "2025-07-14",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["francisco-de-miranda", "biografias"]
  },
  {
@@ -364,6 +433,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones de la Fundación Eugenio Mendoza",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2039 (art. 25).",
   "materias": ["simon-bolivar", "biografias"]
  },
  {
@@ -375,6 +446,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Bogotá, Editorial El Liberal",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2042 (art. 25).",
   "materias": ["simon-bolivar", "biografias"]
  },
  {
@@ -386,6 +459,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -397,6 +472,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -408,6 +485,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -419,6 +498,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -430,6 +511,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -441,6 +524,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -452,6 +537,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -463,6 +550,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -474,6 +563,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -485,6 +576,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Escuela Técnica Industrial",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["simon-bolivar", "pensamiento-politico"]
  },
  {
@@ -496,6 +589,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Buenos Aires, W. M. Jackson",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "pensamiento-politico"]
  },
  {
@@ -507,6 +602,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-07-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -518,6 +615,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "New York, The Colonial Press Inc.",
   "incorporacion": "2025-07-25",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar"]
  },
  {
@@ -529,6 +628,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "New York, The Colonial Press Inc.",
   "incorporacion": "2025-07-25",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar"]
  },
  {
@@ -540,6 +641,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "New York, The Colonial Press Inc.",
   "incorporacion": "2025-07-25",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar"]
  },
  {
@@ -551,6 +654,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Lisama",
   "incorporacion": "2025-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -562,6 +667,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Lisama",
   "incorporacion": "2025-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -573,6 +680,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Lisama",
   "incorporacion": "2025-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -585,6 +694,8 @@
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
   "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -597,6 +708,8 @@
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
   "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -609,6 +722,8 @@
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
   "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -621,6 +736,8 @@
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
   "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -633,6 +750,8 @@
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
   "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -644,6 +763,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "relaciones-internacionales"]
  },
  {
@@ -655,6 +776,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "relaciones-internacionales"]
  },
  {
@@ -666,6 +789,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
   "incorporacion": "2025-07-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "relaciones-internacionales"]
  },
  {
@@ -677,6 +802,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "París, Paul Ollendorf",
   "incorporacion": "2025-07-31",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1962).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -688,6 +815,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-07-31",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1960).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -699,6 +828,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-07-31",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1960).",
   "materias": ["simon-bolivar"]
  },
  {
@@ -710,6 +841,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Parra León Hermanos",
   "incorporacion": "2025-07-31",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1960).",
   "materias": ["simon-bolivar", "iglesia-y-religion"]
  },
  {
@@ -722,6 +855,8 @@
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
   "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
   "incorporacion": "2025-08-01",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia", "pensamiento-politico"]
  },
  {
@@ -733,6 +868,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Aguilar",
   "incorporacion": "2025-08-02",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2029 (art. 25).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -744,6 +881,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Aguilar",
   "incorporacion": "2025-08-02",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2029 (art. 25).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -755,6 +894,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Oviedo, Instituto de Estudios Asturianos",
   "incorporacion": "2025-08-03",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2050 (art. 25; autor fallecido en 1990).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -766,6 +907,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía y Tipografía del Comercio",
   "incorporacion": "2025-09-08",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1942).",
   "materias": ["conquista-y-colonia", "derecho-e-instituciones"]
  },
  {
@@ -777,6 +920,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial La Torre",
   "incorporacion": "2025-09-09",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["identidad-y-cultura", "pensamiento-politico"]
  },
  {
@@ -788,6 +933,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Aguilar",
   "incorporacion": "2025-09-09",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["identidad-y-cultura"]
  },
  {
@@ -799,6 +946,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Publicaciones del Ateneo de Caracas",
   "incorporacion": "2025-09-09",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -810,6 +959,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Maracaibo, Ediciones de la Universidad del Zulia",
   "incorporacion": "2025-09-09",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["historia-regional", "literatura-y-ensayo"]
  },
  {
@@ -821,6 +972,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Garrido",
   "incorporacion": "2025-09-09",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["castro-y-gomez"]
  },
  {
@@ -832,6 +985,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Monte Ávila Editores",
   "incorporacion": "2025-09-13",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1976).",
   "materias": ["de-lopez-contreras-a-gallegos", "literatura-y-ensayo"]
  },
  {
@@ -843,6 +998,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Cromotip",
   "incorporacion": "2025-09-14",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Compilación: cada texto conserva los derechos de su autor (arts. 3 y 25); situación por verificar.",
   "materias": ["biografias"]
  },
  {
@@ -854,6 +1011,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Garrido",
   "incorporacion": "2025-09-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["republica-siglo-xix"]
  },
  {
@@ -865,6 +1024,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Fecar S. A.",
   "incorporacion": "2025-09-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1981).",
   "materias": ["biografias"]
  },
  {
@@ -876,6 +1037,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Nacional",
   "incorporacion": "2025-09-14",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar"]
  },
  {
@@ -887,6 +1050,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "París, Casa Editorial Garnier Hermanos",
   "incorporacion": "2025-09-19",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1866).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -898,6 +1063,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia"]
  },
  {
@@ -909,6 +1076,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Secretaria General de la Décima Conferencia Interamericana",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["francisco-de-miranda", "documentos-y-epistolarios"]
  },
  {
@@ -920,6 +1089,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Javier Morata",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["conquista-y-colonia", "derecho-e-instituciones"]
  },
  {
@@ -931,6 +1102,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Culturales del Banco del Caribe",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
@@ -942,6 +1115,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Secretaria General de la Décima Conferencia Interamericana",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia", "relaciones-internacionales"]
  },
  {
@@ -953,6 +1128,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Culturales del Banco del Caribe",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["francisco-de-miranda", "relaciones-internacionales"]
  },
  {
@@ -964,6 +1141,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Litografía del Comercio",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["independencia"]
  },
  {
@@ -976,6 +1155,8 @@
   "pie_de_imprenta": "Madrid, Ediciones Cultura Hispánica",
   "autorizacion": "Agencia Española de Cooperación Internacional para el Desarrollo (AECID)",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["conquista-y-colonia", "derecho-e-instituciones"]
  },
  {
@@ -987,6 +1168,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela S.A.",
   "incorporacion": "2025-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2062 (art. 25).",
   "materias": ["biografias", "relaciones-internacionales"]
  },
  {
@@ -998,6 +1181,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Centro de Estudios de Historia Actual, FACES-UCV, Consejo de Desarrollo Científico y Humanístico",
   "incorporacion": "2025-09-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 2001).",
   "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
@@ -1009,6 +1194,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Garrido",
   "incorporacion": "2025-09-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25).",
   "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
@@ -1020,6 +1207,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía La Nación",
   "incorporacion": "2025-09-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: obra institucional, sesenta años desde su publicación (art. 27, por analogía).",
   "materias": ["dictadura-militar"]
  },
  {
@@ -1031,6 +1220,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Méjico, Fondo de Cultura Económica",
   "incorporacion": "2025-09-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2041 (art. 25).",
   "materias": ["economia-y-petroleo", "de-lopez-contreras-a-gallegos"]
  },
  {
@@ -1042,6 +1233,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["francisco-de-miranda", "biografias"]
  },
  {
@@ -1053,6 +1246,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Bolívar",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -1064,6 +1259,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Mérida, Imprenta Oficial",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -1075,6 +1272,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["historia-regional", "conquista-y-colonia"]
  },
  {
@@ -1086,6 +1285,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
@@ -1097,6 +1298,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Nacional",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
@@ -1108,6 +1311,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Nacional",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
@@ -1119,6 +1324,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Bolívar",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia"]
  },
  {
@@ -1130,6 +1337,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia"]
  },
  {
@@ -1141,6 +1350,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Bolívar",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -1152,6 +1363,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "México D.F., Imprenta Manuel León Sánchez",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -1163,6 +1376,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -1174,6 +1389,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Santiago de Chile, Imprenta Universitaria",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["sociedad"]
  },
  {
@@ -1185,6 +1402,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "México D.F., Imprenta Rafael Ros e Hijo",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["sociedad"]
  },
  {
@@ -1196,6 +1415,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Bolívar",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia", "historia-regional", "biografias"]
  },
  {
@@ -1207,6 +1428,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Bolívar",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["independencia", "historia-regional", "biografias"]
  },
  {
@@ -1218,6 +1441,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "México D.F., Imprenta Manuel León Sánchez",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["viajeros-y-geografia", "literatura-y-ensayo"]
  },
  {
@@ -1229,6 +1454,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Bolívar",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -1240,6 +1467,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, publicación propia",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1949).",
   "materias": ["literatura-y-ensayo"]
  },
  {
@@ -1251,6 +1480,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Tipografía Americana",
   "incorporacion": "2025-09-29",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["viajeros-y-geografia", "conquista-y-colonia"]
  },
  {
@@ -1261,7 +1492,10 @@
   "anio": "1947",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2025-10-01",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["independencia", "biografias"]
  },
  {
@@ -1273,6 +1507,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Trípode",
   "incorporacion": "2025-10-01",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1987).",
   "materias": ["biografias"]
  },
  {
@@ -1283,7 +1519,10 @@
   "anio": "1942",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Nacional",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2025-10-01",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["conquista-y-colonia", "economia-y-petroleo", "documentos-y-epistolarios"]
  },
  {
@@ -1295,6 +1534,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Centauro",
   "incorporacion": "2026-02-18",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1985).",
   "materias": ["pensamiento-politico", "castro-y-gomez"]
  },
  {
@@ -1306,6 +1547,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Centauro",
   "incorporacion": "2026-02-18",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1985).",
   "materias": ["pensamiento-politico"]
  },
  {
@@ -1317,6 +1560,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, José Agustín Catalá",
   "incorporacion": "2026-02-27",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2051 (art. 25; autor fallecido en 1991).",
   "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
@@ -1328,6 +1573,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, José Agustín Catalá",
   "incorporacion": "2026-02-27",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2051 (art. 25; autor fallecido en 1991).",
   "materias": ["sociedad", "economia-y-petroleo"]
  },
  {
@@ -1339,6 +1586,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Valencia, Vadell Hermanos Editores",
   "incorporacion": "2026-02-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2062 (art. 25; autor fallecido en 2002).",
   "materias": ["economia-y-petroleo", "democracia"]
  },
  {
@@ -1350,6 +1599,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
   "incorporacion": "2026-03-12",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["historia-regional"]
  },
  {
@@ -1361,6 +1612,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Ministerio de Educación Nacional",
   "incorporacion": "2026-03-12",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["historia-regional", "independencia"]
  },
  {
@@ -1372,6 +1625,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Élite",
   "incorporacion": "2026-03-12",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["historias-generales"]
  },
  {
@@ -1383,6 +1638,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Élite",
   "incorporacion": "2026-03-12",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
@@ -1394,6 +1651,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Élite",
   "incorporacion": "2026-03-12",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
@@ -1405,6 +1664,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Fundación Eugenio Mendoza",
   "incorporacion": "2026-05-19",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2062 (art. 25).",
   "materias": ["biografias", "economia-y-petroleo"]
  },
  {
@@ -1415,7 +1676,10 @@
   "anio": "1988",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1426,7 +1690,10 @@
   "anio": "1989",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1437,7 +1704,10 @@
   "anio": "1989",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1448,7 +1718,10 @@
   "anio": "1989",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1459,7 +1732,10 @@
   "anio": "1990",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1470,7 +1746,10 @@
   "anio": "1990",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1481,7 +1760,10 @@
   "anio": "1990",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1492,7 +1774,10 @@
   "anio": "1990",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1503,7 +1788,10 @@
   "anio": "1990",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1514,7 +1802,10 @@
   "anio": "1991",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1525,7 +1816,10 @@
   "anio": "1991",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1536,7 +1830,10 @@
   "anio": "1991",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1547,7 +1844,10 @@
   "anio": "1991",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1558,7 +1858,10 @@
   "anio": "1991",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1569,7 +1872,10 @@
   "anio": "1991",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-05-21",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1580,7 +1886,10 @@
   "anio": "1992",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1591,7 +1900,10 @@
   "anio": "1993",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1602,7 +1914,10 @@
   "anio": "1993",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1613,7 +1928,10 @@
   "anio": "1996",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1624,7 +1942,10 @@
   "anio": "1997",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1635,7 +1956,10 @@
   "anio": "1997",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1646,7 +1970,10 @@
   "anio": "1997",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1657,7 +1984,10 @@
   "anio": "1998",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Congreso de la República",
+  "autorizacion": "Familia Briceño-Iragorry",
   "incorporacion": "2026-06-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -1669,6 +1999,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Barcelona, Casa Editorial Araluce",
   "incorporacion": "2026-06-07",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1927).",
   "materias": ["simon-bolivar", "pensamiento-politico"]
  },
  {
@@ -1680,6 +2012,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Trujillo, Editora Montalvo",
   "incorporacion": "2026-06-22",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Situación por verificar en Venezuela: protegida si el autor falleció después de 1965 (art. 25).",
   "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
@@ -1691,6 +2025,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Bruselas, Editorial Atenas",
   "incorporacion": "2026-06-22",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Situación por verificar en Venezuela: protegida si el autor falleció después de 1965 (art. 25).",
   "materias": ["dictadura-militar"]
  },
  {
@@ -1702,6 +2038,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Biblioteca y Editorial del Maestro",
   "incorporacion": "2026-06-22",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
@@ -1713,6 +2051,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Biblioteca y Editorial del Maestro",
   "incorporacion": "2026-06-22",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
@@ -1724,6 +2064,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
@@ -1735,6 +2077,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "memorias-y-autobiografias"]
  },
  {
@@ -1746,6 +2090,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "documentos-y-epistolarios"]
  },
  {
@@ -1757,6 +2103,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "documentos-y-epistolarios"]
  },
  {
@@ -1768,6 +2116,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["jose-antonio-paez", "biografias"]
  },
  {
@@ -1779,6 +2129,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "biografias"]
  },
  {
@@ -1790,6 +2142,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["memorias-y-autobiografias", "republica-siglo-xix"]
  },
  {
@@ -1801,6 +2155,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["viajeros-y-geografia", "republica-siglo-xix"]
  },
  {
@@ -1812,6 +2168,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["independencia", "viajeros-y-geografia"]
  },
  {
@@ -1823,6 +2181,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["viajeros-y-geografia", "independencia"]
  },
  {
@@ -1834,6 +2194,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1973).",
   "materias": ["jose-antonio-paez", "economia-y-petroleo", "republica-siglo-xix"]
  },
  {
@@ -1845,6 +2207,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["republica-siglo-xix", "memorias-y-autobiografias"]
  },
  {
@@ -1856,6 +2220,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Compilación: cada texto conserva los derechos de su autor (arts. 3 y 25); situación por verificar.",
   "materias": ["jose-antonio-paez"]
  },
  {
@@ -1867,6 +2233,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Compilación: cada texto conserva los derechos de su autor (arts. 3 y 25); situación por verificar.",
   "materias": ["jose-antonio-paez"]
  },
  {
@@ -1878,6 +2246,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto oficial (art. 4) y edición caducada (art. 36). Los estudios añadidos pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "derecho-e-instituciones"]
  },
  {
@@ -1889,6 +2259,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto oficial (art. 4) y edición caducada (art. 36). Los estudios añadidos pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "derecho-e-instituciones"]
  },
  {
@@ -1900,6 +2272,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Compilación: cada texto conserva los derechos de su autor (arts. 3 y 25); situación por verificar.",
   "materias": ["jose-antonio-paez"]
  },
  {
@@ -1911,6 +2285,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1975).",
   "materias": ["iglesia-y-religion", "republica-siglo-xix"]
  },
  {
@@ -1922,6 +2298,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1975).",
   "materias": ["jose-antonio-paez", "biografias"]
  },
  {
@@ -1933,6 +2311,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["jose-antonio-paez", "documentos-y-epistolarios"]
  },
  {
@@ -1944,6 +2324,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Compilación: cada texto conserva los derechos de su autor (arts. 3 y 25); situación por verificar.",
   "materias": ["republica-siglo-xix", "biografias"]
  },
  {
@@ -1955,6 +2337,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["republica-siglo-xix"]
  },
  {
@@ -1966,6 +2350,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["republica-siglo-xix", "documentos-y-epistolarios"]
  },
  {
@@ -1977,6 +2363,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["republica-siglo-xix", "documentos-y-epistolarios"]
  },
  {
@@ -1988,6 +2376,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["republica-siglo-xix", "documentos-y-epistolarios"]
  },
  {
@@ -1999,6 +2389,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2051 (art. 25).",
   "materias": ["republica-siglo-xix", "pensamiento-politico"]
  },
  {
@@ -2010,6 +2402,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1983).",
   "materias": ["republica-siglo-xix", "biografias"]
  },
  {
@@ -2021,6 +2415,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1983).",
   "materias": ["republica-siglo-xix", "biografias"]
  },
  {
@@ -2032,6 +2428,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1983).",
   "materias": ["republica-siglo-xix", "biografias"]
  },
  {
@@ -2043,6 +2441,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1983).",
   "materias": ["republica-siglo-xix", "biografias"]
  },
  {
@@ -2054,6 +2454,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["republica-siglo-xix"]
  },
  {
@@ -2064,7 +2466,10 @@
   "anio": "1983",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
+  "autorizacion": "Herederos de Manuel Lucena Salmoral",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2078 (art. 25; autor fallecido en 2018).",
   "materias": ["economia-y-petroleo", "independencia"]
  },
  {
@@ -2076,6 +2481,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1984).",
   "materias": ["economia-y-petroleo", "historia-regional"]
  },
  {
@@ -2087,6 +2494,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1987).",
   "materias": ["independencia"]
  },
  {
@@ -2098,6 +2507,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-06-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1987).",
   "materias": ["independencia"]
  },
  {
@@ -2110,6 +2521,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-06-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
@@ -2122,6 +2535,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-07-04",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2044 (art. 25; autor fallecido en 1984).",
   "materias": ["derecho-e-instituciones", "conquista-y-colonia"]
  },
  {
@@ -2134,6 +2549,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-07-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2063 (art. 25).",
   "materias": ["antecedentes-de-la-independencia", "pensamiento-politico"]
  },
  {
@@ -2146,6 +2563,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-07-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2060 (art. 25).",
   "materias": ["pensamiento-politico", "independencia"]
  },
  {
@@ -2158,6 +2577,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-07-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "relaciones-internacionales"]
  },
  {
@@ -2170,6 +2591,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-07-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
@@ -2182,6 +2605,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-07-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1977).",
   "materias": ["antecedentes-de-la-independencia", "relaciones-internacionales"]
  },
  {
@@ -2193,6 +2618,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Centro de Estudios de Historia Actual, FACES-UCV, Consejo de Desarrollo Científico y Humanístico",
   "incorporacion": "2026-07-15",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1989).",
   "materias": ["dictadura-militar", "memorias-y-autobiografias"]
  },
  {
@@ -2203,7 +2630,10 @@
   "anio": "1981",
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Gráficas Reunidas",
+  "autorizacion": "Fundación Casa Uslar Pietri",
   "incorporacion": "2026-07-16",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25).",
   "materias": ["identidad-y-cultura"]
  },
  {
@@ -2215,6 +2645,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Venezelia",
   "incorporacion": "2026-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 2001).",
   "materias": ["biografias", "pensamiento-politico"]
  },
  {
@@ -2226,6 +2658,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "New York, Carranza & Company",
   "incorporacion": "2026-07-25",
+  "derechos_eeuu": "NoC-US",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1962).",
   "materias": ["castro-y-gomez"]
  },
  {
@@ -2237,6 +2671,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Madrid, Editorial J. B.",
   "incorporacion": "2026-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2033 (art. 25).",
   "materias": ["simon-bolivar"]
  },
  {
@@ -2248,6 +2684,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2259,6 +2697,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2270,6 +2710,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-07-25",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2281,6 +2723,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-07-30",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2292,6 +2736,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-07-30",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2303,6 +2749,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-07-30",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2314,6 +2762,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-08-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2325,6 +2775,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-08-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2336,6 +2788,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Roma, Cremonese Editore",
   "incorporacion": "2026-08-17",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["pensamiento-politico", "sociedad"]
  },
  {
@@ -2347,6 +2801,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, José González González Editor",
   "incorporacion": "2026-09-17",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1974).",
   "materias": ["biografias", "pensamiento-politico"]
  },
  {
@@ -2358,6 +2814,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-09-18",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2062 (art. 25).",
   "materias": ["castro-y-gomez", "biografias"]
  },
  {
@@ -2368,7 +2826,10 @@
   "anio": "1945",
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Centro de Estudiantes de Derecho",
+  "autorizacion": "Fundación Casa Uslar Pietri",
   "incorporacion": "2026-09-19",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25).",
   "materias": ["economia-y-petroleo"]
  },
  {
@@ -2380,6 +2841,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco de Venezuela y Fundación Vicente Lecuna",
   "incorporacion": "2026-09-20",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1954).",
   "materias": ["simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2391,6 +2854,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Arte",
   "incorporacion": "2026-09-22",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2033 (art. 25).",
   "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
@@ -2402,6 +2867,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Organización de Bienestar Estudiantil",
   "incorporacion": "2026-09-23",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["iglesia-y-religion"]
  },
  {
@@ -2413,6 +2880,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Imprenta Nacional",
   "incorporacion": "2026-09-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2044 (art. 25; autor fallecido en 1984).",
   "materias": ["biografias"]
  },
  {
@@ -2424,6 +2893,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Buenos Aires, Editorial Colombo",
   "incorporacion": "2026-09-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2054 (art. 25; autor fallecido en 1994).",
   "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
@@ -2435,6 +2906,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
   "incorporacion": "2026-09-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2060 (art. 25).",
   "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
@@ -2446,6 +2919,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
   "incorporacion": "2026-09-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2060 (art. 25).",
   "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
@@ -2457,6 +2932,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
   "incorporacion": "2026-09-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2060 (art. 25).",
   "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
@@ -2468,6 +2945,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Universidad Central de Venezuela, Ediciones de la Biblioteca",
   "incorporacion": "2026-09-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2060 (art. 25).",
   "materias": ["economia-y-petroleo", "sociedad"]
  },
  {
@@ -2479,6 +2958,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Vadell Hermanos Editores",
   "incorporacion": "2026-10-03",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1994).",
   "materias": ["democracia", "economia-y-petroleo"]
  },
  {
@@ -2490,6 +2971,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Britannica",
   "incorporacion": "2026-10-11",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2081 (art. 25).",
   "materias": ["historias-generales"]
  },
  {
@@ -2501,6 +2984,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Britannica",
   "incorporacion": "2026-10-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2081 (art. 25).",
   "materias": ["historias-generales"]
  },
  {
@@ -2512,6 +2997,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Britannica",
   "incorporacion": "2026-10-12",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2081 (art. 25).",
   "materias": ["historias-generales"]
  },
  {
@@ -2523,6 +3010,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Britannica",
   "incorporacion": "2026-10-15",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2081 (art. 25).",
   "materias": ["historias-generales"]
  },
  {
@@ -2534,6 +3023,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Britannica",
   "incorporacion": "2026-10-19",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2081 (art. 25).",
   "materias": ["historias-generales"]
  },
  {
@@ -2545,6 +3036,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Fondo Editorial Tropykos",
   "incorporacion": "2026-10-19",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1990).",
   "materias": ["dictadura-militar", "pensamiento-politico"]
  },
  {
@@ -2556,6 +3049,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Fundación para el Rescate del Acervo Documental Venezolano",
   "incorporacion": "2026-10-19",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["castro-y-gomez", "relaciones-internacionales", "documentos-y-epistolarios"]
  },
  {
@@ -2567,6 +3062,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Ex Libris",
   "incorporacion": "2026-10-19",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25; autor fallecido en 2001).",
   "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
@@ -2578,6 +3075,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-10-23",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["conquista-y-colonia", "historia-regional", "sociedad"]
  },
  {
@@ -2589,6 +3088,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones Librería Historia",
   "incorporacion": "2026-10-23",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["memorias-y-autobiografias", "castro-y-gomez"]
  },
  {
@@ -2600,6 +3101,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Arte",
   "incorporacion": "2026-10-23",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1979).",
   "materias": ["de-lopez-contreras-a-gallegos"]
  },
  {
@@ -2611,6 +3114,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Editorial Jurídica Venezolana",
   "incorporacion": "2026-10-23",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25; autor fallecido en 2001).",
   "materias": ["de-lopez-contreras-a-gallegos", "democracia"]
  },
  {
@@ -2621,7 +3126,10 @@
   "anio": "1986",
   "primera_edicion": "",
   "pie_de_imprenta": "Barcelona, Editorial Seix Barral",
+  "autorizacion": "Fundación Casa Uslar Pietri",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2061 (art. 25).",
   "materias": ["pensamiento-politico", "identidad-y-cultura"]
  },
  {
@@ -2634,6 +3142,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Documentos coloniales de dominio público; la labor de compilación caducó (art. 36) y el estudio de Augusto Mijares está protegido en Venezuela hasta el 31 de diciembre de 2039 (art. 25).",
   "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
@@ -2646,6 +3156,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: texto del siglo XVII de autor fallecido hace más de sesenta años; edición caducada (arts. 25 y 36). Los estudios de la edición pueden estar protegidos.",
   "materias": ["conquista-y-colonia", "pensamiento-politico"]
  },
  {
@@ -2658,6 +3170,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: traducción publicada en 1811; edición caducada (arts. 25 y 36). Los estudios de la edición pueden estar protegidos.",
   "materias": ["antecedentes-de-la-independencia", "pensamiento-politico"]
  },
  {
@@ -2670,6 +3184,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1964).",
   "materias": ["conquista-y-colonia", "independencia"]
  },
  {
@@ -2682,6 +3198,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela: obra institucional, sesenta años desde su publicación (art. 27, por analogía).",
   "materias": ["independencia", "documentos-y-epistolarios"]
  },
  {
@@ -2694,6 +3212,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1968).",
   "materias": ["antecedentes-de-la-independencia", "documentos-y-epistolarios"]
  },
  {
@@ -2706,6 +3226,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-24",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1958).",
   "materias": ["antecedentes-de-la-independencia", "sociedad", "historia-regional"]
  },
  {
@@ -2717,6 +3239,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Banco Central de Venezuela, Colección Cuatricentenario de Caracas",
   "incorporacion": "2026-10-25",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["viajeros-y-geografia", "historia-regional"]
  },
  {
@@ -2728,6 +3252,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Monte Ávila Editores",
   "incorporacion": "2026-10-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["identidad-y-cultura", "literatura-y-ensayo"]
  },
  {
@@ -2739,6 +3265,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Monte Ávila Editores",
   "incorporacion": "2026-10-26",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Dominio público en Venezuela (art. 25; autor fallecido en 1965).",
   "materias": ["viajeros-y-geografia", "literatura-y-ensayo"]
  },
  {
@@ -2751,6 +3279,8 @@
   "pie_de_imprenta": "Caracas, Instituto Panamericano de Geografía e Historia, Comisión de Historia, Comité de Orígenes de la Emancipación",
   "autorizacion": "Instituto Panamericano de Geografía e Historia (IPGH)",
   "incorporacion": "2026-10-27",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1970).",
   "materias": ["independencia", "pensamiento-politico"]
  },
  {
@@ -2762,6 +3292,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-10-28",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1975).",
   "materias": ["iglesia-y-religion", "republica-siglo-xix"]
  },
  {
@@ -2773,6 +3305,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-10-28",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["conquista-y-colonia"]
  },
  {
@@ -2784,6 +3318,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-10-28",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["conquista-y-colonia"]
  },
  {
@@ -2795,6 +3331,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-10-28",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Traducción: protegida por los derechos de su traductor (arts. 3 y 25); situación por verificar.",
   "materias": ["historias-generales"]
  },
  {
@@ -2806,6 +3344,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Academia Nacional de la Historia",
   "incorporacion": "2026-10-30",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1984).",
   "materias": ["francisco-de-miranda", "documentos-y-epistolarios"]
  },
  {
@@ -2817,6 +3357,8 @@
   "primera_edicion": "",
   "pie_de_imprenta": "Caracas, Ediciones del Cuatricentenario de Caracas, Comité de Obras Culturales",
   "incorporacion": "2026-10-30",
+  "derechos_eeuu": "InC",
+  "derechos_venezuela": "Protegida en Venezuela hasta el 31 de diciembre de 2064 (art. 25).",
   "materias": ["francisco-de-miranda", "pensamiento-politico"]
  },
  {
@@ -2828,6 +3370,8 @@
   "primera_edicion": "1875",
   "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
   "incorporacion": "2026-10-31",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2839,6 +3383,8 @@
   "primera_edicion": "1875",
   "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
   "incorporacion": "2026-10-31",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2850,6 +3396,8 @@
   "primera_edicion": "1875",
   "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
   "incorporacion": "2026-10-31",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2861,6 +3409,8 @@
   "primera_edicion": "1875",
   "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
   "incorporacion": "2026-10-31",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2872,6 +3422,8 @@
   "primera_edicion": "1875",
   "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
   "incorporacion": "2026-10-31",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2883,6 +3435,8 @@
   "primera_edicion": "1875",
   "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
   "incorporacion": "2026-10-31",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  },
  {
@@ -2894,6 +3448,8 @@
   "primera_edicion": "1875",
   "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
   "incorporacion": "2026-10-31",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  }
 ]

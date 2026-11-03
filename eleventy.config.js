@@ -1,6 +1,7 @@
 // Configuración de Eleventy para el sitio de Idearium Caribe.
 import fs from "node:fs";
 import { slugAutor } from "./lib/slug.js";
+const DERECHOS = JSON.parse(fs.readFileSync(new URL("./_data/derechos.json", import.meta.url), "utf8"));
 const formasAutor = Object.fromEntries(JSON.parse(fs.readFileSync(new URL("./_data/ordenAutores.json", import.meta.url), "utf8")).map((a) => [a.nombre, a.forma_catalogo]));
 const llave = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[«»"“”¿¡]/g, "").trim();
 export default function (eleventyConfig) {
@@ -97,6 +98,7 @@ export default function (eleventyConfig) {
       image: "https://archive.org/services/img/" + o.identificador,
       sameAs: "https://archive.org/details/" + o.identificador,
       isAccessibleForFree: true, bookFormat: "https://schema.org/EBook",
+      usageInfo: DERECHOS[o.derechos_eeuu] ? DERECHOS[o.derechos_eeuu].uri : undefined,
       isPartOf: { "@type": "Collection", name: "Biblioteca Digital de Idearium Caribe", url: "https://www.ideariumcaribe.com/biblioteca/catalogo/" },
       provider: { "@type": "Organization", name: "Idearium Caribe Co.", url: "https://www.ideariumcaribe.com/" },
     };

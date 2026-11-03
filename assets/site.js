@@ -31,3 +31,37 @@
     if(img.complete && img.naturalWidth===0 && img.getAttribute('src')) fix(img);
   });
 })();
+
+// Copiar al portapapeles (botones con data-copiar, p. ej. «Copiar enlace»).
+(function(){
+  document.querySelectorAll('[data-copiar]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var en=document.body.getAttribute('data-lang')==='en', o=b.innerHTML;
+      var ok=function(){b.textContent=en?'Copied':'Copiado'; setTimeout(function(){b.innerHTML=o;},1600);};
+      var viejo=function(){var i=document.createElement('input');i.value=b.getAttribute('data-copiar');document.body.appendChild(i);i.select();try{document.execCommand('copy');ok();}catch(e){}i.remove();};
+      try{navigator.clipboard.writeText(b.getAttribute('data-copiar')).then(ok,viejo);}catch(e){viejo();}
+    });
+  });
+})();
+
+// Vistos recientemente (página de la Biblioteca): lee la lista que guarda cada obra en este navegador.
+(function(){
+  var cont=document.getElementById('vistos'), ul=document.getElementById('vistos-lista'); if(!cont||!ul) return;
+  var lista=[]; try{lista=JSON.parse(localStorage.getItem('ic-vistos')||'[]');}catch(e){}
+  if(!lista.length) return;
+  lista.slice(0,6).forEach(function(x){
+    var li=document.createElement('li'), a=document.createElement('a'), im=document.createElement('img'), t=document.createElement('span'), s=document.createElement('span');
+    a.href='/biblioteca/obras/'+encodeURIComponent(x.id)+'/'; im.src='https://archive.org/services/img/'+encodeURIComponent(x.id); im.alt=''; im.loading='lazy'; im.width=180; im.height=240;
+    t.className='t'; t.textContent=x.t; s.className='s'; s.textContent=x.s; a.appendChild(im); a.appendChild(t); a.appendChild(s); li.appendChild(a); ul.appendChild(li);
+  });
+  cont.hidden=false;
+  var b=document.getElementById('vistos-borrar'); if(b) b.addEventListener('click',function(){try{localStorage.removeItem('ic-vistos');}catch(e){} cont.hidden=true;});
+})();
+
+// Volver arriba: aparece al bajar más de dos pantallas.
+(function(){
+  var a=document.getElementById('arriba'); if(!a) return; var vis=false;
+  var ver=function(){var v=window.scrollY>window.innerHeight*2; if(v!==vis){vis=v; a.hidden=!v;}};
+  window.addEventListener('scroll',ver,{passive:true}); ver();
+  a.addEventListener('click',function(e){e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); var h=document.querySelector('main h1'); if(h){h.setAttribute('tabindex','-1'); h.focus({preventScroll:true});}});
+})();

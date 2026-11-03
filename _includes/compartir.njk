@@ -1,0 +1,10 @@
+{#- Botones para compartir: enlaces simples, sin código de terceros. Recibe `cTitulo` y `cUrl`. #}
+<div class="compartir">
+  <p class="label"><span class="es">Compartir</span><span class="en">Share</span></p>
+  <div class="compartir-botones">
+    <button type="button" class="lb" data-copiar="{{ cUrl }}"><span class="es">Copiar enlace</span><span class="en">Copy link</span></button>
+    <a class="lb" href="https://wa.me/?text={{ (cTitulo + ' ' + cUrl) | urlencode }}" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="lb" href="https://x.com/intent/post?text={{ cTitulo | urlencode }}&amp;url={{ cUrl | urlencode }}" target="_blank" rel="noopener">X</a>
+    <a class="lb" href="mailto:?subject={{ cTitulo | urlencode }}&amp;body={{ cUrl | urlencode }}"><span class="es">Correo</span><span class="en">Email</span></a>
+  </div>
+</div>

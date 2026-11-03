@@ -1,0 +1,6 @@
+---
+pagination: { data: collections.articulo, size: 1, alias: art }
+permalink: "/colombeia/citas/{{ art.page.fileSlug }}.ris"
+eleventyExcludeFromCollections: true
+---
+{{ art | risArticulo(sitio.url + (art.url | urlLimpia), sitio.issn) | safe }}

@@ -1,4 +1,14 @@
 // Página de obra: búsqueda en el texto (OCR de Internet Archive) y botones para copiar las citas.
+// Vistos recientemente: guarda en este navegador las últimas obras abiertas (no se envía a ningún servidor).
+(function () {
+  var f = document.querySelector(".obra-pag [data-ia]"), h = document.querySelector(".obra-cab h1"), s = document.querySelector(".sig-label");
+  if (!f || !h) return;
+  try {
+    var id = f.getAttribute("data-ia"), lista = JSON.parse(localStorage.getItem("ic-vistos") || "[]").filter(function (x) { return x.id !== id; });
+    lista.unshift({ id: id, t: h.textContent.trim(), s: s ? s.textContent.trim() : "" });
+    localStorage.setItem("ic-vistos", JSON.stringify(lista.slice(0, 12)));
+  } catch (e) {}
+})();
 (function () {
   var en = function () { return document.documentElement.lang === "en"; };
   var t = function (es, ing) { return en() ? ing : es; };

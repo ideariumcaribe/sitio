@@ -412,3 +412,39 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .buscar-nota{max-width:760px;font-size:1rem;color:var(--muted)}
 #buscador .pagefind-ui__search-clear{padding:0 16px;border:0;background:transparent;font-family:var(--f-ui);font-size:.8rem;text-decoration:underline}
 .buscar-etq{font-family:var(--f-ui);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:-14px}
+
+/* Obras relacionadas y fechas de autores */
+.obras-relacionadas{margin:44px 0 8px}
+.obras-relacionadas h2{font-size:1.35rem;margin-bottom:18px}
+.aut-fechas{font-size:1.1rem;color:var(--muted);margin:2px 0 0}
+
+/* Citas descargables y compartir */
+.cita-descargas{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin:10px 0 0;font-size:.9rem}
+.cita-descargas a{font-family:var(--f-mono);font-size:.78rem}
+.compartir{margin:4px 0 0}
+.compartir .label{margin-bottom:8px}
+.compartir-botones{display:flex;flex-wrap:wrap;gap:8px}
+.compartir-botones .lb{display:inline-flex;align-items:center;min-height:32px;padding:4px 12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-size:.9rem;text-decoration:none;cursor:pointer}
+.compartir-botones .lb:hover{border-color:var(--ink)}
+
+/* 404 con buscador y volver arriba */
+.buscar-404{display:grid;gap:8px;max-width:560px}
+.buscar-404 label{font-family:var(--f-ui);font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.buscar-404 .bt-fila{display:flex;gap:8px}
+.buscar-404 input{flex:1;min-width:0;font:inherit;font-size:1rem;padding:8px 10px;border:1px solid var(--line)}
+.arriba{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid var(--line);background:var(--bg);color:var(--ink);text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.arriba[hidden]{display:none}
+.arriba:hover{border-color:var(--ink)}
+
+/* Impresión: solo el contenido, con la dirección de la página al pie */
+@media print{
+  header.top,footer,.arriba,.langs,.migas,.buscar-texto,.visor,.obra-acciones,.compartir,.cita-copiar,.cita-descargas,.art-nav,.obras-relacionadas,.lector-barra,.lector-paginas,.cat-vista,.recientes-enlaces,.band-boletin,iframe,.btn{display:none !important}
+  body{font-size:11pt;color:#000;background:#fff}
+  a{color:#000;text-decoration:none}
+  .wrap{max-width:none;padding:0}
+  main{padding:0}
+  .obra-portada{max-width:120px}
+  .como-citar .cita{break-inside:avoid}
+  .solo-impresion{display:block !important;margin-top:18pt;font-size:9pt;color:#444}
+}
+.solo-impresion{display:none}

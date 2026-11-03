@@ -1,0 +1,6 @@
+---
+pagination: { data: catalogo, size: 1, alias: obra }
+permalink: "/biblioteca/obras/{{ obra.identificador }}/cita.ris"
+eleventyExcludeFromCollections: true
+---
+{{ obra | risObra(materias, sitio.naan) | safe }}

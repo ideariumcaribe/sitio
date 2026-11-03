@@ -118,6 +118,76 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("articulosRecientes", (arts) => (arts || []).slice().sort((a, b) => b.data.numero - a.data.numero || (a.data.orden ?? 0) - (b.data.orden ?? 0)));
   eleventyConfig.addFilter("fechaNumero", (n) => { const m = 8 + 2 * (Number(n) - 1); return `${2025 + Math.floor(m / 12)}-${String((m % 12) + 1).padStart(2, "0")}-01`; });
   eleventyConfig.addFilter("tamanoArchivo", (ruta) => { try { return fs.statSync(new URL("." + ruta, import.meta.url)).size; } catch { return 0; } });
+  // Obras relacionadas: mismo autor primero, luego temas en común; como máximo dos volúmenes de una misma obra.
+  eleventyConfig.addFilter("relacionadas", (lista, o, n = 6) => {
+    const aut = new Set(String(o.autor || "").split(";").map((x) => x.trim()).filter(Boolean));
+    const mats = new Set(o.materias || []);
+    const base = (t) => String(t || "").split(/\. (Vol|Tomo)\b/)[0].trim();
+    const puntuadas = (lista || []).filter((x) => x.identificador !== o.identificador).map((x) => {
+      const comunesA = String(x.autor || "").split(";").map((y) => y.trim()).filter((y) => aut.has(y)).length;
+      const comunesM = (x.materias || []).filter((m) => mats.has(m)).length;
+      return { x, p: comunesA * 3 + comunesM };
+    }).filter((r) => r.p > 0).sort((a, b) => b.p - a.p || a.x.signatura.localeCompare(b.x.signatura));
+    // Como máximo dos volúmenes por obra en varios tomos (incluida la propia).
+    const out = []; const vistos = {};
+    for (const r of puntuadas) {
+      const k = base(r.x.titulo).toLowerCase(); vistos[k] = (vistos[k] || 0) + 1;
+      if (vistos[k] > 2) continue;
+      out.push(r.x); if (out.length >= n) break;
+    }
+    return out;
+  });
+  // Fechas de vida de un autor (Wikidata): «(1897–1958)», «(n. 1948)» o vacío.
+  eleventyConfig.addFilter("fechasAutor", (nombre) => { const a = AUTORIDADES[nombre] || {}; return a.nace && a.muere ? `${a.nace}–${a.muere}` : a.nace ? `n. ${a.nace}` : a.muere ? `m. ${a.muere}` : ""; });
+  // Citas descargables para gestores bibliográficos (RIS y BibTeX).
+  const bibEsc = (s) => String(s || "").replace(/([&%$#_])/g, "\\$1");
+  const risL = (k, v) => (v ? `${k}  - ${String(v).replace(/\s+/g, " ").trim()}\r\n` : "");
+  const bibAut = (formas) => formas.map((f) => (corporativo(f) ? `{${bibEsc(f)}}` : bibEsc(f))).join(" and ");
+  const urlObra = (o, naan) => (naan ? `https://n2t.net/ark:${naan}/${o.signatura}` : `https://www.ideariumcaribe.com/biblioteca/obras/${o.identificador}/`);
+  eleventyConfig.addFilter("risObra", (o, mats, naan) => {
+    const { lugar, editorial } = pieDe(o.pie_de_imprenta);
+    const autores = String(o.autor || "").split(";").map((x) => x.trim()).filter(Boolean).map(formaDe);
+    const temas = (o.materias || []).map((s) => ((mats || []).find((m) => m.slug === s) || {}).nombre).filter(Boolean);
+    return "TY  - BOOK\r\n" + autores.map((a) => risL("AU", a)).join("") + risL("TI", o.titulo) + risL("PY", o.anio) + risL("CY", lugar) + risL("PB", editorial)
+      + risL("LA", o.signatura === "IC-0211" ? "ita" : "spa") + temas.map((t) => risL("KW", t)).join("") + risL("N1", o.primera_edicion && o.primera_edicion !== o.anio ? `Primera edición: ${o.primera_edicion}.` : "")
+      + risL("DB", "Biblioteca Digital de Idearium Caribe") + risL("AN", o.signatura) + risL("UR", urlObra(o, naan)) + "ER  - \r\n";
+  });
+  eleventyConfig.addFilter("bibObra", (o, mats, naan) => {
+    const { lugar, editorial } = pieDe(o.pie_de_imprenta);
+    const autores = String(o.autor || "").split(";").map((x) => x.trim()).filter(Boolean).map(formaDe);
+    const temas = (o.materias || []).map((s) => ((mats || []).find((m) => m.slug === s) || {}).nombre).filter(Boolean);
+    const c = [["author", bibAut(autores)], ["title", `{${bibEsc(o.titulo)}}`], ["year", o.anio], ["address", bibEsc(lugar)], ["publisher", bibEsc(editorial)],
+      ["language", o.signatura === "IC-0211" ? "italian" : "spanish"], ["keywords", bibEsc(temas.join(", "))], ["url", urlObra(o, naan)], ["note", `Biblioteca Digital de Idearium Caribe, ${o.signatura}`]];
+    return `@book{${o.signatura.replace("-", "")},\n` + c.filter(([, v]) => v).map(([k, v]) => `  ${k} = {${v}}`).join(",\n") + "\n}\n";
+  });
+  // Autores de Colombeia sin forma de catálogo: «Leonardo L. González Contreras» → «González Contreras, Leonardo L.».
+  const CORPORATIVOS = ["Consejo editorial"];
+  const FORMAS_COLOMBEIA = { "Luis Alejandro Niebles": "Niebles, Luis Alejandro", "José Alfredo Paniagua": "Paniagua, José Alfredo", "José Gregorio Sáez": "Sáez, José Gregorio",
+    "Ramón de Basterra": "Basterra, Ramón de", "Ramiro Guerra y Sánchez": "Guerra y Sánchez, Ramiro" };
+  const invertir = (n) => {
+    if (formasAutor[n]) return formasAutor[n];
+    if (FORMAS_COLOMBEIA[n]) return FORMAS_COLOMBEIA[n];
+    if (CORPORATIVOS.includes(n)) return n;
+    const t = String(n).trim().split(/\s+/); if (t.length < 2) return n;
+    let k = t.length >= 3 && !/\.$/.test(t[t.length - 2]) ? t.length - 2 : t.length - 1;
+    while (k > 1 && /^(de|del|la|las|los|y)$/i.test(t[k - 1])) k--;
+    return t.slice(k).join(" ") + ", " + t.slice(0, k).join(" ");
+  };
+  const anioNumero = (n) => { const m = 8 + 2 * (Number(n) - 1); return String(2025 + Math.floor(m / 12)); };
+  eleventyConfig.addFilter("risArticulo", (a, url, issn) => {
+    const d = a.data; const t = d.titulo + (d.subtitulo ? ": " + d.subtitulo : "");
+    return "TY  - JOUR\r\n" + (d.autores || []).map((x) => risL("AU", invertir(x))).join("") + risL("TI", t) + risL("JO", "Colombeia") + risL("SN", issn)
+      + risL("IS", d.numero) + risL("PY", anioNumero(d.numero)) + risL("SP", d.pagina_inicial) + risL("EP", d.pagina_final) + risL("AB", d.resumen)
+      + (d.palabras_clave || []).map((k) => risL("KW", k)).join("") + risL("DO", d.doi) + risL("LA", "spa") + risL("UR", url)
+      + risL("L1", d.pdf ? "https://www.ideariumcaribe.com" + d.pdf : "") + "ER  - \r\n";
+  });
+  eleventyConfig.addFilter("bibArticulo", (a, url, issn) => {
+    const d = a.data; const t = d.titulo + (d.subtitulo ? ": " + d.subtitulo : "");
+    const pags = d.pagina_inicial ? `${d.pagina_inicial}--${d.pagina_final}` : "";
+    const c = [["author", bibAut((d.autores || []).map(invertir))], ["title", `{${bibEsc(t)}}`], ["journal", "Colombeia"], ["number", d.numero], ["year", anioNumero(d.numero)],
+      ["pages", pags], ["issn", issn], ["doi", d.doi], ["url", url], ["keywords", bibEsc((d.palabras_clave || []).join(", "))], ["language", "spanish"]];
+    return `@article{${a.page.fileSlug.replace(/[^a-z0-9]/gi, "")},\n` + c.filter(([, v]) => v).map(([k, v]) => `  ${k} = {${v}}`).join(",\n") + "\n}\n";
+  });
   eleventyConfig.addFilter("recientes", (lista, n) => (lista || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura)).slice(0, n || 6));
   eleventyConfig.addFilter("fechaRss", (f) => { const d = new Date(String(f || "") + "T12:00:00Z"); return isNaN(d) ? "" : d.toUTCString(); });
   eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));
@@ -145,7 +215,7 @@ export default function (eleventyConfig) {
     const pagefind = await import("pagefind");
     const { index } = await pagefind.createIndex({
       forceLanguage: "es",
-      excludeSelectors: [".en", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", "nav", "script"],
+      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", "nav", "script"],
     });
     await index.addDirectory({ path: dir.output });
     await index.writeFiles({ outputPath: dir.output + "/pagefind" });

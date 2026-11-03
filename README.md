@@ -108,3 +108,13 @@ EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde 
 ## Canal RSS de Colombeia
 
 `colombeia/rss.njk` genera `/colombeia/rss.xml` con todos los artículos, del número más reciente al más antiguo. La fecha de cada artículo es el primer día del bimestre de su número (filtro `fechaNumero`: n.º 1 = septiembre de 2025) y el PDF va como adjunto (`enclosure`). Se anuncia en todas las páginas y se enlaza junto a «Todos los números».
+
+## Comodidades de lectura
+
+- **Obras relacionadas** (filtro `relacionadas`): hasta seis obras del mismo autor o con temas en común, como máximo dos volúmenes por obra en varios tomos.
+- **Fechas de los autores** (filtro `fechasAutor`), tomadas de `_data/autoridades.json`.
+- **Citas descargables**: `/biblioteca/obras/<id>/cita.ris|.bib` y `/colombeia/citas/<archivo>.ris|.bib`. Las formas invertidas de autores de Colombeia sin forma de catálogo se deducen; las dudosas van en `FORMAS_COLOMBEIA` (eleventy.config.js).
+- **Compartir** (`_includes/compartir.njk`): copiar enlace, WhatsApp, X y correo, sin código de terceros.
+- **Catálogo**: la búsqueda (`q`), el orden y la vista quedan en la dirección.
+- **Vistos recientemente**: `localStorage` del navegador (`ic-vistos`), mostrado en la página de la Biblioteca.
+- **404 con buscador** (la CSP permite `form-action 'self'`), **volver arriba** e **impresión** limpia con el enlace permanente al pie.

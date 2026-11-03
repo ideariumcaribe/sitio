@@ -31,6 +31,12 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
         {%- set lista = catalogo | recientes(6) %}{% set clase = "portadas-recientes" %}{% set oculta = false %}
         {% include "portadas-grid.njk" %}
       </div>
+      <div class="stack recientes vistos" id="vistos" hidden>
+        <div class="sec-title"><div><p class="label es">En este navegador</p><p class="label en">In this browser</p>
+          <h2 class="es">Vistos recientemente</h2><h2 class="en">Recently viewed</h2></div>
+          <div class="recientes-enlaces"><button type="button" class="lb" id="vistos-borrar"><span class="es">Borrar</span><span class="en">Clear</span></button></div></div>
+        <ul class="portadas portadas-recientes" id="vistos-lista"></ul>
+      </div>
       <div class="ledger-wrap">
         <table class="ledger">
           <thead><tr>

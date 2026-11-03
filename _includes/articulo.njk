@@ -51,7 +51,10 @@ layout: base.njk
           <div>
             <p class="label"><span class="es">Cómo citar</span><span class="en">How to cite</span></p>
             <p class="cita">{{ autoresTxt }}, «{{ titulo }}{% if subtitulo %}: {{ subtitulo }}{% endif %}»{% if editor %}, ed. {{ editor }}{% endif %}, <i>Colombeia</i>, n.º {{ numero }} ({{ num.data.fecha }}): {{ pagina_inicial }}-{{ pagina_final }}.</p>
+            <p class="cita-descargas"><a href="/colombeia/citas/{{ page.fileSlug }}.ris" download>RIS</a><a href="/colombeia/citas/{{ page.fileSlug }}.bib" download>BibTeX</a></p>
           </div>
+          {%- set cTitulo = titulo + (": " + subtitulo if subtitulo else "") %}{% set cUrl = sitio.url + (page.url | urlLimpia) %}
+          {% include "compartir.njk" %}
           {%- if doi %}
           <div><p class="label">DOI</p><p><a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener">{{ doi }}</a></p></div>
           {%- endif %}

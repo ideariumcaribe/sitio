@@ -49,6 +49,8 @@
 </div>
 {%- endif %}
 
+<p class="solo-impresion">{{ sitio.nombre }} · {% if obra and obra.identificador and sitio.naan %}https://n2t.net/ark:{{ sitio.naan }}/{{ obra.signatura }}{% else %}{{ sitio.url }}{{ page.url | urlLimpia }}{% endif %}</p>
+<a href="#" class="arriba" id="arriba" aria-label="Volver arriba" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 <footer>
   <div class="wrap">
     <div>

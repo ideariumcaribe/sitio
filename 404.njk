@@ -9,8 +9,12 @@ eleventyExcludeFromCollections: true
     <div class="wrap stack">
       <div><p class="label es">Error 404</p><p class="label en">Error 404</p>
         <h1 class="es">No encontramos esta página</h1><h1 class="en">We could not find this page</h1></div>
-      <p class="es">Puede volver al <a href="/">inicio</a> o consultar <a href="/colombeia.html">Colombeia</a>.</p>
-      <p class="en">You can go back to the <a href="/">home page</a> or browse <a href="/colombeia.html">Colombeia</a>.</p>
+      <p class="es">Busque lo que necesita, o vuelva al <a href="/">inicio</a>, al <a href="/biblioteca/catalogo/">catálogo de la Biblioteca</a> o a <a href="/colombeia.html"><i>Colombeia</i></a>.</p>
+      <p class="en">Search for what you need, or go back to the <a href="/">home page</a>, the <a href="/biblioteca/catalogo/">Library catalogue</a> or <a href="/colombeia.html"><i>Colombeia</i></a>.</p>
+      <form class="buscar-404" action="/buscar.html" method="get" role="search">
+        <label for="q404"><span class="es">Buscar en el sitio</span><span class="en">Search the site</span></label>
+        <div class="bt-fila"><input id="q404" type="search" name="q" required autocomplete="off"><button type="submit" class="btn"><span class="es">Buscar</span><span class="en">Search</span></button></div>
+      </form>
     </div>
   </section>
 </main>

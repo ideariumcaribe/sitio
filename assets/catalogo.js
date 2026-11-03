@@ -51,5 +51,19 @@
   var validos = selects.length ? Array.prototype.map.call(selects[0].options, function (o) { return o.value; }) : [];
   if (ordenUrl && validos.indexOf(ordenUrl) !== -1) ordenar(ordenUrl);
   else if (ordenGuardado && ordenGuardado !== "signatura" && validos.indexOf(ordenGuardado) !== -1) ordenar(ordenGuardado);
-  q.addEventListener("input", filtrar);
+  // Enlaces compartibles: la búsqueda (q), el orden y la vista quedan en la dirección.
+  var url = new URLSearchParams(location.search);
+  if (url.get("vista") === "lista" || url.get("vista") === "portadas") vista(url.get("vista"));
+  if (url.get("q")) { q.value = url.get("q"); filtrar(); }
+  var actualizar = function () {
+    var p = new URLSearchParams(location.search), t = q.value.trim();
+    if (t) p.set("q", t); else p.delete("q");
+    var o = selects.length ? selects[0].value : "signatura"; if (o && o !== "signatura") p.set("orden", o); else p.delete("orden");
+    var v = botones.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0];
+    if (v && v.dataset.vista === "lista") p.set("vista", "lista"); else p.delete("vista");
+    var s = p.toString(); history.replaceState(null, "", location.pathname + (s ? "?" + s : "") + location.hash);
+  };
+  var espera; q.addEventListener("input", function () { filtrar(); clearTimeout(espera); espera = setTimeout(actualizar, 400); });
+  selects.forEach(function (s) { s.addEventListener("change", actualizar); });
+  botones.forEach(function (b) { b.addEventListener("click", actualizar); });
 })();

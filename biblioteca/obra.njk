@@ -62,7 +62,18 @@ eleventyComputed:
         <div class="cita"><p class="label">APA</p><p class="cita-txt">{{ c.apa | safe }}</p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
         <p class="cita-nota es">Los gestores bibliográficos como Zotero o Mendeley pueden capturar esta ficha directamente desde el navegador.</p>
         <p class="cita-nota en">Reference managers such as Zotero or Mendeley can capture this record directly from the browser.</p>
+        <p class="cita-descargas"><span class="label"><span class="es">Descargar la cita</span><span class="en">Download citation</span></span><a href="/biblioteca/obras/{{ obra.identificador }}/cita.ris" download="{{ obra.signatura }}.ris">RIS</a><a href="/biblioteca/obras/{{ obra.identificador }}/cita.bib" download="{{ obra.signatura }}.bib">BibTeX</a></p>
       </section>
+      {%- set cTitulo = obra.titulo %}{% set cUrl = sitio.url + page.url %}
+      {% include "compartir.njk" %}
+      {%- set rel = catalogo | relacionadas(obra) %}
+      {%- if rel.length %}
+      <section class="obras-relacionadas" aria-labelledby="rel-t">
+        <h2 id="rel-t"><span class="es">Obras relacionadas</span><span class="en">Related works</span></h2>
+        {%- set lista = rel %}{% set clase = "portadas-recientes" %}{% set oculta = false %}
+        {% include "portadas-grid.njk" %}
+      </section>
+      {%- endif %}
       <nav class="art-nav obra-nav" aria-label="Otras obras">
         {%- if vecinos.anterior %}<a href="/biblioteca/obras/{{ vecinos.anterior.identificador }}/"><span class="label"><span class="es">Anterior</span><span class="en">Previous</span> · {{ vecinos.anterior.signatura }}</span>{{ vecinos.anterior.titulo }}</a>{% endif %}
         {%- if vecinos.siguiente %}<a href="/biblioteca/obras/{{ vecinos.siguiente.identificador }}/"><span class="label"><span class="es">Siguiente</span><span class="en">Next</span> · {{ vecinos.siguiente.signatura }}</span>{{ vecinos.siguiente.titulo }}</a>{% endif %}

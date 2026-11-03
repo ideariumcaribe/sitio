@@ -15,13 +15,13 @@ descripcion: "Política de privacidad del sitio web de Idearium Caribe Co.: qué
           <h2 class="es">Navegación por el sitio</h2><h2 class="en">Browsing the website</h2>
           <ol class="es aviso-lista">
             <li><b>Alojamiento.</b> El sitio se aloja en Cloudflare Pages. Como cualquier servidor web, Cloudflare recibe datos técnicos de cada visita, como la dirección IP y el navegador, para entregar las páginas y proteger el sitio contra ataques.</li>
-            <li><b>Preferencias del navegador.</b> El sitio guarda en el propio navegador del visitante, y nunca en nuestros servidores, el idioma elegido y la vista y el orden preferidos del catálogo. Pueden borrarse en cualquier momento desde la configuración del navegador.</li>
+            <li><b>Preferencias del navegador.</b> El sitio guarda en el propio navegador del visitante, y nunca en nuestros servidores, el idioma elegido, la vista y el orden preferidos del catálogo y la lista de obras vistas recientemente. Pueden borrarse en cualquier momento desde la configuración del navegador.</li>
             <li><b>Buscador.</b> El buscador del sitio funciona dentro del navegador: los términos que se escriben no se envían ni se registran.</li>
             <li><b>Tipografías.</b> Las tipografías se sirven desde el propio sitio, sin recurrir a servicios externos.</li>
           </ol>
           <ol class="en aviso-lista">
             <li><b>Hosting.</b> The website is hosted on Cloudflare Pages. Like any web server, Cloudflare receives technical data from each visit, such as the IP address and browser, in order to deliver pages and protect the site against attacks.</li>
-            <li><b>Browser preferences.</b> The website stores in the visitor's own browser, and never on our servers, the chosen language and the preferred catalogue view and order. They can be deleted at any time from the browser settings.</li>
+            <li><b>Browser preferences.</b> The website stores in the visitor's own browser, and never on our servers, the chosen language, the preferred catalogue view and order, and the list of recently viewed works. They can be deleted at any time from the browser settings.</li>
             <li><b>Search.</b> The site search runs within the browser: search terms are neither sent nor recorded.</li>
             <li><b>Fonts.</b> Fonts are served from the website itself, without relying on external services.</li>
           </ol>

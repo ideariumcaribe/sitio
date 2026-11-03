@@ -43,6 +43,24 @@ descripcion: "Política de preservación digital de Idearium Caribe Co.: copias,
           </ol>
         </section>
 
+        <section id="digitalizacion">
+          <h2 class="es">Especificaciones de digitalización</h2><h2 class="en">Digitization specifications</h2>
+          <ol class="es aviso-lista">
+            <li><b>Equipo.</b> Escáneres cenitales de la familia CZUR (modelo ET25 Pro), que capturan los libros abiertos sin presionarlos contra un cristal, como recomienda FADGI para volúmenes encuadernados.</li>
+            <li><b>Resolución.</b> 320 píxeles por pulgada, en color de 8 bits por canal.</li>
+            <li><b>Nivel de calidad.</b> Estos parámetros siguen el nivel de 3 estrellas de FADGI para libros de colección general (mínimo de 294 ppi) y el de 2 estrellas para libros raros o especiales. El cumplimiento no ha sido certificado mediante cartas de color de referencia.</li>
+            <li><b>Copia maestra.</b> Se exporta en TIFF con compresión sin pérdida, con las correcciones geométricas automáticas del escáner y sin retoque alguno. La limpieza de manchas se aplica solo a las copias de trabajo y de difusión.</li>
+            <li><b>Registro.</b> De cada obra se anotan la fecha de digitalización, el responsable, la resolución, el modo de color, el número de páginas y el estado físico del ejemplar.</li>
+          </ol>
+          <ol class="en aviso-lista">
+            <li><b>Equipment.</b> CZUR overhead scanners (model ET25 Pro), which capture books open without pressing them against glass, as FADGI recommends for bound volumes.</li>
+            <li><b>Resolution.</b> 320 pixels per inch, in 8-bit-per-channel color.</li>
+            <li><b>Quality level.</b> These parameters follow the FADGI 3-star level for general collection books (minimum 294 ppi) and the 2-star level for rare and special books. Conformance has not been certified with reference color targets.</li>
+            <li><b>Master copy.</b> Exported as TIFF with lossless compression, with the scanner's automatic geometric corrections and no retouching. Stain removal is applied only to working and access copies.</li>
+            <li><b>Record.</b> For each work, the digitization date, the person responsible, the resolution, the color mode, the number of pages and the physical condition of the copy are recorded.</li>
+          </ol>
+        </section>
+
         <section id="formatos">
           <h2 class="es">Formatos</h2><h2 class="en">Formats</h2>
           <ol class="es aviso-lista">
@@ -65,13 +83,13 @@ descripcion: "Política de preservación digital de Idearium Caribe Co.: copias,
             <li>Al terminar la digitalización de cada obra se calcula una suma de verificación SHA-256 de cada archivo, que se guarda junto a la obra.</li>
             <li>Las sumas se comprueban en cada transferencia entre ubicaciones y, al menos, una vez al año.</li>
             <li>Si una copia no coincide con su suma de verificación, se sustituye por otra copia íntegra.</li>
-            <li>La copia maestra solo conserva las correcciones geométricas automáticas del escáner (enderezado, recorte y aplanado) y no altera, de manera alguna, el contenido de la obra.</li>
+            <li>La copia maestra solo conserva las correcciones geométricas automáticas del escáner (enderezado, recorte y aplanado), sin retoque alguno, y no altera, de manera alguna, el contenido de la obra.</li>
           </ol>
           <ol class="en aviso-lista">
             <li>When the digitization of a work is completed, a SHA-256 checksum is calculated for each file and stored with the work.</li>
             <li>Checksums are verified on every transfer between locations and at least once a year.</li>
             <li>If a copy does not match its checksum, it is replaced with another intact copy.</li>
-            <li>The master copy keeps only the scanner's automatic geometric corrections (straightening, cropping and flattening) and does not alter the content of the work in any way.</li>
+            <li>The master copy keeps only the scanner's automatic geometric corrections (straightening, cropping and flattening), with no retouching, and does not alter the content of the work in any way.</li>
           </ol>
         </section>
 

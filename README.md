@@ -92,3 +92,7 @@ Cada obra del catálogo lleva dos campos: `derechos_eeuu` (declaración de Right
 ## Accesibilidad
 
 El sitio se revisa con axe-core frente a WCAG 2.2 AA (y buenas prácticas) en escritorio y móvil. Reglas: un solo `h1` por página (el título de la primera sección), niveles de encabezado sin saltos (el pie usa `h2`), objetivos táctiles de al menos 24 px y ninguna región complementaria (`aside`) dentro de otra.
+
+## Licencia de los metadatos
+
+Los metadatos del catálogo (registros MARC, Dublin Core, OAI-PMH, datos del sitio) se publican bajo CC0 1.0, como exigen DPLA y Europeana. Se declara en la página de la Biblioteca, en la política de preservación y en la respuesta Identify del punto OAI (`rightsManifest` con `appliesTo` = metadatos). No se aplica a las obras, cuyos derechos van en `derechos_eeuu` y `derechos_venezuela`.

@@ -94,12 +94,12 @@ descripcion: "Política de preservación digital de Idearium Caribe Co.: copias,
           <ol class="es aviso-lista">
             <li>Cada obra tiene una signatura estable (IC-0001) que nunca se reasigna, y un identificador persistente ARK (ark:{{ sitio.naan }}/IC-0001).</li>
             <li>Cada obra lleva metadatos descriptivos, una declaración de derechos según la legislación venezolana y la estadounidense, y un registro de digitalización con la fecha, el responsable y las características técnicas.</li>
-            <li>Los metadatos se publican en acceso abierto mediante registros MARC y el punto de cosecha OAI-PMH de la Biblioteca.</li>
+            <li>Los metadatos se publican en acceso abierto mediante registros MARC y el punto de cosecha OAI-PMH de la Biblioteca, bajo la licencia CC0 1.0.</li>
           </ol>
           <ol class="en aviso-lista">
             <li>Each work has a stable call number (IC-0001) that is never reassigned, and a persistent ARK identifier (ark:{{ sitio.naan }}/IC-0001).</li>
             <li>Each work carries descriptive metadata, a rights statement under Venezuelan and U.S. law, and a digitization record with the date, the person responsible and the technical characteristics.</li>
-            <li>Metadata are openly published through MARC records and the Library's OAI-PMH endpoint.</li>
+            <li>Metadata are openly published through MARC records and the Library's OAI-PMH endpoint, under the CC0 1.0 license.</li>
           </ol>
         </section>
 

@@ -75,8 +75,8 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
             <a class="more" href="/biblioteca/marc/idearium-caribe.xml">MARCXML (.xml)</a>
             <a class="more" href="/biblioteca/marc/idearium-caribe.mrk" download>MarcEdit (.mrk)</a>
           </div>
-          <p class="es">Los agregadores y repositorios pueden cosechar la colección mediante OAI-PMH, en Dublin Core (<code>oai_dc</code>) o MARCXML (<code>marc21</code>), con las materias como conjuntos: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Cada obra ofrece además su manifiesto IIIF.</p>
-          <p class="en">Aggregators and repositories can harvest the collection via OAI-PMH, in Dublin Core (<code>oai_dc</code>) or MARCXML (<code>marc21</code>), with subjects as sets: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Each work also provides its IIIF manifest.</p>
+          <p class="es">Los agregadores y repositorios pueden cosechar la colección mediante OAI-PMH, en Dublin Core (<code>oai_dc</code>) o MARCXML (<code>marc21</code>), con las materias como conjuntos: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Cada obra ofrece además su manifiesto IIIF. Los metadatos del catálogo se publican bajo la licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license">CC0 1.0</a>: pueden reutilizarse libremente y sin condiciones. Esta licencia se aplica a los datos descriptivos, no a las obras.</p>
+          <p class="en">Aggregators and repositories can harvest the collection via OAI-PMH, in Dublin Core (<code>oai_dc</code>) or MARCXML (<code>marc21</code>), with subjects as sets: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Each work also provides its IIIF manifest. Catalogue metadata are released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license">CC0 1.0</a> license and may be reused freely and without conditions. This license applies to the descriptive data, not to the works.</p>
         </div>
       </div>
     </div>

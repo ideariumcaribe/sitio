@@ -1,0 +1,47 @@
+---
+permalink: /colombeia/rss.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+{%- set arts = collections.articulo | articulosRecientes %}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Colombeia</title>
+  <link>{{ sitio.url }}/colombeia.html</link>
+  <atom:link href="{{ sitio.url }}/colombeia/rss.xml" rel="self" type="application/rss+xml"/>
+  <description>Colombeia (ISSN {{ sitio.issn }}), revista de acceso abierto de Idearium Caribe Co. sobre la historia, la cultura, la sociedad y el pensamiento de Venezuela y América Latina.</description>
+  <language>es</language>
+  <copyright>Creative Commons Atribución 4.0 Internacional (CC BY 4.0)</copyright>
+  {%- if arts.length %}
+  <lastBuildDate>{{ arts[0].data.numero | fechaNumero | fechaRss }}</lastBuildDate>
+  {%- endif %}
+  <image>
+    <url>{{ sitio.url }}/assets/img/compartir.jpg</url>
+    <title>Colombeia</title>
+    <link>{{ sitio.url }}/colombeia.html</link>
+  </image>
+  {%- for a in arts %}
+  {%- set n = collections.numeros | numeroPorId(a.data.numero) %}
+  {%- set enlace = sitio.url + (a.url | urlLimpia) %}
+  <item>
+    <title>{{ a.data.titulo }}{% if a.data.subtitulo %}: {{ a.data.subtitulo }}{% endif %}</title>
+    <link>{{ enlace }}</link>
+    <guid isPermaLink="true">{{ enlace }}</guid>
+    {%- for au in a.data.autores %}
+    <dc:creator>{{ au }}</dc:creator>
+    {%- endfor %}
+    <pubDate>{{ a.data.numero | fechaNumero | fechaRss }}</pubDate>
+    {%- if a.data.seccion %}
+    <category>{{ a.data.seccion }}</category>
+    {%- endif %}
+    {%- for k in a.data.palabras_clave %}
+    <category>{{ k }}</category>
+    {%- endfor %}
+    {%- if a.data.pdf %}
+    <enclosure url="{{ sitio.url }}{{ a.data.pdf }}" length="{{ a.data.pdf | tamanoArchivo }}" type="application/pdf"/>
+    {%- endif %}
+    <description>{{ ('<p><i>Colombeia</i>, n.º ' + a.data.numero + (' (' + n.data.fecha + ')' if n.data.fecha else '') + (', pp. ' + a.data.pagina_inicial + '–' + a.data.pagina_final if a.data.pagina_inicial else '') + '.</p>' + ('<p>' + a.data.resumen + '</p>' if a.data.resumen else '')) }}</description>
+  </item>
+  {%- endfor %}
+</channel>
+</rss>

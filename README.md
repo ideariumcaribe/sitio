@@ -104,3 +104,7 @@ Los metadatos del catálogo (registros MARC, Dublin Core, OAI-PMH, datos del sit
 ## Tipografías
 
 EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde el propio sitio (`assets/fonts/`, declaradas en `assets/fuentes.css`, subconjuntos latin y latin-ext), con sus licencias SIL OFL 1.1 al lado. El sitio no carga nada de Google Fonts y la CSP ya no lo permite.
+
+## Canal RSS de Colombeia
+
+`colombeia/rss.njk` genera `/colombeia/rss.xml` con todos los artículos, del número más reciente al más antiguo. La fecha de cada artículo es el primer día del bimestre de su número (filtro `fechaNumero`: n.º 1 = septiembre de 2025) y el PDF va como adjunto (`enclosure`). Se anuncia en todas las páginas y se enlaza junto a «Todos los números».

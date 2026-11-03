@@ -114,6 +114,10 @@ export default function (eleventyConfig) {
     return JSON.stringify(ld).replace(/</g, "\\u003c");
   });
   eleventyConfig.addFilter("enlacesAutor", enlacesAutor);
+  // Canal RSS de Colombeia: artículos del número más reciente primero; fecha = primer día del bimestre del número (n.º 1 = septiembre de 2025).
+  eleventyConfig.addFilter("articulosRecientes", (arts) => (arts || []).slice().sort((a, b) => b.data.numero - a.data.numero || (a.data.orden ?? 0) - (b.data.orden ?? 0)));
+  eleventyConfig.addFilter("fechaNumero", (n) => { const m = 8 + 2 * (Number(n) - 1); return `${2025 + Math.floor(m / 12)}-${String((m % 12) + 1).padStart(2, "0")}-01`; });
+  eleventyConfig.addFilter("tamanoArchivo", (ruta) => { try { return fs.statSync(new URL("." + ruta, import.meta.url)).size; } catch { return 0; } });
   eleventyConfig.addFilter("recientes", (lista, n) => (lista || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura)).slice(0, n || 6));
   eleventyConfig.addFilter("fechaRss", (f) => { const d = new Date(String(f || "") + "T12:00:00Z"); return isNaN(d) ? "" : d.toUTCString(); });
   eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));

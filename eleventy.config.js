@@ -2,6 +2,14 @@
 import fs from "node:fs";
 import { slugAutor } from "./lib/slug.js";
 const DERECHOS = JSON.parse(fs.readFileSync(new URL("./_data/derechos.json", import.meta.url), "utf8"));
+const AUTORIDADES = JSON.parse(fs.readFileSync(new URL("./_data/autoridades.json", import.meta.url), "utf8"));
+// Enlaces de autoridad de un autor (Wikidata, VIAF, Biblioteca del Congreso, BNE).
+const enlacesAutor = (n) => { const a = AUTORIDADES[n] || {}; return [
+  a.wikidata && { nombre: "Wikidata", url: `https://www.wikidata.org/wiki/${a.wikidata}` },
+  a.viaf && { nombre: "VIAF", url: `https://viaf.org/viaf/${a.viaf}` },
+  a.lc && { nombre: "Biblioteca del Congreso", nombre_en: "Library of Congress", url: `https://id.loc.gov/authorities/names/${a.lc}` },
+  a.bne && { nombre: "Biblioteca Nacional de España", nombre_en: "National Library of Spain", url: `https://datos.bne.es/resource/${a.bne}` },
+].filter(Boolean); };
 const formasAutor = Object.fromEntries(JSON.parse(fs.readFileSync(new URL("./_data/ordenAutores.json", import.meta.url), "utf8")).map((a) => [a.nombre, a.forma_catalogo]));
 const llave = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[«»"“”¿¡]/g, "").trim();
 export default function (eleventyConfig) {
@@ -91,7 +99,7 @@ export default function (eleventyConfig) {
     const { editorial } = pieDe(o.pie_de_imprenta);
     const ld = {
       "@context": "https://schema.org", "@type": "Book", "@id": url, url, name: o.titulo,
-      author: autores.map((n) => ({ "@type": corporativo(formaDe(n)) ? "Organization" : "Person", name: n })),
+      author: autores.map((n) => { const e = enlacesAutor(n).map((x) => x.url); return { "@type": corporativo(formaDe(n)) ? "Organization" : "Person", name: n, ...(e.length ? { sameAs: e } : {}) }; }),
       datePublished: o.anio || undefined, publisher: editorial ? { "@type": "Organization", name: editorial } : undefined,
       inLanguage: o.signatura === "IC-0211" ? "it" : "es", identifier: naan ? [o.signatura, `https://n2t.net/ark:${naan}/${o.signatura}`] : o.signatura,
       about: (o.materias || []).map((s) => (mats || []).find((m) => m.slug === s)).filter(Boolean).map((m) => m.nombre),
@@ -106,6 +114,7 @@ export default function (eleventyConfig) {
     return JSON.stringify(ld).replace(/</g, "\\u003c");
   });
   eleventyConfig.addFilter("autorizadasPor", (lista, titular) => (lista || []).filter((o) => o.autorizacion === titular).length);
+  eleventyConfig.addFilter("enlacesAutor", enlacesAutor);
   eleventyConfig.addFilter("recientes", (lista, n) => (lista || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura)).slice(0, n || 6));
   eleventyConfig.addFilter("fechaRss", (f) => { const d = new Date(String(f || "") + "T12:00:00Z"); return isNaN(d) ? "" : d.toUTCString(); });
   eleventyConfig.addFilter("deMateria", (lista, slug) => (lista || []).filter((o) => (o.materias || []).includes(slug)).sort((a, b) => a.signatura.localeCompare(b.signatura)));

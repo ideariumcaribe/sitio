@@ -399,3 +399,5 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .obra-derechos dd{margin:0}
 @media (max-width:560px){.obra-derechos div{grid-template-columns:1fr;gap:0}}
 .net{align-content:start}
+.aut-autoridades{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin:.8em 0 0;font-size:.85rem}
+.aut-autoridades .label{margin-right:4px}

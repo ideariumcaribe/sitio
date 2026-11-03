@@ -84,3 +84,7 @@ Las páginas de obra incluyen enlaces tipados (signposting.org, nivel 1) en `_in
 ## Derechos de cada obra
 
 Cada obra del catálogo lleva dos campos: `derechos_eeuu` (declaración de RightsStatements.org: `NoC-US`, `InC` o `UND`; etiquetas y enlaces en `_data/derechos.json`) y `derechos_venezuela` (nota pública con la situación en Venezuela y su fundamento legal). Se muestran en la página de la obra y se publican en MARC (campo 542, uno por país), Dublin Core (`dc:rights`), schema.org (`usageInfo`) y Signposting (`license`). Criterio: ley de 1962 (vida + 50 años), ley de 1993 (vida + 60, art. 142) y restauración estadounidense del 1 de enero de 1996. El campo `autorizacion` recoge al titular que autorizó la difusión.
+
+## Registros de autoridad de los autores
+
+`_data/autoridades.json` asocia cada autor del catálogo (por su nombre natural) con sus identificadores de Wikidata, VIAF, Biblioteca del Congreso (LCNAF) y Biblioteca Nacional de España. Se muestran en la página de cada autor, se añaden a schema.org (`sameAs`) y a MARC ($0 con LCNAF y VIAF, $1 con Wikidata en los campos 100/110/700/710). Los autores sin registro verificado no figuran en el archivo.

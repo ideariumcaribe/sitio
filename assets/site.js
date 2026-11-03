@@ -63,5 +63,5 @@
   var a=document.getElementById('arriba'); if(!a) return; var vis=false;
   var ver=function(){var v=window.scrollY>window.innerHeight*2; if(v!==vis){vis=v; a.hidden=!v;}};
   window.addEventListener('scroll',ver,{passive:true}); ver();
-  a.addEventListener('click',function(e){e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); var h=document.querySelector('main h1'); if(h){h.setAttribute('tabindex','-1'); h.focus({preventScroll:true});}});
+  a.addEventListener('click',function(e){e.preventDefault(); window.scrollTo({top:0,behavior:(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth'}); var h=document.querySelector('main h1'); if(h){h.setAttribute('tabindex','-1'); h.focus({preventScroll:true});}});
 })();

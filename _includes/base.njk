@@ -15,6 +15,7 @@
 {% if obra and obra.identificador %}{% include "metas-obra.njk" %}{% endif %}
 </head>
 <body>
+<a class="saltar" href="#contenido"><span class="es">Saltar al contenido</span><span class="en">Skip to content</span></a>
 {%- set u = page.url %}
 <header class="top">
   <div class="wrap">
@@ -36,6 +37,7 @@
     </div>
   </div>
 </header>
+<span id="contenido" tabindex="-1"></span>
 
 {%- set excluidas = ["/biblioteca/catalogo/", "/biblioteca/autores/", "/biblioteca/materias/", "/404.html", "/buscar.html"] %}
 {%- if buscable === false or (page.url in excluidas) or not page.url.endsWith("/") and not page.url.endsWith(".html") %}
@@ -74,7 +76,7 @@
     <div><h2 class="es">Redes académicas</h2><h2 class="en">Scholarly networks</h2>
       <ul>{% for r in sitio.redes_academicas %}<li><a href="{{ r.enlace }}" target="_blank" rel="noopener">{{ r.nombre }}</a></li>{% endfor %}</ul></div>
     <div class="legal">
-      <span>© {{ anio_actual }} {{ sitio.nombre }} · Colombeia ISSN {{ sitio.issn }} · <a href="/aviso-legal.html"><span class="es">Aviso legal</span><span class="en">Legal notice</span></a> · <a href="/preservacion.html"><span class="es">Preservación</span><span class="en">Preservation</span></a> · <a href="/privacidad.html"><span class="es">Privacidad</span><span class="en">Privacy</span></a></span>
+      <span>© {{ anio_actual }} {{ sitio.nombre }} · Colombeia ISSN {{ sitio.issn }} · <a href="/aviso-legal.html"><span class="es">Aviso legal</span><span class="en">Legal notice</span></a> · <a href="/preservacion.html"><span class="es">Preservación</span><span class="en">Preservation</span></a> · <a href="/privacidad.html"><span class="es">Privacidad</span><span class="en">Privacy</span></a> · <a href="/accesibilidad.html"><span class="es">Accesibilidad</span><span class="en">Accessibility</span></a></span>
       <span class="es">Miembro del programa <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> del Internet Archive</span>
       <span class="en">Member of the Internet Archive's <a href="https://communitywebs.archive-it.org/organization/4701/" target="_blank" rel="noopener">Community Webs</a> program</span>
     </div>

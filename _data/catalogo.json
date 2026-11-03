@@ -3451,5 +3451,31 @@
   "derechos_eeuu": "UND",
   "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
   "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
+ },
+ {
+  "signatura": "IC-0262",
+  "identificador": "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-VIII",
+  "titulo": "Documentos para la historia de la vida pública del Libertador. Vol. VIII",
+  "autor": "José Félix Blanco; Ramón Azpúrua",
+  "anio": "1978",
+  "primera_edicion": "1875",
+  "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
+  "incorporacion": "2026-11-02",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
+  "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
+ },
+ {
+  "signatura": "IC-0263",
+  "identificador": "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-IX",
+  "titulo": "Documentos para la historia de la vida pública del Libertador. Vol. IX",
+  "autor": "José Félix Blanco; Ramón Azpúrua",
+  "anio": "1978",
+  "primera_edicion": "1875",
+  "pie_de_imprenta": "Caracas, Ediciones de la Presidencia de la República",
+  "incorporacion": "2026-11-02",
+  "derechos_eeuu": "UND",
+  "derechos_venezuela": "Dominio público en Venezuela: texto de autor fallecido hace más de sesenta años y edición caducada a los quince años (arts. 25 y 36). Los estudios y notas originales de la edición pueden estar protegidos.",
+  "materias": ["independencia", "simon-bolivar", "documentos-y-epistolarios"]
  }
 ]

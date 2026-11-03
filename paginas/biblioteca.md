@@ -10,8 +10,8 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
       <div class="cards">
         <div class="card"><p class="label">Internet Archive</p>
           <h2 class="es">Biblioteca Digital</h2><h2 class="en">Digital Library</h2>
-          <p class="es">{{ sitio.obras_biblioteca }} libros y publicaciones, desde la Independencia hasta el siglo XX, muchos agotados o difíciles de encontrar.</p>
-          <p class="en">{{ sitio.obras_biblioteca }} books and periodicals, from independence to the twentieth century, many out of print or hard to find.</p>
+          <p class="es">{{ catalogo | length }} libros y publicaciones, desde la Independencia hasta el siglo XX, muchos agotados o difíciles de encontrar.</p>
+          <p class="en">{{ catalogo | length }} books and periodicals, from independence to the twentieth century, many out of print or hard to find.</p>
           <a class="more" href="/biblioteca/catalogo/"><span class="es">Consultar el catálogo</span><span class="en">Browse the catalogue</span></a></div>
         <div class="card"><p class="label">Archive-It</p>
           <h2 class="es">Archivo web</h2><h2 class="en">Web archive</h2>
@@ -74,15 +74,21 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
         </div>
         <div class="col para-bibliotecas" id="registros-marc">
           <h3 class="es">Registros para bibliotecas</h3><h3 class="en">Records for libraries</h3>
-          <p class="es">Ofrecemos los registros catalográficos de las {{ sitio.obras_biblioteca }} obras de la Biblioteca Digital en formato MARC 21 (RDA), para que cualquier biblioteca pueda incorporarlas a su catálogo. Cada registro describe la reproducción electrónica e incluye los enlaces de lectura. Los archivos se actualizan con cada nueva incorporación.</p>
-          <p class="en">Catalogue records for all {{ sitio.obras_biblioteca }} works in the Digital Library are available in MARC 21 (RDA), so any library can add them to its catalogue. Each record describes the electronic reproduction and includes the reading links. The files are updated with every new addition.</p>
+          <p class="es">Ofrecemos los registros catalográficos de las {{ catalogo | length }} obras de la Biblioteca Digital en formato MARC 21 (RDA), para que cualquier biblioteca pueda incorporarlas a su catálogo. Cada registro describe la reproducción electrónica e incluye los enlaces de lectura. Los archivos se actualizan con cada nueva incorporación.</p>
+          <p class="en">Catalogue records for all {{ catalogo | length }} works in the Digital Library are available in MARC 21 (RDA), so any library can add them to its catalogue. Each record describes the electronic reproduction and includes the reading links. The files are updated with every new addition.</p>
           <div class="descargas-marc">
             <a class="more" href="/biblioteca/marc/idearium-caribe.mrc" download>MARC 21 (.mrc)</a>
             <a class="more" href="/biblioteca/marc/idearium-caribe.xml">MARCXML (.xml)</a>
             <a class="more" href="/biblioteca/marc/idearium-caribe.mrk" download>MarcEdit (.mrk)</a>
           </div>
-          <p class="es">Los agregadores y repositorios pueden cosechar la colección mediante OAI-PMH, en Dublin Core (<code>oai_dc</code>) o MARCXML (<code>marc21</code>), con las materias como conjuntos: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Cada obra ofrece además su manifiesto IIIF. Los metadatos del catálogo se publican bajo la licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license">CC0 1.0</a>: pueden reutilizarse libremente y sin condiciones. Esta licencia se aplica a los datos descriptivos, no a las obras.</p>
-          <p class="en">Aggregators and repositories can harvest the collection via OAI-PMH, in Dublin Core (<code>oai_dc</code>) or MARCXML (<code>marc21</code>), with subjects as sets: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Each work also provides its IIIF manifest. Catalogue metadata are released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license">CC0 1.0</a> license and may be reused freely and without conditions. This license applies to the descriptive data, not to the works.</p>
+          <p class="es">El catálogo completo también puede descargarse como conjunto de datos, con signaturas, identificadores ARK, autores, temas y derechos de cada obra:</p>
+          <p class="en">The full catalogue can also be downloaded as a dataset, with each work's call number, ARK identifier, authors, subjects and rights:</p>
+          <div class="descargas-marc">
+            <a class="more" href="/biblioteca/datos/catalogo.csv" download="idearium-caribe-catalogo.csv">CSV (.csv)</a>
+            <a class="more" href="/biblioteca/datos/catalogo.json">JSON (.json)</a>
+          </div>
+          <p class="es">Los agregadores y repositorios pueden cosechar la colección mediante OAI-PMH, en Dublin Core (<code>oai_dc</code>) o MARCXML (<code>marc21</code>), con las materias y la revista <i>Colombeia</i> como conjuntos: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Cada obra ofrece además su manifiesto IIIF. Los metadatos del catálogo se publican bajo la licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.es" rel="license">CC0 1.0</a>: pueden reutilizarse libremente y sin condiciones. Esta licencia se aplica a los datos descriptivos, no a las obras.</p>
+          <p class="en">Aggregators and repositories can harvest the collection via OAI-PMH, in Dublin Core (<code>oai_dc</code>) or MARCXML (<code>marc21</code>), with subjects and the journal <i>Colombeia</i> as sets: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Each work also provides its IIIF manifest. Catalogue metadata are released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license">CC0 1.0</a> license and may be reused freely and without conditions. This license applies to the descriptive data, not to the works.</p>
         </div>
       </div>
     </div>

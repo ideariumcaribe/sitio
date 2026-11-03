@@ -11,6 +11,8 @@ const enlacesAutor = (n) => { const a = AUTORIDADES[n] || {}; return [
   a.bne && { nombre: "Biblioteca Nacional de España", nombre_en: "National Library of Spain", url: `https://datos.bne.es/resource/${a.bne}` },
 ].filter(Boolean); };
 const formasAutor = Object.fromEntries(JSON.parse(fs.readFileSync(new URL("./_data/ordenAutores.json", import.meta.url), "utf8")).map((a) => [a.nombre, a.forma_catalogo]));
+// ORCID de los autores de Colombeia (_data/orcid.json, editable en Pages CMS).
+const ORCID = Object.fromEntries(JSON.parse(fs.readFileSync(new URL("./_data/orcid.json", import.meta.url), "utf8")).filter((a) => a.nombre && /^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/.test(String(a.orcid || "").trim())).map((a) => [a.nombre.trim(), a.orcid.trim()]));
 const llave = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[«»"“”¿¡]/g, "").trim();
 export default function (eleventyConfig) {
   // Archivos que se copian tal cual al sitio publicado.
@@ -26,6 +28,8 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addGlobalData("anio_actual", () => new Date().getFullYear());
+  // security.txt: caduca un año después de cada compilación (RFC 9116).
+  eleventyConfig.addGlobalData("expira_seguridad", () => new Date(Date.now() + 365 * 864e5).toISOString().replace(/\.\d{3}Z$/, ".000Z"));
   // Versión de compilación: se añade a las URL de CSS y JS para que los navegadores no usen copias viejas.
   eleventyConfig.addGlobalData("version", () => Date.now().toString(36));
 
@@ -114,6 +118,30 @@ export default function (eleventyConfig) {
     return JSON.stringify(ld).replace(/</g, "\\u003c");
   });
   eleventyConfig.addFilter("enlacesAutor", enlacesAutor);
+  eleventyConfig.addFilter("orcid", (n) => ORCID[String(n || "").trim()] || "");
+  // Fecha AAAA-MM-DD a partir de una fecha YAML (objeto Date) o de un texto.
+  eleventyConfig.addFilter("fechaIso", (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10)));
+  // Datos estructurados (schema.org) de un artículo de Colombeia.
+  eleventyConfig.addFilter("ldArticulo", (d, url, num, sitio) => {
+    const autores = (d.autores || []).filter(Boolean);
+    const ld = {
+      "@context": "https://schema.org", "@type": "ScholarlyArticle", "@id": url, url,
+      headline: d.titulo + (d.subtitulo ? ": " + d.subtitulo : ""),
+      author: autores.map((n) => n === "Consejo editorial" ? { "@type": "Organization", name: n } : { "@type": "Person", name: n, ...(ORCID[n] ? { sameAs: "https://orcid.org/" + ORCID[n] } : {}) }),
+      ...(d.editor ? { editor: { "@type": "Person", name: d.editor } } : {}),
+      datePublished: num && num.data ? String(num.data.anio) : undefined,
+      inLanguage: "es", isAccessibleForFree: true,
+      abstract: d.resumen || undefined, keywords: (d.palabras_clave || []).join(", ") || undefined,
+      pageStart: d.pagina_inicial || undefined, pageEnd: d.pagina_final || undefined,
+      ...(d.doi ? { identifier: "https://doi.org/" + d.doi, sameAs: "https://doi.org/" + d.doi } : {}),
+      ...(d.licencia === "CC BY 4.0" ? { license: "https://creativecommons.org/licenses/by/4.0/" } : {}),
+      encoding: d.pdf ? { "@type": "MediaObject", encodingFormat: "application/pdf", contentUrl: sitio.url + d.pdf } : undefined,
+      isPartOf: { "@type": "PublicationIssue", issueNumber: String(d.numero), ...(num && num.url ? { url: sitio.url + num.url } : {}),
+        isPartOf: { "@type": "Periodical", name: "Colombeia", issn: sitio.issn, url: sitio.url + "/colombeia.html" } },
+      publisher: { "@type": "Organization", name: sitio.nombre, url: sitio.url + "/" },
+    };
+    return JSON.stringify(ld).replace(/</g, "\\u003c");
+  });
   // Canal RSS de Colombeia: artículos del número más reciente primero; fecha = primer día del bimestre del número (n.º 1 = septiembre de 2025).
   eleventyConfig.addFilter("articulosRecientes", (arts) => (arts || []).slice().sort((a, b) => b.data.numero - a.data.numero || (a.data.orden ?? 0) - (b.data.orden ?? 0)));
   eleventyConfig.addFilter("fechaNumero", (n) => { const m = 8 + 2 * (Number(n) - 1); return `${2025 + Math.floor(m / 12)}-${String((m % 12) + 1).padStart(2, "0")}-01`; });
@@ -215,11 +243,13 @@ export default function (eleventyConfig) {
     const pagefind = await import("pagefind");
     const { index } = await pagefind.createIndex({
       forceLanguage: "es",
-      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", "nav", "script"],
+      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".senalar-error", ".saltar", "nav", "script"],
     });
     await index.addDirectory({ path: dir.output });
     await index.writeFiles({ outputPath: dir.output + "/pagefind" });
     await pagefind.close();
+    const { revisarEnlaces } = await import("./lib/enlaces.js");
+    revisarEnlaces(dir.output);
   });
 
   return {

@@ -29,6 +29,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"Colombeia","issn":{{ sitio.issn | dump | safe }},"url":{{ canon | dump | safe }},"inLanguage":"es","isAccessibleForFree":true,"sameAs":[{{ sitio.x_colombeia | dump | safe }},{{ ("https://lccn.loc.gov/" + sitio.lccn_colombeia) | dump | safe }}],"license":"https://creativecommons.org/licenses/by/4.0/","publisher":{"@type":"Organization","name":{{ sitio.nombre | dump | safe }},"url":{{ (sitio.url + "/") | dump | safe }}}}</script>
 {%- elif page.url == "/el-caribe-ilustrado.html" %}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"El Caribe Ilustrado","url":{{ sitio.boletin | dump | safe }},"logo":{{ (sitio.url + "/assets/img/el-caribe-ilustrado-compartir.jpg") | dump | safe }},"inLanguage":"es","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":{{ sitio.nombre | dump | safe }},"url":{{ (sitio.url + "/") | dump | safe }}}}</script>
+{%- elif esArticulo %}
+<script type="application/ld+json">{{ {titulo: titulo, subtitulo: subtitulo, autores: autores, editor: editor, resumen: resumen, palabras_clave: palabras_clave, pagina_inicial: pagina_inicial, pagina_final: pagina_final, doi: doi, licencia: licencia, pdf: pdf, numero: numero} | ldArticulo(canon, numA, sitio) | safe }}</script>
 {%- elif obra %}
 <script type="application/ld+json">{{ obra | ldObra(canon, materias, sitio.naan) | safe }}</script>
 {%- endif %}

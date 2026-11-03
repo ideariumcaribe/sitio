@@ -113,6 +113,10 @@ content:
       - name: anio
         label: Año
         type: number
+      - name: publicado
+        label: Fecha de publicación en línea
+        type: date
+        description: Día en que el número se publicó en el sitio. Fecha de los registros OAI-PMH de sus artículos.
       - name: portada
         label: Portada
         type: image
@@ -315,6 +319,21 @@ content:
         type: string
         description: Por ejemplo, «Vallenilla Lanz, Laureano». Si un autor no figura aquí, se ordena por su nombre de pila.
 
+  - name: orcid
+    label: "Colombeia: ORCID de los autores"
+    type: file
+    path: _data/orcid.json
+    format: json
+    list: true
+    fields:
+      - name: nombre
+        label: Nombre tal como aparece en los artículos
+        type: string
+      - name: orcid
+        label: ORCID
+        type: string
+        description: Solo las 16 cifras con guiones, por ejemplo 0000-0002-1825-0097.
+
   - name: sitio
     label: Datos generales del sitio
     type: file
@@ -366,9 +385,6 @@ content:
       - name: biblioteca_digital
         label: Enlace a la Biblioteca Digital
         type: string
-      - name: obras_biblioteca
-        label: Número de obras en la Biblioteca Digital
-        type: number
       - name: redes_sociales
         label: Redes sociales
         type: object

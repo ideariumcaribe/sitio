@@ -66,6 +66,9 @@ eleventyComputed:
       </section>
       {%- set cTitulo = obra.titulo %}{% set cUrl = sitio.url + page.url %}
       {% include "compartir.njk" %}
+      {%- set asuntoErr = "Error en " + obra.signatura + " · " + obra.titulo %}
+      {%- set cuerpoErr = "Obra: " + obra.signatura + ", " + obra.titulo + "\nEnlace: " + sitio.url + page.url + "\n\nDescriba el problema (página faltante o ilegible, dato equivocado, solicitud de retirada…):\n\n" %}
+      <p class="senalar-error"><a href="mailto:{{ sitio.email_biblioteca }}?subject={{ asuntoErr | urlencode }}&amp;body={{ cuerpoErr | urlencode }}"><span class="es">Señalar un error o solicitar una retirada</span><span class="en">Report an error or request removal</span></a></p>
       {%- set rel = catalogo | relacionadas(obra) %}
       {%- if rel.length %}
       <section class="obras-relacionadas" aria-labelledby="rel-t">

@@ -118,3 +118,14 @@ EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde 
 - **Catálogo**: la búsqueda (`q`), el orden y la vista quedan en la dirección.
 - **Vistos recientemente**: `localStorage` del navegador (`ic-vistos`), mostrado en la página de la Biblioteca.
 - **404 con buscador** (la CSP permite `form-action 'self'`), **volver arriba** e **impresión** limpia con el enlace permanente al pie.
+
+## Datos abiertos, ORCID y cosecha de Colombeia
+
+- **Catálogo como conjunto de datos** (CC0 1.0): `/biblioteca/datos/catalogo.csv` (UTF-8 con BOM, para Excel) y `/biblioteca/datos/catalogo.json`, generados en cada compilación (`biblioteca/datos/datos.11ty.js`).
+- **Número de obras**: se calcula a partir de `_data/catalogo.json`; ya no hay que actualizarlo a mano.
+- **ORCID**: `_data/orcid.json` (Pages CMS, «Colombeia: ORCID de los autores»), con el nombre tal como aparece en los artículos. Se muestra junto al autor y se incluye en `citation_author_orcid`, en schema.org (`ScholarlyArticle`) y en Dublin Core.
+- **OAI-PMH**: conjuntos `biblioteca`, `colombeia` y las materias. Los artículos de *Colombeia* solo se ofrecen en `oai_dc`, con identificadores `oai:ideariumcaribe.com:<archivo>` y la fecha de publicación del número (campo `publicado` de cada número).
+- **Señalar un error**: cada obra lleva un enlace de correo a la Biblioteca con la signatura, el título y la dirección.
+- **Accesibilidad**: `/accesibilidad.html`; enlace «Saltar al contenido» en todas las páginas.
+- **Enlaces internos rotos**: se revisan al final de cada compilación (`lib/enlaces.js`); el resultado aparece en el registro de compilación de Cloudflare.
+- **security.txt**: `/.well-known/security.txt`, con caducidad renovada en cada compilación.

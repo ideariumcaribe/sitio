@@ -8,7 +8,7 @@ descripcion: Idearium Caribe Co. es una fundación cultural sin fines de lucro
   <section id="fundacion">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">La Fundación</p><p class="label en">The Foundation</p>
-        <h2 class="es">La fundación Idearium Caribe</h2><h2 class="en">The Idearium Caribe foundation</h2></div></div>
+        <h1 class="es">La fundación Idearium Caribe</h1><h1 class="en">The Idearium Caribe foundation</h1></div></div>
       <div class="col objetivos">
         <p class="es">Idearium Caribe Co (Georgia, 2025) es una organización sin fines de lucro, registrada como una <i>domestic nonprofit corporation</i>. Surge como fundación cultural cuyos objetivos son (y no están limitados a):</p>
         <p class="en">Idearium Caribe Co (Georgia, 2025) is a nonprofit organization registered as a domestic nonprofit corporation. It was founded as a cultural foundation whose aims include, but are not limited to:</p>

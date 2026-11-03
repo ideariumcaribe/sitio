@@ -6,7 +6,7 @@ descripcion: "Apoye la digitalización y preservación de la memoria documental 
   <section id="apoyanos">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Apóyanos</p><p class="label en">Support us</p>
-        <h2 class="es">Ayúdenos a digitalizar y preservar</h2><h2 class="en">Help us digitize and preserve</h2></div></div>
+        <h1 class="es">Ayúdenos a digitalizar y preservar</h1><h1 class="en">Help us digitize and preserve</h1></div></div>
       <div class="cols">
         <div class="col">
           <p class="es">Su aporte sostiene la digitalización, la preservación y el fomento de la intelectualidad venezolana. Al donar, escriba «Idearium Caribe» en la descripción del pago.</p>
@@ -20,7 +20,7 @@ descripcion: "Apoye la digitalización y preservación de la memoria documental 
           <div><a class="btn" href="https://buymeacoffee.com/ideariumcaribe" target="_blank" rel="noopener">Buy Me a Coffee</a></div>
         </div>
         <div class="col card">
-          <h3 class="es">Done libros</h3><h3 class="en">Donate books</h3>
+          <h2 class="es">Done libros</h2><h2 class="en">Donate books</h2>
           <p class="es">Recibimos libros de autores venezolanos o sobre temas venezolanos y los digitalizamos para su lectura libre en la Biblioteca Digital.</p>
           <p class="en">We accept books by Venezuelan authors or on Venezuelan subjects and digitize them for free reading in the Digital Library.</p>
           <p class="es">Escríbanos a {{ sitio.email_biblioteca }}.</p><p class="en">Write to {{ sitio.email_biblioteca }}.</p>

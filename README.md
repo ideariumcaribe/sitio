@@ -88,3 +88,7 @@ Cada obra del catálogo lleva dos campos: `derechos_eeuu` (declaración de Right
 ## Registros de autoridad de los autores
 
 `_data/autoridades.json` asocia cada autor del catálogo (por su nombre natural) con sus identificadores de Wikidata, VIAF, Biblioteca del Congreso (LCNAF) y Biblioteca Nacional de España. Se muestran en la página de cada autor, se añaden a schema.org (`sameAs`) y a MARC ($0 con LCNAF y VIAF, $1 con Wikidata en los campos 100/110/700/710). Los autores sin registro verificado no figuran en el archivo.
+
+## Accesibilidad
+
+El sitio se revisa con axe-core frente a WCAG 2.2 AA (y buenas prácticas) en escritorio y móvil. Reglas: un solo `h1` por página (el título de la primera sección), niveles de encabezado sin saltos (el pie usa `h2`), objetivos táctiles de al menos 24 px y ninguna región complementaria (`aside`) dentro de otra.

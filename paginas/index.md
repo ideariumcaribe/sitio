@@ -22,13 +22,13 @@ descripcion: "Fundación cultural sin fines de lucro que digitaliza, preserva y 
       <div class="pillars">
         <a class="pillar" href="/biblioteca/catalogo/">
           <span class="num">{{ sitio.obras_biblioteca }}</span>
-          <h3 class="es">Biblioteca Digital</h3><h3 class="en">Digital Library</h3>
+          <h2 class="es">Biblioteca Digital</h2><h2 class="en">Digital Library</h2>
           <p class="es">Libros y publicaciones de historia venezolana, de libre lectura y descarga en Internet Archive.</p>
           <p class="en">Books and periodicals on Venezuelan history, free to read and download on the Internet Archive.</p>
         </a>
         <a class="pillar" href="/colombeia.html">
           <span class="num">{{ collections.numeros | length }}</span>
-          <h3>Colombeia</h3>
+          <h2>Colombeia</h2>
           <p class="es">Revista de historia y pensamiento venezolano e hispanoamericano, en acceso abierto.</p>
           <p class="en">An open-access journal of Venezuelan and Spanish American history and thought.</p>
         </a>

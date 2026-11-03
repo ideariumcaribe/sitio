@@ -48,17 +48,17 @@
         <span><span id="email">{{ sitio.email }}</span><button type="button" class="copy" id="copy-email"><span class="es">Copiar</span><span class="en">Copy</span></button><span class="copy-status" id="copy-status" role="status"></span></span>
       </div>
     </div>
-    <div><h4 class="es">La Fundación</h4><h4 class="en">Foundation</h4>
+    <div><h2 class="es">La Fundación</h2><h2 class="en">Foundation</h2>
       <ul><li><a href="/fundacion.html"><span class="es">Quiénes somos</span><span class="en">Who we are</span></a></li>
         <li><a href="/biblioteca.html#acceso"><span class="es">Acceso y derechos</span><span class="en">Access and rights</span></a></li>
         <li><a href="/apoyanos.html"><span class="es">Apóyanos</span><span class="en">Support us</span></a></li></ul></div>
-    <div><h4 class="es">Publicaciones</h4><h4 class="en">Publications</h4>
+    <div><h2 class="es">Publicaciones</h2><h2 class="en">Publications</h2>
       <ul><li><a href="/biblioteca/catalogo/"><span class="es">Biblioteca Digital</span><span class="en">Digital Library</span></a></li>
         <li><a href="/colombeia.html">Colombeia</a></li>
         <li><a href="/el-caribe-ilustrado.html">El Caribe Ilustrado</a></li></ul></div>
-    <div><h4 class="es">Síguenos</h4><h4 class="en">Follow us</h4>
+    <div><h2 class="es">Síguenos</h2><h2 class="en">Follow us</h2>
       <ul>{% for r in sitio.redes_sociales %}<li><a href="{{ r.enlace }}" target="_blank" rel="noopener">{{ r.nombre }}</a></li>{% endfor %}</ul></div>
-    <div><h4 class="es">Redes académicas</h4><h4 class="en">Scholarly networks</h4>
+    <div><h2 class="es">Redes académicas</h2><h2 class="en">Scholarly networks</h2>
       <ul>{% for r in sitio.redes_academicas %}<li><a href="{{ r.enlace }}" target="_blank" rel="noopener">{{ r.nombre }}</a></li>{% endfor %}</ul></div>
     <div class="legal">
       <span>© {{ anio_actual }} {{ sitio.nombre }} · Colombeia ISSN {{ sitio.issn }} · <a href="/aviso-legal.html"><span class="es">Aviso legal</span><span class="en">Legal notice</span></a></span>

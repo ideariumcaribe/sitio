@@ -54,7 +54,7 @@ section{padding-block:88px}
 section + section{border-top:1px solid var(--line)}
 .stack{display:grid;gap:36px}
 .sec-title{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
-.sec-title h2{font-size:clamp(1.7rem,3vw,2.3rem)}
+.sec-title h2,.sec-title h1{font-size:clamp(1.7rem,3vw,2.3rem)}
 
 /* Welcome */
 .welcome{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:start}
@@ -65,14 +65,14 @@ section + section{border-top:1px solid var(--line)}
 .pillars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:56px}
 .pillar{border:1px solid var(--line);padding:32px;display:grid;gap:12px;text-decoration:none;color:var(--ink);min-width:0;transition:border-color .2s}
 .pillar:hover{border-color:var(--ink);color:var(--ink)}
-.pillar h3{font-size:1.8rem}
+.pillar h3,.pillar h2{font-size:1.8rem}
 .pillar p{color:var(--muted);font-size:1rem}
 .pillar .num{font-family:var(--f-display);font-size:3rem;line-height:1;font-variant-numeric:tabular-nums}
 
 /* Programme cards */
 .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .card{background:var(--soft);padding:28px;display:grid;gap:12px;align-content:start;min-width:0}
-.card h3{font-size:1.35rem}
+.card h3,.card h2{font-size:1.35rem}
 .card p{color:var(--muted);font-size:.98rem}
 
 /* Journal feature */
@@ -82,7 +82,7 @@ section + section{border-top:1px solid var(--line)}
 .cover .s{font-family:var(--f-ui);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .cover .n{font-family:var(--f-display);font-size:4.2rem;line-height:1}
 .feature .text{display:grid;gap:18px}
-.feature h2{font-size:clamp(1.8rem,3.2vw,2.5rem)}
+.feature h2,.feature h1{font-size:clamp(1.8rem,3.2vw,2.5rem)}
 .feature p{color:var(--ink);max-width:40em}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .issues{display:flex;flex-wrap:wrap;gap:18px;font-family:var(--f-ui);font-size:.9rem}
@@ -111,7 +111,7 @@ dl.team dd{margin:0;overflow-wrap:anywhere}
 /* Two-column info */
 .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
 .col{display:grid;gap:14px;align-content:start}
-.col h3{font-size:1.35rem}
+.col h3,.col h2{font-size:1.35rem}
 .col ul,.col ol{margin:0;padding-left:1.15em;display:grid;gap:8px}
 .col li{font-size:1rem}
 .people{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
@@ -139,7 +139,7 @@ dl.team dd{margin:0;overflow-wrap:anywhere}
 footer{border-top:1px solid var(--line)}
 footer .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(4,minmax(0,1fr));gap:40px;padding-block:56px 32px}
 footer .seal{width:64px;height:64px}
-footer h4{font-family:var(--f-ui);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+footer h2,footer h4{font-family:var(--f-ui);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
 footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-family:var(--f-ui);font-size:.92rem}
 footer ul a{text-decoration:none}
 footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display:grid;gap:4px;margin-top:14px}
@@ -315,7 +315,7 @@ footer .addr{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);display
 
 /* El Caribe Ilustrado */
 .ci-intro{display:grid;gap:18px;max-width:46em}
-.ci-intro h2{font-size:clamp(2rem,4vw,3rem)}
+.ci-intro h2,.ci-intro h1{font-size:clamp(2rem,4vw,3rem)}
 ol.principios{padding-left:1.3em;display:grid;gap:12px;margin:0 0 18px}
 ol.principios li{line-height:1.6}
 .ref-codigos{font-size:1rem;color:var(--muted)}
@@ -383,7 +383,7 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .cita-copiar:hover{border-color:var(--ink)}
 .cita-nota{font-size:.88rem;color:var(--muted);margin:0}
 @media (max-width:640px){.como-citar .cita{grid-template-columns:minmax(0,1fr) auto}.como-citar .cita .label{grid-column:1/-1}.bt-resultados button{grid-template-columns:70px minmax(0,1fr)}}
-.aviso{max-width:760px;display:grid;gap:28px}.aviso section{padding:0;border:0}.aviso h3{font-size:1.3rem;margin:0 0 10px}.aviso p{margin:0 0 12px}
+.aviso{max-width:760px;display:grid;gap:28px}.aviso section{padding:0;border:0}.aviso h3,.aviso h2{font-size:1.3rem;margin:0 0 10px}.aviso p{margin:0 0 12px}
 .aviso-lista{margin:0;padding-left:1.4em;display:grid;gap:12px}.aviso-lista li{padding-left:4px}
 .comite .miembro{display:block;margin-bottom:6px}.comite .afil{display:block;font-size:.88em;color:var(--muted)}
 
@@ -402,3 +402,4 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .aut-autoridades{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin:.8em 0 0;font-size:.85rem}
 .aut-autoridades .label{margin-right:4px}
 .para-bibliotecas p{font-size:1rem}
+.abc a{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:24px}

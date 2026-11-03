@@ -6,10 +6,10 @@ descripcion: "Aviso legal del sitio web de Idearium Caribe Co.: uso de asistenci
   <section id="aviso-legal">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Idearium Caribe Co.</p><p class="label en">Idearium Caribe Co.</p>
-        <h2 class="es">Aviso legal</h2><h2 class="en">Legal notice</h2></div></div>
+        <h1 class="es">Aviso legal</h1><h1 class="en">Legal notice</h1></div></div>
       <div class="aviso">
         <section id="inteligencia-artificial">
-          <h3 class="es">Uso de inteligencia artificial</h3><h3 class="en">Use of artificial intelligence</h3>
+          <h2 class="es">Uso de inteligencia artificial</h2><h2 class="en">Use of artificial intelligence</h2>
           <ol class="es aviso-lista">
             <li>En la construcción de la página web y sus recursos se ha empleado asistencia de inteligencia artificial para agilizar procesos. Todos los procesos asistidos son supervisados y curados por humanos.</li>
             <li>La traducción al inglés de la página web es elaborada de forma automática por inteligencia artificial. Hasta nuevo aviso, será llevada a cabo de esta forma por el carácter cambiante de los contenidos y los recursos web.</li>
@@ -26,7 +26,7 @@ descripcion: "Aviso legal del sitio web de Idearium Caribe Co.: uso de asistenci
           </ol>
         </section>
         <section id="criterios-digitalizacion">
-          <h3 class="es">Criterios de digitalización</h3><h3 class="en">Digitization criteria</h3>
+          <h2 class="es">Criterios de digitalización</h2><h2 class="en">Digitization criteria</h2>
           <p class="es">La Fundación Idearium Caribe, a través de su Biblioteca Digital, difunde en acceso abierto obras que cumplen algunos de los criterios que a continuación van a enumerarse, de conformidad con lo expuesto en la Ley sobre el Derecho de Autor (Venezuela), el United States Code y la Copyright Act.</p>
           <p class="en">Through its Digital Library, the Idearium Caribe Foundation makes available in open access works that meet some of the criteria listed below, in accordance with the Venezuelan Copyright Law (Ley sobre el Derecho de Autor), the United States Code and the Copyright Act.</p>
           <ol class="es aviso-lista">

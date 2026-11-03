@@ -13,8 +13,8 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
             <img class="colombeia-logo" src="/assets/img/colombeia-logo.svg" alt="Logo de Colombeia" width="73" height="100">
             <div>
               <p class="label es">Revista</p><p class="label en">Journal</p>
-              <h2 class="es">Colombeia, nuestra columna vertebral</h2>
-              <h2 class="en">Colombeia, our backbone</h2>
+              <h1 class="es">Colombeia, nuestra columna vertebral</h1>
+              <h1 class="en">Colombeia, our backbone</h1>
             </div>
           </div>
           <p class="es">Entre 2024 y 2025, como sabrán nuestros lectores, publicamos más de una centena de artículos y ensayos, contando además boletines y otras formas literarias seleccionadas por nuestro Consejo editorial. En 2025 incursionamos en la publicación periódica. No conformes con nuestro trabajo, del que bien podríamos enorgullecernos por su calidad y diversificación literaria, decidimos que <i>Colombeia</i> podía influir en el debate contemporáneo y servir como un referente intelectual en tiempos donde hay una notoria orfandad del espíritu, un abandono de la literatura y los espacios académicos se vacían. No nos consideramos maestros de nada, ni creemos tener la potestad de la enseñanza, ni autoridad de ningún tipo, pero sí unas grandes ansias de trabajar por el desarrollo de nuestra nación y de nuestra civilización, que mejores tiempos ha visto.</p>

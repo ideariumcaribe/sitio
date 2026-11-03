@@ -46,7 +46,7 @@ layout: base.njk
             <noscript><p><a href="{{ pdf }}">Abrir el PDF</a></p></noscript>
           </section>
         </div>
-        <aside class="art-lado">
+        <div class="art-lado">
           <a class="btn" href="{{ pdf }}" download><span class="es">Descargar PDF</span><span class="en">Download PDF</span></a>
           <div>
             <p class="label"><span class="es">Cómo citar</span><span class="en">How to cite</span></p>
@@ -62,7 +62,7 @@ layout: base.njk
             {%- if pos.anterior %}<a href="{{ pos.anterior.url }}"><span class="label"><span class="es">Anterior</span><span class="en">Previous</span></span>{{ pos.anterior.data.titulo }}</a>{% endif %}
             {%- if pos.siguiente %}<a href="{{ pos.siguiente.url }}"><span class="label"><span class="es">Siguiente</span><span class="en">Next</span></span>{{ pos.siguiente.data.titulo }}</a>{% endif %}
           </nav>
-        </aside>
+        </div>
       </div>
     </div>
   </article>

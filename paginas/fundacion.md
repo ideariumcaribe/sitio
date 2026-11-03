@@ -60,23 +60,6 @@ descripcion: Idearium Caribe Co. es una fundación cultural sin fines de lucro
         </div>
       </div>
       <div class="stack" style="gap:18px">
-        <p class="label es">Autorizaciones</p><p class="label en">Permissions</p>
-        <p class="es">Titulares de derechos que han autorizado la difusión libre y no comercial de sus obras en nuestra Biblioteca Digital.</p>
-        <p class="en">Rights holders who have authorized the free, non-commercial dissemination of their works in our Digital Library.</p>
-        <div class="nets">
-          {%- set n = catalogo | autorizadasPor("Instituto Panamericano de Geografía e Historia (IPGH)") %}
-          <a class="net" href="https://www.ipgh.org" target="_blank" rel="noopener"><b>Instituto Panamericano de Geografía e Historia</b><span class="es">Organismo especializado de la OEA. Autoriza la difusión de sus publicaciones, entre ellas las de su Comité de Orígenes de la Emancipación. {{ n }} obras.</span><span class="en">A specialized organization of the OAS. It authorizes the dissemination of its publications, including those of its Committee on the Origins of Emancipation. {{ n }} works.</span></a>
-          {%- set n = catalogo | autorizadasPor("Agencia Española de Cooperación Internacional para el Desarrollo (AECID)") %}
-          <a class="net" href="https://www.aecid.es" target="_blank" rel="noopener"><b>Agencia Española de Cooperación Internacional para el Desarrollo</b><span class="es">Servicio de Publicaciones de la AECID. Autoriza la difusión de las obras de Ediciones Cultura Hispánica. {{ n }} obras.</span><span class="en">AECID Publications Service. It authorizes the dissemination of the Ediciones Cultura Hispánica works. {{ n }} works.</span></a>
-          {%- set n = catalogo | autorizadasPor("Fundación Casa Uslar Pietri") %}
-          <a class="net" href="https://casauslarpietri.org" target="_blank" rel="noopener"><b>Fundación Casa Uslar Pietri</b><span class="es">Titular de los derechos de la obra de Arturo Uslar Pietri. Autoriza la difusión de toda su obra. {{ n }} obras.</span><span class="en">Rights holder of Arturo Uslar Pietri's work. It authorizes the dissemination of all his works. {{ n }} works.</span></a>
-          {%- set n = catalogo | autorizadasPor("Familia Briceño-Iragorry") %}
-          <a class="net" href="/biblioteca/autores/mario-briceno-iragorry/"><b>Familia Briceño-Iragorry</b><span class="es">Herederos de Mario Briceño-Iragorry. Autorizan la difusión de toda su obra. {{ n }} obras.</span><span class="en">Heirs of Mario Briceño-Iragorry. They authorize the dissemination of all his works. {{ n }} works.</span></a>
-          {%- set n = catalogo | autorizadasPor("Herederos de Manuel Lucena Salmoral") %}
-          <a class="net" href="/biblioteca/autores/manuel-lucena-salmoral/"><b>Herederos de Manuel Lucena Salmoral</b><span class="es">Autorizan la difusión de la obra del historiador español Manuel Lucena Salmoral. {{ n }} {{ "obra" if n == 1 else "obras" }}.</span><span class="en">They authorize the dissemination of the work of the Spanish historian Manuel Lucena Salmoral. {{ n }} {{ "work" if n == 1 else "works" }}.</span></a>
-        </div>
-      </div>
-      <div class="stack" style="gap:18px">
         <p class="label es">Junta Directiva</p><p class="label en">Board of Directors</p>
         <div class="people">
           <div class="person"><b>Alejandro Perdomo Fermin</b><span class="es">Fundador y Director de Asuntos Externos</span><span class="en">Founder and Director of External Affairs</span></div>

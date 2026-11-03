@@ -28,6 +28,7 @@
       <a href="/colombeia.html"{% if u.startsWith("/colombeia") %} aria-current="page"{% endif %}>Colombeia</a>
       <a href="/el-caribe-ilustrado.html"{% if u == "/el-caribe-ilustrado.html" %} aria-current="page"{% endif %}>El Caribe Ilustrado</a>
       <a href="/apoyanos.html"{% if u == "/apoyanos.html" %} aria-current="page"{% endif %}><span class="es">Apóyanos</span><span class="en">Support us</span></a>
+      <a href="/buscar.html" class="menu-buscar"{% if u == "/buscar.html" %} aria-current="page"{% endif %}><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span class="es">Buscar</span><span class="en">Search</span></a>
     </nav>
     <div class="langs" role="group" aria-label="Idioma / Language">
       <button type="button" id="lang-es" data-lang="es" aria-pressed="true">ES</button>
@@ -36,7 +37,17 @@
   </div>
 </header>
 
+{%- set excluidas = ["/biblioteca/catalogo/", "/biblioteca/autores/", "/biblioteca/materias/", "/404.html", "/buscar.html"] %}
+{%- if buscable === false or (page.url in excluidas) or not page.url.endsWith("/") and not page.url.endsWith(".html") %}
 {{ content | safe }}
+{%- else %}
+{%- if obra and obra.identificador %}{% set tipoBusqueda = "Obra" %}{% elif esArticulo %}{% set tipoBusqueda = "Colombeia" %}{% elif page.url.startsWith("/biblioteca/autores/") %}{% set tipoBusqueda = "Autor" %}{% elif page.url.startsWith("/biblioteca/materias/") %}{% set tipoBusqueda = "Tema" %}{% elif page.url.startsWith("/colombeia/") %}{% set tipoBusqueda = "Colombeia" %}{% else %}{% set tipoBusqueda = "Página" %}{% endif %}
+<div data-pagefind-body>
+<span hidden data-pagefind-filter="tipo">{{ tipoBusqueda }}</span>
+{%- if obra and obra.identificador %}<span hidden data-pagefind-meta="image:https://archive.org/services/img/{{ obra.identificador }}"></span><span hidden data-pagefind-meta="image_alt:Portada"></span>{% endif %}
+{{ content | safe }}
+</div>
+{%- endif %}
 
 <footer>
   <div class="wrap">

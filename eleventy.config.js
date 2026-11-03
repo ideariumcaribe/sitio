@@ -136,6 +136,18 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addFilter("urlLimpia", (u) => String(u).replace(/index\.html$/, "").replace(/\.html$/, ""));
 
+  // Buscador del sitio (Pagefind): se indexa _site al terminar cada compilación.
+  eleventyConfig.on("eleventy.after", async ({ dir }) => {
+    const pagefind = await import("pagefind");
+    const { index } = await pagefind.createIndex({
+      forceLanguage: "es",
+      excludeSelectors: [".en", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", "nav", "script"],
+    });
+    await index.addDirectory({ path: dir.output });
+    await index.writeFiles({ outputPath: dir.output + "/pagefind" });
+    await pagefind.close();
+  });
+
   return {
     dir: { input: ".", includes: "_includes", data: "_data", output: "_site" },
     htmlTemplateEngine: "njk",

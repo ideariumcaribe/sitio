@@ -96,3 +96,7 @@ El sitio se revisa con axe-core frente a WCAG 2.2 AA (y buenas prácticas) en es
 ## Licencia de los metadatos
 
 Los metadatos del catálogo (registros MARC, Dublin Core, OAI-PMH, datos del sitio) se publican bajo CC0 1.0, como exigen DPLA y Europeana. Se declara en la página de la Biblioteca, en la política de preservación y en la respuesta Identify del punto OAI (`rightsManifest` con `appliesTo` = metadatos). No se aplica a las obras, cuyos derechos van en `derechos_eeuu` y `derechos_venezuela`.
+
+## Buscador del sitio
+
+`/buscar.html` usa Pagefind (versión fija en package.json). El índice se genera al terminar cada compilación (evento `eleventy.after` en eleventy.config.js) en `_site/pagefind/`. Se indexa el contenido de `data-pagefind-body`, que base.njk pone en todas las páginas salvo el catálogo, los índices de autores y temas, la 404 y el propio buscador (o las que lleven `buscable: false`). Cada página lleva un filtro «tipo» (Obra, Autor, Tema, Colombeia, Página). El texto en inglés (`.en`) y los bloques repetitivos no se indexan. La CSP incluye `'wasm-unsafe-eval'`, que Pagefind necesita.

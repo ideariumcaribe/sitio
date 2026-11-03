@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.6",
+    "pagefind": "1.5.2",
     "pdfjs-dist": "5.4.624"
   }
 }

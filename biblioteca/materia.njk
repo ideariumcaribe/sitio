@@ -7,7 +7,7 @@ pagination:
   alias: mat
 permalink: "/biblioteca/materias/{{ mat.slug }}/"
 eleventyComputed:
-  title: "{{ mat.nombre }} · Biblioteca Digital · Idearium Caribe"
+  title: "Tema: {{ mat.nombre }} · Biblioteca Digital · Idearium Caribe"
   descripcion: "Obras sobre {{ mat.nombre }} en la Biblioteca Digital de Idearium Caribe, de lectura libre en línea."
 ---
 {%- set obras = catalogo | deMateria(mat.slug) -%}

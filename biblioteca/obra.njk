@@ -7,7 +7,7 @@ pagination:
   alias: obra
 permalink: "/biblioteca/obras/{{ obra.identificador }}/"
 eleventyComputed:
-  title: "{{ obra.titulo }} · Biblioteca Digital · Idearium Caribe"
+  title: "{{ obra.titulo }} ({{ obra.anio }}) · Biblioteca Digital · Idearium Caribe"
   descripcion: "{{ obra.titulo }}{% if obra.autor %}, de {{ obra.autor | replace(';', ',') }}{% endif %}{% if obra.anio %} ({{ obra.anio }}){% endif %}. Lectura libre en la Biblioteca Digital de Idearium Caribe."
 ---
 {%- set ordenadas = catalogo | sort(false, true, "signatura") -%}

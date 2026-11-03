@@ -72,6 +72,32 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li>All essays, whose publication we always encourage and seek to promote, will follow the Chicago format (18th ed.). The same rules apply to academic, scientific or research articles, commonly known as papers. We will devote a separate section to style guidelines for the essay genre.</li>
         </ol>
       </div>
+      <div class="col" id="arbitraje">
+        <h3 class="es">Arbitraje</h3><h3 class="en">Peer review</h3>
+        <ol class="es">
+          <li><b>Revisión editorial previa.</b> En un plazo de hasta quince días, el equipo editorial comprueba que el texto se ajuste al ámbito de la revista, a las normas de presentación y a los principios de originalidad. Los textos que no los cumplan se devuelven al autor sin pasar a evaluación.</li>
+          <li><b>Doble ciego.</b> Los artículos y ensayos de investigación se someten a la evaluación de dos especialistas externos al equipo editorial, en la modalidad de doble ciego: ni los autores conocen la identidad de los evaluadores ni estos la de los autores. El autor debe enviar una versión anonimizada de su texto, sin su nombre ni referencias que lo identifiquen.</li>
+          <li><b>Criterios.</b> Los evaluadores consideran la originalidad y pertinencia del tema, el rigor en el uso de las fuentes, la coherencia de la argumentación, la estructura y la calidad de la redacción, y la actualidad de la bibliografía.</li>
+          <li><b>Dictamen.</b> Cada evaluador recomienda aceptar el texto, aceptarlo con cambios menores, solicitar cambios mayores y una nueva evaluación, o rechazarlo. Si los dictámenes son contradictorios, se recurre a un tercer evaluador.</li>
+          <li><b>Plazos.</b> La evaluación se completa en un plazo aproximado de cuatro a seis semanas. El autor dispone de quince días para introducir cambios menores y de treinta para cambios mayores.</li>
+          <li><b>Decisión.</b> La decisión final corresponde a la dirección de la revista, a la vista de los dictámenes y con el parecer del consejo editorial. El autor recibe los informes de evaluación, sin datos que identifiquen a los evaluadores.</li>
+          <li><b>Otras secciones.</b> Las reseñas, los textos de opinión y la creación literaria se someten a revisión editorial, no a arbitraje externo.</li>
+          <li><b>Reconsideración.</b> El autor puede solicitar, de forma razonada, la reconsideración de una decisión. La solicitud se resuelve con la intervención de un evaluador distinto de los anteriores.</li>
+        </ol>
+        <ol class="en">
+          <li><b>Initial editorial review.</b> Within fifteen days, the editorial team checks that the text fits the journal's scope, submission guidelines and originality principles. Texts that do not are returned to the author without being sent for review.</li>
+          <li><b>Double-blind review.</b> Research articles and essays are evaluated by two specialists from outside the editorial team, in a double-blind process: authors do not know the reviewers' identities, and reviewers do not know the authors'. Authors must submit an anonymized version of their text, without their name or identifying references.</li>
+          <li><b>Criteria.</b> Reviewers assess the originality and relevance of the topic, rigor in the use of sources, coherence of the argument, structure and quality of the writing, and currency of the bibliography.</li>
+          <li><b>Recommendation.</b> Each reviewer recommends acceptance, acceptance with minor revisions, major revisions and a new review, or rejection. If the reports conflict, a third reviewer is consulted.</li>
+          <li><b>Timeline.</b> Review is completed in approximately four to six weeks. Authors have fifteen days for minor revisions and thirty for major revisions.</li>
+          <li><b>Decision.</b> The final decision rests with the journal's director, in light of the reports and with the advice of the editorial board. Authors receive the review reports, without information identifying the reviewers.</li>
+          <li><b>Other sections.</b> Reviews, opinion pieces and creative writing undergo editorial review, not external peer review.</li>
+          <li><b>Reconsideration.</b> Authors may submit a reasoned request for reconsideration of a decision. The request is resolved with the involvement of a reviewer different from the previous ones.</li>
+        </ol>
+        <h4 class="es">Preservación</h4><h4 class="en">Preservation</h4>
+        <p class="es">Para garantizar su conservación a largo plazo, cada número y cada artículo de <i>Colombeia</i> se deposita en Internet Archive y en la comunidad de la fundación en Zenodo, además de conservarse en su sitio web.</p>
+        <p class="en">To ensure long-term preservation, every issue and article of <i>Colombeia</i> is deposited in the Internet Archive and in the foundation's Zenodo community, in addition to being kept on its website.</p>
+      </div>
       <div class="col" id="etica">
         <h3 class="es">Ética de publicación</h3><h3 class="en">Publication ethics</h3>
         <p class="es">La revista <i>Colombeia</i> se adhiere a los principios del Committee on Publication Ethics (COPE) e impone las mismas responsabilidades por cumplir a autores, evaluadores y editores derivadas del cumplimiento de las siguientes normas.</p>

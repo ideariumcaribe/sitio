@@ -20,8 +20,8 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
           <a class="more" href="https://archive-it.org/organizations/4701" target="_blank" rel="noopener"><span class="es">Ver en Archive-It</span><span class="en">View on Archive-It</span></a></div>
         <div class="card"><p class="label">Vault</p>
           <h2 class="es">Preservación</h2><h2 class="en">Preservation</h2>
-          <p class="es">Copias maestras de alta resolución, con al menos tres copias en dos ubicaciones y verificación de integridad.</p>
-          <p class="en">High-resolution master copies, with at least three copies in two locations and integrity checks.</p></div>
+          <p class="es">Copias maestras en TIFF y JPG, conservadas en tres ubicaciones independientes: Internet Archive, Vault y almacenamiento en la nube (Backblaze B2) con bloqueo contra borrado. La integridad de cada archivo se verifica mediante sumas SHA-256.</p>
+          <p class="en">Master copies in TIFF and JPG, kept in three independent locations: the Internet Archive, Vault and cloud storage (Backblaze B2) with deletion protection. File integrity is verified with SHA-256 checksums.</p></div>
       </div>
       <div class="stack recientes">
         <div class="sec-title"><div><p class="label es">Novedades</p><p class="label en">New additions</p>

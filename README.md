@@ -76,3 +76,7 @@ En cada compilación, `biblioteca/marc/marc.11ty.js` genera los registros MARC 2
 ## Identificadores persistentes (ARK)
 
 `functions/ark/[[ruta]].js` resuelve los ARK de la Biblioteca: `ark:NAAN/IC-0001` → página de la obra (la signatura es el nombre base; guiones y mayúsculas no cuentan). Con `?info` devuelve la ficha ERC. La regla registrada en la ARK Alliance es `https://www.ideariumcaribe.com/ark/${content}`. Todo se activa al escribir el NAAN en `_data/sitio.json` (campo «NAAN de los identificadores ARK» en Pages CMS): la página de cada obra muestra el identificador, las citas lo usan y MARC, Dublin Core y schema.org lo incluyen. Las signaturas nunca se reasignan.
+
+## Signposting
+
+Las páginas de obra incluyen enlaces tipados (signposting.org, nivel 1) en `_includes/metas-obra.njk`: `cite-as` (ARK), `type` (schema.org), `describedby` (Dublin Core y MARCXML vía OAI-PMH), `item` (manifiesto IIIF) y `collection` (catálogo). Cuando se defina la declaración de derechos de cada obra, se añadirá `license`.

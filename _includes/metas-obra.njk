@@ -8,7 +8,18 @@
 {%- if obra.pie_de_imprenta %}
 <meta name="citation_publisher" content="{{ obra.pie_de_imprenta | editorialDe }}">
 {%- endif %}
-<meta name="citation_language" content="es">
+<meta name="citation_language" content="{{ 'it' if obra.signatura == 'IC-0211' else 'es' }}">
 <meta name="citation_public_url" content="{{ sitio.url }}{{ page.url }}">
 <meta name="DC.type" content="Text">
 <meta name="DC.rights" content="Acceso abierto">
+{#- Signposting (signposting.org, nivel 1): enlaces tipados para agentes y repositorios. #}
+{%- set oaiId = "oai:ideariumcaribe.com:" + obra.signatura %}
+{%- if sitio.naan %}
+<link rel="cite-as" href="https://n2t.net/ark:{{ sitio.naan }}/{{ obra.signatura }}">
+{%- endif %}
+<link rel="type" href="https://schema.org/Book">
+<link rel="type" href="https://schema.org/AboutPage">
+<link rel="describedby" href="{{ sitio.url }}/oai?verb=GetRecord&amp;metadataPrefix=oai_dc&amp;identifier={{ oaiId }}" type="application/xml" title="Dublin Core (oai_dc)">
+<link rel="describedby" href="{{ sitio.url }}/oai?verb=GetRecord&amp;metadataPrefix=marc21&amp;identifier={{ oaiId }}" type="application/xml" title="MARCXML (marc21)">
+<link rel="item" href="https://iiif.archive.org/iiif/3/{{ obra.identificador }}/manifest.json" type="application/ld+json">
+<link rel="collection" href="{{ sitio.url }}/biblioteca/catalogo/" type="text/html">

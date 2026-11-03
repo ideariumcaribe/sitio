@@ -48,7 +48,7 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
   <section id="acceso">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Acceso, derechos y lineamientos</p><p class="label en">Access, rights and guidelines</p>
-        <h2 class="es">Consultar y publicar</h2><h2 class="en">Research and publish</h2></div></div>
+        <h2 class="es">Consultar y reutilizar</h2><h2 class="en">Research and reuse</h2></div></div>
       <div class="cols">
         <div class="col">
           <h3 class="es">Acceso y derechos</h3><h3 class="en">Access and rights</h3>
@@ -65,24 +65,18 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
             <li>If you hold rights to a work and want it removed, write to {{ sitio.email_biblioteca }}: we will restrict access while we review the request and reply in writing.</li>
           </ul>
         </div>
-        <div class="col">
-          <h3 class="es">Publique con nosotros</h3><h3 class="en">Publish with us</h3>
-          <p class="es">Recibimos ensayos, artículos, reseñas, poesía, cuento y folclore para El Caribe Ilustrado y para <i>Colombeia</i>. Consulte los requisitos de envío en el proceso de evaluación de la revista.</p>
-          <p class="en">We welcome essays, articles, reviews, poetry, short fiction and folklore for El Caribe Ilustrado and for <i>Colombeia</i>. See the submission requirements in the journal's review process.</p>
-          <a class="more" href="/colombeia.html#evaluacion"><span class="es">Proceso de evaluación</span><span class="en">Review process</span></a>
+        <div class="col para-bibliotecas" id="registros-marc">
+          <h3 class="es">Registros para bibliotecas</h3><h3 class="en">Records for libraries</h3>
+          <p class="es">Ofrecemos los registros catalográficos de las {{ sitio.obras_biblioteca }} obras de la Biblioteca Digital en formato MARC 21 (RDA), para que cualquier biblioteca pueda incorporarlas a su catálogo. Cada registro describe la reproducción electrónica e incluye los enlaces de lectura. Los archivos se actualizan con cada nueva incorporación.</p>
+          <p class="en">Catalogue records for all {{ sitio.obras_biblioteca }} works in the Digital Library are available in MARC 21 (RDA), so any library can add them to its catalogue. Each record describes the electronic reproduction and includes the reading links. The files are updated with every new addition.</p>
+          <div class="descargas-marc">
+            <a class="more" href="/biblioteca/marc/idearium-caribe.mrc" download>MARC 21 (.mrc)</a>
+            <a class="more" href="/biblioteca/marc/idearium-caribe.xml">MARCXML (.xml)</a>
+            <a class="more" href="/biblioteca/marc/idearium-caribe.mrk" download>MarcEdit (.mrk)</a>
+          </div>
+          <p class="es">Los agregadores y repositorios pueden cosechar la colección mediante OAI-PMH, en Dublin Core (<code>oai_dc</code>) o MARCXML (<code>marc21</code>), con las materias como conjuntos: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Cada obra ofrece además su manifiesto IIIF.</p>
+          <p class="en">Aggregators and repositories can harvest the collection via OAI-PMH, in Dublin Core (<code>oai_dc</code>) or MARCXML (<code>marc21</code>), with subjects as sets: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Each work also provides its IIIF manifest.</p>
         </div>
-      </div>
-      <div class="col para-bibliotecas" id="registros-marc">
-        <h3 class="es">Registros para bibliotecas</h3><h3 class="en">Records for libraries</h3>
-        <p class="es">Ofrecemos los registros catalográficos de las {{ sitio.obras_biblioteca }} obras de la Biblioteca Digital en formato MARC 21 (RDA), para que cualquier biblioteca pueda incorporarlas a su catálogo. Cada registro describe la reproducción electrónica e incluye los enlaces de lectura. Los archivos se actualizan con cada nueva incorporación.</p>
-        <p class="en">Catalogue records for all {{ sitio.obras_biblioteca }} works in the Digital Library are available in MARC 21 (RDA), so any library can add them to its catalogue. Each record describes the electronic reproduction and includes the reading links. The files are updated with every new addition.</p>
-        <div class="descargas-marc">
-          <a class="more" href="/biblioteca/marc/idearium-caribe.mrc" download>MARC 21 (.mrc)</a>
-          <a class="more" href="/biblioteca/marc/idearium-caribe.xml">MARCXML (.xml)</a>
-          <a class="more" href="/biblioteca/marc/idearium-caribe.mrk" download>MarcEdit (.mrk)</a>
-        </div>
-        <p class="es">Los agregadores y repositorios pueden cosechar la colección mediante OAI-PMH, en Dublin Core (<code>oai_dc</code>) o MARCXML (<code>marc21</code>), con las materias como conjuntos: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Cada obra ofrece además su manifiesto IIIF.</p>
-        <p class="en">Aggregators and repositories can harvest the collection via OAI-PMH, in Dublin Core (<code>oai_dc</code>) or MARCXML (<code>marc21</code>), with subjects as sets: <a href="/oai?verb=Identify">https://www.ideariumcaribe.com/oai</a>. Each work also provides its IIIF manifest.</p>
       </div>
     </div>
   </section>

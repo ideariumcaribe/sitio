@@ -59,7 +59,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li>Los archivos adjuntos deben estar en formato .doc o .docx y deben llevar también el título de su publicación. Preferimos la recepción de archivos en formato .doc o .docx porque nos permite trabajar sobre el texto. Si, por alguna razón, hubiera que hacer ajustes al texto, notificaremos al autor. Desaconsejamos profundamente el uso de PDF, ya que haría complicado el trabajo de edición.</li>
           <li>Asegúrese de llenar la siguiente información en el cuerpo de texto del correo que pretende dirigirnos con su futura publicación. Por ejemplo, i) el nombre del autor y de ser posible, una breve reseña del autor ii) el título del texto a publicar, iii) el género literario y iv) un resumen o abstract no mayor a 250 palabras.</li>
           <li>El tiempo de respuesta o recepción será de dos a cinco días hábiles. Le haremos saber de la recepción y de la publicación del mismo.</li>
-          <li>Estará abierta la recepción de ensayos académicos, críticos o de investigación, artículos científicos, de opinión, reseñas o críticas dirigidas a una obra previamente publicada, así como poesía, cuento y folclore mientras, por supuesto, estos últimos se ajusten a los principios representados por nuestro proyecto. Dentro del primer género, el ensayístico, pueden incluirse todas las variantes que aquí no hayamos mencionado por motivos de economía.</li>
+          <li><i>Colombeia</i> recibe artículos de investigación y ensayos académicos sobre la historia, la cultura, la sociedad y el pensamiento de Venezuela y América Latina, que se someten a arbitraje doble ciego. Recibe también reseñas académicas de obras publicadas recientemente, que se someten a revisión editorial. Los textos de opinión y de creación literaria pueden dirigirse a nuestro semanario, El Caribe Ilustrado.</li>
           <li>Todos los ensayos, cuya publicación siempre aconsejamos y buscamos promover, estarán regidos por el formato Chicago (18ª ed). Las mismas normas aplican a los artículos académicos, científicos o de investigación comúnmente conocidos como <i>papers</i>. Dedicaremos un apartado propio a los lineamientos relacionados al estilo del género ensayístico.</li>
         </ol>
         <ol class="en">
@@ -68,7 +68,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li>Attachments must be in .doc or .docx format and must also bear the title of your work. We prefer .doc or .docx files because they allow us to work on the text. If the text needs any adjustments, we will notify the author. We strongly advise against PDF, as it would make editing difficult.</li>
           <li>Make sure to include the following information in the body of the email containing your proposed publication: i) the author's name and, if possible, a short bio; ii) the title of the text; iii) the literary genre; and iv) a summary or abstract of no more than 250 words.</li>
           <li>The response time will be two to five business days. We will let you know when your work has been received and when it is published.</li>
-          <li>We accept academic, critical or research essays, scientific articles, opinion pieces, reviews or critiques of a previously published work, as well as poetry, short stories and folklore, provided, of course, that the latter fit the principles our project represents. The first genre, the essay, includes all variants not mentioned here for the sake of brevity.</li>
+          <li><i>Colombeia</i> accepts research articles and scholarly essays on the history, culture, society and thought of Venezuela and Latin America, which undergo double-blind peer review. It also accepts scholarly reviews of recently published works, which undergo editorial review. Opinion pieces and creative writing may be submitted to our weekly, El Caribe Ilustrado.</li>
           <li>All essays, whose publication we always encourage and seek to promote, will follow the Chicago format (18th ed.). The same rules apply to academic, scientific or research articles, commonly known as papers. We will devote a separate section to style guidelines for the essay genre.</li>
         </ol>
       </div>
@@ -81,7 +81,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li><b>Dictamen.</b> Cada evaluador recomienda aceptar el texto, aceptarlo con cambios menores, solicitar cambios mayores y una nueva evaluación, o rechazarlo. Si los dictámenes son contradictorios, se recurre a un tercer evaluador.</li>
           <li><b>Plazos.</b> La evaluación se completa en un plazo aproximado de cuatro a seis semanas. El autor dispone de quince días para introducir cambios menores y de treinta para cambios mayores.</li>
           <li><b>Decisión.</b> La decisión final corresponde a la dirección de la revista, a la vista de los dictámenes y con el parecer del consejo editorial. El autor recibe los informes de evaluación, sin datos que identifiquen a los evaluadores.</li>
-          <li><b>Otras secciones.</b> Las reseñas, los textos de opinión y la creación literaria se someten a revisión editorial, no a arbitraje externo.</li>
+          <li><b>Reseñas.</b> Las reseñas académicas se someten a revisión editorial, no a arbitraje externo.</li>
           <li><b>Reconsideración.</b> El autor puede solicitar, de forma razonada, la reconsideración de una decisión. La solicitud se resuelve con la intervención de un evaluador distinto de los anteriores.</li>
         </ol>
         <ol class="en">
@@ -91,7 +91,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li><b>Recommendation.</b> Each reviewer recommends acceptance, acceptance with minor revisions, major revisions and a new review, or rejection. If the reports conflict, a third reviewer is consulted.</li>
           <li><b>Timeline.</b> Review is completed in approximately four to six weeks. Authors have fifteen days for minor revisions and thirty for major revisions.</li>
           <li><b>Decision.</b> The final decision rests with the journal's director, in light of the reports and with the advice of the editorial board. Authors receive the review reports, without information identifying the reviewers.</li>
-          <li><b>Other sections.</b> Reviews, opinion pieces and creative writing undergo editorial review, not external peer review.</li>
+          <li><b>Reviews.</b> Scholarly reviews undergo editorial review, not external peer review.</li>
           <li><b>Reconsideration.</b> Authors may submit a reasoned request for reconsideration of a decision. The request is resolved with the involvement of a reviewer different from the previous ones.</li>
         </ol>
         <h4 class="es">Preservación</h4><h4 class="en">Preservation</h4>

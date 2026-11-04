@@ -107,7 +107,7 @@ export default function (eleventyConfig) {
       datePublished: o.anio || undefined, publisher: editorial ? { "@type": "Organization", name: editorial } : undefined,
       inLanguage: o.signatura === "IC-0211" ? "it" : "es", identifier: naan ? [o.signatura, `https://n2t.net/ark:${naan}/${o.signatura}`] : o.signatura,
       about: (o.materias || []).map((s) => (mats || []).find((m) => m.slug === s)).filter(Boolean).map((m) => m.nombre),
-      image: "https://archive.org/services/img/" + o.identificador,
+      image: fs.existsSync(new URL(`./assets/portadas/${o.identificador}.webp`, import.meta.url)) ? `https://www.ideariumcaribe.com/assets/portadas/${o.identificador}.webp` : "https://archive.org/services/img/" + o.identificador,
       sameAs: "https://archive.org/details/" + o.identificador,
       isAccessibleForFree: true, bookFormat: "https://schema.org/EBook",
       usageInfo: DERECHOS[o.derechos_eeuu] ? DERECHOS[o.derechos_eeuu].uri : undefined,
@@ -118,6 +118,16 @@ export default function (eleventyConfig) {
     return JSON.stringify(ld).replace(/</g, "\\u003c");
   });
   eleventyConfig.addFilter("enlacesAutor", enlacesAutor);
+  // Portada de una obra: copia local (assets/portadas, generada con scripts/portadas.py) o, si falta, la miniatura de Internet Archive.
+  eleventyConfig.addFilter("portada", (o, absoluta) => {
+    const id = o && o.identificador; if (!id) return "";
+    return fs.existsSync(new URL(`./assets/portadas/${id}.webp`, import.meta.url)) ? (absoluta ? "https://www.ideariumcaribe.com" : "") + `/assets/portadas/${id}.webp` : `https://archive.org/services/img/${id}`;
+  });
+  // Datos para los filtros del catálogo: década, situación de derechos y temas de cada obra.
+  eleventyConfig.addFilter("decada", (a) => { const n = parseInt(a, 10); return n ? String(Math.floor(n / 10) * 10) : ""; });
+  eleventyConfig.addFilter("decadas", (lista) => { const c = {}; for (const o of lista || []) { const n = parseInt(o.anio, 10); if (n) { const d = Math.floor(n / 10) * 10; c[d] = (c[d] || 0) + 1; } } return Object.keys(c).sort().map((d) => ({ d, n: c[d] })); });
+  eleventyConfig.addFilter("derechoCat", (o) => (o.autorizacion ? "autorizada " : "") + (o.derechos_eeuu || ""));
+  eleventyConfig.addFilter("cuentaFiltro", (lista, campo, valor) => (lista || []).filter((o) => campo === "materia" ? (o.materias || []).includes(valor) : campo === "autorizada" ? !!o.autorizacion : o[campo] === valor).length);
   eleventyConfig.addFilter("orcid", (n) => ORCID[String(n || "").trim()] || "");
   // Fecha AAAA-MM-DD a partir de una fecha YAML (objeto Date) o de un texto.
   eleventyConfig.addFilter("fechaIso", (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10)));

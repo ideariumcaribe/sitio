@@ -129,3 +129,8 @@ EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde 
 - **Accesibilidad**: `/accesibilidad.html`; enlace «Saltar al contenido» en todas las páginas.
 - **Enlaces internos rotos**: se revisan al final de cada compilación (`lib/enlaces.js`); el resultado aparece en el registro de compilación de Cloudflare.
 - **security.txt**: `/.well-known/security.txt`, con caducidad renovada en cada compilación.
+
+## Portadas y filtros del catálogo
+
+- **Portadas locales**: `assets/portadas/<identificador>.webp` (360 px de ancho, unos 16 kB), servidas desde el propio sitio con caché de 30 días. Al incorporar obras, ejecute `python3 scripts/portadas.py` (requiere Pillow): descarga solo las que faltan. Mientras una obra no tenga portada local, el sitio muestra la miniatura de Internet Archive (filtro `portada`).
+- **Filtros del catálogo**: tema, década (del año de la edición digitalizada) y derechos (situación en EE. UU. o «publicadas con autorización»). Se combinan con la búsqueda y quedan en la dirección (`?tema=…&decada=1970&derechos=NoC-US`).

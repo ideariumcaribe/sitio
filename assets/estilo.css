@@ -457,3 +457,9 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .senalar-error{font-family:var(--f-ui);font-size:.86rem;margin-top:14px}
 .senalar-error a{color:var(--muted)}
 @media print{.saltar,.senalar-error{display:none!important}}
+
+/* Catálogo: filtros por tema, década y derechos */
+.cat-filtros{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end}
+.cat-filtro{display:grid;gap:4px;font-family:var(--f-ui);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);flex:1 1 200px;max-width:320px}
+.cat-filtro select{font-family:var(--f-ui);font-size:.92rem;font-weight:400;letter-spacing:0;text-transform:none;color:var(--ink);background:var(--bg);border:1px solid var(--ink);border-radius:0;padding:7px 10px;width:100%;min-height:40px}
+.cat-limpiar{font-family:var(--f-ui);font-size:.88rem;font-weight:600;background:none;border:0;border-bottom:1px solid var(--ink);color:var(--ink);padding:2px 0;cursor:pointer;min-height:24px;margin-bottom:9px}

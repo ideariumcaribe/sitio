@@ -46,7 +46,7 @@
 {%- if obra and obra.identificador %}{% set tipoBusqueda = "Obra" %}{% elif esArticulo %}{% set tipoBusqueda = "Colombeia" %}{% elif page.url.startsWith("/biblioteca/autores/") %}{% set tipoBusqueda = "Autor" %}{% elif page.url.startsWith("/biblioteca/materias/") %}{% set tipoBusqueda = "Tema" %}{% elif page.url.startsWith("/colombeia/") %}{% set tipoBusqueda = "Colombeia" %}{% else %}{% set tipoBusqueda = "Página" %}{% endif %}
 <div data-pagefind-body>
 <span hidden data-pagefind-filter="tipo">{{ tipoBusqueda }}</span>
-{%- if obra and obra.identificador %}<span hidden data-pagefind-meta="image:https://archive.org/services/img/{{ obra.identificador }}"></span><span hidden data-pagefind-meta="image_alt:Portada"></span>{% endif %}
+{%- if obra and obra.identificador %}<span hidden data-pagefind-meta="image:{{ obra | portada }}"></span><span hidden data-pagefind-meta="image_alt:Portada"></span>{% endif %}
 {{ content | safe }}
 </div>
 {%- endif %}

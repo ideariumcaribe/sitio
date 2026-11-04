@@ -319,6 +319,34 @@ content:
         type: string
         description: Por ejemplo, «Vallenilla Lanz, Laureano». Si un autor no figura aquí, se ordena por su nombre de pila.
 
+  - name: cambios
+    label: Registro de cambios
+    type: file
+    path: _data/cambios.json
+    format: json
+    list: true
+    fields:
+      - name: fecha
+        label: Fecha
+        type: date
+        required: true
+      - name: seccion
+        label: Sección
+        type: select
+        options:
+          values: [Biblioteca, Colombeia, El Caribe Ilustrado, Sitio web]
+      - name: es
+        label: Texto en español
+        type: text
+        description: Los títulos de obras y de revistas van entre asteriscos para mostrarlos en cursiva, por ejemplo *Colombeia*.
+      - name: en
+        label: Texto en inglés
+        type: text
+      - name: enlace
+        label: Enlace
+        type: string
+        description: Opcional. Dirección de la página relacionada, por ejemplo /biblioteca/catalogo/.
+
   - name: orcid
     label: "Colombeia: ORCID de los autores"
     type: file

@@ -1,0 +1,156 @@
+[
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Biblioteca",
+  "es": "Nuevos filtros en el catálogo: por tema, por década y por situación de derechos, combinables con la búsqueda y compartibles mediante enlace.",
+  "en": "New catalogue filters by subject, decade and rights status, which can be combined with search and shared by link.",
+  "enlace": "/biblioteca/catalogo/"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Biblioteca",
+  "es": "Se incorporan los volúmenes VIII y IX de los *Documentos para la historia de la vida pública del Libertador*, de José Félix Blanco y Ramón Azpúrua. La Biblioteca reúne 263 obras.",
+  "en": "Volumes VIII and IX of José Félix Blanco and Ramón Azpúrua's *Documentos para la historia de la vida pública del Libertador* are added. The Library now holds 263 works.",
+  "enlace": "/biblioteca/obras/documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-IX/"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Biblioteca",
+  "es": "El catálogo completo puede descargarse como conjunto de datos abierto, en CSV y JSON, bajo la licencia CC0.",
+  "en": "The full catalogue can be downloaded as an open dataset, in CSV and JSON, under the CC0 license.",
+  "enlace": "/biblioteca.html#registros-marc"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Biblioteca",
+  "es": "Cada obra muestra obras relacionadas, citas descargables en RIS y BibTeX para Zotero, Mendeley o EndNote, botones para compartir y un enlace para señalar errores. La Biblioteca recuerda además las obras vistas recientemente.",
+  "en": "Each work now shows related works, downloadable citations in RIS and BibTeX for Zotero, Mendeley or EndNote, share buttons and a link to report errors. The Library also remembers recently viewed works.",
+  "enlace": "/biblioteca/catalogo/"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Biblioteca",
+  "es": "Cada obra indica su situación de derechos según la legislación venezolana y la estadounidense, con las declaraciones normalizadas de RightsStatements.org.",
+  "en": "Each work states its rights status under Venezuelan and U.S. law, using the standardized statements of RightsStatements.org.",
+  "enlace": "/biblioteca/catalogo/?derechos=NoC-US"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Biblioteca",
+  "es": "Las páginas de autor incluyen los años de nacimiento y muerte y enlaces a los registros de autoridad de Wikidata, VIAF, la Biblioteca del Congreso y la Biblioteca Nacional de España.",
+  "en": "Author pages include birth and death years and links to authority records in Wikidata, VIAF, the Library of Congress and the National Library of Spain.",
+  "enlace": "/biblioteca/autores/"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Biblioteca",
+  "es": "Publicamos nuestra política de preservación digital, conforme a los niveles de la NDSA y las directrices de digitalización de FADGI: tres copias de cada obra en ubicaciones independientes y verificación periódica de su integridad.",
+  "en": "We publish our digital preservation policy, following the NDSA levels and the FADGI digitization guidelines: three copies of every work in independent locations and regular integrity checks.",
+  "enlace": "/preservacion.html"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Colombeia",
+  "es": "Publicamos la política de arbitraje de la revista, por pares y en doble ciego. La convocatoria queda abierta a artículos de investigación, ensayos académicos y reseñas.",
+  "en": "We publish the journal's peer review policy, double-blind. The call for papers is open to research articles, academic essays and reviews.",
+  "enlace": "/colombeia.html#arbitraje"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Colombeia",
+  "es": "Los artículos pueden seguirse por RSS y se ofrecen a los cosechadores académicos mediante OAI-PMH, con datos estructurados para Google Académico.",
+  "en": "Articles can be followed by RSS and are available to academic harvesters through OAI-PMH, with structured data for Google Scholar.",
+  "enlace": "/colombeia/rss.xml"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Sitio web",
+  "es": "Nuevo buscador en todo el sitio: obras, autores, temas, artículos de *Colombeia* y páginas, con filtro por tipo.",
+  "en": "New site-wide search covering works, authors, subjects, *Colombeia* articles and pages, with a filter by type.",
+  "enlace": "/buscar.html"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Sitio web",
+  "es": "Publicamos la política de privacidad: el sitio no usa cookies ni herramientas de seguimiento, y las tipografías se sirven desde el propio sitio.",
+  "en": "We publish our privacy policy: the website uses no cookies or tracking tools, and fonts are served from the site itself.",
+  "enlace": "/privacidad.html"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Sitio web",
+  "es": "Publicamos la declaración de accesibilidad del sitio, conforme a las pautas WCAG 2.2, nivel AA.",
+  "en": "We publish the website's accessibility statement, following WCAG 2.2, level AA.",
+  "enlace": "/accesibilidad.html"
+ },
+ {
+  "fecha": "2026-11-02",
+  "seccion": "Biblioteca",
+  "es": "Cada obra tiene un identificador persistente ARK (ark:33524/IC-0001), asignado por la ARK Alliance, que garantiza un enlace estable para citarla.",
+  "en": "Each work has a persistent ARK identifier (ark:33524/IC-0001), assigned through the ARK Alliance, which guarantees a stable link for citation.",
+  "enlace": "https://n2t.net/ark:33524/IC-0001"
+ },
+ {
+  "fecha": "2026-11-01",
+  "seccion": "Biblioteca",
+  "es": "Registros catalográficos MARC 21 de todas las obras, para que cualquier biblioteca pueda incorporarlas a su catálogo, y punto de cosecha OAI-PMH para agregadores y repositorios. Cada obra ofrece también su manifiesto IIIF.",
+  "en": "MARC 21 catalogue records for every work, so that any library can add them to its catalogue, and an OAI-PMH endpoint for aggregators and repositories. Each work also provides its IIIF manifest.",
+  "enlace": "/biblioteca.html#registros-marc"
+ },
+ {
+  "fecha": "2026-11-01",
+  "seccion": "Colombeia",
+  "es": "Alejandra Martínez Canchica y Leonardo L. González Contreras se incorporan al Consejo editorial, y la revista presenta su comité científico.",
+  "en": "Alejandra Martínez Canchica and Leonardo L. González Contreras join the Editorial Board, and the journal presents its scientific committee.",
+  "enlace": "/colombeia.html"
+ },
+ {
+  "fecha": "2026-10-31",
+  "seccion": "Biblioteca",
+  "es": "Se incorporan los volúmenes I a VII de los *Documentos para la historia de la vida pública del Libertador*.",
+  "en": "Volumes I to VII of *Documentos para la historia de la vida pública del Libertador* are added.",
+  "enlace": "/biblioteca/catalogo/?q=vida%20publica%20del%20libertador"
+ },
+ {
+  "fecha": "2026-10-31",
+  "seccion": "Sitio web",
+  "es": "El aviso legal recoge nuestra política sobre el uso de inteligencia artificial y los criterios de digitalización de la Biblioteca.",
+  "en": "The legal notice sets out our policy on the use of artificial intelligence and the Library's digitization criteria.",
+  "enlace": "/aviso-legal.html"
+ },
+ {
+  "fecha": "2026-10-30",
+  "seccion": "Biblioteca",
+  "es": "Búsqueda dentro del texto de cada obra, sección «Cómo citar» y canal RSS con las últimas incorporaciones.",
+  "en": "Search within the text of each work, a “How to cite” section and an RSS feed of the latest additions.",
+  "enlace": "/biblioteca/novedades.xml"
+ },
+ {
+  "fecha": "2026-10-29",
+  "seccion": "Biblioteca",
+  "es": "La Biblioteca se organiza por temas, y el catálogo se muestra con portadas y puede ordenarse por signatura, título, autor, editorial o año.",
+  "en": "The Library is organized by subject, and the catalogue is shown with covers and can be sorted by call number, title, author, publisher or year.",
+  "enlace": "/biblioteca/materias/"
+ },
+ {
+  "fecha": "2026-10-29",
+  "seccion": "Colombeia",
+  "es": "Publicamos la política de ética de publicación de la revista.",
+  "en": "We publish the journal's publication ethics policy.",
+  "enlace": "/colombeia.html#etica"
+ },
+ {
+  "fecha": "2026-10-29",
+  "seccion": "El Caribe Ilustrado",
+  "es": "El Caribe Ilustrado estrena página propia y dominio: elcaribeilustrado.com.",
+  "en": "El Caribe Ilustrado launches its own page and domain: elcaribeilustrado.com.",
+  "enlace": "/el-caribe-ilustrado.html"
+ },
+ {
+  "fecha": "2026-10-28",
+  "seccion": "Colombeia",
+  "es": "*Colombeia* cuenta con número de control de la Biblioteca del Congreso de los Estados Unidos (LCCN) y con cuenta propia en X, @RevColombeia.",
+  "en": "*Colombeia* now has a Library of Congress Control Number (LCCN) and its own X account, @RevColombeia.",
+  "enlace": "/colombeia.html"
+ }
+]

@@ -128,6 +128,11 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("decadas", (lista) => { const c = {}; for (const o of lista || []) { const n = parseInt(o.anio, 10); if (n) { const d = Math.floor(n / 10) * 10; c[d] = (c[d] || 0) + 1; } } return Object.keys(c).sort().map((d) => ({ d, n: c[d] })); });
   eleventyConfig.addFilter("derechoCat", (o) => (o.autorizacion ? "autorizada " : "") + (o.derechos_eeuu || ""));
   eleventyConfig.addFilter("cuentaFiltro", (lista, campo, valor) => (lista || []).filter((o) => campo === "materia" ? (o.materias || []).includes(valor) : campo === "autorizada" ? !!o.autorizacion : o[campo] === valor).length);
+  // Registro de cambios: fechas distintas (de la más reciente a la más antigua), fecha larga y cursivas con *asteriscos*.
+  eleventyConfig.addFilter("fechasUnicas", (l) => [...new Set((l || []).map((c) => c.fecha))].sort().reverse());
+  eleventyConfig.addFilter("fechaLarga", (f, idi) => { const [a, m, d] = String(f).split("-").map(Number); const fecha = new Date(Date.UTC(a, m - 1, d));
+    return idi === "en" ? fecha.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }) : `${d} de ${fecha.toLocaleDateString("es-ES", { month: "long", timeZone: "UTC" })} de ${a}`; });
+  eleventyConfig.addFilter("cursivas", (t) => String(t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\*([^*]+)\*/g, "<i>$1</i>"));
   eleventyConfig.addFilter("orcid", (n) => ORCID[String(n || "").trim()] || "");
   // Fecha AAAA-MM-DD a partir de una fecha YAML (objeto Date) o de un texto.
   eleventyConfig.addFilter("fechaIso", (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10)));

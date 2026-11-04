@@ -258,7 +258,7 @@ export default function (eleventyConfig) {
     const pagefind = await import("pagefind");
     const { index } = await pagefind.createIndex({
       forceLanguage: "es",
-      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".senalar-error", ".saltar", "nav", "script"],
+      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".obra-materias .label", ".senalar-error", ".saltar", "nav", "script"],
     });
     await index.addDirectory({ path: dir.output });
     await index.writeFiles({ outputPath: dir.output + "/pagefind" });

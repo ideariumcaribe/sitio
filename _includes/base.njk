@@ -85,5 +85,8 @@
 
 <script src="/assets/site.js?v={{ version }}" defer></script>
 {% if esArticulo %}<script type="module" src="/assets/lector.js?v={{ version }}"></script>{% endif %}
+{%- if sitio.analitica %}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ sitio.analitica }}"}'></script>
+{%- endif %}
 </body>
 </html>

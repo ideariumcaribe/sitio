@@ -67,6 +67,14 @@ layout: base.njk
           </nav>
         </div>
       </div>
+      {%- for ab in autores | obrasDeAutores(catalogo) %}
+      <section class="art-biblioteca" aria-labelledby="ab-{{ ab.slug }}">
+        <h2 id="ab-{{ ab.slug }}" class="label"><span class="es">{{ ab.nombre }} en la Biblioteca Digital</span><span class="en">{{ ab.nombre }} in the Digital Library</span></h2>
+        {%- set lista = ab.obras.slice(0, 6) %}{% set clase = "portadas-recientes" %}{% set oculta = false %}
+        {% include "portadas-grid.njk" %}
+        <a class="more" href="/biblioteca/autores/{{ ab.slug }}/"><span class="es">{{ "Ver la obra" if ab.obras.length == 1 else "Ver las " + ab.obras.length + " obras" }} del autor</span><span class="en">{{ "See the work" if ab.obras.length == 1 else "See all " + ab.obras.length + " works" }} by this author</span></a>
+      </section>
+      {%- endfor %}
     </div>
   </article>
 </main>

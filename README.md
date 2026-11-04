@@ -134,3 +134,9 @@ EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde 
 
 - **Portadas locales**: `assets/portadas/<identificador>.webp` (360 px de ancho, unos 16 kB), servidas desde el propio sitio con caché de 30 días. Al incorporar obras, ejecute `python3 scripts/portadas.py` (requiere Pillow): descarga solo las que faltan. Mientras una obra no tenga portada local, el sitio muestra la miniatura de Internet Archive (filtro `portada`).
 - **Filtros del catálogo**: tema, década (del año de la edición digitalizada) y derechos (situación en EE. UU. o «publicadas con autorización»). Se combinan con la búsqueda y quedan en la dirección (`?tema=…&decada=1970&derechos=NoC-US`).
+
+## Imágenes para compartir, enlaces Biblioteca–Colombeia y estadísticas
+
+- **Imágenes para compartir** (Open Graph, 1200×630): `assets/og/{obras,articulos,autores,temas,paginas}/…jpg`. Tras compilar, ejecute `node scripts/tarjetas-og.cjs` (requiere Playwright): genera solo las tarjetas nuevas o cuyo texto cambió, según `assets/og/indice.json`. Los textos salen de `/og/datos.json` (`og/datos.11ty.js`); la plantilla es `scripts/og-plantilla.html`. Las páginas sin tarjeta usan la imagen anterior.
+- **Biblioteca y Colombeia**: los artículos muestran las obras de sus autores en la Biblioteca y las páginas de autor sus textos en la revista. Si un autor figura con otro nombre en la revista, añádalo a `EQUIV_COLOMBEIA` (eleventy.config.js).
+- **Estadísticas**: Cloudflare Web Analytics, sin cookies, con el token de `sitio.analitica` (vacío lo desactiva). La CSP admite `static.cloudflareinsights.com` y `cloudflareinsights.com`. Los datos se consultan en el panel de Cloudflare, en Analytics & Logs › Web Analytics.

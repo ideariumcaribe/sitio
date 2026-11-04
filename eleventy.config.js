@@ -133,6 +133,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("fechaLarga", (f, idi) => { const [a, m, d] = String(f).split("-").map(Number); const fecha = new Date(Date.UTC(a, m - 1, d));
     return idi === "en" ? fecha.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }) : `${d} de ${fecha.toLocaleDateString("es-ES", { month: "long", timeZone: "UTC" })} de ${a}`; });
   eleventyConfig.addFilter("cursivas", (t) => String(t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\*([^*]+)\*/g, "<i>$1</i>"));
+  // Imagen para compartir generada con scripts/tarjetas-og.cjs (assets/og/...), si existe.
+  eleventyConfig.addFilter("ogImagen", (archivo) => (archivo && fs.existsSync(new URL(`./assets/og/${archivo}`, import.meta.url)) ? `https://www.ideariumcaribe.com/assets/og/${archivo}` : ""));
   eleventyConfig.addFilter("orcid", (n) => ORCID[String(n || "").trim()] || "");
   // Fecha AAAA-MM-DD a partir de una fecha YAML (objeto Date) o de un texto.
   eleventyConfig.addFilter("fechaIso", (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10)));
@@ -241,7 +243,15 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("claveEditorial", (p) => { const s = String(p || ""); const i = s.indexOf(","); return llave(i >= 0 ? s.slice(i + 1) : s); });
   eleventyConfig.addFilter("split", (s, sep) => String(s || "").split(sep).map((x) => x.trim()).filter(Boolean));
   eleventyConfig.addFilter("otrosAutores", (s, nombre) => String(s || "").split(";").map((x) => x.trim()).filter((x) => x && x !== nombre).join(", "));
-  eleventyConfig.addFilter("deAutor", (arts, nombre) => (arts || []).filter((a) => (a.data.autores || []).includes(nombre) || a.data.editor === nombre));
+  // Autores de Colombeia que figuran con otro nombre en el catálogo de la Biblioteca.
+  const EQUIV_COLOMBEIA = { "J. E. Casariego": "Jesús Evaristo Casariego" };
+  const enBiblioteca = (n) => EQUIV_COLOMBEIA[String(n || "").trim()] || String(n || "").trim();
+  eleventyConfig.addFilter("deAutor", (arts, nombre) => (arts || []).filter((a) => (a.data.autores || []).map(enBiblioteca).includes(nombre) || enBiblioteca(a.data.editor) === nombre));
+  // Obras de la Biblioteca de los autores de un artículo de Colombeia: [{ nombre, slug, obras }].
+  eleventyConfig.addFilter("obrasDeAutores", (autores, catalogo) => (autores || []).map(enBiblioteca).map((n) => {
+    const obras = (catalogo || []).filter((o) => String(o.autor || "").split(";").map((x) => x.trim()).includes(n)).sort((a, b) => a.signatura.localeCompare(b.signatura));
+    return { nombre: n, slug: slugAutor(n), obras };
+  }).filter((x) => x.obras.length));
   eleventyConfig.addFilter("porInicial", (autores) => {
     const grupos = [];
     for (const a of autores || []) {
@@ -258,7 +268,7 @@ export default function (eleventyConfig) {
     const pagefind = await import("pagefind");
     const { index } = await pagefind.createIndex({
       forceLanguage: "es",
-      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".obra-materias .label", ".senalar-error", ".saltar", "nav", "script"],
+      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".obra-materias .label", ".art-biblioteca", ".en-colombeia", ".senalar-error", ".saltar", "nav", "script"],
     });
     await index.addDirectory({ path: dir.output });
     await index.writeFiles({ outputPath: dir.output + "/pagefind" });

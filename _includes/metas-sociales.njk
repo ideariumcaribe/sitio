@@ -13,6 +13,17 @@
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ desc | truncate(300) }}">
 <meta property="og:url" content="{{ canon }}">
+{%- set PAG_OG = {"/biblioteca.html": "biblioteca", "/colombeia.html": "colombeia", "/fundacion.html": "fundacion", "/cambios.html": "cambios", "/preservacion.html": "preservacion", "/accesibilidad.html": "accesibilidad", "/privacidad.html": "privacidad", "/buscar.html": "buscar", "/aviso-legal.html": "aviso-legal", "/apoyanos.html": "apoyanos", "/biblioteca/catalogo/": "catalogo", "/biblioteca/autores/": "autores", "/biblioteca/materias/": "temas"} %}
+{%- if obra and obra.identificador %}{% set ogArch = "obras/" + obra.identificador + ".jpg" %}{% elif esArticulo %}{% set ogArch = "articulos/" + page.fileSlug + ".jpg" %}{% elif autor and autor.slug %}{% set ogArch = "autores/" + autor.slug + ".jpg" %}{% elif mat and mat.slug %}{% set ogArch = "temas/" + mat.slug + ".jpg" %}{% elif PAG_OG[page.url] %}{% set ogArch = "paginas/" + PAG_OG[page.url] + ".jpg" %}{% else %}{% set ogArch = "" %}{% endif %}
+{%- set ogTarjeta = ogArch | ogImagen %}
+{%- if ogTarjeta %}
+<meta property="og:image" content="{{ ogTarjeta }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ title }}">
+<meta name="twitter:image" content="{{ ogTarjeta }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- else %}
 <meta property="og:image" content="{% if obra %}https://archive.org/download/{{ obra.identificador }}/page/n0_w800.jpg{% else %}{{ sitio.url }}{{ imgSocial }}{% endif %}">
 {%- set imgAbs = ("https://archive.org/download/" + obra.identificador + "/page/n0_w800.jpg") if obra else (sitio.url + imgSocial) %}
 {%- if not obra and (imgSocial == "/assets/img/compartir.jpg" or imgSocial == "/assets/img/el-caribe-ilustrado-compartir.jpg") %}
@@ -22,6 +33,7 @@
 <meta property="og:image:alt" content="{{ title }}">
 <meta name="twitter:image" content="{{ imgAbs }}">
 <meta name="twitter:card" content="{{ 'summary_large_image' if (imgSocial == '/assets/img/compartir.jpg' and not obra) else 'summary' }}">
+{%- endif %}
 <meta name="twitter:site" content="@{{ (sitio.x_colombeia | replace('https://x.com/', '')) if page.url.startsWith('/colombeia') else 'IdeariumCaribe' }}">
 {%- if page.url == "/" %}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":{{ sitio.nombre | dump | safe }},"alternateName":"Idearium Caribe","url":{{ (sitio.url + "/") | dump | safe }},"logo":{{ (sitio.url + "/assets/img/logo-512.png") | dump | safe }},"description":{{ sitio.descripcion | dump | safe }},"email":{{ sitio.email | dump | safe }},"address":{{ sitio.direccion | dump | safe }},"sameAs":[{% for r in sitio.redes_sociales %}{{ r.enlace | dump | safe }},{% endfor %}{% for r in sitio.redes_academicas %}{{ r.enlace | dump | safe }}{% if not loop.last %},{% endif %}{% endfor %}]}</script>

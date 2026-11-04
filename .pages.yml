@@ -406,6 +406,10 @@ content:
         label: NAAN de los identificadores ARK
         type: string
         description: "Número de cinco cifras asignado por la ARK Alliance. Al rellenarlo se activan los identificadores persistentes de la Biblioteca (ark:NAAN/IC-0001)."
+      - name: analitica
+        label: Token de Cloudflare Web Analytics
+        type: string
+        description: Estadísticas de visitas sin cookies. Vacío desactiva el contador.
       - name: boletin
         label: Dirección de El Caribe Ilustrado (Substack)
         type: string

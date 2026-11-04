@@ -1,6 +1,13 @@
 [
  {
   "fecha": "2026-11-03",
+  "seccion": "Colombeia",
+  "es": "Los artículos de *Colombeia* enlazan con las obras de sus autores en la Biblioteca Digital, y las páginas de autor de la Biblioteca muestran sus textos en la revista.",
+  "en": "*Colombeia* articles now link to their authors' works in the Digital Library, and Library author pages list their texts in the journal.",
+  "enlace": "/colombeia/articulos/colombeia-04-02-jose-antonio-paez"
+ },
+ {
+  "fecha": "2026-11-03",
   "seccion": "Biblioteca",
   "es": "Nuevos filtros en el catálogo: por tema, por década y por situación de derechos, combinables con la búsqueda y compartibles mediante enlace.",
   "en": "New catalogue filters by subject, decade and rights status, which can be combined with search and shared by link.",
@@ -61,6 +68,20 @@
   "es": "Los artículos pueden seguirse por RSS y se ofrecen a los cosechadores académicos mediante OAI-PMH, con datos estructurados para Google Académico.",
   "en": "Articles can be followed by RSS and are available to academic harvesters through OAI-PMH, with structured data for Google Scholar.",
   "enlace": "/colombeia/rss.xml"
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Sitio web",
+  "es": "Cada obra, artículo, autor y tema tiene su propia imagen al compartirse en redes sociales y aplicaciones de mensajería, con la portada, el título y el autor.",
+  "en": "Each work, article, author and subject now has its own image when shared on social media and messaging apps, with the cover, title and author.",
+  "enlace": ""
+ },
+ {
+  "fecha": "2026-11-03",
+  "seccion": "Sitio web",
+  "es": "El sitio cuenta sus visitas de forma agregada con Cloudflare Web Analytics, sin cookies y sin identificar a los visitantes. La política de privacidad se actualiza en consecuencia.",
+  "en": "The website counts visits in aggregate with Cloudflare Web Analytics, without cookies and without identifying visitors. The privacy policy has been updated accordingly.",
+  "enlace": "/privacidad.html"
  },
  {
   "fecha": "2026-11-03",

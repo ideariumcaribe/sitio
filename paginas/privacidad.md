@@ -8,19 +8,21 @@ descripcion: "Política de privacidad del sitio web de Idearium Caribe Co.: qué
       <div class="sec-title"><div><p class="label es">Idearium Caribe Co.</p><p class="label en">Idearium Caribe Co.</p>
         <h1 class="es">Política de privacidad</h1><h1 class="en">Privacy policy</h1></div></div>
       <div class="aviso">
-        <p class="es">Este sitio no usa cookies, no muestra publicidad, no emplea herramientas de seguimiento y no vende ni cede datos personales. Esta política explica los pocos datos que se tratan y quién los trata.</p>
-        <p class="en">This website does not use cookies, does not show advertising, does not use tracking tools and does not sell or share personal data. This policy explains the few data that are processed and who processes them.</p>
+        <p class="es">Este sitio no usa cookies, no muestra publicidad, no sigue a sus visitantes de un sitio a otro y no vende ni cede datos personales. Esta política explica los pocos datos que se tratan y quién los trata.</p>
+        <p class="en">This website does not use cookies, does not show advertising, does not track its visitors across websites and does not sell or share personal data. This policy explains the few data that are processed and who processes them.</p>
 
         <section id="navegacion">
           <h2 class="es">Navegación por el sitio</h2><h2 class="en">Browsing the website</h2>
           <ol class="es aviso-lista">
             <li><b>Alojamiento.</b> El sitio se aloja en Cloudflare Pages. Como cualquier servidor web, Cloudflare recibe datos técnicos de cada visita, como la dirección IP y el navegador, para entregar las páginas y proteger el sitio contra ataques.</li>
+            <li><b>Estadísticas de visitas.</b> Para saber qué obras y páginas se consultan, el sitio usa Cloudflare Web Analytics, que cuenta las visitas de forma agregada, sin cookies, sin guardar datos en el navegador y sin identificar ni seguir a los visitantes.</li>
             <li><b>Preferencias del navegador.</b> El sitio guarda en el propio navegador del visitante, y nunca en nuestros servidores, el idioma elegido, la vista y el orden preferidos del catálogo y la lista de obras vistas recientemente. Pueden borrarse en cualquier momento desde la configuración del navegador.</li>
             <li><b>Buscador.</b> El buscador del sitio funciona dentro del navegador: los términos que se escriben no se envían ni se registran.</li>
             <li><b>Tipografías.</b> Las tipografías se sirven desde el propio sitio, sin recurrir a servicios externos.</li>
           </ol>
           <ol class="en aviso-lista">
             <li><b>Hosting.</b> The website is hosted on Cloudflare Pages. Like any web server, Cloudflare receives technical data from each visit, such as the IP address and browser, in order to deliver pages and protect the site against attacks.</li>
+            <li><b>Visit statistics.</b> To learn which works and pages are read, the website uses Cloudflare Web Analytics, which counts visits in aggregate, without cookies, without storing data in the browser and without identifying or tracking visitors.</li>
             <li><b>Browser preferences.</b> The website stores in the visitor's own browser, and never on our servers, the chosen language, the preferred catalogue view and order, and the list of recently viewed works. They can be deleted at any time from the browser settings.</li>
             <li><b>Search.</b> The site search runs within the browser: search terms are neither sent nor recorded.</li>
             <li><b>Fonts.</b> Fonts are served from the website itself, without relying on external services.</li>

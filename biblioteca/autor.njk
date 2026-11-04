@@ -18,7 +18,7 @@ eleventyComputed:
       {%- set bio = biografias[autor.nombre] or {} %}
       <div class="sec-title{% if bio.retrato %} aut-con-retrato{% endif %}">
         {%- if bio.retrato %}
-        <figure class="aut-retrato"><img src="{{ bio.retrato.imagen }}" alt="Retrato de {{ autor.nombre }}" width="120" height="160" decoding="async"><figcaption><a href="{{ bio.retrato.fuente }}" target="_blank" rel="noopener">{% if bio.retrato.autor %}{{ bio.retrato.autor }}, {% endif %}{{ bio.retrato.licencia if bio.retrato.licencia != "Dominio público" else "" }}<span class="es">{{ "Dominio público" if bio.retrato.licencia == "Dominio público" }}</span><span class="en">{{ "Public domain" if bio.retrato.licencia == "Dominio público" }}</span> · Wikimedia Commons</a></figcaption></figure>
+        <figure class="aut-retrato"><img src="{{ bio.retrato.imagen }}" alt="Retrato de {{ autor.nombre }}" width="120" height="160" decoding="async"{% if bio.retrato.posicion %} style="object-position:{{ bio.retrato.posicion }}"{% endif %}><figcaption><a href="{{ bio.retrato.fuente }}" target="_blank" rel="noopener">{% if bio.retrato.autor %}{{ bio.retrato.autor }}, {% endif %}{{ bio.retrato.licencia if bio.retrato.licencia != "Dominio público" else "" }}<span class="es">{{ "Dominio público" if bio.retrato.licencia == "Dominio público" }}</span><span class="en">{{ "Public domain" if bio.retrato.licencia == "Dominio público" }}</span> · Wikimedia Commons</a></figcaption></figure>
         {%- endif %}
         <div><p class="label es">Autor</p><p class="label en">Author</p>
         <h1>{{ autor.nombre }}</h1>

@@ -143,7 +143,14 @@
   "wikipedia": "https://es.wikipedia.org/wiki/Instituto_Panamericano_de_Geograf%C3%ADa_e_Historia"
  },
  "Isaías Medina Angarita": {
-  "wikipedia": "https://es.wikipedia.org/wiki/Isa%C3%ADas_Medina_Angarita"
+  "wikipedia": "https://es.wikipedia.org/wiki/Isa%C3%ADas_Medina_Angarita",
+  "retrato": {
+   "imagen": "/assets/autores/isaias-medina-angarita.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:IMAngarita.JPG",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
  },
  "Jesús Evaristo Casariego": {
   "wikipedia": "https://es.wikipedia.org/wiki/Jes%C3%BAs_Evaristo_Casariego",
@@ -189,7 +196,15 @@
   }
  },
  "Juan Liscano": {
-  "wikipedia": "https://es.wikipedia.org/wiki/Juan_Liscano"
+  "wikipedia": "https://es.wikipedia.org/wiki/Juan_Liscano",
+  "retrato": {
+   "imagen": "/assets/autores/juan-liscano.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Juan_Liscano.jpg",
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Fev at English Wikipedia",
+   "licencia_url": "http://www.gnu.org/copyleft/fdl.html",
+   "posicion": "30% 25%"
+  }
  },
  "Juan Vicente González": {
   "wikipedia": "https://es.wikipedia.org/wiki/Juan_Vicente_Gonz%C3%A1lez",
@@ -253,7 +268,14 @@
   "wikipedia": "https://es.wikipedia.org/wiki/Nemesio_Garc%C3%ADa_Naranjo"
  },
  "Nora Bustamante": {
-  "wikipedia": "https://es.wikipedia.org/wiki/Nora_Bustamante_Luciani"
+  "wikipedia": "https://es.wikipedia.org/wiki/Nora_Bustamante_Luciani",
+  "retrato": {
+   "imagen": "/assets/autores/nora-bustamante.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Nora_Bustamante_Luciani.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
  },
  "Pedro Estrada": {
   "wikipedia": "https://es.wikipedia.org/wiki/Pedro_Estrada",
@@ -360,6 +382,13 @@
   "wikipedia": "https://es.wikipedia.org/wiki/William_Spence_Robertson"
  },
  "Ángel Laborde y Navarro": {
-  "wikipedia": "https://es.wikipedia.org/wiki/%C3%81ngel_Laborde"
+  "wikipedia": "https://es.wikipedia.org/wiki/%C3%81ngel_Laborde",
+  "retrato": {
+   "imagen": "/assets/autores/angel-laborde-y-navarro.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:%C3%81ngel_Laborde_y_Navarro_%28Museo_Naval_de_Madrid%29.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
  }
 }

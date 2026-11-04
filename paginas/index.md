@@ -63,14 +63,6 @@ descripcion: "Fundación cultural sin fines de lucro que digitaliza, preserva y 
             {%- endif %}{% endfor %}
           </ul>
         </div>
-        <div class="inicio-bloque">
-          <h3 class="label"><span class="es">En el sitio</span><span class="en">On the website</span></h3>
-          <ul class="inicio-lista">
-            {%- for c in cambios.slice(0, 4) %}
-            <li><time datetime="{{ c.fecha }}" class="ref"><span class="es">{{ c.fecha | fechaLarga("es") }}</span><span class="en">{{ c.fecha | fechaLarga("en") }}</span></time><span class="es">{{ c.es | cursivas | safe }}</span><span class="en">{{ c.en | cursivas | safe }}</span></li>
-            {%- endfor %}
-          </ul>
-        </div>
       </div>
     </div>
   </section>

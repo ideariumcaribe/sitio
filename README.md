@@ -151,7 +151,7 @@ El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: c
 - **Retratos y biografías de autores**: `_data/biografias.json` (enlace a Wikipedia en español y retrato de Wikimedia Commons, solo de dominio público o con licencia libre, alojado en `assets/autores/` con su atribución). Datos tomados de Wikidata.
 - **Texto plano (OCR)**: `_data/textosIA.json`, con el archivo `_djvu.txt` de cada obra en Internet Archive. Al incorporar obras, ejecute `python3 scripts/textos.py`.
 - **Solicitar una digitalización**: enlace de correo a la Biblioteca al pie del catálogo y de cada página de autor (`_includes/solicitar.njk`).
-- **Portada**: bloque «Novedades» con las últimas incorporaciones (los tomos de una colección cuentan como una), el último número de *Colombeia* y las cuatro entradas más recientes del registro de cambios.
+- **Portada**: bloque «Novedades» con las últimas incorporaciones (los tomos de una colección cuentan como una) y el último número de *Colombeia*. Las novedades del sitio quedan solo en el registro de cambios.
 - **Indexación**: Cloudflare Crawler Hints (IndexNow) está activado en la zona; avisa a Bing y otros buscadores de las páginas nuevas o modificadas.
 
 ### Al incorporar obras nuevas

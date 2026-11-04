@@ -487,9 +487,10 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 .colecciones-lista .s{font-family:var(--f-ui);font-size:.86rem;color:var(--muted);grid-column:2}
 
 /* Portada: novedades */
-.inicio-nov{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.inicio-nov{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:48px}
 .inicio-bloque{display:grid;gap:16px;align-content:start}
-.inicio-portadas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.inicio-portadas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:560px){.inicio-portadas{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .inicio-portadas a{display:grid;gap:6px;color:var(--ink);text-decoration:none;font-size:.92rem;line-height:1.3}
 .inicio-portadas img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line);background:var(--soft)}
 .inicio-portadas a>span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}

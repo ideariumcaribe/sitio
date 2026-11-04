@@ -1,0 +1,46 @@
+---
+layout: base.njk
+pagination:
+  data: colecciones
+  size: 1
+  addAllPagesToCollections: true
+  alias: col
+permalink: "/biblioteca/colecciones/{{ col.slug }}/"
+eleventyComputed:
+  title: "{{ col.titulo }} ({{ col.tomos.length }} tomos) · Biblioteca Digital · Idearium Caribe"
+  descripcion: "{{ col.titulo }}{% if col.autor %}, de {{ col.autor | replace(';', ',') }}{% endif %}: {{ col.tomos.length }} tomos de libre lectura en la Biblioteca Digital de Idearium Caribe."
+---
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><a href="/biblioteca/colecciones/"><span class="es">Obras en varios tomos</span><span class="en">Multi-volume works</span></a></nav>
+      <div class="sec-title"><div><p class="label es">Obra en varios tomos</p><p class="label en">Multi-volume work</p>
+        <h1>{{ col.titulo }}</h1>
+        {%- if col.autor %}<p class="autores">{% for n in col.autor | split(";") %}<a href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+        <p class="cat-cuenta"><span class="es">{{ col.tomos.length }} tomos{% if col.ediciones.length > 1 %} en {{ col.ediciones.length }} ediciones{% endif %}{% if col.anios %} · {{ col.anios }}{% endif %}</span><span class="en">{{ col.tomos.length }} volumes{% if col.ediciones.length > 1 %} in {{ col.ediciones.length }} editions{% endif %}{% if col.anios %} · {{ col.anios }}{% endif %}</span></p>
+      </div></div>
+      {%- for ed in col.ediciones %}
+      <section class="col-edicion stack" style="gap:18px"{% if col.ediciones.length > 1 %} aria-labelledby="ed-{{ loop.index }}"{% endif %}>
+        {%- if col.ediciones.length > 1 %}<h2 id="ed-{{ loop.index }}" class="label">{{ ed.pie }}{% if ed.anios %}, {{ ed.anios }}{% endif %}</h2>{% endif %}
+        {%- set lista = ed.tomos %}{% set clase = "col-portadas" %}{% set oculta = false %}
+        {% include "portadas-grid.njk" %}
+        <div class="ledger-wrap">
+          <table class="ledger cat-tabla">
+            <thead><tr>
+              <th><span class="es">Tomo</span><span class="en">Vol.</span></th>
+              <th><span class="es">Signatura</span><span class="en">Call no.</span></th>
+              <th><span class="es">Título</span><span class="en">Title</span></th>
+              <th><span class="es">Año</span><span class="en">Year</span></th>
+            </tr></thead>
+            <tbody>
+              {%- for o in ed.tomos %}
+              <tr><td class="yr">{{ o.tomo }}</td><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a>{% if o.pie_de_imprenta and col.ediciones.length == 1 %}<span class="cat-pie">{{ o.pie_de_imprenta }}</span>{% endif %}</td><td class="yr">{{ o.anio }}</td></tr>
+              {%- endfor %}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      {%- endfor %}
+    </div>
+  </section>
+</main>

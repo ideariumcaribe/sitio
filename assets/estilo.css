@@ -472,3 +472,44 @@ ul.portadas .s{font-family:var(--f-mono);font-size:.72rem;color:var(--stamp)}
 
 /* Artículos de Colombeia: obras del autor en la Biblioteca */
 .art-biblioteca{display:grid;gap:18px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line)}
+
+.solicitar{font-family:var(--f-ui);font-size:.92rem;color:var(--muted);border-top:1px solid var(--line);padding-top:18px}
+@media print{.solicitar{display:none!important}}
+
+/* Obras en varios tomos */
+.obra-coleccion{font-family:var(--f-ui);font-size:.95rem;margin-top:6px}
+.colecciones-lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px 28px}
+.colecciones-lista li{display:grid;grid-template-columns:72px 1fr;grid-template-rows:auto 1fr;column-gap:16px;row-gap:4px;align-items:start}
+.colecciones-lista a{display:contents;color:var(--ink);text-decoration:none}
+.colecciones-lista img{grid-row:1/3;width:72px;height:auto;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line);background:var(--soft)}
+.colecciones-lista .t{font-size:1.08rem;line-height:1.3;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.colecciones-lista a:hover .t{color:var(--stamp)}
+.colecciones-lista .s{font-family:var(--f-ui);font-size:.86rem;color:var(--muted);grid-column:2}
+
+/* Portada: novedades */
+.inicio-nov{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.inicio-bloque{display:grid;gap:16px;align-content:start}
+.inicio-portadas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.inicio-portadas a{display:grid;gap:6px;color:var(--ink);text-decoration:none;font-size:.92rem;line-height:1.3}
+.inicio-portadas img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line);background:var(--soft)}
+.inicio-portadas a>span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.inicio-portadas a:hover>span{color:var(--stamp)}
+.inicio-numero{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start;color:var(--ink);text-decoration:none}
+.inicio-numero img{width:96px;height:auto;aspect-ratio:619/963;border:1px solid var(--line)}
+.inicio-numero b{font-weight:500;display:block;line-height:1.3}
+.inicio-numero:hover b{color:var(--stamp)}
+.inicio-lista{list-style:none;margin:0;padding:0;display:grid;gap:12px;font-size:.98rem;line-height:1.4}
+.inicio-lista .ref,.inicio-numero .ref{font-family:var(--f-ui);font-size:.82rem;color:var(--muted)}
+.inicio-lista time{display:block}
+@media (max-width:900px){.inicio-nov{grid-template-columns:minmax(0,1fr)}}
+
+/* Autores: retrato y biografía */
+.aut-con-retrato{display:grid;grid-template-columns:120px minmax(0,1fr);gap:28px;align-items:start}
+.aut-retrato{margin:0;display:grid;gap:6px}
+.aut-retrato img{width:120px;height:160px;object-fit:cover;object-position:50% 20%;border:1px solid var(--line);background:var(--soft)}
+.aut-retrato figcaption{font-family:var(--f-ui);font-size:.7rem;line-height:1.3;color:var(--muted)}
+.aut-retrato figcaption a{color:var(--muted)}
+.aut-wiki{font-family:var(--f-ui);font-size:.9rem;margin-top:8px}
+@media (max-width:560px){.aut-con-retrato{grid-template-columns:88px minmax(0,1fr);gap:18px}.aut-retrato img{width:88px;height:118px}}
+.aut-colecciones{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;font-family:var(--f-ui);font-size:.9rem;margin-top:8px}
+.aut-colecciones .label{margin-right:4px}.aut-colecciones .n{color:var(--muted)}

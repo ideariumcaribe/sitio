@@ -15,14 +15,22 @@ eleventyComputed:
   <section class="cat-pag">
     <div class="wrap stack" style="gap:28px">
       <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><a href="/biblioteca/autores/"><span class="es">Autores</span><span class="en">Authors</span></a><span aria-hidden="true"> › </span><span>{{ autor.forma }}</span></nav>
-      <div class="sec-title"><div><p class="label es">Autor</p><p class="label en">Author</p>
+      {%- set bio = biografias[autor.nombre] or {} %}
+      <div class="sec-title{% if bio.retrato %} aut-con-retrato{% endif %}">
+        {%- if bio.retrato %}
+        <figure class="aut-retrato"><img src="{{ bio.retrato.imagen }}" alt="Retrato de {{ autor.nombre }}" width="120" height="160" decoding="async"><figcaption><a href="{{ bio.retrato.fuente }}" target="_blank" rel="noopener">{% if bio.retrato.autor %}{{ bio.retrato.autor }}, {% endif %}{{ bio.retrato.licencia if bio.retrato.licencia != "Dominio público" else "" }}<span class="es">{{ "Dominio público" if bio.retrato.licencia == "Dominio público" }}</span><span class="en">{{ "Public domain" if bio.retrato.licencia == "Dominio público" }}</span> · Wikimedia Commons</a></figcaption></figure>
+        {%- endif %}
+        <div><p class="label es">Autor</p><p class="label en">Author</p>
         <h1>{{ autor.nombre }}</h1>
         {%- set fv = autor.nombre | fechasAutor %}{% if fv %}<p class="aut-fechas">{{ fv }}</p>{% endif %}
         <p class="cat-cuenta"><span class="es">{{ autor.obras | length }} {{ "obra" if autor.obras.length == 1 else "obras" }} en la Biblioteca Digital</span><span class="en">{{ autor.obras | length }} {{ "work" if autor.obras.length == 1 else "works" }} in the Digital Library</span></p>
+        {%- set colsAut = colecciones | coleccionesDeAutor(autor.nombre) %}
+        {%- if colsAut.length %}<p class="aut-colecciones"><span class="label"><span class="es">Obras en varios tomos</span><span class="en">Multi-volume works</span></span>{% for c in colsAut %}<a href="/biblioteca/colecciones/{{ c.slug }}/">{{ c.titulo }} <span class="n">({{ c.tomos.length }})</span></a>{% endfor %}</p>{% endif %}
+        {%- if bio.wikipedia %}<p class="aut-wiki"><a href="{{ bio.wikipedia }}" target="_blank" rel="noopener"><span class="es">Biografía en Wikipedia</span><span class="en">Biography on Wikipedia (Spanish)</span></a></p>{% endif %}
         {%- set ea = autor.nombre | enlacesAutor %}
         {%- if ea.length %}
         <p class="aut-autoridades"><span class="label"><span class="es">Registros de autoridad</span><span class="en">Authority records</span></span>{% for e in ea %}<a href="{{ e.url }}" target="_blank" rel="noopener">{% if e.nombre_en %}<span class="es">{{ e.nombre }}</span><span class="en">{{ e.nombre_en }}</span>{% else %}{{ e.nombre }}{% endif %}</a>{% endfor %}</p>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":{{ ("Organization" if (autor.forma.indexOf(",") == -1) else "Person") | dump | safe }},"name":{{ autor.nombre | dump | safe }},"url":{{ (sitio.url + "/biblioteca/autores/" + autor.slug + "/") | dump | safe }},"sameAs":[{% for e in ea %}{{ e.url | dump | safe }}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":{{ ("Organization" if (autor.forma.indexOf(",") == -1) else "Person") | dump | safe }},"name":{{ autor.nombre | dump | safe }},"url":{{ (sitio.url + "/biblioteca/autores/" + autor.slug + "/") | dump | safe }},{% if bio.retrato %}"image":{{ (sitio.url + bio.retrato.imagen) | dump | safe }},{% endif %}"sameAs":[{% for e in ea %}{{ e.url | dump | safe }}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
         {%- endif %}</div></div>
       {%- set lista = autor.obras %}{% set clase = "aut-portadas" %}{% set oculta = false %}
       {% include "portadas-grid.njk" %}
@@ -51,6 +59,8 @@ eleventyComputed:
         </ul>
       </div>
       {%- endif %}
+      {%- set autorSol = autor.nombre %}
+      {% include "solicitar.njk" %}
     </div>
   </section>
 </main>

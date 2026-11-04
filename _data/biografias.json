@@ -1,0 +1,365 @@
+{
+ "Academia Nacional de la Historia": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Academia_Nacional_de_la_Historia_de_Venezuela"
+ },
+ "Agustín Blanco Muñoz": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Agust%C3%ADn_Blanco_Mu%C3%B1oz"
+ },
+ "Agustín Codazzi": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Agust%C3%ADn_Codazzi",
+  "retrato": {
+   "imagen": "/assets/autores/agustin-codazzi.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Retrato_Agust%C3%ADn_Codazzi.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Alfredo Tarre Murzi (Sanin)": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Alfredo_Tarre_Murzi"
+ },
+ "Ana Mercedes Pérez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Ana_Mercedes_P%C3%A9rez"
+ },
+ "Arturo Sosa Abascal": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Arturo_Sosa_Abascal",
+  "retrato": {
+   "imagen": "/assets/autores/arturo-sosa-abascal.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Arturo_Sosa_in_January_2017.jpg",
+   "licencia": "CC BY 2.0",
+   "autor": "Irekia",
+   "licencia_url": "https://creativecommons.org/licenses/by/2.0"
+  }
+ },
+ "Arturo Uslar Pietri": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Arturo_Uslar_Pietri",
+  "retrato": {
+   "imagen": "/assets/autores/arturo-uslar-pietri.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Uslar_Pietri.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Augusto Mijares": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Augusto_Mijares",
+  "retrato": {
+   "imagen": "/assets/autores/augusto-mijares.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Mijares%2C_Augusto.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Caracciolo Parra Pérez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Caracciolo_Parra_P%C3%A9rez",
+  "retrato": {
+   "imagen": "/assets/autores/caracciolo-parra-perez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Caracciolo_Parra_P%C3%A9rez.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Carlos Irazábal": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Carlos_Iraz%C3%A1bal"
+ },
+ "Carlos Rodríguez Jiménez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Carlos_Rodr%C3%ADguez_Jim%C3%A9nez",
+  "retrato": {
+   "imagen": "/assets/autores/carlos-rodriguez-jimenez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Carlos_Rodriguez_Jimenez.jpg",
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Carlos Rodriguez Jimenez",
+   "licencia_url": "http://www.gnu.org/copyleft/fdl.html"
+  }
+ },
+ "Carlos Soublette": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Carlos_Soublette",
+  "retrato": {
+   "imagen": "/assets/autores/carlos-soublette.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Carlos_Soublette.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Carmelo Fernández": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Carmelo_Fern%C3%A1ndez",
+  "retrato": {
+   "imagen": "/assets/autores/carmelo-fernandez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Carmelo_Fernandez_1809-1887.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Eleazar López Contreras": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Eleazar_L%C3%B3pez_Contreras",
+  "retrato": {
+   "imagen": "/assets/autores/eleazar-lopez-contreras.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Eleazar_L%C3%B3pez_Contreras.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Enrique Bernardo Núñez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Enrique_Bernardo_N%C3%BA%C3%B1ez",
+  "retrato": {
+   "imagen": "/assets/autores/enrique-bernardo-nunez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Enrique_Bernardo_N%C3%BA%C3%B1ez_c_1950.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Enrique Gandía": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Enrique_de_Gand%C3%ADa"
+ },
+ "Federico Brito Figueroa": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Federico_Brito_Figueroa"
+ },
+ "Francisco Javier Yanes": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Francisco_Javier_Yanes"
+ },
+ "Gabriel Fernández de Villalobos": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Gabriel_Fern%C3%A1ndez_de_Villalobos"
+ },
+ "Guillermo Morón": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Guillermo_Mor%C3%B3n",
+  "retrato": {
+   "imagen": "/assets/autores/guillermo-moron.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Guillermo_Mor%C3%B3n%2C_2009.JPG",
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Guillermo Ramos Flamerich",
+   "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  }
+ },
+ "Indalecio Liévano Aguirre": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Indalecio_Li%C3%A9vano_Aguirre"
+ },
+ "Instituto Panamericano de Geografía e Historia": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Instituto_Panamericano_de_Geograf%C3%ADa_e_Historia"
+ },
+ "Isaías Medina Angarita": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Isa%C3%ADas_Medina_Angarita"
+ },
+ "Jesús Evaristo Casariego": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Jes%C3%BAs_Evaristo_Casariego",
+  "retrato": {
+   "imagen": "/assets/autores/jesus-evaristo-casariego.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Jes%C3%BAs_Evaristo_Casariego_%281936%29.png",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Joaquín Gabaldón Márquez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Joaqu%C3%ADn_Gabald%C3%B3n_M%C3%A1rquez",
+  "retrato": {
+   "imagen": "/assets/autores/joaquin-gabaldon-marquez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Joaqu%C3%ADn_Gabald%C3%B3n_M%C3%A1rquez.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "José Antonio Páez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Jos%C3%A9_Antonio_P%C3%A1ez",
+  "retrato": {
+   "imagen": "/assets/autores/jose-antonio-paez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Jose_Antonio_P%C3%A1ez_restored.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "José Félix Blanco": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Jos%C3%A9_F%C3%A9lix_Blanco"
+ },
+ "José Gregorio Hernández": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Jos%C3%A9_Gregorio_Hern%C3%A1ndez",
+  "retrato": {
+   "imagen": "/assets/autores/jose-gregorio-hernandez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Photo1502317-Enhanced_%281%29.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Juan Liscano": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Juan_Liscano"
+ },
+ "Juan Vicente González": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Juan_Vicente_Gonz%C3%A1lez",
+  "retrato": {
+   "imagen": "/assets/autores/juan-vicente-gonzalez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Juan_Vicente_Gonz%C3%A1lez_2.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Laureano Vallenilla Lanz": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Laureano_Vallenilla_Lanz"
+ },
+ "Laureano Vallenilla-Lanz Planchart": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Laureano_Vallenilla_Planchart"
+ },
+ "Luis Perú de Lacroix": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Luis_Per%C3%BA_de_Lacroix"
+ },
+ "Manuel Pérez Vila": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Manuel_P%C3%A9rez_Vila"
+ },
+ "Marcos Pérez Jiménez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Marcos_P%C3%A9rez_Jim%C3%A9nez",
+  "retrato": {
+   "imagen": "/assets/autores/marcos-perez-jimenez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:General_Marcos_Evangelista_P%C3%A9rez_Jim%C3%A9nez%2C_Venezuela.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Mariano Picón-Salas": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Mariano_Pic%C3%B3n_Salas",
+  "retrato": {
+   "imagen": "/assets/autores/mariano-picon-salas.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Mariano_Pic%C3%B3n_Salas.JPG",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Mario Briceño-Iragorry": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Mario_Brice%C3%B1o_Iragorry",
+  "retrato": {
+   "imagen": "/assets/autores/mario-briceno-iragorry.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Mario_Brice%C3%B1o_Iragorry.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Miguel Batllori": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Miquel_Batllori"
+ },
+ "Ministerio de Relaciones Exteriores de Venezuela": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Ministerio_del_Poder_Popular_para_Relaciones_Exteriores_y_Comercio_Exterior"
+ },
+ "Nemesio García Naranjo": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Nemesio_Garc%C3%ADa_Naranjo"
+ },
+ "Nora Bustamante": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Nora_Bustamante_Luciani"
+ },
+ "Pedro Estrada": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Pedro_Estrada",
+  "retrato": {
+   "imagen": "/assets/autores/pedro-estrada.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:PedroEstrada.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Pedro Grases": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Pedro_Grases_Gonz%C3%A1lez"
+ },
+ "Pedro Manuel Arcaya": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Pedro_Manuel_Arcaya",
+  "retrato": {
+   "imagen": "/assets/autores/pedro-manuel-arcaya.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Pedro_Manuel_Arcaya.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Ramón Díaz Sánchez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Ram%C3%B3n_D%C3%ADaz_S%C3%A1nchez",
+  "retrato": {
+   "imagen": "/assets/autores/ramon-diaz-sanchez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Ram%C3%B3n_D%C3%ADaz_S%C3%A1nchez.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Ramón J. Velásquez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Ram%C3%B3n_J._Vel%C3%A1squez"
+ },
+ "Ramón Páez": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Ram%C3%B3n_P%C3%A1ez"
+ },
+ "Robert Bontine Cunninghame Graham": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Robert_Bontine_Cunninghame_Graham",
+  "retrato": {
+   "imagen": "/assets/autores/robert-bontine-cunninghame-graham.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Robert_Bontine_Cunninghame_Graham00.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Rómulo Betancourt": {
+  "wikipedia": "https://es.wikipedia.org/wiki/R%C3%B3mulo_Betancourt",
+  "retrato": {
+   "imagen": "/assets/autores/romulo-betancourt.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Foto_oficial_R%C3%B3mulo_Betancourt_1959.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Rómulo Gallegos": {
+  "wikipedia": "https://es.wikipedia.org/wiki/R%C3%B3mulo_Gallegos",
+  "retrato": {
+   "imagen": "/assets/autores/romulo-gallegos.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:R%C3%B3mulo_Gallegos.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Simón Bolívar": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar",
+  "retrato": {
+   "imagen": "/assets/autores/simon-bolivar.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Sim%C3%B3n_Bol%C3%ADvar_by_Acevedo_Bernal%2C_1922.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Thomas Paine": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Thomas_Paine",
+  "retrato": {
+   "imagen": "/assets/autores/thomas-paine.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Thomas_Paine_rev1.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
+ },
+ "Tomás Michelena": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Tom%C3%A1s_Michelena"
+ },
+ "Tomás Polanco Alcántara": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Tom%C3%A1s_Polanco_Alc%C3%A1ntara"
+ },
+ "Tulio Chiossone": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Tulio_Chiossone"
+ },
+ "Vicente Lecuna": {
+  "wikipedia": "https://es.wikipedia.org/wiki/Vicente_Lecuna"
+ },
+ "William Spence Robertson": {
+  "wikipedia": "https://es.wikipedia.org/wiki/William_Spence_Robertson"
+ },
+ "Ángel Laborde y Navarro": {
+  "wikipedia": "https://es.wikipedia.org/wiki/%C3%81ngel_Laborde"
+ }
+}

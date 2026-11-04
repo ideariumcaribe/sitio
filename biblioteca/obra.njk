@@ -23,6 +23,10 @@ eleventyComputed:
         <h1>{{ obra.titulo }}</h1>
         {%- if obra.autor %}<p class="autores">{% for n in obra.autor | split(";") %}<a href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
         <p class="ref">{% if obra.pie_de_imprenta %}{{ obra.pie_de_imprenta }}{% endif %}{% if obra.anio %}{% if obra.pie_de_imprenta %}, {% endif %}{{ obra.anio }}{% endif %}{% if obra.primera_edicion %} · <span class="es">1.ª ed.</span><span class="en">1st ed.</span> {{ obra.primera_edicion }}{% endif %}</p>
+        {%- set enCol = obra | coleccionDe(colecciones) %}
+        {%- if enCol %}
+        <p class="obra-coleccion"><span class="es">Tomo {{ enCol.tomo }} de <a href="/biblioteca/colecciones/{{ enCol.c.slug }}/">{{ enCol.c.titulo }}</a> · {{ enCol.total }} tomos{% if enCol.varias %} en esta edición{% endif %}</span><span class="en">Volume {{ enCol.tomo }} of <a href="/biblioteca/colecciones/{{ enCol.c.slug }}/">{{ enCol.c.titulo }}</a> · {{ enCol.total }} volumes{% if enCol.varias %} in this edition{% endif %}</span></p>
+        {%- endif %}
         {%- if obra.materias and obra.materias.length %}
         <p class="obra-materias"><span class="label"><span class="es">Temas</span><span class="en">Subjects</span></span>{% for s in obra.materias %}{% set m = materias | materia(s) %}<a href="/biblioteca/materias/{{ s }}/"><span class="es">{{ m.nombre }}</span><span class="en">{{ m.nombre_en }}</span></a>{% endfor %}</p>
         {%- endif %}
@@ -53,6 +57,8 @@ eleventyComputed:
       <div class="obra-acciones">
         <a class="btn" href="https://archive.org/details/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Abrir en Internet Archive</span><span class="en">Open on the Internet Archive</span></a>
         <a class="btn outline" href="https://archive.org/download/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Descargar (PDF y otros formatos)</span><span class="en">Download (PDF and other formats)</span></a>
+        {%- set txt = obra.identificador | textoIA %}{% if txt %}
+        <a class="iiif" href="{{ txt.url }}" target="_blank" rel="noopener" type="text/plain"><span class="es">Texto plano (OCR, {{ txt.mb }} MB)</span><span class="en">Plain text (OCR, {{ txt.mb | replace(",", ".") }} MB)</span></a>{% endif %}
         <a class="iiif" href="https://iiif.archive.org/iiif/3/{{ obra.identificador }}/manifest.json" target="_blank" rel="noopener" title="IIIF Presentation API 3.0"><span class="es">Manifiesto IIIF</span><span class="en">IIIF manifest</span></a>
       </div>
       {%- set c = obra | citas(("https://n2t.net/ark:" + sitio.naan + "/" + obra.signatura) if sitio.naan else (sitio.url + page.url)) %}

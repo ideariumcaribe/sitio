@@ -1,5 +1,33 @@
 [
  {
+  "fecha": "2026-11-04",
+  "seccion": "Biblioteca",
+  "es": "Las obras en varios tomos tienen su propia página, con todos sus volúmenes reunidos y separados por edición: obras completas, epistolarios, colecciones documentales e historias generales.",
+  "en": "Multi-volume works now have their own page, with all their volumes together and grouped by edition: complete works, correspondence, document collections and general histories.",
+  "enlace": "/biblioteca/colecciones/"
+ },
+ {
+  "fecha": "2026-11-04",
+  "seccion": "Biblioteca",
+  "es": "Las páginas de autor muestran su retrato, cuando hay uno de uso libre en Wikimedia Commons, y enlazan con su biografía en Wikipedia.",
+  "en": "Author pages now show a portrait, when a freely licensed one is available on Wikimedia Commons, and link to the author's biography on Wikipedia.",
+  "enlace": "/biblioteca/autores/"
+ },
+ {
+  "fecha": "2026-11-04",
+  "seccion": "Biblioteca",
+  "es": "Cada obra ofrece su texto plano completo, obtenido por reconocimiento óptico de caracteres, y el catálogo permite solicitar la digitalización de obras que aún no están en la Biblioteca.",
+  "en": "Each work now offers its full plain text, produced by optical character recognition, and the catalogue lets readers request the digitization of works not yet in the Library.",
+  "enlace": "/biblioteca/catalogo/"
+ },
+ {
+  "fecha": "2026-11-04",
+  "seccion": "Sitio web",
+  "es": "La portada muestra las últimas obras incorporadas, el último número de *Colombeia* y las novedades más recientes del sitio.",
+  "en": "The home page now shows the latest works added, the latest issue of *Colombeia* and the most recent news from the website.",
+  "enlace": "/"
+ },
+ {
   "fecha": "2026-11-03",
   "seccion": "Colombeia",
   "es": "Los artículos de *Colombeia* enlazan con las obras de sus autores en la Biblioteca Digital, y las páginas de autor de la Biblioteca muestran sus textos en la revista.",

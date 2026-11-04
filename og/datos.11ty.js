@@ -15,6 +15,7 @@ const PAGINAS = {
   catalogo: ["Catálogo de la Biblioteca Digital", "Búsqueda y filtros por tema, década y derechos"],
   autores: ["Autores de la Biblioteca Digital", "Índice alfabético de autores"],
   temas: ["Temas de la Biblioteca Digital", "La colección organizada por temas"],
+  colecciones: ["Obras en varios tomos", "Obras completas, epistolarios y colecciones documentales"],
 };
 const portadaObra = (o) => `/assets/portadas/${o.identificador}.webp`;
 const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
@@ -46,6 +47,11 @@ export default class {
       const elegidas = [obras[0], obras[Math.floor(obras.length / 2)], obras[obras.length - 1]].filter((o, i, l) => l.indexOf(o) === i);
       out.push({ archivo: `temas/${m.slug}.jpg`, tipo: "coleccion", marca: "Biblioteca Digital", etiqueta: "Tema", titulo: m.nombre,
         detalle: plural(obras.length, "obra", "obras") + " de libre lectura", pie: "ideariumcaribe.com", portadas: elegidas.map(portadaObra) });
+    }
+    for (const c of d.colecciones || []) {
+      const l = c.tomos; const elegidas = [l[0], l[Math.floor(l.length / 2)], l[l.length - 1]].filter((o, i, x) => x.indexOf(o) === i);
+      out.push({ archivo: `colecciones/${c.slug}.jpg`, tipo: "coleccion", marca: "Biblioteca Digital", etiqueta: "Obra en varios tomos", titulo: c.titulo,
+        autor: String(c.autor || "").split(";").map((s) => s.trim()).join(", "), detalle: `${c.tomos.length} tomos${c.anios ? " · " + c.anios : ""}`, pie: "ideariumcaribe.com", portadas: elegidas.map(portadaObra) });
     }
     for (const [k, [t, s]] of Object.entries(PAGINAS)) {
       const portadas = k === "colombeia" ? numeros.slice().sort((a, b) => a.numero - b.numero).map((n) => n.portada).filter(Boolean) : MOSAICO.map((id) => `/assets/portadas/${id}.webp`);

@@ -135,6 +135,23 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("cursivas", (t) => String(t || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\*([^*]+)\*/g, "<i>$1</i>"));
   // Imagen para compartir generada con scripts/tarjetas-og.cjs (assets/og/...), si existe.
   eleventyConfig.addFilter("ogImagen", (archivo) => (archivo && fs.existsSync(new URL(`./assets/og/${archivo}`, import.meta.url)) ? `https://www.ideariumcaribe.com/assets/og/${archivo}` : ""));
+  // Texto plano (OCR) de una obra en Internet Archive (_data/textosIA.json, generado con scripts/textos.py).
+  const TEXTOS = JSON.parse(fs.readFileSync(new URL("./_data/textosIA.json", import.meta.url), "utf8"));
+  eleventyConfig.addFilter("textoIA", (id) => { const t = TEXTOS[id]; return t && t.archivo ? { url: `https://archive.org/download/${id}/${encodeURIComponent(t.archivo)}`, mb: (t.bytes / 1048576).toFixed(1).replace(".", ",") } : null; });
+  // Colección (obra en varios tomos) a la que pertenece una obra, con su número de tomo.
+  eleventyConfig.addFilter("coleccionDe", (o, cols) => { for (const c of cols || []) { const t = c.tomos.find((x) => x.identificador === o.identificador); if (t) { const ed = c.ediciones.find((e) => e.tomos.some((x) => x.identificador === o.identificador)); return { c, tomo: t.tomo, total: ed.tomos.length, varias: c.ediciones.length > 1 }; } } return null; });
+  // Últimas incorporaciones para la portada: los tomos de una misma colección cuentan como una sola entrada.
+  eleventyConfig.addFilter("recientesAgrupadas", (cat, cols, n = 4) => {
+    const out = [], vistas = new Set();
+    for (const o of (cat || []).slice().sort((a, b) => b.signatura.localeCompare(a.signatura))) {
+      const c = (cols || []).find((x) => x.tomos.some((t) => t.identificador === o.identificador));
+      if (c) { if (vistas.has(c.slug)) continue; vistas.add(c.slug); out.push({ obra: o, url: `/biblioteca/colecciones/${c.slug}/`, titulo: `${c.titulo} (${c.tomos.length} tomos)`, titulo_en: `${c.titulo} (${c.tomos.length} volumes)` }); }
+      else out.push({ obra: o, url: `/biblioteca/obras/${o.identificador}/`, titulo: o.titulo, titulo_en: o.titulo });
+      if (out.length >= n) break;
+    }
+    return out;
+  });
+  eleventyConfig.addFilter("coleccionesDeAutor", (cols, n) => (cols || []).filter((c) => String(c.autor || "").split(";").map((x) => x.trim()).includes(n)));
   eleventyConfig.addFilter("orcid", (n) => ORCID[String(n || "").trim()] || "");
   // Fecha AAAA-MM-DD a partir de una fecha YAML (objeto Date) o de un texto.
   eleventyConfig.addFilter("fechaIso", (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10)));
@@ -268,7 +285,7 @@ export default function (eleventyConfig) {
     const pagefind = await import("pagefind");
     const { index } = await pagefind.createIndex({
       forceLanguage: "es",
-      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".obra-materias .label", ".art-biblioteca", ".en-colombeia", ".senalar-error", ".saltar", "nav", "script"],
+      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".obra-materias .label", ".aut-retrato", ".aut-wiki", ".art-biblioteca", ".en-colombeia", ".senalar-error", ".solicitar", ".saltar", "nav", "script"],
     });
     await index.addDirectory({ path: dir.output });
     await index.writeFiles({ outputPath: dir.output + "/pagefind" });

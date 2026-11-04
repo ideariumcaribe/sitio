@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: "Obras en varios tomos · Biblioteca Digital · Idearium Caribe"
+descripcion: "Obras completas, epistolarios, colecciones documentales e historias generales en varios tomos de la Biblioteca Digital de Idearium Caribe."
+permalink: /biblioteca/colecciones/
+---
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><span class="es">Obras en varios tomos</span><span class="en">Multi-volume works</span></nav>
+      <div class="sec-title"><div><p class="label es">Biblioteca Digital</p><p class="label en">Digital Library</p>
+        <h1 class="es">Obras en varios tomos</h1><h1 class="en">Multi-volume works</h1></div></div>
+      {% include "biblioteca-pestanas.njk" %}
+      <p class="es cat-intro">Obras completas, epistolarios, colecciones documentales e historias generales, con todos sus tomos reunidos.</p>
+      <p class="en cat-intro">Complete works, correspondence, document collections and general histories, with all their volumes together.</p>
+      <ul class="colecciones-lista">
+        {%- for c in colecciones %}
+        <li><a href="/biblioteca/colecciones/{{ c.slug }}/"><img src="{{ c.tomos[0] | portada }}" alt="" loading="lazy" decoding="async" width="90" height="120"><span class="t">{{ c.titulo }}</span></a><span class="s">{{ c.autor | replace(";", ",") }} · <span class="es">{{ c.tomos.length }} tomos</span><span class="en">{{ c.tomos.length }} volumes</span>{% if c.anios %} · {{ c.anios }}{% endif %}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+</main>

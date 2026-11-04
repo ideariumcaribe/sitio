@@ -36,6 +36,45 @@ descripcion: "Fundación cultural sin fines de lucro que digitaliza, preserva y 
     </div>
   </section>
 
+  {%- set ultNum = (collections.numeros | sort(false, false, "data.numero") | last) %}
+  {%- set artsUlt = collections.articulo | delNumero(ultNum.data.numero) %}
+  {%- set recientes = catalogo | recientesAgrupadas(colecciones, 4) %}
+  <section id="novedades" aria-labelledby="nov-t">
+    <div class="wrap stack">
+      <div class="sec-title"><div><p class="label es">Lo más reciente</p><p class="label en">Latest</p>
+        <h2 id="nov-t" class="es">Novedades</h2><h2 class="en">What's new</h2></div>
+        <a class="more" href="/cambios.html"><span class="es">Registro de cambios</span><span class="en">Changelog</span></a></div>
+      <div class="inicio-nov">
+        <div class="inicio-bloque">
+          <h3 class="label"><span class="es">Últimas incorporaciones</span><span class="en">Latest additions</span></h3>
+          <ul class="inicio-portadas">
+            {%- for o in recientes %}
+            <li><a href="{{ o.url }}"><img src="{{ o.obra | portada }}" alt="" loading="lazy" decoding="async" width="120" height="160"><span><span class="es">{{ o.titulo }}</span><span class="en">{{ o.titulo_en }}</span></span></a></li>
+            {%- endfor %}
+          </ul>
+          <a class="more" href="/biblioteca/catalogo/?orden=recientes"><span class="es">Ver el catálogo</span><span class="en">Browse the catalogue</span></a>
+        </div>
+        <div class="inicio-bloque">
+          <h3 class="label"><span class="es">Último número de</span><span class="en">Latest issue of</span> <i>Colombeia</i></h3>
+          <a class="inicio-numero" href="{{ ultNum.url }}"><img src="{{ ultNum.data.portada }}" alt="" loading="lazy" decoding="async" width="120" height="187"><span><b>N.º {{ ultNum.data.numero }}: {{ ultNum.data.titulo }}</b><span class="ref">{{ ultNum.data.fecha }}</span></span></a>
+          <ul class="inicio-lista">
+            {%- for a in artsUlt %}{% if loop.index <= 4 and a.data.titulo != "Presentación" %}
+            <li><a href="{{ a.url | urlLimpia }}">{{ a.data.titulo }}</a>{% if a.data.autores and a.data.autores.length %} <span class="ref">· {{ a.data.autores | listaAutores }}</span>{% endif %}</li>
+            {%- endif %}{% endfor %}
+          </ul>
+        </div>
+        <div class="inicio-bloque">
+          <h3 class="label"><span class="es">En el sitio</span><span class="en">On the website</span></h3>
+          <ul class="inicio-lista">
+            {%- for c in cambios.slice(0, 4) %}
+            <li><time datetime="{{ c.fecha }}" class="ref"><span class="es">{{ c.fecha | fechaLarga("es") }}</span><span class="en">{{ c.fecha | fechaLarga("en") }}</span></time><span class="es">{{ c.es | cursivas | safe }}</span><span class="en">{{ c.en | cursivas | safe }}</span></li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="actividad">
     <div class="wrap stack">
       <div class="sec-title"><div><p class="label es">Nuestra actividad</p><p class="label en">Our activity</p>

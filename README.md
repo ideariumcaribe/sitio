@@ -144,3 +144,19 @@ EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde 
 ## Obras ocultas
 
 El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: catálogo»); `_data/catalogo.js` entrega al sitio solo las obras visibles. Una obra con «Ocultar en el sitio» (`"oculta": true`) desaparece del catálogo, las páginas de autor y tema, el buscador, los registros MARC, el conjunto de datos y las imágenes para compartir, y su página deja de existir. Conserva su signatura. En OAI-PMH figura como registro eliminado (`deletedRecord` transitorio) y su ARK responde que la obra no está disponible temporalmente. Para restituirla, desmarque la casilla.
+
+## Obras en varios tomos, retratos, texto plano y solicitudes
+
+- **Obras en varios tomos** (`lib/colecciones.js`, `_data/colecciones.js`): se agrupan solas los volúmenes con «Vol.» o «Tomo» en el título y el mismo autor; si un mismo tomo aparece dos veces, la colección se separa por edición (pie de imprenta). Páginas en `/biblioteca/colecciones/`, pestaña «Varios tomos» y aviso «Tomo N de…» en cada volumen.
+- **Retratos y biografías de autores**: `_data/biografias.json` (enlace a Wikipedia en español y retrato de Wikimedia Commons, solo de dominio público o con licencia libre, alojado en `assets/autores/` con su atribución). Datos tomados de Wikidata.
+- **Texto plano (OCR)**: `_data/textosIA.json`, con el archivo `_djvu.txt` de cada obra en Internet Archive. Al incorporar obras, ejecute `python3 scripts/textos.py`.
+- **Solicitar una digitalización**: enlace de correo a la Biblioteca al pie del catálogo y de cada página de autor (`_includes/solicitar.njk`).
+- **Portada**: bloque «Novedades» con las últimas incorporaciones (los tomos de una colección cuentan como una), el último número de *Colombeia* y las cuatro entradas más recientes del registro de cambios.
+- **Indexación**: Cloudflare Crawler Hints (IndexNow) está activado en la zona; avisa a Bing y otros buscadores de las páginas nuevas o modificadas.
+
+### Al incorporar obras nuevas
+
+1. Añada la obra en Pages CMS («Biblioteca: catálogo»).
+2. `python3 scripts/portadas.py` y `python3 scripts/textos.py`.
+3. `npx @11ty/eleventy` y `node scripts/tarjetas-og.cjs`.
+4. Publique los archivos nuevos de `assets/portadas`, `assets/og` y `_data/textosIA.json`.

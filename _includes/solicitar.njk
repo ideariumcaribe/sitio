@@ -1,0 +1,4 @@
+{#- Enlace para solicitar la digitalización de una obra que aún no está en la Biblioteca. Variable opcional: autorSol. -#}
+{%- set asuntoSol = "Solicitud de digitalización" + (" · " + autorSol if autorSol else "") %}
+{%- set cuerpoSol = "Título:\nAutor: " + (autorSol or "") + "\nEdición o año (si lo conoce):\nUso previsto (opcional):\n\n" %}
+<p class="solicitar"><span class="es">¿Busca una obra que aún no está en la Biblioteca?</span><span class="en">Looking for a work that is not yet in the Library?</span> <a href="mailto:{{ sitio.email_biblioteca }}?subject={{ asuntoSol | urlencode }}&amp;body={{ cuerpoSol | urlencode }}"><span class="es">Solicite su digitalización</span><span class="en">Request its digitization</span></a></p>

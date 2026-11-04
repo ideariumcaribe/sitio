@@ -17,6 +17,7 @@ export async function resolver(url, datos) {
   if (!nombre) return Response.redirect(`${SITIO}/biblioteca/catalogo/`, 302);
   const o = datos.obras.find((x) => norma(x.id) === norma(nombre));
   if (!o) return texto(`ark:${naan}/${nombre}: identificador no asignado.\n`, 404);
+  if (o.oculta) return texto(`ark:${naan}/${o.id}: esta obra no está disponible temporalmente en la Biblioteca Digital de Idearium Caribe.\nark:${naan}/${o.id}: this work is temporarily unavailable in the Idearium Caribe Digital Library.\n`, 404);
   const ark = `ark:${datos.naan}/${o.id}`;
   const destino = SITIO + o.ruta;
   const q = url.search;

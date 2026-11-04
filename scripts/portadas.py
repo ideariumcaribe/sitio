@@ -41,7 +41,7 @@ def procesar(ident):
 
 def main():
     DESTINO.mkdir(parents=True, exist_ok=True)
-    catalogo = json.loads((RAIZ / "_data" / "catalogo.json").read_text(encoding="utf-8"))
+    catalogo = json.loads((RAIZ / "fondo" / "catalogo.json").read_text(encoding="utf-8"))
     ids = [o["identificador"] for o in catalogo if "--todas" in sys.argv or not (DESTINO / f"{o['identificador']}.webp").exists()]
     print(f"{len(ids)} portadas por descargar")
     with ThreadPoolExecutor(8) as ex:

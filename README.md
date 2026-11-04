@@ -65,7 +65,7 @@ La página de la Biblioteca muestra las seis obras con signatura más alta (las 
 
 ## Registros MARC para bibliotecas
 
-En cada compilación, `biblioteca/marc/marc.11ty.js` genera los registros MARC 21 de todas las obras de `_data/catalogo.json` (con la lógica de `lib/marc.js`) en tres formatos: `/biblioteca/marc/idearium-caribe.mrc` (binario), `.xml` (MARCXML) y `.mrk` (texto de MarcEdit). Se enlazan en la página de la Biblioteca, sección «Registros para bibliotecas». No hay que tocarlos a mano: se actualizan al añadir obras al catálogo. Si una obra no está en español o se publicó en una ciudad nueva, añada su código en `IDIOMAS` o `PAISES` dentro de `lib/marc.js`.
+En cada compilación, `biblioteca/marc/marc.11ty.js` genera los registros MARC 21 de todas las obras de `fondo/catalogo.json` (con la lógica de `lib/marc.js`) en tres formatos: `/biblioteca/marc/idearium-caribe.mrc` (binario), `.xml` (MARCXML) y `.mrk` (texto de MarcEdit). Se enlazan en la página de la Biblioteca, sección «Registros para bibliotecas». No hay que tocarlos a mano: se actualizan al añadir obras al catálogo. Si una obra no está en español o se publicó en una ciudad nueva, añada su código en `IDIOMAS` o `PAISES` dentro de `lib/marc.js`.
 
 ## Cosecha OAI-PMH, schema.org e IIIF
 
@@ -122,7 +122,7 @@ EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde 
 ## Datos abiertos, ORCID y cosecha de Colombeia
 
 - **Catálogo como conjunto de datos** (CC0 1.0): `/biblioteca/datos/catalogo.csv` (UTF-8 con BOM, para Excel) y `/biblioteca/datos/catalogo.json`, generados en cada compilación (`biblioteca/datos/datos.11ty.js`).
-- **Número de obras**: se calcula a partir de `_data/catalogo.json`; ya no hay que actualizarlo a mano.
+- **Número de obras**: se calcula a partir de `fondo/catalogo.json`; ya no hay que actualizarlo a mano.
 - **ORCID**: `_data/orcid.json` (Pages CMS, «Colombeia: ORCID de los autores»), con el nombre tal como aparece en los artículos. Se muestra junto al autor y se incluye en `citation_author_orcid`, en schema.org (`ScholarlyArticle`) y en Dublin Core.
 - **OAI-PMH**: conjuntos `biblioteca`, `colombeia` y las materias. Los artículos de *Colombeia* solo se ofrecen en `oai_dc`, con identificadores `oai:ideariumcaribe.com:<archivo>` y la fecha de publicación del número (campo `publicado` de cada número).
 - **Señalar un error**: cada obra lleva un enlace de correo a la Biblioteca con la signatura, el título y la dirección.
@@ -140,3 +140,7 @@ EB Garamond (400, 500, 600 y cursiva 400) e IBM Plex Mono (400) se sirven desde 
 - **Imágenes para compartir** (Open Graph, 1200×630): `assets/og/{obras,articulos,autores,temas,paginas}/…jpg`. Tras compilar, ejecute `node scripts/tarjetas-og.cjs` (requiere Playwright): genera solo las tarjetas nuevas o cuyo texto cambió, según `assets/og/indice.json`. Los textos salen de `/og/datos.json` (`og/datos.11ty.js`); la plantilla es `scripts/og-plantilla.html`. Las páginas sin tarjeta usan la imagen anterior.
 - **Biblioteca y Colombeia**: los artículos muestran las obras de sus autores en la Biblioteca y las páginas de autor sus textos en la revista. Si un autor figura con otro nombre en la revista, añádalo a `EQUIV_COLOMBEIA` (eleventy.config.js).
 - **Estadísticas**: Cloudflare Web Analytics, sin cookies, con el token de `sitio.analitica` (vacío lo desactiva). La CSP admite `static.cloudflareinsights.com` y `cloudflareinsights.com`. Los datos se consultan en el panel de Cloudflare, en Analytics & Logs › Web Analytics.
+
+## Obras ocultas
+
+El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: catálogo»); `_data/catalogo.js` entrega al sitio solo las obras visibles. Una obra con «Ocultar en el sitio» (`"oculta": true`) desaparece del catálogo, las páginas de autor y tema, el buscador, los registros MARC, el conjunto de datos y las imágenes para compartir, y su página deja de existir. Conserva su signatura. En OAI-PMH figura como registro eliminado (`deletedRecord` transitorio) y su ARK responde que la obra no está disponible temporalmente. Para restituirla, desmarque la casilla.

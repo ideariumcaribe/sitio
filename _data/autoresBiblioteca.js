@@ -3,12 +3,13 @@
 // si un autor nuevo no está allí, se usa el nombre tal como aparece.
 import fs from "node:fs";
 import { slugAutor } from "../lib/slug.js";
+import { visibles } from "../lib/fondo.js";
 
 const sinTildes = (s) => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
 export default function () {
   const leer = (f) => JSON.parse(fs.readFileSync(new URL(f, import.meta.url), "utf8"));
-  const catalogo = leer("./catalogo.json");
+  const catalogo = visibles();
   const formas = Object.fromEntries(leer("./ordenAutores.json").map((a) => [a.nombre, a.forma_catalogo]));
   const mapa = new Map();
   for (const obra of catalogo) {

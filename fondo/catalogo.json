@@ -1183,7 +1183,8 @@
   "incorporacion": "2025-09-21",
   "derechos_eeuu": "InC",
   "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 2001).",
-  "materias": ["dictadura-militar", "memorias-y-autobiografias"]
+  "materias": ["dictadura-militar", "memorias-y-autobiografias"],
+  "oculta": true
  },
  {
   "signatura": "IC-0091",
@@ -2620,7 +2621,8 @@
   "incorporacion": "2026-07-15",
   "derechos_eeuu": "InC",
   "derechos_venezuela": "Protegida en Venezuela (art. 25; el autor vivía en 1989).",
-  "materias": ["dictadura-militar", "memorias-y-autobiografias"]
+  "materias": ["dictadura-militar", "memorias-y-autobiografias"],
+  "oculta": true
  },
  {
   "signatura": "IC-0199",

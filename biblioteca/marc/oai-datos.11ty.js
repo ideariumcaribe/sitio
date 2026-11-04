@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import { registro, aMarcXml } from "../../lib/marc.js";
 import { oaiDc, oaiDcArticulo } from "../../lib/dc.js";
+import { ocultas } from "../../lib/fondo.js";
 const SITIO = "https://www.ideariumcaribe.com";
 const ORCID = Object.fromEntries(JSON.parse(fs.readFileSync(new URL("../../_data/orcid.json", import.meta.url), "utf8")).filter((a) => a.nombre && a.orcid).map((a) => [a.nombre.trim(), String(a.orcid).trim()]));
 const iso = (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10));
@@ -40,6 +41,9 @@ export default class {
         };
       });
     const sets = [{ spec: "biblioteca", nombre: "Biblioteca Digital" }, { spec: "colombeia", nombre: "Colombeia (ISSN " + d.sitio.issn + ")" }, ...materias.map((m) => ({ spec: m.slug, nombre: m.nombre }))];
-    return JSON.stringify({ naan, sets, obras: [...obras, ...articulos] });
+    // Obras ocultas temporalmente: registros eliminados (deletedRecord «transient»), sin metadatos.
+    const hoy = new Date().toISOString().slice(0, 10);
+    const retiradas = ocultas().map((o) => ({ id: o.signatura, oculta: true, fecha: hoy, sets: ["biblioteca", ...(o.materias || [])] }));
+    return JSON.stringify({ naan, sets, obras: [...[...obras, ...retiradas].sort((a, b) => a.id.localeCompare(b.id)), ...articulos] });
   }
 }

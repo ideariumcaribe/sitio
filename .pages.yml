@@ -200,7 +200,7 @@ content:
   - name: catalogo
     label: "Biblioteca: catálogo"
     type: file
-    path: _data/catalogo.json
+    path: fondo/catalogo.json
     format: json
     list: true
     fields:
@@ -281,6 +281,10 @@ content:
             - { label: "Memorias y autobiografías", value: "memorias-y-autobiografias" }
             - { label: "Documentos y epistolarios", value: "documentos-y-epistolarios" }
             - { label: "Historias generales", value: "historias-generales" }
+      - name: oculta
+        label: Ocultar en el sitio
+        type: boolean
+        description: Retira temporalmente la obra del sitio (catálogo, búsquedas, registros y cosecha) sin perder su signatura.
 
   - name: materias
     label: "Biblioteca: temas"

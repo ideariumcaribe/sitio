@@ -33,7 +33,7 @@ function respuesta(cuerpo, peticion, estado = 200) {
   return new Response(xml, { status: estado, headers: { "Content-Type": "text/xml; charset=utf-8", "Cache-Control": "public, max-age=3600", "Access-Control-Allow-Origin": "*" } });
 }
 const error = (codigo, texto) => `<error code="${codigo}">${esc(texto)}</error>`;
-const cabecera = (o) => `<header><identifier>${PREFIJO}${o.id}</identifier><datestamp>${o.fecha}</datestamp>${o.sets.map((s) => `<setSpec>${esc(s)}</setSpec>`).join("")}</header>`;
+const cabecera = (o) => `<header${o.oculta ? ' status="deleted"' : ''}><identifier>${PREFIJO}${o.id}</identifier><datestamp>${o.fecha}</datestamp>${o.sets.map((s) => `<setSpec>${esc(s)}</setSpec>`).join("")}</header>`;
 
 export async function responder(params, datos) {
   // Argumentos repetidos o desconocidos: badArgument (sin atributos en <request>).
@@ -59,15 +59,15 @@ export async function responder(params, datos) {
   const buscar = (ident) => (ident && ident.startsWith(PREFIJO) ? obras.find((o) => o.id === ident.slice(PREFIJO.length)) : null);
 
   if (verbo === "Identify") {
-    const primera = obras.map((o) => o.fecha).filter(Boolean).sort()[0] || "2025-01-01";
-    return respuesta(`<Identify><repositoryName>Idearium Caribe: Biblioteca Digital y revista Colombeia</repositoryName><baseURL>${BASE}</baseURL><protocolVersion>2.0</protocolVersion><adminEmail>${CORREO}</adminEmail><earliestDatestamp>${primera}</earliestDatestamp><deletedRecord>no</deletedRecord><granularity>YYYY-MM-DD</granularity>` +
+    const primera = obras.filter((o) => !o.oculta).map((o) => o.fecha).filter(Boolean).sort()[0] || "2025-01-01";
+    return respuesta(`<Identify><repositoryName>Idearium Caribe: Biblioteca Digital y revista Colombeia</repositoryName><baseURL>${BASE}</baseURL><protocolVersion>2.0</protocolVersion><adminEmail>${CORREO}</adminEmail><earliestDatestamp>${primera}</earliestDatestamp><deletedRecord>transient</deletedRecord><granularity>YYYY-MM-DD</granularity>` +
       `<description><oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd"><scheme>oai</scheme><repositoryIdentifier>${DOMINIO}</repositoryIdentifier><delimiter>:</delimiter><sampleIdentifier>${PREFIJO}IC-0001</sampleIdentifier></oai-identifier></description>` +
       `<description><rightsManifest xmlns="http://www.openarchives.org/OAI/2.0/rights/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/rights/ http://www.openarchives.org/OAI/2.0/rightsManifest.xsd" appliesTo="http://www.openarchives.org/OAI/2.0/entity#metadata"><rights><rightsReference ref="https://creativecommons.org/publicdomain/zero/1.0/"/></rights></rightsManifest></description></Identify>`, pet);
   }
   if (verbo === "ListMetadataFormats") {
     const reg = args.identifier ? buscar(args.identifier) : null;
     if (args.identifier && !reg) return respuesta(error("idDoesNotExist", "Identificador desconocido."), pet);
-    return respuesta(`<ListMetadataFormats>${Object.entries(FORMATOS).filter(([p]) => !reg || reg[p]).map(([p, f]) => `<metadataFormat><metadataPrefix>${p}</metadataPrefix><schema>${f.schema}</schema><metadataNamespace>${f.ns}</metadataNamespace></metadataFormat>`).join("")}</ListMetadataFormats>`, pet);
+    return respuesta(`<ListMetadataFormats>${Object.entries(FORMATOS).filter(([p]) => !reg || reg.oculta || reg[p]).map(([p, f]) => `<metadataFormat><metadataPrefix>${p}</metadataPrefix><schema>${f.schema}</schema><metadataNamespace>${f.ns}</metadataNamespace></metadataFormat>`).join("")}</ListMetadataFormats>`, pet);
   }
   if (verbo === "ListSets") {
     return respuesta(`<ListSets>${datos.sets.map((s) => `<set><setSpec>${esc(s.spec)}</setSpec><setName>${esc(s.nombre)}</setName></set>`).join("")}</ListSets>`, pet);
@@ -77,6 +77,7 @@ export async function responder(params, datos) {
   if (verbo === "GetRecord") {
     const o = buscar(args.identifier);
     if (!o) return respuesta(error("idDoesNotExist", "Identificador desconocido."), pet);
+    if (o.oculta) return respuesta(`<GetRecord><record>${cabecera(o)}</record></GetRecord>`, pet);
     if (!o[args.metadataPrefix]) return respuesta(error("cannotDisseminateFormat", "Este registro solo está disponible en oai_dc."), pet);
     return respuesta(`<GetRecord><record>${cabecera(o)}<metadata>${o[args.metadataPrefix]}</metadata></record></GetRecord>`, pet);
   }
@@ -85,10 +86,10 @@ export async function responder(params, datos) {
   for (const k of ["from", "until"]) if (args[k] !== undefined && !FECHA.test(args[k])) return respuesta(error("badArgument", `Fecha no válida en ${k}: use AAAA-MM-DD.`));
   if (args.from && args.until && args.from > args.until) return respuesta(error("badArgument", "from es posterior a until."));
   if (args.set && !datos.sets.some((s) => s.spec === args.set)) return respuesta(error("noRecordsMatch", "Conjunto desconocido."), pet);
-  const lista = obras.filter((o) => o[args.metadataPrefix] && (!args.from || o.fecha >= args.from) && (!args.until || o.fecha <= args.until) && (!args.set || o.sets.includes(args.set)));
+  const lista = obras.filter((o) => (o.oculta ? o.sets.includes("biblioteca") && args.metadataPrefix in FORMATOS : o[args.metadataPrefix]) && (!args.from || o.fecha >= args.from) && (!args.until || o.fecha <= args.until) && (!args.set || o.sets.includes(args.set)));
   if (!lista.length) return respuesta(error("noRecordsMatch", "Ningún registro coincide con la consulta."), pet);
   if (verbo === "ListIdentifiers") return respuesta(`<ListIdentifiers>${lista.map(cabecera).join("")}</ListIdentifiers>`, pet);
-  return respuesta(`<ListRecords>${lista.map((o) => `<record>${cabecera(o)}<metadata>${o[args.metadataPrefix]}</metadata></record>`).join("")}</ListRecords>`, pet);
+  return respuesta(`<ListRecords>${lista.map((o) => `<record>${cabecera(o)}${o.oculta ? "" : `<metadata>${o[args.metadataPrefix]}</metadata>`}</record>`).join("")}</ListRecords>`, pet);
 }
 
 export async function onRequest({ request, env }) {

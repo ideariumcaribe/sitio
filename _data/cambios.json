@@ -2,6 +2,13 @@
  {
   "fecha": "2026-11-05",
   "seccion": "Biblioteca",
+  "es": "Se incorporan los volúmenes X a XIV de los *Documentos para la historia de la vida pública del Libertador*, de José Félix Blanco y Ramón Azpúrua. La colección reúne ya catorce tomos.",
+  "en": "Volumes X to XIV of José Félix Blanco and Ramón Azpúrua's *Documentos para la historia de la vida pública del Libertador* are added. The set now has fourteen volumes.",
+  "enlace": "/biblioteca/colecciones/documentos-para-la-historia-de-la-vida-publica-del-libertador/"
+ },
+ {
+  "fecha": "2026-11-05",
+  "seccion": "Biblioteca",
   "es": "Nueva página «La Biblioteca en cifras»: obras, autores y temas, crecimiento de la colección, obras por década y situación de derechos, con gráficos que se actualizan con cada incorporación.",
   "en": "New page «The Library in figures»: works, authors and subjects, collection growth, works by decade and rights status, with charts updated with every addition.",
   "enlace": "/cifras.html"

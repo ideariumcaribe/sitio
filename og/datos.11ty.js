@@ -18,7 +18,8 @@ const PAGINAS = {
   cifras: ["La Biblioteca en cifras", "Obras, autores, temas, crecimiento y derechos de la colección"],
   colecciones: ["Obras en varios tomos", "Obras completas, epistolarios y colecciones documentales"],
 };
-const portadaObra = (o) => `/assets/portadas/${o.identificador}.webp`;
+import fs from "node:fs";
+const portadaObra = (o) => fs.existsSync(new URL(`../assets/portadas/${o.identificador}.webp`, import.meta.url)) ? `/assets/portadas/${o.identificador}.webp` : `https://archive.org/services/img/${o.identificador}`;
 const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
 
 export default class {

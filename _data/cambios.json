@@ -1,6 +1,13 @@
 [
  {
   "fecha": "2026-11-05",
+  "seccion": "Sitio web",
+  "es": "Renovación visual: títulos de sección más claros en todo el sitio, una franja de portadas del fondo en la página de la Biblioteca, mejor ancho de lectura y portadas provisionales para las obras recién incorporadas.",
+  "en": "Visual refresh: clearer section headings across the website, a band of covers from the collection on the Library page, better reading width and provisional covers for newly added works.",
+  "enlace": "/biblioteca.html"
+ },
+ {
+  "fecha": "2026-11-05",
   "seccion": "Biblioteca",
   "es": "Nueva cronología de la Biblioteca: las obras ordenadas por el año de su primera edición, del siglo XIX a nuestros días, agrupadas por períodos.",
   "en": "New Library timeline: works ordered by the year of their first edition, from the nineteenth century to the present, grouped by period.",

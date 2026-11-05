@@ -595,3 +595,15 @@ a.m-marca:focus{outline:2px solid var(--ink)}
 /* Ancho de lectura y números de Colombeia en móvil */
 .objetivos>p,.objetivos>ol,.col-meta p,.cols .col p{max-width:31em}
 @media (max-width:560px){.numeros{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}}
+
+/* Jerarquía de secciones: títulos mayores, línea fina y etiqueta en sepia */
+.sec-title:has(h2){border-top:1px solid var(--ink);padding-top:22px}
+.sec-title h2,.sec-title h1{font-size:clamp(2.1rem,3.8vw,2.9rem);letter-spacing:-.005em}
+.sec-title .label{color:var(--stamp)}
+
+/* Biblioteca: franja de portadas del fondo */
+.banda-portadas{display:flex;gap:14px;overflow:hidden;height:250px;align-items:flex-end;margin:-40px 0 8px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.banda-portadas img{height:220px;width:auto;aspect-ratio:3/4.3;object-fit:cover;border:1px solid var(--line);box-shadow:0 6px 16px rgba(0,0,0,.12);flex:none;background:var(--soft)}
+.banda-portadas img:nth-child(odd){height:236px}
+@media (max-width:560px){.banda-portadas{height:160px;gap:10px;margin:-20px 0 4px}.banda-portadas img{height:140px}.banda-portadas img:nth-child(odd){height:152px}}
+@media print{.banda-portadas{display:none}}

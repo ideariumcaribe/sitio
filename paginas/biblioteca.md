@@ -5,6 +5,10 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
 <main>
   <section id="biblioteca">
     <div class="wrap stack">
+      {%- set banda = ["mario-briceno-iragorry-tapices-de-historia-patria", "arturo-uslar-pietri-golpe-y-estado-en-venezuela", "indalecio-lievano-aguirre-bolivar-2da-edicion", "mario-briceno-iragorry-el-caballo-de-ledesma", "augusto-mijares-el-libertador", "mario-briceno-iragorry-casa-leon-y-su-tiempo", "mariano-picon-salas-miranda", "arturo-uslar-pietri-del-hacer-y-deshacer-de-venezuela", "ramon-j.-velasquez-la-caida-del-liberalismo-amarillo", "juan-uslar-pietri-historia-de-la-rebelion-popular-de-1814", "antonio-perez-vivas-hegemonia-andina-y-perez-jimenez", "laureano-vallenilla-lanz-cesarismo-democratico", "arturo-uslar-pietri-los-libros-de-miranda", "gloria-henriquez-uzcategui-los-papeles-de-francisco-de-miranda"] %}
+      <div class="banda-portadas" aria-hidden="true">
+        {%- for id in banda %}<img src="/assets/portadas/{{ id }}.webp" alt="" width="165" height="236" decoding="async"{% if loop.index > 7 %} loading="lazy"{% endif %}>{% endfor %}
+      </div>
       <div class="sec-title"><div><p class="label es">Biblioteca y archivo</p><p class="label en">Library and archive</p>
         <h1 class="es">Lo que preservamos</h1><h1 class="en">What we preserve</h1></div></div>
       <div class="cards">

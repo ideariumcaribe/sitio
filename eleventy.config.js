@@ -1,6 +1,7 @@
 // Configuración de Eleventy para el sitio de Idearium Caribe.
 import fs from "node:fs";
 import { slugAutor } from "./lib/slug.js";
+import * as CIFRAS from "./lib/cifras.js";
 const DERECHOS = JSON.parse(fs.readFileSync(new URL("./_data/derechos.json", import.meta.url), "utf8"));
 const AUTORIDADES = JSON.parse(fs.readFileSync(new URL("./_data/autoridades.json", import.meta.url), "utf8"));
 // Enlaces de autoridad de un autor (Wikidata, VIAF, Biblioteca del Congreso, BNE).
@@ -152,6 +153,14 @@ export default function (eleventyConfig) {
     return out;
   });
   eleventyConfig.addFilter("coleccionesDeAutor", (cols, n) => (cols || []).filter((c) => String(c.autor || "").split(";").map((x) => x.trim()).includes(n)));
+  // La Biblioteca en cifras (lib/cifras.js).
+  eleventyConfig.addFilter("cifras", (cat, mats, cols, arts, nums) => CIFRAS.datos(cat, mats, cols, arts, nums));
+  // Cada gráfico se genera en dos tamaños (escritorio y móvil) para que el texto sea legible en ambos.
+  const dos = (d, m) => `<div class="graf-d">${d}</div><div class="graf-m">${m}</div>`;
+  eleventyConfig.addFilter("grafColumnas", (serie, titulo) => dos(CIFRAS.columnas(serie, { titulo }), CIFRAS.columnas(serie, { titulo, ancho: 360, alto: 220, saltar: 2 })));
+  eleventyConfig.addFilter("grafBarras", (serie, titulo, etiqueta) => dos(CIFRAS.barras(serie, { titulo, etiqueta: etiqueta || 250 }), CIFRAS.barras(serie, { titulo, ancho: 360, apilado: true })));
+  eleventyConfig.addFilter("grafLinea", (serie, titulo) => dos(CIFRAS.linea(serie, { titulo }), CIFRAS.linea(serie, { titulo, ancho: 360, alto: 220, etiquetas: 3 })));
+  eleventyConfig.addFilter("miles", (n) => CIFRAS.fmt(n));
   eleventyConfig.addFilter("orcid", (n) => ORCID[String(n || "").trim()] || "");
   // Fecha AAAA-MM-DD a partir de una fecha YAML (objeto Date) o de un texto.
   eleventyConfig.addFilter("fechaIso", (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10)));

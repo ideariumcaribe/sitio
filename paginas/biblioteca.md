@@ -12,7 +12,7 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
           <h2 class="es">Biblioteca Digital</h2><h2 class="en">Digital Library</h2>
           <p class="es">{{ catalogo | length }} libros y publicaciones, desde la Independencia hasta el siglo XX, muchos agotados o difíciles de encontrar.</p>
           <p class="en">{{ catalogo | length }} books and periodicals, from independence to the twentieth century, many out of print or hard to find.</p>
-          <a class="more" href="/biblioteca/catalogo/"><span class="es">Consultar el catálogo</span><span class="en">Browse the catalogue</span></a></div>
+          <p class="card-enlaces"><a class="more" href="/biblioteca/catalogo/"><span class="es">Consultar el catálogo</span><span class="en">Browse the catalogue</span></a> <a class="more" href="/cifras.html"><span class="es">La Biblioteca en cifras</span><span class="en">The Library in figures</span></a></p></div>
         <div class="card"><p class="label">Archive-It</p>
           <h2 class="es">Archivo web</h2><h2 class="en">Web archive</h2>
           <p class="es">Capturas de sitios, decretos y prensa digital venezolana en riesgo de desaparecer de internet.</p>

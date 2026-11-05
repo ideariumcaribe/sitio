@@ -160,3 +160,10 @@ El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: c
 2. `python3 scripts/portadas.py` y `python3 scripts/textos.py`.
 3. `npx @11ty/eleventy` y `node scripts/tarjetas-og.cjs`.
 4. Publique los archivos nuevos de `assets/portadas`, `assets/og` y `_data/textosIA.json`.
+
+## Cifras, ruta de navegación, suscripción y archivo web
+
+- **La Biblioteca en cifras** (`/cifras.html`, `lib/cifras.js`): cifras y gráficos SVG generados al compilar, sin JavaScript; cada gráfico en versión de escritorio y de móvil, con tabla de datos y enlaces al catálogo filtrado o a los temas.
+- **Ruta de navegación** para buscadores: `_includes/migas-ld.njk` (schema.org BreadcrumbList) en obras, autores, temas, colecciones, índices, números y artículos.
+- **Formulario de Substack**: se carga cuando el lector se acerca a él (`assets/site.js`, atributo `data-src`), no en la carga inicial; sin JavaScript se muestra igual.
+- **Wayback Machine**: el Worker de Cloudflare `archivo-wayback` (cron `30 20 * * 1`, lunes 15:30 en Caracas/Nueva York en invierno) pide cada semana capturas de la portada, la Biblioteca, el catálogo, *Colombeia*, el registro de cambios, las cifras y las obras incorporadas en los ocho días anteriores (máximo 12 direcciones). No tiene dirección pública; sus registros se ven en el panel de Cloudflare (Workers › archivo-wayback › Logs).

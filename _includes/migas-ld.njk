@@ -1,0 +1,18 @@
+{#- Ruta de navegación en datos estructurados (schema.org BreadcrumbList) para los buscadores. -#}
+{%- set U = sitio.url %}
+{%- set B = [["Biblioteca", U + "/biblioteca.html"]] %}
+{%- if obra and obra.identificador %}{% set mig = B.concat([["Catálogo", U + "/biblioteca/catalogo/"], [obra.titulo, U + page.url]]) %}
+{%- elif autor and autor.slug %}{% set mig = B.concat([["Autores", U + "/biblioteca/autores/"], [autor.nombre, U + page.url]]) %}
+{%- elif mat and mat.slug %}{% set mig = B.concat([["Temas", U + "/biblioteca/materias/"], [mat.nombre, U + page.url]]) %}
+{%- elif col and col.slug %}{% set mig = B.concat([["Obras en varios tomos", U + "/biblioteca/colecciones/"], [col.titulo, U + page.url]]) %}
+{%- elif page.url == "/biblioteca/catalogo/" %}{% set mig = B.concat([["Catálogo", U + page.url]]) %}
+{%- elif page.url == "/biblioteca/autores/" %}{% set mig = B.concat([["Autores", U + page.url]]) %}
+{%- elif page.url == "/biblioteca/materias/" %}{% set mig = B.concat([["Temas", U + page.url]]) %}
+{%- elif page.url == "/biblioteca/colecciones/" %}{% set mig = B.concat([["Obras en varios tomos", U + page.url]]) %}
+{%- elif page.url == "/cifras.html" %}{% set mig = B.concat([["La Biblioteca en cifras", U + "/cifras"]]) %}
+{%- elif esArticulo %}{% set nA = collections.numeros | numeroPorId(numero) %}{% set mig = [["Colombeia", U + "/colombeia.html"], ["N.º " + numero, U + (nA.url or "/colombeia.html")], [titulo, U + (page.url | urlLimpia)]] %}
+{%- elif page.url.startsWith("/colombeia/numero-") %}{% set mig = [["Colombeia", U + "/colombeia.html"], ["N.º " + numero, U + page.url]] %}
+{%- else %}{% set mig = [] %}{% endif %}
+{%- if mig.length %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{% for m in mig %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ m[0] | dump | safe }},"item":{{ m[1] | dump | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+{%- endif %}

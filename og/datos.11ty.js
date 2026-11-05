@@ -15,6 +15,7 @@ const PAGINAS = {
   catalogo: ["Catálogo de la Biblioteca Digital", "Búsqueda y filtros por tema, década y derechos"],
   autores: ["Autores de la Biblioteca Digital", "Índice alfabético de autores"],
   temas: ["Temas de la Biblioteca Digital", "La colección organizada por temas"],
+  cifras: ["La Biblioteca en cifras", "Obras, autores, temas, crecimiento y derechos de la colección"],
   colecciones: ["Obras en varios tomos", "Obras completas, epistolarios y colecciones documentales"],
 };
 const portadaObra = (o) => `/assets/portadas/${o.identificador}.webp`;

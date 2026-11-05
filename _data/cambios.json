@@ -1,5 +1,19 @@
 [
  {
+  "fecha": "2026-11-05",
+  "seccion": "Biblioteca",
+  "es": "Nueva página «La Biblioteca en cifras»: obras, autores y temas, crecimiento de la colección, obras por década y situación de derechos, con gráficos que se actualizan con cada incorporación.",
+  "en": "New page «The Library in figures»: works, authors and subjects, collection growth, works by decade and rights status, with charts updated with every addition.",
+  "enlace": "/cifras.html"
+ },
+ {
+  "fecha": "2026-11-05",
+  "seccion": "Sitio web",
+  "es": "Las páginas principales del sitio y las de cada obra nueva se archivan cada semana en la Wayback Machine de Internet Archive.",
+  "en": "The website's main pages and the page of each new work are archived every week in the Internet Archive's Wayback Machine.",
+  "enlace": "/preservacion.html"
+ },
+ {
   "fecha": "2026-11-04",
   "seccion": "Biblioteca",
   "es": "Las obras en varios tomos tienen su propia página, con todos sus volúmenes reunidos y separados por edición: obras completas, epistolarios, colecciones documentales e historias generales.",

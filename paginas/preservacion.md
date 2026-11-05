@@ -41,6 +41,8 @@ descripcion: "Política de preservación digital de Idearium Caribe Co.: copias,
             <li><b>Vault</b>, the Internet Archive's digital preservation service, which keeps multiple copies and checks their integrity.</li>
             <li><b>Internet Archive</b>, where each work is published together with its original files.</li>
           </ol>
+          <p class="es">Además, las páginas principales del sitio web y las de cada obra nueva se archivan cada semana en la Wayback Machine de Internet Archive, que deja constancia pública y fechada de su contenido.</p>
+          <p class="en">In addition, the website's main pages and the page of each new work are archived every week in the Internet Archive's Wayback Machine, which keeps a public, dated record of their content.</p>
         </section>
 
         <section id="digitalizacion">

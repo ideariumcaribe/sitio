@@ -65,3 +65,13 @@
   window.addEventListener('scroll',ver,{passive:true}); ver();
   a.addEventListener('click',function(e){e.preventDefault(); window.scrollTo({top:0,behavior:(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)?'auto':'smooth'}); var h=document.querySelector('main h1'); if(h){h.setAttribute('tabindex','-1'); h.focus({preventScroll:true});}});
 })();
+
+// Formulario de suscripción de Substack: se carga cuando el lector se acerca a él (no en la carga inicial de la página).
+(function(){
+  var f=document.querySelectorAll('iframe[data-src]'); if(!f.length) return;
+  var cargar=function(el){ if(!el.getAttribute('src')) el.setAttribute('src', el.getAttribute('data-src')); };
+  if(!('IntersectionObserver' in window)){ window.addEventListener('load',function(){ f.forEach(cargar); }); return; }
+  var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ cargar(e.target); io.unobserve(e.target); } }); },{rootMargin:'900px 0px'});
+  var empezar=function(){ f.forEach(function(el){ io.observe(el); }); };
+  if(document.readyState==='complete') empezar(); else window.addEventListener('load',empezar);
+})();

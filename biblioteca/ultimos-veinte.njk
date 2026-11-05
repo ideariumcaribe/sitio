@@ -1,0 +1,43 @@
+---
+layout: base.njk
+title: "Últimos veinte años · Biblioteca Digital · Idearium Caribe"
+descripcion: "Obras de la Biblioteca Digital de Idearium Caribe en los últimos veinte años de su protección en Estados Unidos, que pueden difundirse con fines de investigación al amparo de la sección 108(h) de la ley de derechos de autor."
+permalink: /biblioteca/ultimos-veinte/
+---
+{%- set lista = catalogo | ultimosVeinte %}
+{%- set nAmp = lista | contarAmparo %}
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><span class="es">Últimos veinte años</span><span class="en">Last twenty years</span></nav>
+      <div class="sec-title"><div><p class="label es">Derechos de autor</p><p class="label en">Copyright</p>
+        <h1 class="es">Últimos veinte años</h1><h1 class="en">Last twenty years</h1></div></div>
+      <div class="aviso">
+        <p class="es">La sección 108(h) de la ley de derechos de autor de Estados Unidos permite a las bibliotecas y archivos abiertos al público reproducir y difundir, con fines de preservación, estudio o investigación, las obras publicadas que se encuentran en los últimos veinte años de su plazo de protección. La biblioteca debe comprobar antes, mediante una investigación razonable, que la obra no se comercializa normalmente, que no puede conseguirse un ejemplar a un precio razonable y que el titular no ha presentado aviso en contrario ante la Oficina de Derechos de Autor.</p>
+        <p class="en">Section 108(h) of the U.S. Copyright Act allows libraries and archives open to the public to reproduce and distribute, for purposes of preservation, scholarship or research, published works in the last twenty years of their term of protection. The library must first determine, on the basis of a reasonable investigation, that the work is not subject to normal commercial exploitation, that a copy cannot be obtained at a reasonable price, and that the rights holder has not filed a notice to the contrary with the Copyright Office.</p>
+        <p class="es">Las obras de la Biblioteca, publicadas fuera de Estados Unidos, están protegidas allí durante 95 años desde su publicación. Esta lista reúne las que se encuentran hoy en sus últimos veinte años y no cuentan con autorización de sus titulares. Cada obra se acoge a la sección 108(h) solo cuando la fundación ha documentado su investigación; el resultado figura en la página de la obra y en sus registros. Cada 1 de enero la lista se actualiza sola: entran las obras que inician su último tramo de protección y salen las que pasan al dominio público en Estados Unidos.</p>
+        <p class="en">The Library's works, published outside the United States, are protected there for 95 years from publication. This list gathers those currently in their last twenty years that lack the rights holders' permission. A work relies on section 108(h) only once the foundation has documented its investigation; the result appears on the work's page and in its records. The list updates itself every January 1: works entering their final stretch of protection are added, and those entering the U.S. public domain are removed.</p>
+        <p class="es">Si usted es titular de derechos de alguna de estas obras, escriba a {{ sitio.email_biblioteca }}.</p>
+        <p class="en">If you hold rights in any of these works, please write to {{ sitio.email_biblioteca }}.</p>
+      </div>
+      <p class="cat-cuenta"><span class="es">{{ lista.length }} obras · {{ nAmp }} {{ "amparada" if nAmp == 1 else "amparadas" }} tras su investigación · {{ lista.length - nAmp }} con la investigación pendiente</span><span class="en">{{ lista.length }} works · {{ nAmp }} covered after investigation · {{ lista.length - nAmp }} pending investigation</span></p>
+      <div class="ledger-wrap">
+        <table class="ledger cat-tabla">
+          <thead><tr>
+            <th><span class="es">Signatura</span><span class="en">Call no.</span></th>
+            <th><span class="es">Obra</span><span class="en">Work</span></th>
+            <th><span class="es">Año</span><span class="en">Year</span></th>
+            <th><span class="es">Protegida en EE. UU. hasta</span><span class="en">Protected in the U.S. until</span></th>
+            <th><span class="es">Sección 108(h)</span><span class="en">Section 108(h)</span></th>
+          </tr></thead>
+          <tbody>
+            {%- for o in lista %}
+            <tr><td class="sig">{{ o.signatura }}</td><td><a href="/biblioteca/obras/{{ o.identificador }}/">{{ o.titulo }}</a><span class="cat-pie">{{ o.autor | replace(";", ",") }}</span></td><td class="yr">{{ o.anio }}</td><td class="yr">{{ o | finProteccion }}</td>
+              <td>{% if o | amparo108h %}<span class="es">Amparada ({{ o.investigacion_108h.fecha | fechaIso }})</span><span class="en">Covered ({{ o.investigacion_108h.fecha | fechaIso }})</span>{% else %}<span class="ref"><span class="es">Investigación pendiente</span><span class="en">Investigation pending</span></span>{% endif %}</td></tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>

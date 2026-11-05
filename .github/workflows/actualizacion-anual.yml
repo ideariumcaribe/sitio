@@ -1,0 +1,24 @@
+# Reconstrucción anual del sitio cada 1 de enero.
+# Ese día vencen en EE. UU. los derechos de las obras publicadas 96 años antes y cambia la lista de «Últimos veinte años»
+# (lib/plazos.js). Cloudflare Pages solo compila cuando hay cambios en la rama principal, así que este flujo anota el año
+# en _data/actualizacion.json y lo publica; esa publicación dispara la compilación con las nuevas fechas.
+name: Actualización anual de derechos
+on:
+  schedule:
+    - cron: "10 5 1 1 *"   # 1 de enero, 05:10 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Anotar el año
+        run: |
+          echo "{ \"anio\": $(date -u +%Y), \"fecha\": \"$(date -u +%F)\" }" > _data/actualizacion.json
+          git config user.name "Idearium Caribe (actualización anual)"
+          git config user.email "biblioteca@ideariumcaribe.com"
+          git add _data/actualizacion.json
+          git commit -m "Actualización anual de derechos: $(date -u +%Y)" || echo "Sin cambios"
+          git push

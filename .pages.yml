@@ -239,6 +239,36 @@ content:
         description: "Declaración normalizada de RightsStatements.org. NoC-US: sin derechos en EE. UU.; InC: protegida; UND: indeterminada."
         options:
           values: ["NoC-US", "InC", "UND"]
+      - name: investigacion_108h
+        label: "Investigación de la sección 108(h) (EE. UU.)"
+        type: object
+        description: "Solo para obras sin autorización en sus últimos veinte años de protección en EE. UU. (véase /biblioteca/ultimos-veinte/). La obra se ampara en la sección 108(h) cuando las tres respuestas son «No»."
+        fields:
+          - name: fecha
+            label: Fecha de la investigación
+            type: date
+          - name: responsable
+            label: Responsable
+            type: string
+          - name: comercializada
+            label: "¿Se comercializa normalmente (edición en venta, reimpresión, libro electrónico)?"
+            type: select
+            options:
+              values: ["No", "Sí"]
+          - name: precio_razonable
+            label: "¿Se consigue un ejemplar a un precio razonable (nuevo o de segunda mano)?"
+            type: select
+            options:
+              values: ["No", "Sí"]
+          - name: aviso_titular
+            label: "¿El titular ha presentado aviso ante la Oficina de Derechos de Autor de EE. UU.?"
+            type: select
+            options:
+              values: ["No", "Sí"]
+          - name: fuentes
+            label: Fuentes consultadas
+            type: text
+            description: Librerías, catálogos y registros consultados, con sus resultados.
       - name: derechos_venezuela
         label: "Derechos: Venezuela"
         type: string

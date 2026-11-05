@@ -177,3 +177,8 @@ El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: c
 ## Portadas provisionales
 
 Si una obra aún no tiene portada local (por ejemplo, mientras Internet Archive la procesa), el sitio genera una portada provisional en SVG (`biblioteca/provisional/provisional.11ty.js` → `/assets/portadas/provisional/<identificador>.svg`) con el título, el autor, el año y la signatura. `scripts/portadas.py` no guarda el marcador genérico de Internet Archive; basta volver a ejecutarlo cuando la obra esté procesada.
+
+## Plazos en EE. UU. y sección 108(h)
+
+- **Vencimiento automático** (`lib/plazos.js`): las obras de la Biblioteca están protegidas en EE. UU. 95 años desde su publicación (año de la edición digitalizada). Una obra «InC» o «UND» se muestra como «NoC-US» desde el 1 de enero siguiente al fin de su plazo, con la nota correspondiente; el dato de Pages CMS no se modifica. El flujo `.github/workflows/actualizacion-anual.yml` publica cada 1 de enero un cambio en `_data/actualizacion.json` para que Cloudflare reconstruya el sitio ese día.
+- **Últimos veinte años** (`/biblioteca/ultimos-veinte/`): obras sin autorización en los últimos veinte años de su protección en EE. UU. Se acogen a la sección 108(h) solo cuando su «Investigación de la sección 108(h)» (Pages CMS) tiene fecha y las tres respuestas son «No»; entonces la página de la obra, el registro MARC (540) y Dublin Core lo indican.

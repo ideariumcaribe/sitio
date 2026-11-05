@@ -40,7 +40,7 @@ eleventyComputed:
         {%- if der or obra.derechos_venezuela %}
         <dl class="obra-derechos">
           {%- if obra.derechos_venezuela %}<div><dt>Venezuela</dt><dd>{{ obra.derechos_venezuela }}</dd></div>{% endif %}
-          {%- if der %}<div><dt><span class="es">Estados Unidos</span><span class="en">United States</span></dt><dd><a href="{{ der.uri }}" target="_blank" rel="noopener license"><span class="es">{{ der.es }}</span><span class="en">{{ der.en }}</span></a></dd></div>{% endif %}
+          {%- if der %}<div><dt><span class="es">Estados Unidos</span><span class="en">United States</span></dt><dd><a href="{{ der.uri }}" target="_blank" rel="noopener license"><span class="es">{{ der.es }}</span><span class="en">{{ der.en }}</span></a>{% if obra.derechos_eeuu_vencido %} <span class="es">Su plazo de protección venció el 1 de enero de {{ obra.derechos_eeuu_vencido }}.</span><span class="en">Its term of protection expired on January 1, {{ obra.derechos_eeuu_vencido }}.</span>{% endif %}{% if obra | amparo108h %} <span class="es">Disponible con fines de investigación y estudio al amparo de la <a href="/biblioteca/ultimos-veinte/">sección 108(h)</a> de la ley de derechos de autor (últimos veinte años de protección), según la investigación del {{ obra.investigacion_108h.fecha | fechaIso | fechaLarga("es") }}.</span><span class="en">Available for research and study under <a href="/biblioteca/ultimos-veinte/">section 108(h)</a> of the Copyright Act (last twenty years of protection), following the investigation of {{ obra.investigacion_108h.fecha | fechaIso | fechaLarga("en") }}.</span>{% endif %}</dd></div>{% endif %}
         </dl>
         {%- endif %}
       </header>

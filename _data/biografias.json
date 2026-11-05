@@ -217,7 +217,14 @@
   }
  },
  "Laureano Vallenilla Lanz": {
-  "wikipedia": "https://es.wikipedia.org/wiki/Laureano_Vallenilla_Lanz"
+  "wikipedia": "https://es.wikipedia.org/wiki/Laureano_Vallenilla_Lanz",
+  "retrato": {
+   "imagen": "/assets/autores/laureano-vallenilla-lanz.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Laureano_Vallenilla_Lanz.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
  },
  "Laureano Vallenilla-Lanz Planchart": {
   "wikipedia": "https://es.wikipedia.org/wiki/Laureano_Vallenilla_Planchart"
@@ -258,6 +265,15 @@
    "licencia_url": ""
   }
  },
+ "Marius André": {
+  "retrato": {
+   "imagen": "/assets/autores/marius-andre.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Marius_Andr%C3%A9_dins_Jourdanne.png",
+   "licencia": "CC BY-SA 4.0",
+   "autor": "Jfblanc",
+   "licencia_url": ""
+  }
+ },
  "Miguel Batllori": {
   "wikipedia": "https://es.wikipedia.org/wiki/Miquel_Batllori"
  },
@@ -266,6 +282,15 @@
  },
  "Nemesio García Naranjo": {
   "wikipedia": "https://es.wikipedia.org/wiki/Nemesio_Garc%C3%ADa_Naranjo"
+ },
+ "Nicolás Eugenio Navarro": {
+  "retrato": {
+   "imagen": "/assets/autores/nicolas-eugenio-navarro.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Nicol%C3%A1s_Eugenio_Navarro_%281867%E2%80%931960%29.png",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
  },
  "Nora Bustamante": {
   "wikipedia": "https://es.wikipedia.org/wiki/Nora_Bustamante_Luciani",
@@ -311,7 +336,14 @@
   }
  },
  "Ramón J. Velásquez": {
-  "wikipedia": "https://es.wikipedia.org/wiki/Ram%C3%B3n_J._Vel%C3%A1squez"
+  "wikipedia": "https://es.wikipedia.org/wiki/Ram%C3%B3n_J._Vel%C3%A1squez",
+  "retrato": {
+   "imagen": "/assets/autores/ramon-j-velasquez.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Ram%C3%B3n_J._Vel%C3%A1squez%2C_2009.jpg",
+   "licencia": "CC BY-SA 3.0",
+   "autor": "Guillermo Ramos Flamerich",
+   "licencia_url": ""
+  }
  },
  "Ramón Páez": {
   "wikipedia": "https://es.wikipedia.org/wiki/Ram%C3%B3n_P%C3%A1ez"

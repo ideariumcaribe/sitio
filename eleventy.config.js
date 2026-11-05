@@ -5,6 +5,7 @@ import * as CIFRAS from "./lib/cifras.js";
 import * as MAPA from "./lib/mapa.js";
 import { lugar as lugarDe } from "./lib/lugares.js";
 import * as PLAZOS from "./lib/plazos.js";
+import { visibles as VISIBLES } from "./lib/fondo.js";
 const DERECHOS = JSON.parse(fs.readFileSync(new URL("./_data/derechos.json", import.meta.url), "utf8"));
 const AUTORIDADES = JSON.parse(fs.readFileSync(new URL("./_data/autoridades.json", import.meta.url), "utf8"));
 // Enlaces de autoridad de un autor (Wikidata, VIAF, Biblioteca del Congreso, BNE).
@@ -201,6 +202,7 @@ export default function (eleventyConfig) {
     return [...new Set([3, ...[0.2, 0.35, 0.5, 0.65, 0.8].map((f) => Math.round(p * f))])].filter((n) => n > 0 && n < p - 1); });
   // Plazos en EE. UU. y sección 108(h) (lib/plazos.js).
   eleventyConfig.addFilter("amparo108h", (o) => PLAZOS.amparo108h(o));
+  eleventyConfig.addFilter("amparadas108h", (l) => (l || []).filter((o) => PLAZOS.amparo108h(o)));
   eleventyConfig.addFilter("contarAmparo", (l) => (l || []).filter((o) => PLAZOS.amparo108h(o)).length);
   eleventyConfig.addFilter("finProteccion", (o) => PLAZOS.finProteccion(o));
   eleventyConfig.addFilter("ultimosVeinte", (cat) => (cat || []).filter((o) => PLAZOS.ultimos20(o)).sort((a, b) => a.anio.localeCompare(b.anio) || a.signatura.localeCompare(b.signatura)));
@@ -334,6 +336,8 @@ export default function (eleventyConfig) {
 
   // Buscador del sitio (Pagefind): se indexa _site al terminar cada compilación.
   eleventyConfig.on("eleventy.after", async ({ dir }) => {
+    const sinInvestigar = VISIBLES().filter((o) => PLAZOS.ultimos20(o) && !PLAZOS.amparo108h(o));
+    if (sinInvestigar.length) console.warn(`[108(h)] ${sinInvestigar.length} obra(s) en sus últimos veinte años sin investigación registrada (no se listan): ${sinInvestigar.map((o) => o.signatura).join(", ")}`);
     const pagefind = await import("pagefind");
     const { index } = await pagefind.createIndex({
       forceLanguage: "es",

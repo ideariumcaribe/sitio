@@ -88,11 +88,11 @@ section + section{border-top:1px solid var(--line)}
 .issues{display:flex;flex-wrap:wrap;gap:18px;font-family:var(--f-ui);font-size:.9rem}
 
 /* Journal details */
-.col-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;border-top:1px solid var(--line);padding-top:48px}
+.col-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px}
 dl.team{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 20px;margin:0 0 12px}
 dl.team dt{font-family:var(--f-ui);font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
 dl.team dd{margin:0;overflow-wrap:anywhere}
-#evaluacion{border-top:1px solid var(--line);padding-top:48px}
+#evaluacion{padding-top:8px}
 #evaluacion ol{max-width:46em}
 
 /* Lists */
@@ -327,7 +327,7 @@ ol.principios li{line-height:1.6}
 .ci-cab{display:flex;align-items:center;gap:28px}
 .ci-sello{height:150px;width:auto;padding-right:28px;border-right:1px solid var(--line)}
 @media (max-width:720px){.ci-cab{gap:16px}.ci-sello{height:72px;padding-right:16px}.ci-logotipo img{max-width:230px}}
-#etica h4{font-size:1.05rem;font-weight:600;margin:10px 0 -4px}#etica p{font-size:1rem}
+#etica h3,#arbitraje h3{font-family:var(--f-body);font-size:1.05rem;font-weight:600;margin:10px 0 -4px}#etica p:not(.label){font-size:1rem}
 
 /* Portadas de la Biblioteca */
 .cat-vista{display:flex;gap:0;font-family:var(--f-ui)}

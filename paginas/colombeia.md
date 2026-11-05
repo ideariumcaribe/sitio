@@ -27,6 +27,8 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
         </div>
       </div>
       {% include "colombeia-numeros.njk" %}
+      <div class="sec-title"><div><p class="label es">La revista</p><p class="label en">The journal</p>
+        <h2 class="es">Sobre <i>Colombeia</i></h2><h2 class="en">About <i>Colombeia</i></h2></div></div>
       <div class="col-meta">
         <div class="col">
           <h3 class="es">Revista de acceso abierto</h3><h3 class="en">Open-access journal</h3>
@@ -52,7 +54,8 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
         </div>
       </div>
       <div class="col" id="evaluacion">
-        <h3 class="es">Proceso de evaluación</h3><h3 class="en">Review process</h3>
+        <div class="sec-title"><div><p class="label es">Normas para autores</p><p class="label en">Guidelines for authors</p>
+          <h2 class="es">Proceso de evaluación</h2><h2 class="en">Review process</h2></div></div>
         <ol class="es">
           <li>La recepción del material a publicarse se hará mediante nuestra dirección de correo electrónico: {{ sitio.email_editorial }}.</li>
           <li>Todos los correos enviados a nuestra dirección deberán estar titulados para facilitar la labor de recepción. Escriba de título el nombre de su publicación.</li>
@@ -73,7 +76,8 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
         </ol>
       </div>
       <div class="col" id="arbitraje">
-        <h3 class="es">Arbitraje</h3><h3 class="en">Peer review</h3>
+        <div class="sec-title"><div><p class="label es">Política editorial</p><p class="label en">Editorial policy</p>
+          <h2 class="es">Arbitraje</h2><h2 class="en">Peer review</h2></div></div>
         <ol class="es">
           <li><b>Revisión editorial previa.</b> En un plazo de hasta quince días, el equipo editorial comprueba que el texto se ajuste al ámbito de la revista, a las normas de presentación y a los principios de originalidad. Los textos que no los cumplan se devuelven al autor sin pasar a evaluación.</li>
           <li><b>Doble ciego.</b> Los artículos y ensayos de investigación se someten a la evaluación de dos especialistas externos al equipo editorial, en la modalidad de doble ciego: ni los autores conocen la identidad de los evaluadores ni estos la de los autores. El autor debe enviar una versión anonimizada de su texto, sin su nombre ni referencias que lo identifiquen.</li>
@@ -94,15 +98,16 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li><b>Reviews.</b> Scholarly reviews undergo editorial review, not external peer review.</li>
           <li><b>Reconsideration.</b> Authors may submit a reasoned request for reconsideration of a decision. The request is resolved with the involvement of a reviewer different from the previous ones.</li>
         </ol>
-        <h4 class="es">Preservación</h4><h4 class="en">Preservation</h4>
+        <h3 class="es">Preservación</h3><h3 class="en">Preservation</h3>
         <p class="es">Para garantizar su conservación a largo plazo, cada número y cada artículo de <i>Colombeia</i> se deposita en Internet Archive y en la comunidad de la fundación en Zenodo, además de conservarse en su sitio web.</p>
         <p class="en">To ensure long-term preservation, every issue and article of <i>Colombeia</i> is deposited in the Internet Archive and in the foundation's Zenodo community, in addition to being kept on its website.</p>
       </div>
       <div class="col" id="etica">
-        <h3 class="es">Ética de publicación</h3><h3 class="en">Publication ethics</h3>
+        <div class="sec-title"><div><p class="label es">Política editorial</p><p class="label en">Editorial policy</p>
+          <h2 class="es">Ética de publicación</h2><h2 class="en">Publication ethics</h2></div></div>
         <p class="es">La revista <i>Colombeia</i> se adhiere a los principios del Committee on Publication Ethics (COPE) e impone las mismas responsabilidades por cumplir a autores, evaluadores y editores derivadas del cumplimiento de las siguientes normas.</p>
         <p class="en"><i>Colombeia</i> adheres to the principles of the Committee on Publication Ethics (COPE) and holds authors, reviewers and editors alike to the following standards.</p>
-        <h4 class="es">Autores</h4><h4 class="en">Authors</h4>
+        <h3 class="es">Autores</h3><h3 class="en">Authors</h3>
         <ol class="es">
           <li><b>Originalidad.</b> Todos los textos deben ser originales e inéditos. Si son dirigidos a nuestra revista, no pueden estar en evaluación en otro medio. Si un texto ha aparecido antes en otro medio, el autor debe indicarlo al enviarlo.</li>
           <li><b>Plagio.</b> Toda cita, idea o dato ajeno debe atribuirse a su fuente original. El plagio, sea total o parcial, lleva al rechazo del texto y, en el caso extremo de que haya sido publicado, a su retractación.</li>
@@ -117,7 +122,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li><b>Conflicts of interest.</b> Authors must declare any personal, professional or financial relationship that might in any way influence their work.</li>
           <li><b>Artificial intelligence.</b> In keeping with our editorial line and our review system, we reject texts generated by artificial intelligence. Any supplementary use of artificial intelligence, such as for translation or proofreading, must be declared.</li>
         </ol>
-        <h4 class="es">Evaluadores</h4><h4 class="en">Reviewers</h4>
+        <h3 class="es">Evaluadores</h3><h3 class="en">Reviewers</h3>
         <ol class="es">
           <li><b>Confidencialidad.</b> Los textos evaluados son confidenciales. No puede usarse esta información en provecho o beneficio propio.</li>
           <li><b>Imparcialidad.</b> La evaluación de los textos debe ser objetiva y fundamentada. Si hubiera conflicto de interés con el texto o el autor, deberá el evaluador inhibirse de la evaluación.</li>
@@ -126,7 +131,7 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li><b>Confidentiality.</b> Texts under review are confidential. This information may not be used for personal gain or benefit.</li>
           <li><b>Impartiality.</b> Reviews must be objective and well founded. Reviewers with a conflict of interest regarding the text or its author must recuse themselves.</li>
         </ol>
-        <h4 class="es">Editores</h4><h4 class="en">Editors</h4>
+        <h3 class="es">Editores</h3><h3 class="en">Editors</h3>
         <ol class="es">
           <li>Todas las decisiones editoriales se toman por mérito académico, sin consideración de la nacionalidad, el credo, la afiliación política o cualquier condición del autor.</li>
           <li>Los editores no evaluarán textos en los que tengan un conflicto de interés. Los artículos de miembros del equipo editorial se someten al mismo sistema de evaluación que los demás aspirantes.</li>
@@ -135,10 +140,10 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
           <li>All editorial decisions are made on academic merit, without regard to the author's nationality, creed, political affiliation or any other condition.</li>
           <li>Editors will not evaluate texts in which they have a conflict of interest. Articles by members of the editorial team undergo the same review process as all other submissions.</li>
         </ol>
-        <h4 class="es">Correcciones y retractaciones</h4><h4 class="en">Corrections and retractions</h4>
+        <h3 class="es">Correcciones y retractaciones</h3><h3 class="en">Corrections and retractions</h3>
         <p class="es">Si se detectaran errores en un artículo después de su publicación, todas las correcciones se harán mediante una nota fechada y visible. Si, por otro lado, hubiera un plagio comprobado, una publicación duplicada o datos falsificados, el artículo será retractado.</p>
         <p class="en">If errors are found in an article after publication, all corrections will be made through a dated and visible note. If, on the other hand, plagiarism, duplicate publication or falsified data is proven, the article will be retracted.</p>
-        <h4 class="es">Reclamaciones</h4><h4 class="en">Complaints</h4>
+        <h3 class="es">Reclamaciones</h3><h3 class="en">Complaints</h3>
         <p class="es">Las reclamaciones sobre cualquier aspecto del proceso editorial pueden dirigirse a {{ sitio.email_editorial }}, y serán atendidas por el equipo editorial.</p>
         <p class="en">Complaints about any aspect of the editorial process may be sent to {{ sitio.email_editorial }} and will be handled by the editorial team.</p>
       </div>

@@ -227,7 +227,14 @@
   }
  },
  "Laureano Vallenilla-Lanz Planchart": {
-  "wikipedia": "https://es.wikipedia.org/wiki/Laureano_Vallenilla_Planchart"
+  "wikipedia": "https://es.wikipedia.org/wiki/Laureano_Vallenilla_Planchart",
+  "retrato": {
+   "imagen": "/assets/autores/laureano-vallenilla-lanz-planchart.webp",
+   "fuente": "https://commons.wikimedia.org/wiki/File:Laureano_Vallenilla_Lanz-Planchart.jpg",
+   "licencia": "Dominio público",
+   "autor": "",
+   "licencia_url": ""
+  }
  },
  "Luis Perú de Lacroix": {
   "wikipedia": "https://es.wikipedia.org/wiki/Luis_Per%C3%BA_de_Lacroix"

@@ -607,3 +607,8 @@ a.m-marca:focus{outline:2px solid var(--ink)}
 .banda-portadas img:nth-child(odd){height:236px}
 @media (max-width:560px){.banda-portadas{height:160px;gap:10px;margin:-20px 0 4px}.banda-portadas img{height:140px}.banda-portadas img:nth-child(odd){height:152px}}
 @media print{.banda-portadas{display:none}}
+
+/* Colombeia: franja de portadas y primeras páginas */
+.banda-colombeia{margin-bottom:-24px}
+.banda-colombeia img{aspect-ratio:619/963}
+.banda-colombeia img.pagina{background:#fff}

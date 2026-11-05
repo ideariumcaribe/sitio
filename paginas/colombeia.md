@@ -5,6 +5,15 @@ descripcion: "Colombeia (ISSN 3069-7700), revista bimestral de acceso abierto so
 <main>
   <section id="colombeia">
     <div class="wrap stack" style="gap:64px">
+      {#- Franja de cabecera: portada de cada número seguida de la primera página de dos de sus artículos (scripts/colombeia-paginas.py). #}
+      <div class="banda-portadas banda-colombeia" aria-hidden="true">
+        {%- for n in collections.numeros | sort(true, false, "data.numero") %}
+        <img src="{{ n.data.portada }}" alt="" width="165" height="257" decoding="async">
+        {%- for a in collections.articulo | delNumero(n.data.numero) %}{% if a.data.titulo != "Presentación" and loop.index <= 3 %}
+        <img src="/assets/colombeia/paginas/{{ a.page.fileSlug }}.webp" alt="" width="165" height="257" decoding="async" loading="lazy" class="pagina">
+        {%- endif %}{% endfor %}
+        {%- endfor %}
+      </div>
       <div class="feature">
         <!-- La portada se toma automáticamente del último número publicado. -->
         {% include "colombeia-portada.njk" %}

@@ -110,7 +110,7 @@ export default function (eleventyConfig) {
       datePublished: o.anio || undefined, publisher: editorial ? { "@type": "Organization", name: editorial } : undefined,
       inLanguage: o.signatura === "IC-0211" ? "it" : "es", identifier: naan ? [o.signatura, `https://n2t.net/ark:${naan}/${o.signatura}`] : o.signatura,
       about: (o.materias || []).map((s) => (mats || []).find((m) => m.slug === s)).filter(Boolean).map((m) => m.nombre),
-      image: fs.existsSync(new URL(`./assets/portadas/${o.identificador}.webp`, import.meta.url)) ? `https://www.ideariumcaribe.com/assets/portadas/${o.identificador}.webp` : "https://archive.org/services/img/" + o.identificador,
+      image: `https://www.ideariumcaribe.com/assets/portadas/${fs.existsSync(new URL(`./assets/portadas/${o.identificador}.webp`, import.meta.url)) ? o.identificador + ".webp" : "provisional/" + o.identificador + ".svg"}`,
       sameAs: "https://archive.org/details/" + o.identificador,
       isAccessibleForFree: true, bookFormat: "https://schema.org/EBook",
       usageInfo: DERECHOS[o.derechos_eeuu] ? DERECHOS[o.derechos_eeuu].uri : undefined,
@@ -121,10 +121,11 @@ export default function (eleventyConfig) {
     return JSON.stringify(ld).replace(/</g, "\\u003c");
   });
   eleventyConfig.addFilter("enlacesAutor", enlacesAutor);
-  // Portada de una obra: copia local (assets/portadas, generada con scripts/portadas.py) o, si falta, la miniatura de Internet Archive.
+  // Portada de una obra: copia local (assets/portadas, generada con scripts/portadas.py) o, si falta, una portada provisional en SVG.
   eleventyConfig.addFilter("portada", (o, absoluta) => {
     const id = o && o.identificador; if (!id) return "";
-    return fs.existsSync(new URL(`./assets/portadas/${id}.webp`, import.meta.url)) ? (absoluta ? "https://www.ideariumcaribe.com" : "") + `/assets/portadas/${id}.webp` : `https://archive.org/services/img/${id}`;
+    const base = absoluta ? "https://www.ideariumcaribe.com" : "";
+    return base + (fs.existsSync(new URL(`./assets/portadas/${id}.webp`, import.meta.url)) ? `/assets/portadas/${id}.webp` : `/assets/portadas/provisional/${id}.svg`);
   });
   // Datos para los filtros del catálogo: década, situación de derechos y temas de cada obra.
   eleventyConfig.addFilter("decada", (a) => { const n = parseInt(a, 10); return n ? String(Math.floor(n / 10) * 10) : ""; });
@@ -193,7 +194,7 @@ export default function (eleventyConfig) {
       return { ...p, rango: ys.length ? (ys[0] === ys[ys.length - 1] ? String(ys[0]) : `${ys[0]}–${ys[ys.length - 1]}`) : "", total, anios: ys.map((a) => ({ anio: a, obras: porAnio.get(a) })) };
     }).filter((p) => p.total);
   });
-  eleventyConfig.addFilter("mini", (o) => { const id = o && o.identificador; return id && fs.existsSync(new URL(`./assets/portadas/mini/${id}.webp`, import.meta.url)) ? `/assets/portadas/mini/${id}.webp` : `https://archive.org/services/img/${id}`; });
+  eleventyConfig.addFilter("mini", (o) => { const id = o && o.identificador; return id && fs.existsSync(new URL(`./assets/portadas/mini/${id}.webp`, import.meta.url)) ? `/assets/portadas/mini/${id}.webp` : `/assets/portadas/provisional/${id}.svg`; });
   // Páginas de muestra de una obra (número de hoja en Internet Archive): la cuarta hoja (a menudo la portadilla) y cinco repartidas por el libro.
   eleventyConfig.addFilter("paginasMuestra", (id) => { const p = (TEXTOS[id] || {}).paginas || 0; if (p < 8) return [];
     return [...new Set([3, ...[0.2, 0.35, 0.5, 0.65, 0.8].map((f) => Math.round(p * f))])].filter((n) => n > 0 && n < p - 1); });

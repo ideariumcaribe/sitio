@@ -173,3 +173,7 @@ El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: c
 - **Cronología** (`/biblioteca/cronologia/`, filtro `cronologia`): obras por año de primera edición (o de la edición digitalizada si no consta), en cinco períodos; los tomos de una colección del mismo año se agrupan. Usa miniaturas de 120 px (`assets/portadas/mini/`, generadas por `scripts/portadas.py`).
 - **Lugares de edición** (`lib/lugares.js`): ciudad normalizada, país y coordenadas de cada pie de imprenta. Si aparece una ciudad nueva, añádala allí (y su país en `PAISES` si es nuevo). Mapas SVG en `lib/mapa.js` (world-atlas y d3-geo, solo al compilar) y filtro «Lugar de edición» en el catálogo (`?lugar=Caracas`).
 - **Hojear**: seis páginas de muestra por obra, según el número de páginas anotado en `_data/textosIA.json` (`scripts/textos.py`); al pulsar una, el visor de Internet Archive salta a esa página.
+
+## Portadas provisionales
+
+Si una obra aún no tiene portada local (por ejemplo, mientras Internet Archive la procesa), el sitio genera una portada provisional en SVG (`biblioteca/provisional/provisional.11ty.js` → `/assets/portadas/provisional/<identificador>.svg`) con el título, el autor, el año y la signatura. `scripts/portadas.py` no guarda el marcador genérico de Internet Archive; basta volver a ejecutarlo cuando la obra esté procesada.

@@ -34,6 +34,9 @@ def procesar(ident):
         img, fuente = (miniatura or pagina), "miniatura" if miniatura else "página 1"
     if img is None:
         return ident, "sin imagen"
+    if img.size == (320, 220) or (img.width > img.height * 1.2):
+        # Marcador genérico de Internet Archive mientras procesa la obra: no se guarda (el sitio usa la portada provisional).
+        return ident, "aún sin portada en Internet Archive"
     if img.width > ANCHO:
         img = img.resize((ANCHO, round(img.height * ANCHO / img.width)), Image.LANCZOS)
     img.save(salida, "WEBP", quality=72, method=6)

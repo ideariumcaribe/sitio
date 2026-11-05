@@ -20,7 +20,7 @@ const PAGINAS = {
   colecciones: ["Obras en varios tomos", "Obras completas, epistolarios y colecciones documentales"],
 };
 import fs from "node:fs";
-const portadaObra = (o) => fs.existsSync(new URL(`../assets/portadas/${o.identificador}.webp`, import.meta.url)) ? `/assets/portadas/${o.identificador}.webp` : `https://archive.org/services/img/${o.identificador}`;
+const portadaObra = (o) => fs.existsSync(new URL(`../assets/portadas/${o.identificador}.webp`, import.meta.url)) ? `/assets/portadas/${o.identificador}.webp` : `/assets/portadas/provisional/${o.identificador}.svg`;
 const plural = (n, s, p) => `${n} ${n === 1 ? s : p}`;
 
 export default class {

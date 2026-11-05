@@ -28,8 +28,11 @@ descripcion: "Biblioteca Digital de Idearium Caribe: libros y publicaciones de h
         <div class="sec-title"><div><p class="label es">Novedades</p><p class="label en">New additions</p>
           <h2 class="es">Últimas incorporaciones</h2><h2 class="en">Latest additions</h2></div>
           <div class="recientes-enlaces"><a class="more" href="/biblioteca/catalogo/?orden=recientes"><span class="es">Ver todas</span><span class="en">See all</span></a><a class="rss" href="/biblioteca/novedades.xml" title="RSS">RSS</a></div></div>
-        {%- set lista = catalogo | recientes(6) %}{% set clase = "portadas-recientes" %}{% set oculta = false %}
-        {% include "portadas-grid.njk" %}
+        <ul class="portadas portadas-recientes">
+          {%- for e in catalogo | recientesAgrupadas(colecciones, 6) %}
+          <li><a href="{{ e.url }}"><img src="{{ e.obra | portada }}" alt="" loading="lazy" decoding="async" width="180" height="240"><span class="t"><span class="es">{{ e.titulo }}</span><span class="en">{{ e.titulo_en }}</span></span><span class="s">{{ e.obra.signatura }}{% if e.obra.anio %} · {{ e.obra.anio }}{% endif %}</span></a></li>
+          {%- endfor %}
+        </ul>
       </div>
       <div class="stack recientes vistos" id="vistos" hidden>
         <div class="sec-title"><div><p class="label es">En este navegador</p><p class="label en">In this browser</p>

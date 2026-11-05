@@ -83,7 +83,7 @@ section + section{border-top:1px solid var(--line)}
 .cover .n{font-family:var(--f-display);font-size:4.2rem;line-height:1}
 .feature .text{display:grid;gap:18px}
 .feature h2,.feature h1{font-size:clamp(1.8rem,3.2vw,2.5rem)}
-.feature p{color:var(--ink);max-width:40em}
+.feature p{color:var(--ink);max-width:31em}
 .btns{display:flex;flex-wrap:wrap;gap:12px}
 .issues{display:flex;flex-wrap:wrap;gap:18px;font-family:var(--f-ui);font-size:.9rem}
 
@@ -591,3 +591,7 @@ a.m-marca:focus{outline:2px solid var(--ink)}
 .hojear-lista a:hover img,.hojear-lista a:focus-visible img{transform:translateY(-3px)}
 @media (prefers-reduced-motion:reduce){.hojear-lista img{transition:none}}
 @media print{.hojear{display:none!important}}
+
+/* Ancho de lectura y números de Colombeia en móvil */
+.objetivos>p,.objetivos>ol,.col-meta p,.cols .col p{max-width:31em}
+@media (max-width:560px){.numeros{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}}

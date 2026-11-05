@@ -2,6 +2,27 @@
  {
   "fecha": "2026-11-05",
   "seccion": "Biblioteca",
+  "es": "Nueva cronología de la Biblioteca: las obras ordenadas por el año de su primera edición, del siglo XIX a nuestros días, agrupadas por períodos.",
+  "en": "New Library timeline: works ordered by the year of their first edition, from the nineteenth century to the present, grouped by period.",
+  "enlace": "/biblioteca/cronologia/"
+ },
+ {
+  "fecha": "2026-11-05",
+  "seccion": "Biblioteca",
+  "es": "Mapa de los lugares de edición en «La Biblioteca en cifras» y nuevo filtro del catálogo por lugar de edición: doce países y diecinueve ciudades.",
+  "en": "Map of places of publication in «The Library in figures» and a new catalogue filter by place of publication: twelve countries and nineteen cities.",
+  "enlace": "/cifras.html#c-lug"
+ },
+ {
+  "fecha": "2026-11-05",
+  "seccion": "Biblioteca",
+  "es": "Cada obra muestra una selección de sus páginas para hojearla; al pulsar una, el visor salta a esa página.",
+  "en": "Each work now shows a selection of its pages to browse; clicking one takes the viewer to that page.",
+  "enlace": "/biblioteca/catalogo/"
+ },
+ {
+  "fecha": "2026-11-05",
+  "seccion": "Biblioteca",
   "es": "Se incorporan los volúmenes X a XIV de los *Documentos para la historia de la vida pública del Libertador*, de José Félix Blanco y Ramón Azpúrua. La colección reúne ya catorce tomos.",
   "en": "Volumes X to XIV of José Félix Blanco and Ramón Azpúrua's *Documentos para la historia de la vida pública del Libertador* are added. The set now has fourteen volumes.",
   "enlace": "/biblioteca/colecciones/documentos-para-la-historia-de-la-vida-publica-del-libertador/"

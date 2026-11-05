@@ -39,6 +39,18 @@ descripcion: "La Biblioteca Digital de Idearium Caribe en cifras: obras, autores
           {%- for d in k.decadas %}<tr><td>{% if d.n %}<a href="/biblioteca/catalogo/?decada={{ d.etiqueta }}">{{ d.etiqueta }}-{{ (d.etiqueta | int) + 9 }}</a>{% else %}{{ d.etiqueta }}-{{ (d.etiqueta | int) + 9 }}{% endif %}</td><td class="yr">{{ d.n }}</td></tr>{% endfor %}</tbody></table></details>
       </section>
 
+      {%- set lug = catalogo | lugares %}
+      <section class="cifra cifra-ancha" aria-labelledby="c-lug">
+        <h2 id="c-lug"><span class="es">Dónde se publicaron</span><span class="en">Where they were published</span></h2>
+        <p class="cifra-nota es">Lugar de edición de las obras, según su pie de imprenta: {{ lug.paises.length }} países y {{ lug.ciudades.length }} ciudades. Cada punto enlaza con sus obras en el catálogo.</p><p class="cifra-nota en">Place of publication of the works, from their imprint: {{ lug.paises.length }} countries and {{ lug.ciudades.length }} cities. Each point links to its works in the catalogue.</p>
+        {{ catalogo | mapaMundo | safe }}
+        <h3 id="mapa-venezuela" class="label"><span class="es">Venezuela</span><span class="en">Venezuela</span></h3>
+        <div class="mapa-ven">{{ catalogo | mapaVenezuela | safe }}</div>
+        <details class="cifra-tabla"><summary><span class="es">Ver los datos</span><span class="en">View the data</span></summary>
+          <table class="ledger"><thead><tr><th><span class="es">Ciudad</span><span class="en">City</span></th><th><span class="es">País</span><span class="en">Country</span></th><th><span class="es">Obras</span><span class="en">Works</span></th></tr></thead><tbody>
+          {%- for c in lug.ciudades %}<tr><td><a href="/biblioteca/catalogo/?lugar={{ c.nombre | urlencode }}">{{ c.nombre }}</a></td><td>{{ c.pais }}</td><td class="yr">{{ c.n }}</td></tr>{% endfor %}</tbody></table></details>
+      </section>
+
       <section class="cifra" aria-labelledby="c-tem">
         <h2 id="c-tem"><span class="es">Obras por tema</span><span class="en">Works by subject</span></h2>
         <p class="cifra-nota es">Una obra puede tener varios temas. Cada barra enlaza con la página del tema.</p><p class="cifra-nota en">A work may have several subjects. Each bar links to the subject page.</p>

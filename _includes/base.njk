@@ -40,7 +40,7 @@
 </header>
 <span id="contenido" tabindex="-1"></span>
 
-{%- set excluidas = ["/biblioteca/catalogo/", "/biblioteca/autores/", "/biblioteca/materias/", "/biblioteca/colecciones/", "/404.html", "/buscar.html"] %}
+{%- set excluidas = ["/biblioteca/catalogo/", "/biblioteca/autores/", "/biblioteca/materias/", "/biblioteca/colecciones/", "/biblioteca/cronologia/", "/404.html", "/buscar.html"] %}
 {%- if buscable === false or (page.url in excluidas) or not page.url.endsWith("/") and not page.url.endsWith(".html") %}
 {{ content | safe }}
 {%- else %}

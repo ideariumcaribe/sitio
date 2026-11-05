@@ -14,16 +14,16 @@
   var filtros = Array.prototype.slice.call(document.querySelectorAll("select[data-filtro]"));
   var limpiar = document.querySelector(".cat-limpiar");
   var valorFiltro = function (k) { var s = filtros.filter(function (x) { return x.dataset.filtro === k; })[0]; return s ? s.value : ""; };
-  function pasa(el, t, tema, dec, der) {
+  function pasa(el, t, tema, dec, der, lug) {
     var d = el.dataset;
     return (!t || d.buscar.indexOf(t) !== -1) && (!tema || (" " + d.mat + " ").indexOf(" " + tema + " ") !== -1) &&
-      (!dec || d.dec === dec) && (!der || (" " + d.der + " ").indexOf(" " + der + " ") !== -1);
+      (!dec || d.dec === dec) && (!der || (" " + d.der + " ").indexOf(" " + der + " ") !== -1) && (!lug || d.lugar === lug);
   }
   function filtrar() {
-    var t = norm(q.value.trim()), n = 0, tema = valorFiltro("tema"), dec = valorFiltro("decada"), der = valorFiltro("derechos");
-    filas.forEach(function (f) { var ok = pasa(f, t, tema, dec, der); f.hidden = !ok; if (ok) n++; });
-    fichas.forEach(function (f) { f.hidden = !pasa(f, t, tema, dec, der); });
-    if (limpiar) limpiar.hidden = !(tema || dec || der);
+    var t = norm(q.value.trim()), n = 0, tema = valorFiltro("tema"), dec = valorFiltro("decada"), der = valorFiltro("derechos"), lug = valorFiltro("lugar");
+    filas.forEach(function (f) { var ok = pasa(f, t, tema, dec, der, lug); f.hidden = !ok; if (ok) n++; });
+    fichas.forEach(function (f) { f.hidden = !pasa(f, t, tema, dec, der, lug); });
+    if (limpiar) limpiar.hidden = !(tema || dec || der || lug);
     cuenta.innerHTML = '<span class="es">' + n + (n === 1 ? " obra" : " obras") + '</span><span class="en">' + n + (n === 1 ? " work" : " works") + "</span>";
   }
   function vista(v) {
@@ -62,7 +62,7 @@
   if (ordenUrl && validos.indexOf(ordenUrl) !== -1) ordenar(ordenUrl);
   else if (ordenGuardado && ordenGuardado !== "signatura" && validos.indexOf(ordenGuardado) !== -1) ordenar(ordenGuardado);
   // Filtros: los selectores en español y en inglés se mantienen sincronizados.
-  var PARAM = { tema: "tema", decada: "decada", derechos: "derechos" };
+  var PARAM = { tema: "tema", decada: "decada", derechos: "derechos", lugar: "lugar" };
   filtros.forEach(function (s) {
     s.addEventListener("change", function () {
       filtros.forEach(function (o) { if (o !== s && o.dataset.filtro === s.dataset.filtro) o.value = s.value; });
@@ -83,7 +83,7 @@
   function actualizar() {
     var p = new URLSearchParams(location.search), t = q.value.trim();
     if (t) p.set("q", t); else p.delete("q");
-    ["tema", "decada", "derechos"].forEach(function (k) { var v = valorFiltro(k); if (v) p.set(PARAM[k], v); else p.delete(PARAM[k]); });
+    ["tema", "decada", "derechos", "lugar"].forEach(function (k) { var v = valorFiltro(k); if (v) p.set(PARAM[k], v); else p.delete(PARAM[k]); });
     var o = selects.length ? selects[0].value : "signatura"; if (o && o !== "signatura") p.set("orden", o); else p.delete("orden");
     var v = botones.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0];
     if (v && v.dataset.vista === "lista") p.set("vista", "lista"); else p.delete("vista");

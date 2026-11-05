@@ -39,6 +39,16 @@ def procesar(ident):
     img.save(salida, "WEBP", quality=72, method=6)
     return ident, f"{fuente}, {img.width}×{img.height}, {salida.stat().st_size // 1024} kB"
 
+def miniaturas():
+    """Versión pequeña (120 px de ancho) de cada portada local, para la cronología."""
+    mini = DESTINO / "mini"; mini.mkdir(exist_ok=True); n = 0
+    for f in DESTINO.glob("*.webp"):
+        m = mini / f.name
+        if m.exists() and m.stat().st_mtime >= f.stat().st_mtime: continue
+        img = Image.open(f).convert("RGB"); img = img.resize((120, round(img.height * 120 / img.width)), Image.LANCZOS)
+        img.save(m, "WEBP", quality=70, method=6); n += 1
+    print(f"{n} miniaturas nuevas")
+
 def main():
     DESTINO.mkdir(parents=True, exist_ok=True)
     catalogo = json.loads((RAIZ / "fondo" / "catalogo.json").read_text(encoding="utf-8"))
@@ -50,3 +60,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    miniaturas()

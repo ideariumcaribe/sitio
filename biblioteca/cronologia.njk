@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: "Cronología de la Biblioteca Digital · Idearium Caribe"
+descripcion: "Las obras de la Biblioteca Digital de Idearium Caribe ordenadas por el año de su primera edición, del siglo XIX a nuestros días."
+permalink: /biblioteca/cronologia/
+---
+{%- set crono = catalogo | cronologia(colecciones) %}
+<main>
+  <section class="cat-pag">
+    <div class="wrap stack" style="gap:28px">
+      <nav class="migas" aria-label="Ruta"><a href="/biblioteca.html"><span class="es">Biblioteca</span><span class="en">Library</span></a><span aria-hidden="true"> › </span><span class="es">Cronología</span><span class="en">Timeline</span></nav>
+      <div class="sec-title"><div><p class="label es">Biblioteca Digital</p><p class="label en">Digital Library</p>
+        <h1 class="es">Cronología</h1><h1 class="en">Timeline</h1></div></div>
+      {% include "biblioteca-pestanas.njk" %}
+      <p class="es cat-intro">Las obras ordenadas por el año de su primera edición. Los tomos de una misma obra publicados el mismo año aparecen juntos.</p>
+      <p class="en cat-intro">Works ordered by the year of their first edition. Volumes of the same work published in the same year appear together.</p>
+      <nav class="crono-indice" aria-label="Períodos">
+        {%- for p in crono %}<a href="#p-{{ loop.index }}"><span class="es">{{ p.es }}</span><span class="en">{{ p.en }}</span> <span class="n">{{ p.total }}</span></a>{% endfor %}
+      </nav>
+      {%- for p in crono %}
+      <section class="crono-periodo" id="p-{{ loop.index }}" aria-labelledby="pt-{{ loop.index }}">
+        <header class="crono-cab"><h2 id="pt-{{ loop.index }}"><span class="es">{{ p.es }}</span><span class="en">{{ p.en }}</span></h2><p class="ref">{{ p.rango }} · <span class="es">{{ p.total }} {{ "obra" if p.total == 1 else "obras" }}</span><span class="en">{{ p.total }} {{ "work" if p.total == 1 else "works" }}</span></p></header>
+        <ol class="crono-anios">
+          {%- for a in p.anios %}
+          <li><span class="crono-anio">{{ a.anio }}</span>
+            <ul class="crono-obras">
+              {%- for e in a.obras %}
+              <li><a href="{{ e.url }}" title="{{ e.titulo }}{% if e.autor %} · {{ e.autor | replace(';', ',') }}{% endif %}{% if e.n > 1 %} ({{ e.n }} tomos){% endif %}"><img src="{{ e.obra | mini }}" alt="{{ e.titulo }}{% if e.n > 1 %} ({{ e.n }} tomos){% endif %}" loading="lazy" decoding="async" width="72" height="100">{% if e.n > 1 %}<span class="crono-tomos" aria-hidden="true">{{ e.n }}</span>{% endif %}</a></li>
+              {%- endfor %}
+            </ul>
+          </li>
+          {%- endfor %}
+        </ol>
+      </section>
+      {%- endfor %}
+    </div>
+  </section>
+</main>

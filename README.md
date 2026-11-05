@@ -167,3 +167,9 @@ El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: c
 - **Ruta de navegación** para buscadores: `_includes/migas-ld.njk` (schema.org BreadcrumbList) en obras, autores, temas, colecciones, índices, números y artículos.
 - **Formulario de Substack**: se carga cuando el lector se acerca a él (`assets/site.js`, atributo `data-src`), no en la carga inicial; sin JavaScript se muestra igual.
 - **Wayback Machine**: el Worker de Cloudflare `archivo-wayback` (cron `30 20 * * 1`: lunes a las 20:30 UTC) pide cada semana capturas de la portada, la Biblioteca, el catálogo, *Colombeia*, el registro de cambios, las cifras y las obras incorporadas en los ocho días anteriores (máximo 12 direcciones). No tiene dirección pública; sus registros se ven en el panel de Cloudflare (Workers › archivo-wayback › Logs).
+
+## Cronología, mapa de lugares y hojear
+
+- **Cronología** (`/biblioteca/cronologia/`, filtro `cronologia`): obras por año de primera edición (o de la edición digitalizada si no consta), en cinco períodos; los tomos de una colección del mismo año se agrupan. Usa miniaturas de 120 px (`assets/portadas/mini/`, generadas por `scripts/portadas.py`).
+- **Lugares de edición** (`lib/lugares.js`): ciudad normalizada, país y coordenadas de cada pie de imprenta. Si aparece una ciudad nueva, añádala allí (y su país en `PAISES` si es nuevo). Mapas SVG en `lib/mapa.js` (world-atlas y d3-geo, solo al compilar) y filtro «Lugar de edición» en el catálogo (`?lugar=Caracas`).
+- **Hojear**: seis páginas de muestra por obra, según el número de páginas anotado en `_data/textosIA.json` (`scripts/textos.py`); al pulsar una, el visor de Internet Archive salta a esa página.

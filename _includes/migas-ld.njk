@@ -8,6 +8,7 @@
 {%- elif page.url == "/biblioteca/catalogo/" %}{% set mig = B.concat([["Catálogo", U + page.url]]) %}
 {%- elif page.url == "/biblioteca/autores/" %}{% set mig = B.concat([["Autores", U + page.url]]) %}
 {%- elif page.url == "/biblioteca/materias/" %}{% set mig = B.concat([["Temas", U + page.url]]) %}
+{%- elif page.url == "/biblioteca/cronologia/" %}{% set mig = B.concat([["Cronología", U + page.url]]) %}
 {%- elif page.url == "/biblioteca/colecciones/" %}{% set mig = B.concat([["Obras en varios tomos", U + page.url]]) %}
 {%- elif page.url == "/cifras.html" %}{% set mig = B.concat([["La Biblioteca en cifras", U + "/cifras"]]) %}
 {%- elif esArticulo %}{% set nA = collections.numeros | numeroPorId(numero) %}{% set mig = [["Colombeia", U + "/colombeia.html"], ["N.º " + numero, U + (nA.url or "/colombeia.html")], [titulo, U + (page.url | urlLimpia)]] %}

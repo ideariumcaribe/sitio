@@ -54,6 +54,17 @@ eleventyComputed:
       <div class="visor">
         <iframe id="visor-ia" src="https://archive.org/embed/{{ obra.identificador }}" title="{{ obra.titulo }}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
+      {%- set muestra = obra.identificador | paginasMuestra %}
+      {%- if muestra.length %}
+      <section class="hojear" aria-labelledby="hj-t">
+        <h2 id="hj-t" class="label"><span class="es">Hojear</span><span class="en">Browse pages</span></h2>
+        <ul class="hojear-lista">
+          {%- for n in muestra %}
+          <li><a href="https://archive.org/details/{{ obra.identificador }}/page/n{{ n }}/mode/1up" target="_blank" rel="noopener" data-hoja="{{ n }}"><img src="https://archive.org/download/{{ obra.identificador }}/page/n{{ n }}_w240.jpg" alt="Página {{ n + 1 }} de {{ obra.titulo }}" loading="lazy" decoding="async" width="96" height="140"></a></li>
+          {%- endfor %}
+        </ul>
+      </section>
+      {%- endif %}
       <div class="obra-acciones">
         <a class="btn" href="https://archive.org/details/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Abrir en Internet Archive</span><span class="en">Open on the Internet Archive</span></a>
         <a class="btn outline" href="https://archive.org/download/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Descargar (PDF y otros formatos)</span><span class="en">Download (PDF and other formats)</span></a>

@@ -2,6 +2,8 @@
 import fs from "node:fs";
 import { slugAutor } from "./lib/slug.js";
 import * as CIFRAS from "./lib/cifras.js";
+import * as MAPA from "./lib/mapa.js";
+import { lugar as lugarDe } from "./lib/lugares.js";
 const DERECHOS = JSON.parse(fs.readFileSync(new URL("./_data/derechos.json", import.meta.url), "utf8"));
 const AUTORIDADES = JSON.parse(fs.readFileSync(new URL("./_data/autoridades.json", import.meta.url), "utf8"));
 // Enlaces de autoridad de un autor (Wikidata, VIAF, Biblioteca del Congreso, BNE).
@@ -161,6 +163,40 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("grafBarras", (serie, titulo, etiqueta) => dos(CIFRAS.barras(serie, { titulo, etiqueta: etiqueta || 250 }), CIFRAS.barras(serie, { titulo, ancho: 360, apilado: true })));
   eleventyConfig.addFilter("grafLinea", (serie, titulo) => dos(CIFRAS.linea(serie, { titulo }), CIFRAS.linea(serie, { titulo, ancho: 360, alto: 220, etiquetas: 3 })));
   eleventyConfig.addFilter("miles", (n) => CIFRAS.fmt(n));
+  // Lugares de edición (lib/lugares.js) y mapas (lib/mapa.js).
+  eleventyConfig.addFilter("lugarObra", (o) => { const l = lugarDe(o && o.pie_de_imprenta); return l ? l.nombre : ""; });
+  eleventyConfig.addFilter("lugares", (cat) => MAPA.conteo(cat));
+  eleventyConfig.addFilter("mapaMundo", (cat) => MAPA.mundo(cat));
+  eleventyConfig.addFilter("mapaVenezuela", (cat) => MAPA.venezuela(cat));
+  // Cronología: obras por año de primera edición, agrupadas en períodos; los tomos de una colección del mismo año cuentan como una entrada.
+  const PERIODOS = [
+    { desde: 0, hasta: 1898, es: "Siglo XIX", en: "Nineteenth century" },
+    { desde: 1899, hasta: 1935, es: "Castro y Gómez", en: "Castro and Gómez" },
+    { desde: 1936, hasta: 1957, es: "De López Contreras a Pérez Jiménez", en: "From López Contreras to Pérez Jiménez" },
+    { desde: 1958, hasta: 1998, es: "Período democrático", en: "Democratic period" },
+    { desde: 1999, hasta: 9999, es: "Desde 1999", en: "Since 1999" },
+  ];
+  eleventyConfig.addFilter("cronologia", (cat, cols) => {
+    const porAnio = new Map();
+    for (const o of (cat || []).slice().sort((a, b) => a.signatura.localeCompare(b.signatura))) {
+      const a = parseInt(o.primera_edicion || o.anio, 10); if (!a) continue;
+      const c = (cols || []).find((x) => x.tomos.some((t) => t.identificador === o.identificador));
+      if (!porAnio.has(a)) porAnio.set(a, []);
+      const lista = porAnio.get(a);
+      if (c) { const e = lista.find((x) => x.col === c.slug); if (e) { e.n++; continue; } lista.push({ col: c.slug, obra: o, url: `/biblioteca/colecciones/${c.slug}/`, titulo: c.titulo, autor: c.autor, n: 1 }); }
+      else lista.push({ obra: o, url: `/biblioteca/obras/${o.identificador}/`, titulo: o.titulo, autor: o.autor, n: 1 });
+    }
+    const anios = [...porAnio.keys()].sort((a, b) => a - b);
+    return PERIODOS.map((p) => {
+      const ys = anios.filter((a) => a >= p.desde && a <= p.hasta);
+      const total = ys.reduce((s, a) => s + porAnio.get(a).reduce((t, e) => t + e.n, 0), 0);
+      return { ...p, rango: ys.length ? (ys[0] === ys[ys.length - 1] ? String(ys[0]) : `${ys[0]}–${ys[ys.length - 1]}`) : "", total, anios: ys.map((a) => ({ anio: a, obras: porAnio.get(a) })) };
+    }).filter((p) => p.total);
+  });
+  eleventyConfig.addFilter("mini", (o) => { const id = o && o.identificador; return id && fs.existsSync(new URL(`./assets/portadas/mini/${id}.webp`, import.meta.url)) ? `/assets/portadas/mini/${id}.webp` : `https://archive.org/services/img/${id}`; });
+  // Páginas de muestra de una obra (número de hoja en Internet Archive): la cuarta hoja (a menudo la portadilla) y cinco repartidas por el libro.
+  eleventyConfig.addFilter("paginasMuestra", (id) => { const p = (TEXTOS[id] || {}).paginas || 0; if (p < 8) return [];
+    return [...new Set([3, ...[0.2, 0.35, 0.5, 0.65, 0.8].map((f) => Math.round(p * f))])].filter((n) => n > 0 && n < p - 1); });
   eleventyConfig.addFilter("orcid", (n) => ORCID[String(n || "").trim()] || "");
   // Fecha AAAA-MM-DD a partir de una fecha YAML (objeto Date) o de un texto.
   eleventyConfig.addFilter("fechaIso", (f) => (f instanceof Date ? f.toISOString().slice(0, 10) : String(f || "").slice(0, 10)));
@@ -294,7 +330,7 @@ export default function (eleventyConfig) {
     const pagefind = await import("pagefind");
     const { index } = await pagefind.createIndex({
       forceLanguage: "es",
-      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".obra-materias .label", ".aut-retrato", ".aut-wiki", ".art-biblioteca", ".en-colombeia", ".senalar-error", ".solicitar", ".saltar", "nav", "script"],
+      excludeSelectors: [".en", ".obras-relacionadas", ".compartir", ".cita-descargas", ".solo-impresion", ".obra-ark", ".obra-derechos", ".obra-permiso", ".sig-label", ".migas", ".art-nav", ".obra-nav", ".como-citar", ".buscar-texto", ".visor", ".obra-acciones", ".obra-materias .label", ".hojear", ".aut-retrato", ".aut-wiki", ".art-biblioteca", ".en-colombeia", ".senalar-error", ".solicitar", ".saltar", "nav", "script"],
     });
     await index.addDirectory({ path: dir.output });
     await index.writeFiles({ outputPath: dir.output + "/pagefind" });

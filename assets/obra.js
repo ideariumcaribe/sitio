@@ -105,3 +105,18 @@
     });
   });
 })();
+
+// Hojear: al pulsar una página de muestra, el visor salta a esa página (sin JavaScript, el enlace abre Internet Archive).
+(function () {
+  var visor = document.getElementById("visor-ia"); if (!visor) return;
+  var base = visor.getAttribute("src").split("#")[0];
+  document.querySelectorAll("[data-hoja]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      visor.setAttribute("src", base + "#page/n" + a.getAttribute("data-hoja") + "/mode/1up");
+      var r = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      visor.scrollIntoView({ behavior: r ? "auto" : "smooth", block: "center" });
+    });
+  });
+})();

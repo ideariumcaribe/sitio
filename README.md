@@ -11,7 +11,7 @@ Configuración en Cloudflare Pages:
 | Opción | Valor |
 | --- | --- |
 | Framework preset | Eleventy |
-| Build command | `npx @11ty/eleventy` |
+| Build command | `npx @11ty/eleventy --quiet` (caché de compilación activada) |
 | Build output directory | `_site` |
 
 ## Dónde está cada cosa

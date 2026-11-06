@@ -15,7 +15,7 @@ buscable: false
       {% include "biblioteca-pestanas.njk" %}
       <p class="es cat-intro">Busque una palabra, un nombre o una frase en el texto completo de {{ nTextos.obras }} obras ({{ nTextos.paginas | miles }} páginas). Cada resultado lleva a la página exacta del libro. Escriba la frase entre comillas para buscarla tal cual.</p>
       <p class="en cat-intro">Search for a word, a name or a phrase in the full text of {{ nTextos.obras }} works ({{ nTextos.paginas | miles }} pages). Each result leads to the exact page of the book. Put a phrase in quotation marks to search for it exactly.</p>
-      <form class="texto-buscar" role="search">
+      <form class="texto-buscar" role="search" data-grupos="8">
         <label for="tx-q" class="buscar-etq"><span class="es">Términos de búsqueda</span><span class="en">Search terms</span></label>
         <div class="bt-fila"><input id="tx-q" type="search" name="q" autocomplete="off" required placeholder="Ezequiel Zamora, &quot;Federación&quot;…"><button type="submit" class="btn"><span class="es">Buscar</span><span class="en">Search</span></button></div>
         <div class="tx-filtro"><label for="tx-tema"><span class="es">Tema</span><span class="en">Subject</span></label><select id="tx-tema" name="tema"><option value="">{{ "Todos los temas" }}</option>{% for m in materias %}<option value="{{ m.nombre }}">{{ m.nombre }}</option>{% endfor %}</select></div>

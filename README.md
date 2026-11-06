@@ -157,9 +157,9 @@ El catálogo completo está en `fondo/catalogo.json` (Pages CMS, «Biblioteca: c
 ### Al incorporar obras nuevas
 
 1. Añada la obra en Pages CMS («Biblioteca: catálogo»).
-2. `python3 scripts/portadas.py` y `python3 scripts/textos.py`.
+2. `python3 scripts/portadas.py`, `python3 scripts/textos.py` y `python3 scripts/textos-paginas.py`.
 3. `npx @11ty/eleventy` y `node scripts/tarjetas-og.cjs`.
-4. Publique los archivos nuevos de `assets/portadas`, `assets/og` y `_data/textosIA.json`.
+4. Publique los archivos nuevos de `assets/portadas`, `assets/og`, `fondo/textos` y `_data/textosIA.json`.
 
 ## Cifras, ruta de navegación, suscripción y archivo web
 
@@ -182,3 +182,11 @@ Si una obra aún no tiene portada local (por ejemplo, mientras Internet Archive 
 
 - **Vencimiento automático** (`lib/plazos.js`): las obras de la Biblioteca están protegidas en EE. UU. 95 años desde su publicación (año de la edición digitalizada). Una obra «InC» o «UND» se muestra como «NoC-US» desde el 1 de enero siguiente al fin de su plazo, con la nota correspondiente; el dato de Pages CMS no se modifica. El flujo `.github/workflows/actualizacion-anual.yml` publica cada 1 de enero un cambio en `_data/actualizacion.json` para que Cloudflare reconstruya el sitio ese día.
 - **Últimos veinte años** (`/biblioteca/ultimos-veinte/`): obras sin autorización en los últimos veinte años de su protección en EE. UU. Se acogen a la sección 108(h) solo cuando su «Investigación de la sección 108(h)» (Pages CMS) tiene fecha y las tres respuestas son «No»; entonces la página de la obra, el registro MARC (540) y Dublin Core lo indican.
+
+## Búsqueda en el texto, citas por página, bibliografías, lecturas y Wikimedia Commons
+
+- **Búsqueda en el texto** (`/biblioteca/texto/`): índice Pagefind propio, aparte del buscador del sitio, generado en cada compilación por `lib/textos.js` (unos 80 s) en `_site/biblioteca/texto/pagefind/`. La fuente es `fondo/textos/{identificador}.json.gz`: el OCR de Internet Archive página a página (`[[imagen, número impreso, texto], …]`), que crea `scripts/textos-paginas.py`. Al incorporar obras nuevas, ejecute `python3 scripts/textos-paginas.py` cuando Internet Archive haya terminado de procesarlas; solo descarga las que faltan. Las obras ocultas no se indexan. Para compilar en local sin este índice: `SIN_TEXTOS=1 npx @11ty/eleventy`.
+- **Citar una página**: en «Cómo citar», cada obra genera la nota de Chicago y la referencia APA con número de página. El enlace `?pagina=123` (número impreso) o `?pagina=n37` (imagen 38) abre el visor en esa página.
+- **Bibliografías**: cada tema, autor y obra en varios tomos tiene `bibliografia.ris`, `bibliografia.bib` y `bibliografia.csv` (`_data/bibliografias.js`, `biblioteca/bibliografia.11ty.js`).
+- **Lecturas**: `scripts/lecturas.py` guarda en `_data/lecturas.json` las consultas de cada obra en Internet Archive; lo ejecuta cada lunes `.github/workflows/lecturas.yml`, que publica el archivo si cambió. Alimenta «Las más leídas» en `/cifras.html` y el orden «Más leídas» del catálogo.
+- **Wikimedia Commons**: el campo `commons` del catálogo (nombre del archivo, sin «File:») añade el enlace en la ficha, en schema.org y en el campo MARC 856.

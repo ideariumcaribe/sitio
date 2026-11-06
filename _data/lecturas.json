@@ -1,0 +1,1097 @@
+{
+ "fecha": "2026-11-06",
+ "obras": {
+  "agustin-blanco-munoz-habla-el-general": {
+   "total": 147,
+   "mes": 29
+  },
+  "agustin-blanco-munoz-pedro-estrada-hablo": {
+   "total": 65,
+   "mes": 11
+  },
+  "agustin-codazzi-obras-escogidas-tomo-ii": {
+   "total": 68,
+   "mes": 3
+  },
+  "agustin-codazzi-obras-escogidas.-tomo-i": {
+   "total": 73,
+   "mes": 6
+  },
+  "alfonso-armas-ayala-influencia-del-pensamiento-venezolano": {
+   "total": 0,
+   "mes": 0
+  },
+  "alfredo-tarre-murzi-sanin-venezuela-saudita": {
+   "total": 139,
+   "mes": 7
+  },
+  "alicia-ardao-el-cafe-y-las-ciudades-en-los-andes-venezolanos": {
+   "total": 26,
+   "mes": 2
+  },
+  "ana-mercedes-perez-la-verdad-inedita-historia-de-la-revolucion-de-octubre": {
+   "total": 0,
+   "mes": 0
+  },
+  "angel-cesar-rivas-la-colonia-y-la-independencia": {
+   "total": 0,
+   "mes": 0
+  },
+  "angel-francisco-brice-conjuracion-de-1808-en-caracas-tomo-II": {
+   "total": 0,
+   "mes": 0
+  },
+  "angel-francisco-brice-conjuracion-de-1808-en-caracas-tomo-i": {
+   "total": 45,
+   "mes": 2
+  },
+  "angel-laborde-angel-laborde-y-navarro-capitan-de-navio": {
+   "total": 19,
+   "mes": 4
+  },
+  "angel-sanz-tapia-los-militares-emigrados-y-los-prisioneros-franceses": {
+   "total": 22,
+   "mes": 5
+  },
+  "anh-documentos-para-la-historia-de-la-vida-de-jose-antonio-paez-vol-I": {
+   "total": 22,
+   "mes": 3
+  },
+  "anh-estudios-y-discursos-sobre-el-general-carlos-soublette": {
+   "total": 29,
+   "mes": 12
+  },
+  "anh-jose-antonio-paez-visto-por-cinco-historiadores": {
+   "total": 30,
+   "mes": 5
+  },
+  "anh-juicios-sobre-la-personalidad-del-general-jose-antonio-paez": {
+   "total": 25,
+   "mes": 2
+  },
+  "anh-la-codificacion-de-paez-vol-I": {
+   "total": 18,
+   "mes": 1
+  },
+  "anh-la-codificacion-de-paez-vol-II": {
+   "total": 19,
+   "mes": 2
+  },
+  "anh-opusculo-historico-de-la-revolucion-desde-el-ano-1858-a-1859": {
+   "total": 18,
+   "mes": 2
+  },
+  "anh-soublette-y-la-prensa-de-su-epoca": {
+   "total": 16,
+   "mes": 3
+  },
+  "antonio-arellano-moreno-las-estadisticas-de-las-provincias-en-la-epoca-de-paez": {
+   "total": 26,
+   "mes": 4
+  },
+  "antonio-perez-vivas-hegemonia-andina-y-perez-jimenez": {
+   "total": 171,
+   "mes": 14
+  },
+  "arturo-sosa-abascal-del-garibaldismo-estudiantil-a-la-izquierda-criolla": {
+   "total": 141,
+   "mes": 21
+  },
+  "arturo-sosa-abascal-ensayos-sobre-el-pensamiento-politico-positivista-venezolano": {
+   "total": 77,
+   "mes": 16
+  },
+  "arturo-uslar-pietri-del-hacer-y-deshacer-de-venezuela": {
+   "total": 199,
+   "mes": 14
+  },
+  "arturo-uslar-pietri-educar-para-venezuela": {
+   "total": 45,
+   "mes": 7
+  },
+  "arturo-uslar-pietri-godos-insurgentes-y-visionarios": {
+   "total": 0,
+   "mes": 0
+  },
+  "arturo-uslar-pietri-golpe-y-estado-en-venezuela": {
+   "total": 212,
+   "mes": 16
+  },
+  "arturo-uslar-pietri-los-libros-de-miranda": {
+   "total": 0,
+   "mes": 0
+  },
+  "arturo-uslar-pietri-sumario-de-economia-venezolana-para-alivio-de-estudiantes": {
+   "total": 2,
+   "mes": 2
+  },
+  "augusto-mijares-documentos-relativos-a-la-insurreccion-de-juan-francisco-de-leon": {
+   "total": 0,
+   "mes": 0
+  },
+  "augusto-mijares-el-libertador": {
+   "total": 118,
+   "mes": 17
+  },
+  "augusto-mijares-hombres-e-ideas-en-america": {
+   "total": 110,
+   "mes": 10
+  },
+  "augusto-mijares-lo-afirmativo-venezolano": {
+   "total": 283,
+   "mes": 24
+  },
+  "beatriz-briceno-picon-retazos-mario-briceno-iragorry": {
+   "total": 65,
+   "mes": 8
+  },
+  "caracciolo-parra-perez-bolivar-2da-edicion": {
+   "total": 141,
+   "mes": 8
+  },
+  "caracciolo-parra-perez-el-colombiano-de-francisco-de-miranda": {
+   "total": 118,
+   "mes": 13
+  },
+  "caracciolo-parra-perez-el-regimen-espanol-en-venezuela": {
+   "total": 145,
+   "mes": 29
+  },
+  "caracciolo-parra-perez-el-regimen-espanol-en-venezuela-2da-edicion": {
+   "total": 176,
+   "mes": 10
+  },
+  "caracciolo-parra-perez-historia-de-la-primera-republica-de-venezuela-tomo-i": {
+   "total": 141,
+   "mes": 10
+  },
+  "caracciolo-parra-perez-historia-de-la-primera-republica-de-venezuela-tomo-ii": {
+   "total": 131,
+   "mes": 8
+  },
+  "caracciolo-parra-perez-la-monarquia-en-la-gran-colombia": {
+   "total": 181,
+   "mes": 10
+  },
+  "caracciolo-parra-perez-marino-y-la-independencia-de-venezuela-tomo-i": {
+   "total": 117,
+   "mes": 6
+  },
+  "caracciolo-parra-perez-marino-y-la-independencia-de-venezuela-tomo-ii": {
+   "total": 126,
+   "mes": 17
+  },
+  "caracciolo-parra-perez-marino-y-la-independencia-de-venezuela-tomo-iii": {
+   "total": 119,
+   "mes": 8
+  },
+  "caracciolo-parra-perez-marino-y-la-independencia-de-venezuela-tomo-iv": {
+   "total": 96,
+   "mes": 4
+  },
+  "caracciolo-parra-perez-marino-y-la-independencia-de-venezuela-tomo-v": {
+   "total": 90,
+   "mes": 3
+  },
+  "caracciolo-parra-perez-miranda-y-la-revolucion-francesa-2da-edicion-tomo-i": {
+   "total": 91,
+   "mes": 10
+  },
+  "caracciolo-parra-perez-miranda-y-la-revolucion-francesa-2da-edicion-tomo-ii": {
+   "total": 97,
+   "mes": 8
+  },
+  "caracciolo-parra-perez-miranda-y-la-revolucion-francesa-tomo-i": {
+   "total": 100,
+   "mes": 9
+  },
+  "caracciolo-parra-perez-miranda-y-la-revolucion-francesa-tomo-ii": {
+   "total": 95,
+   "mes": 5
+  },
+  "caracciolo-parra-perez-paginas-de-historia-y-de-polemica": {
+   "total": 143,
+   "mes": 14
+  },
+  "caracciolo-parra-perez-trazos-de-historia-venezolana": {
+   "total": 123,
+   "mes": 9
+  },
+  "caracciolo-parra-perez-una-mision-diplomatica-venezolana-ante-napoleon-en-1813": {
+   "total": 130,
+   "mes": 9
+  },
+  "carlos-irazabal-hacia-la-democracia": {
+   "total": 53,
+   "mes": 11
+  },
+  "carlos-irazabal-venezuela-esclava-y-feudal": {
+   "total": 77,
+   "mes": 17
+  },
+  "carlos-rodriguez-jimenez-venezuela-1908-1933": {
+   "total": 145,
+   "mes": 8
+  },
+  "carlos-soublette-correspondencia-vol-I": {
+   "total": 28,
+   "mes": 9
+  },
+  "carlos-soublette-correspondencia-vol-II": {
+   "total": 22,
+   "mes": 7
+  },
+  "carlos-soublette-correspondencia-vol-III": {
+   "total": 20,
+   "mes": 4
+  },
+  "carmelo-fernandez-memorias-de-carmelo-fernandez": {
+   "total": 18,
+   "mes": 2
+  },
+  "colombeia-numero-1": {
+   "total": 305,
+   "mes": 8
+  },
+  "colombeia-numero-2": {
+   "total": 56,
+   "mes": 1
+  },
+  "colombeia-numero-3": {
+   "total": 27,
+   "mes": 4
+  },
+  "colombeia-numero-4": {
+   "total": 36,
+   "mes": 36
+  },
+  "cornelio-hispano-diario-de-bucaramanga": {
+   "total": 54,
+   "mes": 5
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol--XIV": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol--XV": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-I": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-II": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-III": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-IV": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-IX": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-V": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-VI": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-VII": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-VIII": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-X": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-XI": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-XII": {
+   "total": 0,
+   "mes": 0
+  },
+  "documentos-para-la-historia-de-la-vida-publica-del-libertador-vol-XIII": {
+   "total": 0,
+   "mes": 0
+  },
+  "eleazar-lopez-contreras-gobierno-y-administracion-1936-1941": {
+   "total": 0,
+   "mes": 0
+  },
+  "eleazar-lopez-contreras-temas-de-historia-bolivariana": {
+   "total": 32,
+   "mes": 8
+  },
+  "enrique-gandia-dos-ensayos-de-enrique-gandia": {
+   "total": 18,
+   "mes": 2
+  },
+  "enrique-melendez-el-otro-vallenilla-lanz": {
+   "total": 30,
+   "mes": 15
+  },
+  "eugene-andre-un-naturalista-en-la-guayana": {
+   "total": 0,
+   "mes": 0
+  },
+  "federico-brito-figueroa-historia-economica-y-social-de-venezuela-vol-I": {
+   "total": 0,
+   "mes": 0
+  },
+  "federico-brito-figueroa-historia-economica-y-social-de-venezuela-vol-II": {
+   "total": 0,
+   "mes": 0
+  },
+  "federico-brito-figueroa-historia-economica-y-social-de-venezuela-vol-III": {
+   "total": 0,
+   "mes": 0
+  },
+  "federico-brito-figueroa-historia-economica-y-social-de-venezuela-vol-IV": {
+   "total": 0,
+   "mes": 0
+  },
+  "francisco-depons-viaje-a-la-parte-oriental-de-tierra-firme": {
+   "total": 44,
+   "mes": 1
+  },
+  "francisco-javier-yanes-compendio-de-la-historia-de-venezuela": {
+   "total": 169,
+   "mes": 41
+  },
+  "francisco-javier-yanes-historia-de-la-provincia-de-cumana": {
+   "total": 88,
+   "mes": 11
+  },
+  "francisco-javier-yanes-historia-de-margarita": {
+   "total": 168,
+   "mes": 72
+  },
+  "francisco-javier-yanes-relacion-documentada-de-los-principales-sucesos-ocurridos": {
+   "total": 127,
+   "mes": 18
+  },
+  "francisco-javier-yanes-relacion-documentada-de-los-principales-sucesos-ocurridos-en-venezuela-tomo-i": {
+   "total": 131,
+   "mes": 29
+  },
+  "fundacion-vicente-lecuna-miscelanea-vicente-lecuna-homenaje-continental": {
+   "total": 45,
+   "mes": 1
+  },
+  "funres-documentos-britanicos-relacionados-con-el-bloqueo": {
+   "total": 0,
+   "mes": 0
+  },
+  "gabriel-e-munoz-monteverde-cuatro-anos-de-historia-patria-vol-I": {
+   "total": 45,
+   "mes": 16
+  },
+  "gabriel-e-munoz-monteverde-cuatro-anos-de-historia-patria-vol-II": {
+   "total": 46,
+   "mes": 15
+  },
+  "gabriel-fernandez-de-villalobos-vaticinios-de-la-perdida-de-las-indias": {
+   "total": 0,
+   "mes": 0
+  },
+  "gloria-henriquez-uzcategui-los-papeles-de-francisco-de-miranda": {
+   "total": 0,
+   "mes": 0
+  },
+  "guillermo-moron-historia-de-venezuela-vol-I": {
+   "total": 0,
+   "mes": 0
+  },
+  "guillermo-moron-historia-de-venezuela-vol-II": {
+   "total": 0,
+   "mes": 0
+  },
+  "guillermo-moron-historia-de-venezuela-vol-III": {
+   "total": 0,
+   "mes": 0
+  },
+  "guillermo-moron-historia-de-venezuela-vol-IV": {
+   "total": 0,
+   "mes": 0
+  },
+  "guillermo-moron-historia-de-venezuela-vol-V": {
+   "total": 0,
+   "mes": 0
+  },
+  "gustavo-ocando-yamarte-historia-politico-eclesiastica-de-venezuela-vol-I": {
+   "total": 0,
+   "mes": 0
+  },
+  "gustavo-ocando-yamarte-historia-politico-eclesiastica-de-venezuela-vol-II": {
+   "total": 17,
+   "mes": 2
+  },
+  "harrison-sabin-howard-romulo-gallegos-y-la-revolucion-burguesa-en-venezuela": {
+   "total": 99,
+   "mes": 6
+  },
+  "hector-garcia-chuecos-documentos-relativos-a-la-revolucion-de-gual-y-espana": {
+   "total": 38,
+   "mes": 1
+  },
+  "indalecio-lievano-aguirre-bolivar-2da-edicion": {
+   "total": 119,
+   "mes": 7
+  },
+  "instituto-panamericano-conjuracion-de-1808-en-caracas": {
+   "total": 26,
+   "mes": 1
+  },
+  "instituto-panamericano-el-19-de-abril-de-1810": {
+   "total": 0,
+   "mes": 0
+  },
+  "isaias-medina-angarita-cuatro-anos-de-democracia": {
+   "total": 153,
+   "mes": 13
+  },
+  "jesus-evaristo-casariego-reivindicacion-del-mariscal-asturiano-bobes": {
+   "total": 137,
+   "mes": 1
+  },
+  "joaquin-gabaldon-marquez-el-municipio-raiz-de-la-republica": {
+   "total": 25,
+   "mes": 0
+  },
+  "john-gustavus-adolphus-williamson-las-comadres-de-caracas": {
+   "total": 19,
+   "mes": 0
+  },
+  "jose-antonio-paez-archivo-del-general-jose-antonio-paez-tomo-I": {
+   "total": 23,
+   "mes": 5
+  },
+  "jose-antonio-paez-archivo-del-general-jose-antonio-paez-tomo-II": {
+   "total": 24,
+   "mes": 3
+  },
+  "jose-antonio-paez-autobiografia-del-general-jose-antonio-paez-tomo-I-academia": {
+   "total": 16,
+   "mes": 1
+  },
+  "jose-antonio-paez-autobiografia-del-general-jose-antonio-paez-tomo-II-academia": {
+   "total": 16,
+   "mes": 2
+  },
+  "jose-antonio-paez-autobiografia-del-general-jose-antonio-paez-tomo-i": {
+   "total": 26,
+   "mes": 2
+  },
+  "jose-antonio-paez-autobiografia-del-general-jose-antonio-paez-tomo-ii": {
+   "total": 13,
+   "mes": 0
+  },
+  "jose-gregorio-hernandez-obras-completas": {
+   "total": 0,
+   "mes": 0
+  },
+  "jose-vicente-pepper-fichas-del-romulato": {
+   "total": 29,
+   "mes": 6
+  },
+  "jose-vicente-pepper-perez-jimenez-reivindicador-del-tropico": {
+   "total": 40,
+   "mes": 4
+  },
+  "joseph-thorning-miranda-ciudadano-del-mundo": {
+   "total": 49,
+   "mes": 1
+  },
+  "juan-penzini-hernandez-vida-y-obra-de-jose-gil-fortoul": {
+   "total": 8,
+   "mes": 8
+  },
+  "juan-uslar-pietri-historia-de-la-rebelion-popular-de-1814": {
+   "total": 308,
+   "mes": 3
+  },
+  "juan-uslar-pietri-miranda-y-la-sonrisa-de-la-guillotina": {
+   "total": 68,
+   "mes": 3
+  },
+  "juan-vicente-gonzalez-biografia-de-jose-felix-ribas": {
+   "total": 42,
+   "mes": 2
+  },
+  "jules-humbert-historia-de-colombia-y-de-venezuela": {
+   "total": 0,
+   "mes": 0
+  },
+  "jules-humbert-la-ocupacion-alemana-de-venezuela-en-el-siglo-xvi": {
+   "total": 0,
+   "mes": 0
+  },
+  "jules-humbert-los-origenes-venezolanos": {
+   "total": 0,
+   "mes": 0
+  },
+  "laureano-vallenilla-lanz-cesarismo-democratico": {
+   "total": 145,
+   "mes": 7
+  },
+  "laureano-vallenilla-lanz-cesarismo-democratico-edicion-italiana": {
+   "total": 37,
+   "mes": 22
+  },
+  "laureano-vallenilla-lanz-criticas-de-sinceridad-y-exactitud": {
+   "total": 171,
+   "mes": 6
+  },
+  "laureano-vallenilla-lanz-disgregacion-e-integracion": {
+   "total": 101,
+   "mes": 2
+  },
+  "laureano-vallenilla-lanz-planchart-razones-de-proscrito": {
+   "total": 139,
+   "mes": 8
+  },
+  "luis-alberto-sucre-gobernadores-y-capitanes-generales-de-venezuela": {
+   "total": 54,
+   "mes": 1
+  },
+  "luis-cordero-velasquez-betancourt-y-la-conjura-militar-del-45": {
+   "total": 116,
+   "mes": 5
+  },
+  "manuel-lucena-salmoral-la-economia-americana-del-primer-cuarto-del-siglo-xix": {
+   "total": 33,
+   "mes": 3
+  },
+  "manuel-perez-vila-la-oposicion-liberal-en-oriente": {
+   "total": 16,
+   "mes": 2
+  },
+  "marcos-perez-jimenez-frente-a-la-infamia": {
+   "total": 82,
+   "mes": 8
+  },
+  "mariano-picon-salas-1941": {
+   "total": 99,
+   "mes": 4
+  },
+  "mariano-picon-salas-biblioteca-mariano-picon-salas-vol-II": {
+   "total": 0,
+   "mes": 0
+  },
+  "mariano-picon-salas-biblioteca-mariano-picon-salas-vol-IV": {
+   "total": 0,
+   "mes": 0
+  },
+  "mariano-picon-salas-comprension-de-venezuela": {
+   "total": 116,
+   "mes": 12
+  },
+  "mariano-picon-salas-hora-y-deshora": {
+   "total": 117,
+   "mes": 11
+  },
+  "mariano-picon-salas-las-nieves-de-antano": {
+   "total": 87,
+   "mes": 12
+  },
+  "mariano-picon-salas-los-dias-de-cipriano-castro": {
+   "total": 121,
+   "mes": 10
+  },
+  "mariano-picon-salas-miranda": {
+   "total": 123,
+   "mes": 10
+  },
+  "mario-briceno-iragorry-casa-leon-y-su-tiempo": {
+   "total": 156,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-el-caballo-de-ledesma": {
+   "total": 149,
+   "mes": 11
+  },
+  "mario-briceno-iragorry-el-regente-heredia": {
+   "total": 76,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-I": {
+   "total": 51,
+   "mes": 9
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-II": {
+   "total": 36,
+   "mes": 6
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-IX": {
+   "total": 35,
+   "mes": 3
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-V": {
+   "total": 40,
+   "mes": 6
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-VI": {
+   "total": 38,
+   "mes": 4
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-VII": {
+   "total": 45,
+   "mes": 6
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-VIII": {
+   "total": 48,
+   "mes": 9
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-X": {
+   "total": 33,
+   "mes": 4
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XI": {
+   "total": 34,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XII": {
+   "total": 32,
+   "mes": 2
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XIII": {
+   "total": 38,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XIV": {
+   "total": 37,
+   "mes": 9
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XIX": {
+   "total": 45,
+   "mes": 6
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XV": {
+   "total": 39,
+   "mes": 2
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XVI": {
+   "total": 39,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XVII": {
+   "total": 36,
+   "mes": 8
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XVIII": {
+   "total": 42,
+   "mes": 12
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XX": {
+   "total": 32,
+   "mes": 1
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XXI": {
+   "total": 41,
+   "mes": 9
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XXII": {
+   "total": 31,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-XXIII": {
+   "total": 29,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-iii": {
+   "total": 37,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-obras-completas-tomo-iv": {
+   "total": 40,
+   "mes": 5
+  },
+  "mario-briceno-iragorry-origenes-de-la-hacienda-en-venezuela": {
+   "total": 84,
+   "mes": 10
+  },
+  "mario-briceno-iragorry-tapices-de-historia-patria": {
+   "total": 164,
+   "mes": 10
+  },
+  "marius-andre-bolivar-y-la-democracia": {
+   "total": 26,
+   "mes": 2
+  },
+  "miguel-batllori-el-abate-viscardo": {
+   "total": 30,
+   "mes": 1
+  },
+  "ministerio-de-relaciones-exteriores-venezuela-1955": {
+   "total": 103,
+   "mes": 5
+  },
+  "nemesio-garcia-naranjo-venezuela-y-su-gobernante": {
+   "total": 25,
+   "mes": 7
+  },
+  "nicolas-eugenio-navarro-diario-de-bucaramanga": {
+   "total": 44,
+   "mes": 2
+  },
+  "nicolas-eugenio-navarro-la-cristiana-muerte-del-libertador": {
+   "total": 65,
+   "mes": 1
+  },
+  "nicolas-eugenio-navarro-topicos-bolivarianos": {
+   "total": 33,
+   "mes": 2
+  },
+  "nora-bustamante-isaias-medina-angarita": {
+   "total": 104,
+   "mes": 8
+  },
+  "nstituto-panamericano-venezuela-en-lima-y-en-el-rosario-de-cucuta": {
+   "total": 17,
+   "mes": 1
+  },
+  "ocarina-castillo-d-imperio-los-anos-del-bulldozer": {
+   "total": 0,
+   "mes": 0
+  },
+  "pedro-grases-la-conspiracion-de-gual-y-espana": {
+   "total": 47,
+   "mes": 2
+  },
+  "pedro-manuel-arcaya-insurreccion-de-los-negros-de-la-serrania-de-coro": {
+   "total": 0,
+   "mes": 0
+  },
+  "pedro-manuel-arcaya-memorias-2da-edicion": {
+   "total": 0,
+   "mes": 0
+  },
+  "pedro-manuel-arcaya-poblacion-de-origen-europeo-de-coro-en-la-epoca-colonial": {
+   "total": 0,
+   "mes": 0
+  },
+  "rafael-ramon-castellanos-paez-peregrino-y-proscrito": {
+   "total": 18,
+   "mes": 3
+  },
+  "ramon-j.-velasquez-la-caida-del-liberalismo-amarillo": {
+   "total": 130,
+   "mes": 11
+  },
+  "ramon-paez-escenas-rusticas-de-suramerica-academia": {
+   "total": 17,
+   "mes": 2
+  },
+  "repertorio-historico-biografico-del-general-jose-tadeo-monagas-vol-I": {
+   "total": 19,
+   "mes": 2
+  },
+  "repertorio-historico-biografico-del-general-jose-tadeo-monagas-vol-II": {
+   "total": 17,
+   "mes": 3
+  },
+  "repertorio-historico-biografico-del-general-jose-tadeo-monagas-vol-III": {
+   "total": 21,
+   "mes": 2
+  },
+  "repertorio-historico-biografico-del-general-jose-tadeo-monagas-vol-IV": {
+   "total": 20,
+   "mes": 1
+  },
+  "ricardo-archila-luis-razetti-o-biografia-de-la-superacion": {
+   "total": 0,
+   "mes": 0
+  },
+  "ricardo-escalante-de-la-caida-de-perez-a-la-del-banco-latino": {
+   "total": 0,
+   "mes": 0
+  },
+  "richard-vowell-campanas-y-cruceros": {
+   "total": 30,
+   "mes": 6
+  },
+  "richard-vowell-las-sabanas-de-barinas": {
+   "total": 18,
+   "mes": 1
+  },
+  "robert-bontine-cunninghame-graham-jose-antonio-paez-academia": {
+   "total": 19,
+   "mes": 2
+  },
+  "romulo-betancourt-venezuela-politica-y-petroleo": {
+   "total": 177,
+   "mes": 19
+  },
+  "romulo-gallegos-obras-completas-tomo-i": {
+   "total": 157,
+   "mes": 7
+  },
+  "romulo-gallegos-obras-completas-tomo-ii": {
+   "total": 107,
+   "mes": 2
+  },
+  "santiago-gerardo-suarez-el-regimen-de-lopez-contreras": {
+   "total": 0,
+   "mes": 0
+  },
+  "thomas-paine-la-independencia-de-la-costa-firme-justificada": {
+   "total": 0,
+   "mes": 0
+  },
+  "tomas-michelena-resumen-de-la-vida-militar-y-politica-jose-antonio-paez": {
+   "total": 15,
+   "mes": 0
+  },
+  "tomas-polanco-alcantara-caracciolo-parra-perez.-con-la-pluma-y-con-el-frac": {
+   "total": 118,
+   "mes": 21
+  },
+  "tomas-polanco-alcantara-eugenio-mendoza": {
+   "total": 23,
+   "mes": 2
+  },
+  "tomas-polanco-alcantara-juan-vicente-gomez": {
+   "total": 6,
+   "mes": 6
+  },
+  "tulio-chiossone-apuntes-politico-sociales-1945-1968": {
+   "total": 0,
+   "mes": 0
+  },
+  "tulio-chiossone-el-decenio-democratico-inconcluso-1935-1945": {
+   "total": 0,
+   "mes": 0
+  },
+  "valentina-lecuna-vida-e-historia-de-vicente-lecuna": {
+   "total": 35,
+   "mes": 4
+  },
+  "veinte-discursos-sobre-el-general-jose-antonio-paez": {
+   "total": 18,
+   "mes": 1
+  },
+  "venezuela-independiente-1810-1960": {
+   "total": 192,
+   "mes": 16
+  },
+  "vicente-davila-biografia-de-miranda": {
+   "total": 36,
+   "mes": 1
+  },
+  "vicente-davila-diccionario-biografico-de-ilustres-proceres-de-la-independencia-suramericana-tomo-i": {
+   "total": 52,
+   "mes": 4
+  },
+  "vicente-davila-discurso-de-grado": {
+   "total": 24,
+   "mes": 0
+  },
+  "vicente-davila-don-sancho-briceno": {
+   "total": 32,
+   "mes": 2
+  },
+  "vicente-davila-hojas-militares-tomo-i": {
+   "total": 80,
+   "mes": 2
+  },
+  "vicente-davila-hojas-militares-tomo-ii": {
+   "total": 52,
+   "mes": 4
+  },
+  "vicente-davila-hojas-militares-tomo-iii": {
+   "total": 63,
+   "mes": 2
+  },
+  "vicente-davila-investigaciones-historicas-tomo-i": {
+   "total": 56,
+   "mes": 2
+  },
+  "vicente-davila-investigaciones-historicas-tomo-ii": {
+   "total": 69,
+   "mes": 4
+  },
+  "vicente-davila-jaculatorias-1ra-edicion": {
+   "total": 30,
+   "mes": 2
+  },
+  "vicente-davila-jaculatorias-3ra-edicion": {
+   "total": 35,
+   "mes": 2
+  },
+  "vicente-davila-labores-culturales": {
+   "total": 35,
+   "mes": 1
+  },
+  "vicente-davila-problemas-sociales-tomo-i": {
+   "total": 42,
+   "mes": 2
+  },
+  "vicente-davila-problemas-sociales.-tomo-ii": {
+   "total": 41,
+   "mes": 2
+  },
+  "vicente-davila-proceres-meridenos": {
+   "total": 40,
+   "mes": 2
+  },
+  "vicente-davila-proceres-trujillanos": {
+   "total": 35,
+   "mes": 1
+  },
+  "vicente-davila-rincones-mexicanos": {
+   "total": 28,
+   "mes": 3
+  },
+  "vicente-davila-verdades-1ra-edicion": {
+   "total": 32,
+   "mes": 1
+  },
+  "vicente-davila-verdades-2da-edicion": {
+   "total": 35,
+   "mes": 3
+  },
+  "vicente-lecuna-cartas-apocrifas-sobre-la-conferencia-de-guayaquil": {
+   "total": 50,
+   "mes": 3
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-I": {
+   "total": 52,
+   "mes": 12
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-III": {
+   "total": 31,
+   "mes": 7
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-IV": {
+   "total": 24,
+   "mes": 8
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-V": {
+   "total": 29,
+   "mes": 11
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-VI": {
+   "total": 20,
+   "mes": 6
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-VII": {
+   "total": 20,
+   "mes": 6
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-VIII": {
+   "total": 13,
+   "mes": 5
+  },
+  "vicente-lecuna-cartas-del-libertador-segunda-edicion-vol-ii": {
+   "total": 33,
+   "mes": 6
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-I": {
+   "total": 97,
+   "mes": 12
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-ii": {
+   "total": 70,
+   "mes": 3
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-iii": {
+   "total": 65,
+   "mes": 5
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-iv": {
+   "total": 71,
+   "mes": 4
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-ix": {
+   "total": 84,
+   "mes": 11
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-vi": {
+   "total": 68,
+   "mes": 4
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-vii": {
+   "total": 64,
+   "mes": 5
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-viii": {
+   "total": 66,
+   "mes": 4
+  },
+  "vicente-lecuna-cartas-del-libertador-tomo-x": {
+   "total": 75,
+   "mes": 9
+  },
+  "vicente-lecuna-catalogo-de-errores-y-calumnias-en-la-historia-de-bolivar.-tomo-i": {
+   "total": 193,
+   "mes": 9
+  },
+  "vicente-lecuna-catalogo-de-errores-y-calumnias-en-la-historia-de-bolivar.-tomo-ii": {
+   "total": 118,
+   "mes": 5
+  },
+  "vicente-lecuna-catalogo-de-errores-y-calumnias-en-la-historia-de-bolivar.-tomo-iii": {
+   "total": 156,
+   "mes": 17
+  },
+  "vicente-lecuna-correspondencia-del-libertador": {
+   "total": 0,
+   "mes": 0
+  },
+  "vicente-lecuna-la-casa-natal-del-libertador": {
+   "total": 107,
+   "mes": 34
+  },
+  "vicente-lecuna-la-entrevista-de-guayaquil": {
+   "total": 50,
+   "mes": 3
+  },
+  "vicente-lecuna-la-entrevista-de-guayaquil-2da-edicion": {
+   "total": 82,
+   "mes": 2
+  },
+  "vicente-lecuna-la-revolucion-de-queipa": {
+   "total": 71,
+   "mes": 5
+  },
+  "vicente-lecuna-proclamas-y-discursos-del-libertador": {
+   "total": 66,
+   "mes": 3
+  },
+  "vicente-lecuna-simon-bolivar-ideas-politicas-y-militares": {
+   "total": 73,
+   "mes": 2
+  },
+  "vicente-lecuna-simon-bolivar-obras-completas-tomo-i": {
+   "total": 144,
+   "mes": 5
+  },
+  "vicente-lecuna-simon-bolivar-obras-completas-tomo-ii": {
+   "total": 104,
+   "mes": 3
+  },
+  "vicente-lecuna-simon-bolivar-obras-completas-tomo-iii": {
+   "total": 87,
+   "mes": 5
+  },
+  "william-spence-robertson-la-vida-de-miranda": {
+   "total": 59,
+   "mes": 2
+  }
+ }
+}

@@ -18,8 +18,23 @@ descripcion: "La Biblioteca Digital de Idearium Caribe en cifras: obras, autores
         <li><a href="/biblioteca/materias/"><span class="n">{{ k.temas }}</span><span class="es">temas</span><span class="en">subjects</span></a></li>
         <li><a href="/biblioteca/colecciones/"><span class="n">{{ k.colecciones }}</span><span class="es">obras en varios tomos ({{ k.tomos }} volúmenes)</span><span class="en">multi-volume works ({{ k.tomos }} volumes)</span></a></li>
         <li><span class="n">{{ k.desde }}–{{ k.hasta }}</span><span class="es">años de edición</span><span class="en">publication years</span></li>
+        <li><a href="#c-lec"><span class="n">{{ catalogo | totalLecturas | miles }}</span><span class="es">consultas en Internet Archive</span><span class="en">views on the Internet Archive</span></a></li>
         <li><a href="/colombeia.html"><span class="n">{{ k.articulos }}</span><span class="es">artículos de <i>Colombeia</i> en {{ k.numeros }} números</span><span class="en"><i>Colombeia</i> articles in {{ k.numeros }} issues</span></a></li>
       </ul>
+
+      {%- set top = catalogo | masLeidas(10) %}
+      {%- if top.length %}
+      <section class="cifra" aria-labelledby="c-lec">
+        <h2 id="c-lec"><span class="es">Las más leídas</span><span class="en">Most read</span></h2>
+        <p class="cifra-nota es">Consultas de cada obra en Internet Archive, donde se alojan sus copias digitales. Se actualizan cada semana{% if lecturasFecha %} (última actualización: {{ lecturasFecha | fechaIso | fechaLarga("es") }}){% endif %}.</p><p class="cifra-nota en">Views of each work on the Internet Archive, which hosts its digital copies. Updated weekly{% if lecturasFecha %} (last updated {{ lecturasFecha | fechaIso | fechaLarga("en") }}){% endif %}.</p>
+        <ol class="mas-leidas">
+          {%- for x in top %}
+          <li><a href="/biblioteca/obras/{{ x.o.identificador }}/"><img src="{{ x.o | mini }}" alt="" width="48" height="64" loading="lazy" decoding="async"><span class="ml-t">{{ x.o.titulo }}<span class="cat-pie">{{ x.o.autor | replace(";", ",") }}{% if x.o.anio %} · {{ x.o.anio }}{% endif %}</span></span><span class="ml-n"><b>{{ x.total | miles }}</b><span class="es">{{ x.mes | miles }} en los últimos 30 días</span><span class="en">{{ x.mes | miles }} in the last 30 days</span></span></a></li>
+          {%- endfor %}
+        </ol>
+        <p><a href="/biblioteca/catalogo/?orden=lecturas"><span class="es">Ver el catálogo ordenado por lecturas</span><span class="en">See the catalogue sorted by views</span></a></p>
+      </section>
+      {%- endif %}
 
       <section class="cifra" aria-labelledby="c-crec">
         <h2 id="c-crec"><span class="es">Crecimiento de la colección</span><span class="en">Collection growth</span></h2>

@@ -120,3 +120,59 @@
     });
   });
 })();
+
+// Citar una página: cita con número de página y enlace que abre el visor en esa página (?pagina=123).
+(function () {
+  var visor = document.getElementById("visor-ia");
+  var en = function () { return document.documentElement.lang === "en"; };
+  var t = function (es, ing) { return en() ? ing : es; };
+  var f = document.querySelector(".citar-pagina");
+  var id = f ? f.dataset.ia : null;
+  if (!id) { var e = document.querySelector(".obra-pag [data-ia]"); id = e && e.getAttribute("data-ia"); }
+  var numeros = null;
+  // Numeración impresa de Internet Archive: número de página → índice de imagen.
+  function cargarNumeros() {
+    if (numeros) return Promise.resolve(numeros);
+    if (!window.fetch || !id) return Promise.resolve({});
+    return fetch("https://archive.org/metadata/" + encodeURIComponent(id)).then(function (r) { return r.json(); }).then(function (m) {
+      var pn = (m.files || []).filter(function (a) { return /_page_numbers\.json$/.test(a.name); })[0];
+      if (!pn) return {};
+      return fetch("https://" + m.server + m.dir + "/" + encodeURIComponent(pn.name)).then(function (r) { return r.json(); }).then(function (j) {
+        var x = {}; (j.pages || []).forEach(function (p) { if (p.pageNumber && !(p.pageNumber in x)) x[p.pageNumber] = p.leafNum; }); return x;
+      });
+    }).catch(function () { return {}; }).then(function (x) { numeros = x; return x; });
+  }
+  function abrir(valor, desplazar) {
+    if (!visor) return;
+    var base = visor.getAttribute("src").split("#")[0];
+    var poner = function (destino) {
+      visor.setAttribute("src", base + "#page/" + destino + "/mode/1up");
+      if (desplazar) { var r = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches; visor.scrollIntoView({ behavior: r ? "auto" : "smooth", block: "center" }); }
+    };
+    if (/^n\d+$/.test(valor)) return poner(valor);
+    cargarNumeros().then(function (x) { poner(valor in x ? "n" + x[valor] : valor); });
+  }
+  // Enlace a una página: ?pagina=123 (número impreso) o ?pagina=n37 (imagen 38).
+  try {
+    var v = new URLSearchParams(location.search).get("pagina");
+    if (v && /^n?\d{1,5}$/.test(v)) { if (visor) visor.removeAttribute("loading"); abrir(v, true); }
+  } catch (e) {}
+  if (!f) return;
+  f.hidden = false;
+  var inp = f.querySelector("input"), res = f.querySelector(".cp-res"), aviso = f.querySelector(".cp-aviso");
+  f.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var n = inp.value.trim().replace(/^0+/, "");
+    if (!/^\d{1,5}$/.test(n)) return;
+    var url = f.dataset.url + "?pagina=" + n;
+    var esc = function (s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); };
+    f.querySelector(".cp-chicago").innerHTML = f.dataset.chicago.replace("{P}", n).replace("{U}", esc(url));
+    f.querySelector(".cp-apa").innerHTML = f.dataset.apa.replace("{P}", n);
+    f.querySelector(".cp-url").textContent = url;
+    res.hidden = false; aviso.textContent = "";
+    cargarNumeros().then(function (x) {
+      if (Object.keys(x).length && !(n in x)) aviso.textContent = t("Internet Archive no reconoce la página " + n + " en la numeración impresa de esta obra; compruebe el número en el visor.", "The Internet Archive does not recognise page " + n + " in this work's printed numbering; please check the number in the viewer.");
+    });
+    abrir(n, false);
+  });
+})();

@@ -70,6 +70,7 @@ eleventyComputed:
         <a class="btn outline" href="https://archive.org/download/{{ obra.identificador }}" target="_blank" rel="noopener"><span class="es">Descargar (PDF y otros formatos)</span><span class="en">Download (PDF and other formats)</span></a>
         {%- set txt = obra.identificador | textoIA %}{% if txt %}
         <a class="iiif" href="{{ txt.url }}" target="_blank" rel="noopener" type="text/plain"><span class="es">Texto plano (OCR, {{ txt.mb }} MB)</span><span class="en">Plain text (OCR, {{ txt.mb | replace(",", ".") }} MB)</span></a>{% endif %}
+        {%- if obra.commons %}<a class="iiif" href="https://commons.wikimedia.org/wiki/File:{{ obra.commons | replace(" ", "_") | urlencode }}" target="_blank" rel="noopener">Wikimedia Commons</a>{% endif %}
         <a class="iiif" href="https://iiif.archive.org/iiif/3/{{ obra.identificador }}/manifest.json" target="_blank" rel="noopener" title="IIIF Presentation API 3.0"><span class="es">Manifiesto IIIF</span><span class="en">IIIF manifest</span></a>
       </div>
       {%- set c = obra | citas(("https://n2t.net/ark:" + sitio.naan + "/" + obra.signatura) if sitio.naan else (sitio.url + page.url)) %}
@@ -77,6 +78,16 @@ eleventyComputed:
         <h2 id="cc-t"><span class="es">Cómo citar</span><span class="en">How to cite</span></h2>
         <div class="cita"><p class="label">Chicago</p><p class="cita-txt">{{ c.chicago | safe }}</p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
         <div class="cita"><p class="label">APA</p><p class="cita-txt">{{ c.apa | safe }}</p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+        <form class="citar-pagina" data-ia="{{ obra.identificador }}" data-url="{{ sitio.url }}{{ page.url }}" data-chicago="{{ c.chicagoPagina }}" data-apa="{{ c.apaPagina }}" hidden>
+          <p class="label"><label for="cp-n"><span class="es">Citar una página</span><span class="en">Cite a page</span></label></p>
+          <div class="bt-fila"><input id="cp-n" type="text" inputmode="numeric" pattern="[0-9]{1,5}" maxlength="5" required autocomplete="off" placeholder="Página / Page"><button type="submit" class="btn outline"><span class="es">Generar cita</span><span class="en">Create citation</span></button></div>
+          <div class="cp-res" hidden>
+            <div class="cita"><p class="label"><span class="es">Chicago (nota)</span><span class="en">Chicago (note)</span></p><p class="cita-txt cp-chicago"></p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+            <div class="cita"><p class="label"><span class="es">APA (en el texto)</span><span class="en">APA (in-text)</span></p><p class="cita-txt cp-apa"></p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+            <div class="cita"><p class="label"><span class="es">Enlace</span><span class="en">Link</span></p><p class="cita-txt cp-url"></p><button type="button" class="cita-copiar"><span class="es">Copiar</span><span class="en">Copy</span></button></div>
+            <p class="cita-nota cp-aviso" aria-live="polite"></p>
+          </div>
+        </form>
         <p class="cita-nota es">Los gestores bibliográficos como Zotero o Mendeley pueden capturar esta ficha directamente desde el navegador.</p>
         <p class="cita-nota en">Reference managers such as Zotero or Mendeley can capture this record directly from the browser.</p>
         <p class="cita-descargas"><span class="label"><span class="es">Descargar la cita</span><span class="en">Download citation</span></span><a href="/biblioteca/obras/{{ obra.identificador }}/cita.ris" download="{{ obra.signatura }}.ris">RIS</a><a href="/biblioteca/obras/{{ obra.identificador }}/cita.bib" download="{{ obra.signatura }}.bib">BibTeX</a></p>

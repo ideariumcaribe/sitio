@@ -1,5 +1,33 @@
 [
  {
+  "fecha": "2026-11-06",
+  "seccion": "Biblioteca",
+  "es": "Nueva búsqueda en el texto completo de las obras de la Biblioteca: 263 obras y más de cien mil páginas. Cada resultado lleva a la página exacta del libro.",
+  "en": "New full-text search across the Library's works: 263 works and over one hundred thousand pages. Each result leads to the exact page of the book.",
+  "enlace": "/biblioteca/texto/"
+ },
+ {
+  "fecha": "2026-11-06",
+  "seccion": "Biblioteca",
+  "es": "Cada obra permite citar una página concreta, en Chicago y APA, con un enlace que abre el visor en esa página.",
+  "en": "Each work can now be cited at a specific page, in Chicago and APA, with a link that opens the viewer at that page.",
+  "enlace": "/biblioteca/catalogo/"
+ },
+ {
+  "fecha": "2026-11-06",
+  "seccion": "Biblioteca",
+  "es": "Cada tema, autor y obra en varios tomos ofrece su bibliografía completa para descargar en RIS, BibTeX y CSV, lista para Zotero, Mendeley o EndNote.",
+  "en": "Each subject, author and multi-volume work offers its full bibliography for download in RIS, BibTeX and CSV, ready for Zotero, Mendeley or EndNote.",
+  "enlace": "/biblioteca/materias/"
+ },
+ {
+  "fecha": "2026-11-06",
+  "seccion": "Biblioteca",
+  "es": "«La Biblioteca en cifras» muestra las obras más leídas, según sus consultas en Internet Archive, y el catálogo puede ordenarse por lecturas. Las cifras se actualizan cada semana.",
+  "en": "«The Library in figures» shows the most-read works, based on their views on the Internet Archive, and the catalogue can be sorted by views. The figures are updated weekly.",
+  "enlace": "/cifras.html#c-lec"
+ },
+ {
   "fecha": "2026-11-05",
   "seccion": "Biblioteca",
   "es": "Nueva página «Últimos veinte años»: las obras que están en los últimos veinte años de su protección en Estados Unidos y su situación respecto de la sección 108(h) de la ley de derechos de autor. La situación de derechos de cada obra se actualiza sola cada 1 de enero.",

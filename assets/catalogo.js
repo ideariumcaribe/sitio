@@ -42,6 +42,7 @@
       var A = a.dataset, B = b.dataset, r = 0;
       if (k === "anio-asc" || k === "anio-desc") { r = (parseInt(A.anio, 10) || 9999) - (parseInt(B.anio, 10) || 9999); if (k === "anio-desc") r = -r; }
       else if (k === "recientes") return B.sig.localeCompare(A.sig);
+      else if (k === "lecturas") r = (parseInt(B.lec, 10) || 0) - (parseInt(A.lec, 10) || 0);
       else if (k !== "signatura") r = (A[k] || "").localeCompare(B[k] || "", "es");
       return r || A.sig.localeCompare(B.sig);
     };

@@ -18,6 +18,7 @@ eleventyComputed:
         <h1>{{ col.titulo }}</h1>
         {%- if col.autor %}<p class="autores">{% for n in col.autor | split(";") %}<a href="/biblioteca/autores/{{ n | slugAutor }}/">{{ n }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
         <p class="cat-cuenta"><span class="es">{{ col.tomos.length }} tomos{% if col.ediciones.length > 1 %} en {{ col.ediciones.length }} ediciones{% endif %}{% if col.anios %} · {{ col.anios }}{% endif %}</span><span class="en">{{ col.tomos.length }} volumes{% if col.ediciones.length > 1 %} in {{ col.ediciones.length }} editions{% endif %}{% if col.anios %} · {{ col.anios }}{% endif %}</span></p>
+        {%- set bibRuta = "/biblioteca/colecciones/" + col.slug + "/" %}{% set bibArchivo = "coleccion-" + col.slug %}{% include "bibliografia.njk" %}
       </div></div>
       {%- for ed in col.ediciones %}
       <section class="col-edicion stack" style="gap:18px"{% if col.ediciones.length > 1 %} aria-labelledby="ed-{{ loop.index }}"{% endif %}>

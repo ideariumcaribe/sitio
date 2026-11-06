@@ -100,7 +100,13 @@ export default function (eleventyConfig) {
     });
     const apaEd = editorial && !formas.includes(editorial) ? " " + esc(fin(editorial)) : "";
     const apa = (apaAut.length ? esc(fin(unirY(apaAut))) + " " : "") + "(" + esc(anio) + "). " + titulo + apaEd + " " + esc(url);
-    return { chicago, apa };
+    // Cita de una página concreta: nota de Chicago y referencia APA en el texto. {P} es la página y {U}, el enlace a esa página.
+    const natural = (f, i) => corporativo(f) ? f : (autores[i].indexOf(",") === -1 ? autores[i] : f.split(",").slice(1).join(",").trim() + " " + f.split(",")[0].trim());
+    const tituloNota = "<i>" + esc(String(o.titulo || "").replace(/[.]$/, "")) + "</i>";
+    const chicagoPagina = (formas.length ? esc(unirY(formas.map(natural))) + ", " : "") + tituloNota + " (" + esc((lugar ? lugar + ": " : "") + editorial + ", " + anio) + "), {P}, {U}.";
+    const apellidos = formas.map((f) => corporativo(f) ? f : f.split(",")[0].trim());
+    const apaPagina = "(" + esc(apellidos.length > 2 ? apellidos[0] + " et al." : unirY(apellidos) || o.titulo) + ", " + esc(anio) + ", p. {P})";
+    return { chicago, apa, chicagoPagina, apaPagina };
   });
   // Datos estructurados (schema.org) de una obra de la Biblioteca.
   eleventyConfig.addFilter("ldObra", (o, url, mats, naan) => {
@@ -113,7 +119,7 @@ export default function (eleventyConfig) {
       inLanguage: o.signatura === "IC-0211" ? "it" : "es", identifier: naan ? [o.signatura, `https://n2t.net/ark:${naan}/${o.signatura}`] : o.signatura,
       about: (o.materias || []).map((s) => (mats || []).find((m) => m.slug === s)).filter(Boolean).map((m) => m.nombre),
       image: `https://www.ideariumcaribe.com/assets/portadas/${fs.existsSync(new URL(`./assets/portadas/${o.identificador}.webp`, import.meta.url)) ? o.identificador + ".webp" : "provisional/" + o.identificador + ".svg"}`,
-      sameAs: "https://archive.org/details/" + o.identificador,
+      sameAs: ["https://archive.org/details/" + o.identificador, ...(o.commons ? ["https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(o.commons.replace(/ /g, "_"))] : [])],
       isAccessibleForFree: true, bookFormat: "https://schema.org/EBook",
       usageInfo: DERECHOS[o.derechos_eeuu] ? DERECHOS[o.derechos_eeuu].uri : undefined,
       isPartOf: { "@type": "Collection", name: "Biblioteca Digital de Idearium Caribe", url: "https://www.ideariumcaribe.com/biblioteca/catalogo/" },
@@ -166,6 +172,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("grafBarras", (serie, titulo, etiqueta) => dos(CIFRAS.barras(serie, { titulo, etiqueta: etiqueta || 250 }), CIFRAS.barras(serie, { titulo, ancho: 360, apilado: true })));
   eleventyConfig.addFilter("grafLinea", (serie, titulo) => dos(CIFRAS.linea(serie, { titulo }), CIFRAS.linea(serie, { titulo, ancho: 360, alto: 220, etiquetas: 3 })));
   eleventyConfig.addFilter("miles", (n) => CIFRAS.fmt(n));
+  // Consultas de cada obra en Internet Archive (_data/lecturas.json, actualizado cada semana por scripts/lecturas.py).
+  const LECTURAS = (() => { try { return JSON.parse(fs.readFileSync(new URL("./_data/lecturas.json", import.meta.url), "utf8")); } catch (e) { return { obras: {} }; } })();
+  eleventyConfig.addFilter("lecturas", (o) => (LECTURAS.obras[o && o.identificador] || {}).total || 0);
+  eleventyConfig.addFilter("masLeidas", (cat, n) => (cat || []).map((o) => ({ o, ...(LECTURAS.obras[o.identificador] || { total: 0, mes: 0 }) })).filter((x) => x.total > 0).sort((a, b) => b.total - a.total || a.o.signatura.localeCompare(b.o.signatura)).slice(0, n || 10));
+  eleventyConfig.addFilter("totalLecturas", (cat) => (cat || []).reduce((s, o) => s + ((LECTURAS.obras[o.identificador] || {}).total || 0), 0));
+  // Obras y páginas con texto para la búsqueda en el texto (fondo/textos, lib/textos.js).
+  const CON_TEXTO = (() => { const r = {}; try { for (const f of fs.readdirSync(new URL("./fondo/textos/", import.meta.url))) r[f.replace(/\.json\.gz$/, "")] = true; } catch (e) {} return r; })();
+  eleventyConfig.addFilter("tieneTexto", (o) => !!CON_TEXTO[o && o.identificador]);
+  eleventyConfig.addFilter("conTexto", (cat) => { const l = (cat || []).filter((o) => CON_TEXTO[o.identificador]); return { obras: l.length, paginas: l.reduce((s, o) => s + ((TEXTOS[o.identificador] || {}).paginas || 0), 0) }; });
+  eleventyConfig.addGlobalData("lecturasFecha", () => LECTURAS.fecha || "");
   // Lugares de edición (lib/lugares.js) y mapas (lib/mapa.js).
   eleventyConfig.addFilter("lugarObra", (o) => { const l = lugarDe(o && o.pie_de_imprenta); return l ? l.nombre : ""; });
   eleventyConfig.addFilter("lugares", (cat) => MAPA.conteo(cat));
@@ -345,6 +361,9 @@ export default function (eleventyConfig) {
     });
     await index.addDirectory({ path: dir.output });
     await index.writeFiles({ outputPath: dir.output + "/pagefind" });
+    await index.deleteIndex();
+    const { indiceTextos } = await import("./lib/textos.js");
+    await indiceTextos(pagefind, dir.output);
     await pagefind.close();
     const { revisarEnlaces } = await import("./lib/enlaces.js");
     revisarEnlaces(dir.output);

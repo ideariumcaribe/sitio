@@ -311,6 +311,10 @@ content:
             - { label: "Memorias y autobiografías", value: "memorias-y-autobiografias" }
             - { label: "Documentos y epistolarios", value: "documentos-y-epistolarios" }
             - { label: "Historias generales", value: "historias-generales" }
+      - name: commons
+        label: Archivo en Wikimedia Commons
+        type: string
+        description: Nombre del archivo en Wikimedia Commons, sin «File:» (por ejemplo, «Verdades (1900) - Vicente Dávila.pdf»). La ficha de la obra enlaza con él.
       - name: oculta
         label: Ocultar en el sitio
         type: boolean
